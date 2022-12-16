@@ -1,1 +1,3714 @@
-# stub
+Nodes:
+  clinical_trial:
+    Props:
+      - clinical_trial_id
+      - clinical_trial_short_name
+      - clinical_trial_description
+      - clinical_trial_designation
+      - clinical_trial_long_name
+      - clinical_trial_type
+      - lead_organization
+      - principal_investigators
+      - dbgap_accession_number
+  cohort:
+    Props:
+      - cohort_id
+      - arm
+      - center
+      - disease
+  demo:
+    Props:
+      - demo_id
+      - bmi_curc
+      - weight50_f
+      - race7
+      - state
+      - occupat
+      - educat
+      - bmi_50c
+      - marital
+      - sisters
+      - agelevel
+      - bmi_50
+      - brothers
+      - hispanic_f
+      - age
+      - weight20_f
+      - bmi_20c
+      - height_f
+      - bmi_curr
+      - weight_f
+      - bmi_20
+      - sex
+  mort:
+    Props:
+      - mort_id
+      - d_seer_death
+      - f_cancersite
+      - d_cancersite
+      - is_dead
+      - d_codeath_cat
+      - dth_days
+      - f_codeath_cat
+      - f_seer_death
+      - is_dead_with_cod
+  comp:
+    Props:
+      - comp_id
+      - bq_compdays
+      - bq_adminm
+      - bq_age
+      - bq_returned
+  risk:
+    Props:
+      - risk_id
+      - cig_stop
+      - pipe
+      - smoked_f
+      - fh_cancer
+      - ssmokea_f
+      - cig_stat
+      - filtered_f
+      - pack_years
+      - smokea_f
+      - rsmoker_f
+      - cigar
+      - cigpd_f
+      - cig_years
+  nsaid_use:
+    Props:
+      - nsaid_use_id
+      - ibuppd
+      - ibup
+      - asp
+      - asppd
+  health_cond:
+    Props:
+      - health_cond_id
+      - polyps_f
+      - hyperten_f
+      - hearta_f
+      - osteopor_f
+      - stroke_f
+      - liver_comorbidity
+      - bronchit_f
+      - gallblad_f
+      - colon_comorbidity
+      - arthrit_f
+      - emphys_f
+      - divertic_f
+      - diabetes_f
+  fem_health_cond:
+    Props:
+      - fem_health_cond_id
+      - curhorm
+      - fmenstr
+      - thorm
+      - ovariesr_f
+      - lmenstr
+      - miscar
+      - bcontr_f
+      - pregc
+      - prega
+      - horm_stat
+      - endometriosis
+      - hystera
+      - trypreg
+      - horm_f
+      - preg_f
+      - tubal
+      - tuballig
+      - bbd
+      - uterine_fib
+      - hyster_f
+      - menstrs
+      - fchilda
+      - menstrs_stat_type
+      - bcontrt
+      - livec
+      - bcontra
+      - benign_ovcyst
+      - stillb
+      - post_menopausal
+  male_health_cond:
+    Props:
+      - male_health_id
+      - enlpros_f
+      - infprosa
+      - prosprob_f
+      - urinatea
+      - infpros_f
+      - enlprosa
+      - urinate_f
+  visit:
+    Props:
+      - visit_id
+      - visit_year_from_index
+  breast_case:
+    Props:
+      - breast_case_id
+      - ph_first_cancer_age
+      - ph_first_cancer
+      - j_ph_breast_trial
+      - j_ph_any_trial
+      - rndyear
+  breast_elig:
+    Props:
+      - breast_elig_id
+      - j_breast_eligible_dhq
+      - j_ph_any_dqx
+      - j_ph_breast_sqx
+      - j_ph_breast_dqx
+      - j_ph_breast_dhq
+      - j_ph_any_sqx
+      - entryage_muq
+      - j_ph_breast_bq
+      - j_breast_eligible_bq
+      - entryage_bq
+      - entrydays_bq
+      - entrydays_dhq
+      - j_ph_any_muq
+      - j_ph_any_dhq
+      - j_breast_eligible_sqx
+      - j_ph_breast_muq
+      - j_breast_eligible_dqx
+      - entryage_sqx
+      - entrydays_dqx
+      - entrydays_sqx
+      - j_ph_any_bq
+      - entryage_dqx
+      - entryage_dhq
+      - entrydays_muq
+      - j_breast_eligible_muq
+  breast_exit:
+    Props:
+      - breast_exit_id
+      - j_breast_exitdays
+      - j_breast_exitstat
+      - mortality_exitdays
+      - mortality_exitage
+      - j_fstcan_exitage
+      - mortality_exitstat
+      - j_fstcan_exitdays
+      - j_breast_exitage
+      - j_fstcan_exitstat
+  breast_regn:
+    Props:
+      - breast_regn_id
+      - reconsent_outcome_days
+      - queried_any_registry
+      - reconsent_outcome
+      - queried_any_registry_stat
+  breast_diag:
+    Props:
+      - node_id
+      - j_breast_clinstage
+      - j_breast_candxdays
+      - j_breast_pathstage_n
+      - j_breast_stage_n
+      - j_breast_mets_source
+      - j_er_status
+      - j_breast_pathstage
+      - j_breast_cancer
+      - j_breast_has_mets
+      - breast_registry_stat_cat
+      - j_bc_her2_stat
+      - j_breast_summary_stage_raw
+      - j_breast_clinstage_n
+      - j_breast_is_first_dx
+      - j_breast_stage_t
+      - j_pr_status
+      - j_breast_clinstage_m
+      - j_breast_summary_stage_enhanced
+      - j_breast_clinstage_7e
+      - j_breast_pathstage_m
+      - j_breast_stage_7e
+      - j_breast_stage
+      - j_breast_clinstage_t
+      - j_breast_pathstage_t
+      - j_breast_mets_conflict
+      - j_bc_her2summ
+      - j_breast_stage_m
+      - j_breast_pathstage_7e
+      - j_breast_mets_conflict_source
+      - j_breast_tmrsize
+  breast_mort:
+    Props:
+      - breast_mort_id
+      - d_dth_breast
+      - f_dth_breast
+  breast_hist:
+    Props:
+      - breast_hist_id
+      - breast_fh_age
+      - breast_fh_cnt
+      - breast_fh
+  colo_case:
+    Props:
+      - colo_case_id
+      - ph_first_cancer_age
+      - ph_first_cancer
+      - j_ph_colo_trial
+      - j_ph_any_trial
+      - rndyear
+  colo_elig:
+    Props:
+      - colo_elig_id
+      - j_ph_colo_dqx
+      - j_ph_any_dqx
+      - j_ph_colo_muq
+      - j_ph_any_sqx
+      - entryage_muq
+      - j_colo_eligible_dhq
+      - j_ph_colo_sqx
+      - j_colo_eligible_bq
+      - j_colo_eligible_muq
+      - entryage_bq
+      - entrydays_bq
+      - entrydays_dhq
+      - j_ph_colo_bq
+      - j_ph_any_dhq
+      - j_ph_any_muq
+      - j_ph_colo_dhq
+      - entryage_sqx
+      - entrydays_dqx
+      - entrydays_sqx
+      - j_ph_any_bq
+      - j_colo_eligible_sqx
+      - entryage_dqx
+      - entryage_dhq
+      - j_colo_eligible_dqx
+      - entrydays_muq
+  colo_exit:
+    Props:
+      - colo_exit_id
+      - mortality_exitage
+      - mortality_exitdays
+      - j_colo_exitstat
+      - j_colo_exitdays
+      - j_fstcan_exitage
+      - mortality_exitstat
+      - j_colo_exitage
+      - j_fstcan_exitdays
+      - j_fstcan_exitstat
+  colo_regn:
+    Props:
+      - colo_regn_id
+      - dual
+      - queried_any_registry
+      - reconsent_outcome
+      - reconsent_outcome_days
+      - queried_any_registry_stat
+  colo_screen:
+    Props:
+      - colo_screen_id
+      - adeneith0/3/5/35
+      - sizerght_days0/3/5/35
+      - othfind_divlosis0/3/5/35
+      - villeith0/3/5/35
+      - colsw_left0/3/5/35
+      - largrght0/3/5/35
+      - advleft_days0/3/5/35
+      - adveith0/3/5/35
+      - largrght_days0/3/5/35
+      - t0_div_disease_any
+      - dyspw_left0/3/5/35
+      - sizeleft0/3/5/35
+      - lessize0/3/5/35
+      - dyspleft_days0/3/5/35
+      - sizerght0/3/5/35
+      - rsizleft0/3/5/35
+      - numadv0/3/5/35
+      - villrght0/3/5/35
+      - insirght0/3/5/35
+      - rsizeith0/3/5/35
+      - rsizrght0/3/5/35
+      - colsw_left_days0/3/5/35
+      - adenleft_days0/3/5/35
+      - adveith_days0/3/5/35
+      - villleft0/3/5/35
+      - colsw_eith_days0/3/5/35
+      - aden_count_eith0/3/5/35
+      - fsg_result0/3/5/35
+      - aden_count_left0/3/5/35
+      - villleft_days0/3/5/35
+      - dyspw_rght0/3/5/35
+      - largeith0/3/5/35
+      - villeith_days0/3/5/35
+      - largleft0/3/5/35
+      - othfind_divlitis0/3/5/35
+      - colo_mra_stat0/3/5/35
+      - lessize_cat0/3/5/35
+      - dyspeith_days0/3/5/35
+      - hadcolsc_days0/3/5/35
+      - advleft0/3/5/35
+      - protocolc
+      - adenrght0/3/5/35
+      - villrght_days0/3/5/35
+      - dyspeith0/3/5/35
+      - hadcolsc0/3/5/35
+      - inad_div0/3/5/35
+      - dyspw_eith0/3/5/35
+      - insieith0/3/5/35
+      - sizeleft_days0/3/5/35
+      - fsg_in0/3/5/35
+      - adenleft0/3/5/35
+      - adenrght_days0/3/5/35
+      - advrght0/3/5/35
+      - largleft_days0/3/5/35
+      - multeith0/3/5/35
+      - sizeeith0/3/5/35
+      - dysprght0/3/5/35
+      - dyspleft0/3/5/35
+      - sizeeith_days0/3/5/35
+      - numnoadv0/3/5/35
+      - advrght_days0/3/5/35
+      - fsg_days0/3/5/35
+      - adeneith_days0/3/5/35
+      - colsw_eith0/3/5/35
+      - insileft0/3/5/35
+      - hadcolsc12mon0/3/5/35
+      - multrght0/3/5/35
+      - dysprght_days0/3/5/35
+      - aden_count_rght0/3/5/35
+      - largeith_days0/3/5/35
+      - colsw_rght0/3/5/35
+      - colsw_rght_days0/3/5/35
+      - multleft0/3/5/35
+  colo_diag:
+    Props:
+      - colo_diag_id
+      - j_colo_location_summary
+      - j_colo_grade
+      - j_colo_mets_conflict
+      - j_colo_histtype
+      - j_colo_icdo2_tmrloc
+      - j_colo_pathstage_t
+      - j_colo_stage_n
+      - reassurvc
+      - j_colo_clinstage
+      - j_colo_has_mets
+      - j_colo_cancer
+      - j_colo_clinstage_7e
+      - j_colo_pathstage
+      - j_colo_stage
+      - reassympc
+      - j_colo_clinstage_n
+      - j_colo_pathstage_7e
+      - j_colo_location
+      - j_colo_stage_t
+      - j_colo_stage_7e
+      - j_colo_clinstage_t
+      - j_colo_pathstage_m
+      - j_colo_pathstage_n
+      - j_intstatc_cat
+      - reasfollc
+      - j_colo_clinstage_m
+      - j_colo_cancer_type
+      - j_colo_mets_source
+      - j_colo_stage_m
+      - j_colo_is_first_dx
+      - j_colo_location_side
+      - j_colo_mets_conflict_source
+      - reasothc
+      - j_colo_summary_stage_enhanced
+      - j_candxdaysc
+      - j_num_cancc
+      - j_colo_summary_stage_raw
+      - colo_registry_stat_cat
+  colo_treat:
+    Props:
+      - colo_treat_id
+      - iaden_aden_days
+      - curative_radc
+      - primary_trtc
+      - iaden_protocol
+      - neoadjuvantc
+      - iaden_cohort
+      - iaden_aden
+      - iaden_adv
+      - iaden_dyspw
+      - curative_chemoc
+      - iaden_exclusion
+      - raden_cohort_group
+      - primary_trtc_days
+      - curative_resectc
+      - raden_exclusion
+  colo_mort:
+    Props:
+      - colo_mort_id
+      - f_dthc
+      - d_dthc
+  colo_hist:
+    Props:
+      - colo_hist_id
+      - colo_fh
+      - colo_fh_cnt
+      - fh_cancer
+      - colo_fh_age
+  lung_case:
+    Props:
+      - lung_case_id
+      - ph_first_cancer_age
+      - j_ph_lung_trial
+      - ph_first_cancer
+      - j_ph_any_trial
+      - rndyear
+  lung_elig:
+    Props:
+      - lung_elig_id
+      - j_ph_any_dqx
+      - j_lung_eligible_dhq
+      - j_ph_any_sqx
+      - entryage_muq
+      - j_ph_lung_bq
+      - j_ph_lung_dqx
+      - j_lung_eligible_sqx
+      - entryage_bq
+      - entrydays_bq
+      - entrydays_dhq
+      - j_ph_any_muq
+      - j_ph_any_dhq
+      - j_lung_eligible_bq
+      - entryage_sqx
+      - entrydays_dqx
+      - j_ph_lung_dhq
+      - j_ph_lung_sqx
+      - entrydays_sqx
+      - j_ph_any_bq
+      - j_ph_lung_muq
+      - j_lung_eligible_muq
+      - entryage_dqx
+      - entryage_dhq
+      - j_lung_eligible_dqx
+      - entrydays_muq
+  lung_exit:
+    Props:
+      - lung_exit_id
+      - j_lung_exitage
+      - mortality_exitage
+      - mortality_exitdays
+      - j_lung_exitstat
+      - j_fstcan_exitage
+      - mortality_exitstat
+      - j_lung_exitdays
+      - j_fstcan_exitdays
+      - j_fstcan_exitstat
+  lung_regn:
+    Props:
+      - lung_regn_id
+      - dual
+      - queried_any_registry
+      - reconsent_outcome
+      - reconsent_outcome_days
+      - queried_any_registry_stat
+  lung_screen:
+    Props:
+      - lung_screen_id
+      - lung_mra_stat0-3
+      - xry_days0-3
+      - xry_result0-3
+      - xry_prot
+      - biopllink0-3
+      - nlst_flag
+  lung_diag:
+    Props:
+      - lung_diag_id
+      - j_lung_clinstage_n
+      - reasfolll
+      - j_lung_summary_stage_enhanced
+      - j_lung_pathstage_t
+      - j_lung_is_carcinoid
+      - j_lung_clinstage
+      - j_lung_mets_source
+      - j_num_cancl
+      - j_lung_clinstage_m
+      - j_lung_is_first_dx
+      - j_lung_stage
+      - j_lung_cancer
+      - j_lung_has_mets
+      - j_lung_mets_conflict_source
+      - lung_registry_stat_cat
+      - j_lung_stage_t
+      - j_lung_grade
+      - j_lung_stage_n
+      - j_lung_pathstage_7e
+      - j_lung_clinstage_t
+      - j_lung_pathstage_m
+      - j_lung_stage_7e
+      - j_lung_summary_stage_raw
+      - j_lung_pathstage
+      - j_lung_stage_m
+      - j_candxdaysl
+      - j_intstatl_cat
+      - j_lung_mets_conflict
+      - reassurvl
+      - j_lung_cancer_type
+      - j_lung_histtype_cat
+      - j_lung_clinstage_7e
+      - reassympl
+      - j_lung_histtype
+      - j_lung_pathstage_n
+      - reasothl
+  lung_treat:
+    Props:
+      - lung_treat_id
+      - curative_chemol
+      - curative_wsll
+      - curative_radl
+      - primary_trtl_small
+      - curative_pneuml
+      - primary_trtl_nsc_days
+      - neoadjuvantl
+      - primary_trtl_small_days
+      - primary_trtl_nsc
+  lung_mort:
+    Props:
+      - lung_mort_id
+      - d_dthp
+      - f_dthp
+  lung_hist:
+    Props:
+      - lung_histid
+      - lung_fh
+      - lung_fh_age
+      - fh_cancer
+      - lung_fh_cnt
+  ovar_case:
+    Props:
+      - ovar_case_id
+      - ph_first_cancer_age
+      - ph_first_cancer
+      - j_ph_osumm_trial
+      - j_ph_any_trial
+      - rndyear
+  ovar_elig:
+    Props:
+      - ovar_elig_id
+      - j_ph_osumm_dhq
+      - j_ph_any_dqx
+      - j_ph_osumm_bq
+      - j_ph_any_sqx
+      - j_osumm_eligible_sqx
+      - entryage_muq
+      - j_osumm_eligible_bq
+      - j_osumm_eligible_muq
+      - j_osumm_eligible_dqx
+      - j_ph_osumm_dqx
+      - entryage_bq
+      - entrydays_bq
+      - entrydays_dhq
+      - j_ph_any_muq
+      - j_ph_any_dhq
+      - j_osumm_eligible_dhq
+      - entryage_sqx
+      - entrydays_dqx
+      - entrydays_sqx
+      - j_ph_any_bq
+      - entryage_dqx
+      - entryage_dhq
+      - j_ph_osumm_sqx
+      - entrydays_muq
+      - j_ph_osumm_muq
+  ovar_exit:
+    Props:
+      - ovar_exit_id
+      - j_ovar_exitstat
+      - mortality_exitage
+      - mortality_exitdays
+      - j_ovar_exitdays
+      - j_fstcan_exitage
+      - mortality_exitstat
+      - j_ovar_exitage
+      - j_fstcan_exitdays
+      - j_fstcan_exitstat
+  ovar_regn:
+    Props:
+      - ovar_regn_id
+      - osumm_registry_stat_cat
+      - dual
+      - reconsent_outcome_day s
+      - queried_any_registry
+      - reconsent_outcome
+      - queried_any_registry_sta t
+  ovar_screen:
+    Props:
+      - ovar_screen_id
+      - ca125_result0-5
+      - tvu_days0-3
+      - ca125_level0-5
+      - ca125ii_level0-5
+      - biopolink0-5
+      - ca125_src0-5
+      - ca125_days0-5
+      - ovar_mra_stat0-5
+      - orem_fyro
+      - ca125_prot
+      - tvu_result0-3
+  ovar_diag:
+    Props:
+      - ovar_diag_id
+      - j_osumm_stage_t
+      - reasothosumm
+      - reassymposumm
+      - j_osumm_stage
+      - j_intstatosumm_cat
+      - j_osumm_clinstage_n
+      - j_osumm_cancer
+      - j_osumm_stage_n
+      - j_candxdaysosumm
+      - j_osumm_is_first_dx
+      - j_osumm_mets_source
+      - j_osumm_summary_stage_enhanced
+      - j_osumm_stage_7e
+      - j_osumm_clinstage_t
+      - j_osumm_mets_conflict_ source
+      - j_osumm_pathstage_n
+      - j_osumm_summary_stage_raw
+      - j_osumm_has_mets
+      - j_osumm_clinstage
+      - j_osumm_mets_conflict
+      - j_osumm_clinstage_7e
+      - j_osumm_clinstage_m
+      - j_osumm_pathstage
+      - j_osumm_pathstage_m
+      - reasfollosumm
+      - reassurvosumm
+      - j_osumm_pathstage_7e
+      - j_cancerosumm
+      - j_osumm_pathstage_t
+      - j_osumm_stage_m
+  ovar_treat:
+    Props:
+      - ovar_treat_id
+      - primary_trtosumm_days
+      - primary_trtosumm
+      - curative_surgosumm
+      - curative_chemoosumm
+  ovar_mort:
+    Props:
+      - ovar_mort_id
+      - d_dthosumm
+      - f_dthosumm
+  ovar_hist:
+    Props:
+      - ovar_hist_id
+      - breast_fh_age
+      - ovarsumm_fh_cnt
+      - breast_fh_cnt
+      - ovarsumm_fh
+      - breast_fh
+      - ovarsumm_fh_age
+      - fh_cancer
+  pros_case:
+    Props:
+      - pros_case_id
+      - ph_first_cancer_age
+      - ph_first_cancer
+      - j_ph_pros_trial
+      - j_ph_any_trial
+      - rndyear
+  pros_elig:
+    Props:
+      - pros_elig_id
+      - j_ph_any_dqx
+      - j_pros_eligible_dhq
+      - j_ph_any_sqx
+      - entryage_muq
+      - j_ph_pros_sqx
+      - j_pros_eligible_muq
+      - entryage_bq
+      - entrydays_bq
+      - entrydays_dhq
+      - j_ph_any_muq
+      - j_ph_any_dhq
+      - j_pros_eligible_dqx
+      - j_ph_pros_dhq
+      - entryage_sqx
+      - entrydays_dqx
+      - j_ph_pros_dqx
+      - entrydays_sqx
+      - j_pros_eligible_bq
+      - j_ph_any_bq
+      - j_ph_pros_bq
+      - j_pros_eligible_sqx
+      - entryage_dqx
+      - entryage_dhq
+      - j_ph_pros_muq
+      - entrydays_muq
+  pros_exit:
+    Props:
+      - pros_exit_id
+      - j_pros_exitdays
+      - mortality_exitage
+      - mortality_exitdays
+      - j_pros_exitstat
+      - j_fstcan_exitage
+      - mortality_exitstat
+      - j_pros_exitage
+      - j_fstcan_exitdays
+      - j_fstcan_exitstat
+  pros_regn:
+    Props:
+      - pros_regn_id
+      - dual
+      - queried_any_registry
+      - reconsent_outcome
+      - reconsent_outcome_days
+      - queried_any_registry_stat
+  pros_screen:
+    Props:
+      - pros_screen_id
+      - pros_mra_stat0-5
+      - psa_prot
+      - dre_result0-3
+      - psa_days0-5
+      - dre_days0-3
+      - biopplink0-5
+      - psa_result0-5
+      - psa_level0-5
+  pros_diag:
+    Props:
+      - pros_diag_id
+      - j_pros_gleason_prost
+      - j_pros_gleason_source
+      - j_pros_stage_7e
+      - j_pros_summary_stage_enhanced
+      - j_intstatp_cat
+      - j_pros_is_first_dx
+      - j_pros_mets_conflict_source
+      - j_pros_mets_conflict
+      - j_pros_stage
+      - j_pros_histtype
+      - reasfollp
+      - j_pros_pathstage_7e
+      - j_pros_pathstage_t
+      - pros_registry_stat_cat
+      - j_pros_clinstage_m
+      - j_dx_psa_gap
+      - j_pros_stage_t
+      - reasothp
+      - j_pros_grade
+      - j_pros_pathstage_n
+      - j_pros_mets_source
+      - j_pros_pathstage
+      - j_pros_clinstage_7e
+      - j_pros_clinstage
+      - j_pros_cancer
+      - j_pros_clinstage_t
+      - j_pros_stage_m
+      - j_pros_gleason
+      - j_pros_gleason_biop
+      - j_pros_pathstage_m
+      - j_pros_clinstage_n
+      - j_pros_summary_stage_raw
+      - j_pros_stage_n
+      - reassurvp
+      - j_dx_psa
+      - j_pros_has_mets
+      - j_candxdaysp
+      - reassympp
+  pros_treat:
+    Props:
+      - pros_treat_id
+      - primary_trtp
+      - curative_radp
+      - curative_othp
+      - neoadjuvantp
+      - curative_hormp
+      - curative_prostp
+      - primary_trtp_days
+  pros_mort:
+    Props:
+      - pros_mort_id
+      - d_dthp
+      - f_dthp
+  pros_hist:
+    Props:
+      - pros_hist_id
+      - pros_fh_age
+      - pros_fh
+      - pros_fh_cnt
+      - fh_cancer
+  dhq:
+    Props:
+      - dhq_id
+      - mped_alc_bev_beer_dhq
+      - g_chicken_total_dhq
+      - p_vegyell_dhq
+      - g_tomato_catsup_dhq
+      - sv_chips_olestra_dhq
+      - p_lunch_dhq
+      - sofa_perc2005_dhq
+      - sv_chick_mix_dhq
+      - sv_marg_bread_fat_free_dhq
+      - dt_sugar_icecream_reg_dhq
+      - g_milk_skim_dhq
+      - tot_zinc_dhq
+      - dt_folnat_ndsr_dhq
+      - dt_flav50_theaflavin_755_dhq
+      - mped_alc_bev_liquor25_dhq
+      - sup_selen_dhq
+      - g_egg_sub_fa_dhq
+      - g_cream_cream_sub_dhq
+      - g_red_low_temp_dhq
+      - sv_eggs_fa_dhq
+      - g_m_sausage_lowfat_dhq
+      - sv_stk_lean_dhq
+      - g_egg_rolls_dhq
+      - mped_m_fish_high_dhq
+      - sv_nuts_butter_dhq
+      - dt_sugar_pudding_dhq
+      - dt_fa16_1_csfii_dhq
+      - g_oil_olive_dhq
+      - hei2015c5_wholegrain_dhq
+      - sv_marg_pancake_reg_dhq
+      - g_coldcut_lowfat_dhq
+      - dt_fiber_ndsr_dhq
+      - g_tofu_dhq
+      - seaplden2010_dhq
+      - sv_ham_lunch_lowfat_dhq
+      - sv_butter_bread_reg_dhq
+      - sv_milk_2_cer_dhq
+      - dt_flav50_luteolin_773_dhq
+      - g_milk_rice_dhq
+      - g_marg_oth_use_nofat_dhq
+      - g_pot_pot_salad_dhq
+      - dt_fa20_1_dhq
+      - dt_vitare_csfii_dhq
+      - sv_chips_lowfat_dhq
+      - sv_saccharine_cof_dhq
+      - g_croissant_dhq
+      - sv_sausage_reg_dhq
+      - sv_whitesce_dhq
+      - sv_crm_whip_reg_dhq
+      - vegden2005_dhq
+      - sv_tuna_can_oil_dhq
+      - dt_betacry_dhq
+      - g_tomato_raw_dhq
+      - mped_discfat_solid_dhq
+      - dt_betacarot_eq_dhq
+      - g_liquor_dhq
+      - g_soup_bean_dhq
+      - g_eggs_white_dhq
+      - g_cereal_fort_dhq
+      - dt_fa16_0_dhq
+      - g_marg_veg_nofat_dhq
+      - sv_mayo_sand_diet_dhq
+      - g_milk_skim_not_cof_dhq
+      - g_coldcut_reg_dhq
+      - g_milk_soy_not_cof_dhq
+      - g_butter_pan_lowfat_dhq
+      - sv_pasta_nfa_dhq
+      - dhq_completedvalid
+      - g_icecream_reg_dhq
+      - sv_oil_olive_dhq
+      - dt_flav50_pelargonidin_743_dhq
+      - g_chick_bbq_j_dhq
+      - g_whitemt_dhq
+      - g_porkch_bak_dhq
+      - g_chick_bbq_ns_j_dhq
+      - sv_chick_dark_ns_dhq
+      - sv_marg_veg_fat_free_dhq
+      - g_hamb_br_dhq
+      - sv_cobbler_dhq
+      - sv_bacon_lean_dhq
+      - g_hamb_lean_dhq
+      - g_peach_nect_plum_dhq
+      - sv_butter_veg_reg_dhq
+      - sup_mag_dhq
+      - mped_alc_bev_liquor_dhq
+      - dt_sugar_saccharine_cof_dhq
+      - sv_cake_reg_dhq
+      - sup_b6_dhq
+      - g_sausage_reg_dhq
+      - sv_granola_bar_dhq
+      - sv_lettuce_dhq
+      - sv_meal_repl_liq_dhq
+      - g_onions_dhq
+      - g_marg_pan_nofat_dhq
+      - g_milk_soy_dhq
+      - g_milk_whole_not_cof_dhq
+      - g_cobbler_dhq
+      - g_milk_skim_cof_dhq
+      - heiX1_totalveg_dhq
+      - dt_sugar_granola_dhq
+      - sv_cheese_reg_dhq
+      - sv_beer_dhq
+      - sv_tea_reg_nosug_dhq
+      - dt_iron_redmt_spec_dhq
+      - dt_fa22_5_dhq
+      - sv_fruit_dried_no_apr_dhq
+      - g_avocado_dhq
+      - sup_vita_re_dhq
+      - sv_mayo_salad_fat_free_dhq
+      - g_cookie_lowfat_dhq
+      - sv_orangjce_dhq
+      - g_mayo_sand_diet_dhq
+      - g_crm_whipped_sub_dhq
+      - g_pfbbq_wv_dhq
+      - drinker_status_dhq
+      - sup_thia_dhq
+      - sv_plantain_dhq
+      - grbnden2010_dhq
+      - g_misc_syrup_dhq
+      - g_chick_pf_s_v_dhq
+      - sv_rice_nfa_dhq
+      - g_soda_diet_dhq
+      - dt_theobromine_dhq
+      - dt_kcal_dhq
+      - g_yogurt_dhq
+      - dt_carb_dhq
+      - mped_legume_dhq
+      - g_marg_veg_diet_dhq
+      - g_high_temp_dhq
+      - g_hamb_reg_dhq
+      - g_chicken_light_dhq
+      - g_cereal_good_fiber_dhq
+      - hei2010_total_score_dhq
+      - g_peppers_nfa_dhq
+      - dt_monofat_dhq
+      - tot_vitc_dhq
+      - dt_ribo_dhq
+      - g_cantaloupe_dhq
+      - g_fruit_dried_no_apr_dhq
+      - mped_m_egg_dhq
+      - heix2_green_and_bean_dhq
+      - g_mixed_food_dhq
+      - dt_flav50_thearubigins_756_dhq
+      - sv_fish_nf_nfa_dhq
+      - g_marg_diet_dhq
+      - g_milk_other_dhq
+      - mped_alc_bev_wine_dhq
+      - g_cabbage_dhq
+      - sv_tofu_soy_dhq
+      - g_eggs_plain_nfa_dhq
+      - g_hamb_pf_r_dhq
+      - g_chick_pf_w_dhq
+      - sv_bread_whole_gr_dhq
+      - sv_milk_evap_cof_dhq
+      - hei2015c7_totprot_dhq
+      - sv_soup_creamed_dhq
+      - mped_m_meat_dhq
+      - g_sugar_honey_cof_dhq
+      - g_candy_choc_dhq
+      - g_marg_oth_use_reg_dhq
+      - g_sausage_pf_v_dhq
+      - g_hotdog_lowfat_dhq
+      - g_soup_veg_dhq
+      - sv_eggs_nfa_dhq
+      - dt_fa18_2_ndsr_dhq
+      - g_whitesce_dhq
+      - meatden2010_dhq
+      - g_hamb_pf_w_dhq
+      - sv_pie_pumpkin_dhq
+      - sv_bread_white_dhq
+      - g_mayo_salad_nofat_dhq
+      - dt_sucrose_dhq
+      - sv_crm_sour_lowfat_dhq
+      - g_chick_bbq_s_w_dhq
+      - g_stk_bbq_dhq
+      - sv_pot_fr_dhq
+      - tot_mag_dhq
+      - p_fruit_oth_dhq
+      - sv_cheese_nonfat_dhq
+      - sv_soda_diet_decaf_dhq
+      - pe_fr_satfat_dhq
+      - mped_alc_bev_liquor40_dhq
+      - dt_monofat_meat_dhq
+      - g_marg_brd_nofat_dhq
+      - g_hamb_bbq_v_dhq
+      - dt_flav50_petunidin_746_dhq
+      - dt_flav50_malvidin_742_dhq
+      - g_crm_whipped_reg_dhq
+      - sv_milk_soy_cer_dhq
+      - g_mayo_reg_dhq
+      - mped_dairy_cheese_dhq
+      - dt_sugar_dhq
+      - g_pie_pecan_dhq
+      - g_porkch_bak_w_dhq
+      - dt_flav50_cyanidin_731_dhq
+      - sv_ham_lunch_dhq
+      - g_hamb_bbq_dhq
+      - g_hamb_pf_v_dhq
+      - tot_selenium_dhq
+      - sv_butter_pancake_lowfat_dhq
+      - g_soda_caff_diet_dhq
+      - dt_sugar_yogurt_frz_dhq
+      - sv_tomato_catsup_dhq
+      - sv_marg_other_diet_dhq
+      - sv_wine_dhq
+      - sv_oil_corn_dhq
+      - g_spinach_raw_dhq
+      - g_non_red5_dhq
+      - g_spinach_ckd_dhq
+      - sv_crm_cof_dhq
+      - sv_pizza_w_meat_dhq
+      - g_pasta_meatsce_dhq
+      - dt_polyfat_unk_dhq
+      - mped_dairy_dhq
+      - pctsfat2005_dhq
+      - g_veal_venison_lamb_dhq
+      - sv_yogurt_frz_dhq
+      - g_mayo_salad_reg_dhq
+      - g_sugar_honey_not_cof_dhq
+      - g_fruit_citrus_dhq
+      - g_chick_stew_dhq
+      - dt_alc_alc_drinks_dhq
+      - mped_veg_orange_dhq
+      - g_milk_2_cof_dhq
+      - sv_milk_1_cer_dhq
+      - sv_oysters_dhq
+      - sv_soda_diet_caff_dhq
+      - hei11_sodium_dhq
+      - g_salad_dress_nofat_dhq
+      - sv_crackers_dhq
+      - sup_betacarot_re_dhq
+      - g_corn_dhq
+      - sv_crm_nd_pwdr_reg_dhq
+      - g_broccoli_dhq
+      - g_rice_nfa_dhq
+      - sv_mayo_salad_diet_dhq
+      - mped_discfat_oil_dhq
+      - dt_sugar_muffin_reg_dhq
+      - dt_flav50_apigenin_770_dhq
+      - sv_sausage_lowfat_dhq
+      - g_gelatin_dhq
+      - dt_starch_dhq
+      - g_turkey_dhq
+      - pe_fr_fat_dhq
+      - pe_fr_monofat_dhq
+      - dt_fol_ndsr_dhq
+      - sv_apple_dhq
+      - heix7_totprot_dhq
+      - vegden2010_dhq
+      - mped_alc_bev_alc_drinks25_dhq
+      - g_m_pasta_meatsce_dhq
+      - sv_stk_reg_dhq
+      - g_pork_roast_dhq
+      - g_fish_total_dhq
+      - g_sausage_pf_w_dhq
+      - dt_alc_wine_dhq
+      - sup_copper_dhq
+      - g_chick_bbq_s_j_dhq
+      - sv_candy_choc_dhq
+      - sv_tomatojce_dhq
+      - sv_milk_1_not_cof_dhq
+      - dt_lut_zeax_dhq
+      - dt_fol_csfii_dhq
+      - sv_milk_2_cof_dhq
+      - mped_m_nut_seed_dhq
+      - sv_meatlf_dhq
+      - g_soda_decaf_diet_dhq
+      - sv_coffee_decaf_nosug_dhq
+      - g_milk_rice_cof_dhq
+      - ph_any_dhq
+      - g_porkch_bbq_v_dhq
+      - sv_soup_broth_noodle_dhq
+      - g_milk_soy_cer_dhq
+      - g_stk_pf_v_dhq
+      - dt_meth_dhq
+      - g_tea_decaf_nosug_dhq
+      - addsug_perc2015_dhq
+      - hei2015c2_green_and_bean_dhq
+      - g_butter_oth_use_reg_dhq
+      - sv_crm_nd_pwdr_diet_dhq
+      - g_crm_sour_lowfat_dhq
+      - g_bacon_pf_w_dhq
+      - g_pear_dhq
+      - g_milk_dairy_dhq
+      - sv_pudding_dhq
+      - p_seafood_dhq
+      - tot_betacarot_dhq
+      - sv_salad_dress_lowfat_dhq
+      - sv_fish_fr_fa_dhq
+      - sv_pickled_veg_frt_dhq
+      - sv_crm_nd_liq_reg_dhq
+      - sv_donut_dhq
+      - g_milk_rice_not_cof_dhq
+      - g_pie_pumpkin_dhq
+      - sv_cookie_lowfat_dhq
+      - g_cheese_nonfat_dhq
+      - g_stk_pf_r_dhq
+      - sv_melon_other_dhq
+      - dt_flav50_epicatechin_751_dhq
+      - dt_sugar_cheesecake_dhq
+      - sv_maple_syrup_dhq
+      - hei7_milk_dhq
+      - sv_hamb_reg_dhq
+      - g_butter_oth_use_lowfat_dhq
+      - tot_vitd_dhq
+      - dt_fat_fish_dhq
+      - dt_gammatoco_dhq
+      - sfat_perc2015_dhq
+      - dt_sugar_pancake_dhq
+      - dt_fat_dhq
+      - sv_stk_dhq
+      - g_salty_grain_snack_dhq
+      - g_redmt_dhq
+      - sv_beans_nfa_dhq
+      - g_hamb_ff_dhq
+      - g_beef_stew_dhq
+      - g_milk_whole_dhq
+      - g_chick_bbq_s_v_dhq
+      - g_whitemtminuspfbbqbakbr_dhq
+      - heix12_sofaas_dhq
+      - dt_lactose_dhq
+      - dt_isoflav50_glycitein_712_dhq
+      - g_bacon_reg_dhq
+      - sv_tomato_salsa_dhq
+      - sv_misc_syrup_dhq
+      - sv_creamch_reg_dhq
+      - dt_sugar_fruitpunch_diet_dhq
+      - g_pot_fr_dhq
+      - dt_fiber_insol_ndsr_dhq
+      - sv_chick_light_ns_dhq
+      - g_grapes_dhq
+      - sv_egg_sub_fa_dhq
+      - sv_mayo_sand_reg_dhq
+      - sup_niac_dhq
+      - g_chick_pf_s_w_dhq
+      - g_soda_caff_reg_dhq
+      - sv_butter_pot_reg_dhq
+      - g_bacon_lean_dhq
+      - g_butter_veg_lowfat_dhq
+      - g_notpro5_dhq
+      - g_cake_cookie_pie_dhq
+      - g_apricot_dried_dhq
+      - sv_coldcut_poultry_dhq
+      - dt_fa10_0_dhq
+      - g_soda_decaf_reg_dhq
+      - sv_pie_pecan_dhq
+      - hei2015_total_score_dhq
+      - g_ham_lunch_lowfat_dhq
+      - dt_polyfat_animal_dhq
+      - g_orange_dhq
+      - sv_lasagna_dhq
+      - dt_fa22_1_dhq
+      - dt_b12_dhq
+      - dt_monofat_animal_dhq
+      - g_mexican_dhq
+      - dt_iron_whitemt_dhq
+      - g_pretzel_dhq
+      - sv_beefrst_dhq
+      - sv_avocado_dhq
+      - p_grain_wh_dhq
+      - sv_pancake_dhq
+      - dt_fa20_4_dhq
+      - dt_foleq_ndsr_dhq
+      - dt_sugar_milk_soy_dhq
+      - g_chick_pf_ns_v_dhq
+      - g_pf_dhq
+      - g_milk_1_dhq
+      - sv_popcorn_dhq
+      - age_dhq
+      - dt_folsyn_ndsr_dhq
+      - g_chicken_dhq
+      - sv_liver_dhq
+      - g_muffin_reg_dhq
+      - sv_sausage_dhq
+      - sv_applesce_dhq
+      - g_mayo_diet_dhq
+      - g_chick_stew_j_dhq
+      - sv_marg_pot_fat_free_dhq
+      - sv_cheesecake_dhq
+      - g_mayo_sand_reg_dhq
+      - g_chick_br_s_v_dhq
+      - g_marg_brd_reg_dhq
+      - dt_flav50_quercetin_789_dhq
+      - g_bacon_pf_v_dhq
+      - dt_sugar_yogurt_dhq
+      - sv_marg_veg_reg_dhq
+      - dt_iron_meat_dhq
+      - hei2015c11_refinedgrain_dhq
+      - g_cheesecake_dhq
+      - g_mayo_sand_nofat_dhq
+      - g_chicken_dark_dhq
+      - sup_b12_dhq
+      - g_hamb_br_w_dhq
+      - g_tea_reg_nosug_dhq
+      - hei3_totalveg_dhq
+      - g_tuna_can_water_dhq
+      - dt_sugar_donut_dhq
+      - g_red_high_temp_dhq
+      - hei9_oil_dhq
+      - mped_m_organ_dhq
+      - hei1_totalfruit_dhq
+      - dt_glucose_dhq
+      - g_nuts_whole_dhq
+      - dt_alc_liquor_dhq
+      - g_porkch_br_w_dhq
+      - heix10_sodium_dhq
+      - g_strawberry_dhq
+      - g_hotdog_reg_dhq
+      - sup_vitc_dhq
+      - sv_hotdog_reg_dhq
+      - sv_cornbread_dhq
+      - g_saccharine_cof_dhq
+      - sv_soup_bean_dhq
+      - sv_creamch_lowfat_dhq
+      - mped_dairy_milk_dhq
+      - dhq_completed
+      - mped_alc_bev_alc_drinks_dhq
+      - g_porkch_br_dhq
+      - sv_pot_wht_dhq
+      - dt_flav50_theaflavin_791_dhq
+      - g_hamb_dhq
+      - sv_caul_brus_spr_dhq
+      - sv_beans_green_dhq
+      - g_process_6_dhq
+      - sup_iron_dhq
+      - protden2015_dhq
+      - dt_vitaiu_csfii_dhq
+      - g_pie_fruit_dhq
+      - dt_flav50_theaflavin_792_dhq
+      - dt_sugar_candy_choc_dhq
+      - g_butter_reg_dhq
+      - g_chick_br_s_j_dhq
+      - sv_macaroni_dhq
+      - sv_strawberry_dhq
+      - g_hamb_br_v_dhq
+      - g_biscuit_dhq
+      - sv_cereal_other_dhq
+      - heix11_refinedgrain_dhq
+      - oilden2005_dhq
+      - dt_sugar_frt_not_citr_dried_dhq
+      - dt_vitc_dhq
+      - p_fat_dhq
+      - g_mayo_nofat_dhq
+      - sv_bacon_dhq
+      - sv_fruitpunch_diet_dhq
+      - sv_pot_salad_dhq
+      - sv_pork_dhq
+      - g_coffee_decaf_nosug_dhq
+      - hei2015c9_fattyacid_dhq
+      - g_coleslaw_dhq
+      - hei5_totalgrain_dhq
+      - rgden_dhq
+      - sv_butter_pancake_reg_dhq
+      - p_bean_dhq
+      - g_coffee_reg_nosug_dhq
+      - tot_b6_dhq
+      - g_donut_dhq
+      - g_bbq_dhq
+      - sv_chow_mein_dhq
+      - g_milk_soy_cof_dhq
+      - sv_icecream_reg_dhq
+      - g_crm_sour_reg_dhq
+      - mped_alc_bev_liquor55_dhq
+      - g_tomatojce_dhq
+      - p_nuts_dhq
+      - sv_pretzels_dhq
+      - sv_gravy_dhq
+      - g_cereal_hi_fiber_dhq
+      - g_pie_custard_dhq
+      - g_chick_df_dhq
+      - sv_gelatins_dhq
+      - mped_alc_bev_liquor18_dhq
+      - dt_polyfat_dhq
+      - dt_polyfat_eggs_dhq
+      - mped_m_frank_dhq
+      - g_low_temp_dhq
+      - sv_chips_reg_dhq
+      - dt_fiber_csfii_dhq
+      - g_pasta_redsce_dhq
+      - g_wine_dhq
+      - meatden2005_dhq
+      - dt_sugar_jelly_dhq
+      - g_coldcut_dhq
+      - g_milk_evap_cof_dhq
+      - g_stk_br_v_dhq
+      - dt_sugar_icecream_lowfat_dhq
+      - dt_sugar_cereal_not_ckd_dhq
+      - dt_flav50_naringenin_762_dhq
+      - g_chick_fr_dark_ws_dhq
+      - g_pasta_nfa_dhq
+      - g_chick_light_ns_dhq
+      - dt_sugar_pie_custard_dhq
+      - g_peas_dhq
+      - g_br_dhq
+      - sv_lard_dhq
+      - sv_coleslaw_dhq
+      - mped_veg_starchy_dhq
+      - sv_chick_fr_dark_ws_dhq
+      - g_pudding_dhq
+      - sv_juice_other_dhq
+      - g_marg_veg_reg_dhq
+      - sv_sugar_honey_cof_dhq
+      - sv_veg_med_dhq
+      - g_cookie_reg_dhq
+      - g_crm_nd_lqd_reg_dhq
+      - g_marg_reg_dhq
+      - g_beefrst_sand_dhq
+      - dt_monofat_fish_dhq
+      - g_chick_pf_ns_j_dhq
+      - sv_coldcut_dhq
+      - sv_eggs_white_dhq
+      - mped_veg_dhq
+      - g_chick_bbq_w_dhq
+      - dt_fa20_5_dhq
+      - dt_fa22_6_dhq
+      - g_chips_reg_dhq
+      - g_porkch_bbq_dhq
+      - sv_soda_reg_caff_dhq
+      - pe_fr_carb_dhq
+      - g_butter_veg_reg_dhq
+      - g_fruit_dried_dhq
+      - g_butter_lowfat_dhq
+      - sv_carrot_dhq
+      - tot_copper_dhq
+      - dt_sugar_juice_other_dhq
+      - sv_mayo_sand_fat_free_dhq
+      - tot_thia_dhq
+      - dt_sugar_soda_reg_dhq
+      - g_pasta_ckd_cereal_rice_dhq
+      - g_olives_dhq
+      - g_chick_br_ns_j_dhq
+      - g_stk_bbq_v_dhq
+      - hei2015c10_sodium_dhq
+      - sv_marg_bread_diet_dhq
+      - sv_butter_other_reg_dhq
+      - sv_beefrst_not_sand_dhq
+      - hei2015c4_wholefruit_dhq
+      - g_bacon_pf_j_dhq
+      - dt_fa18_3_dhq
+      - dt_alc_dhq
+      - g_bak_dhq
+      - dt_sodium_dhq
+      - g_crm_nd_pwdr_reg_dhq
+      - g_chick_dark_ws_dhq
+      - tot_iron_dhq
+      - sv_turkey_dhq
+      - g_sugar_honey_dhq
+      - wgrnden_dhq
+      - sv_bananas_dhq
+      - g_hamb_bbq_w_dhq
+      - g_stk_bbq_w_dhq
+      - frtden_dhq
+      - g_milk_2_dhq
+      - sup_zinc_dhq
+      - sv_peas_dhq
+      - g_milk_dessert_dhq
+      - sv_milk_soy_not_cof_dhq
+      - dt_mag_dhq
+      - g_oil_corn_dhq
+      - dt_fa18_1_csfii_dhq
+      - dt_polyfat_dairy_dhq
+      - g_salad_dress_lowfat_dhq
+      - g_lettuce_dhq
+      - dt_sugar_muffin_lowfat_dhq
+      - p_grain_dhq
+      - g_soup_creamed_dhq
+      - g_macaroni_dhq
+      - dt_carot_dhq
+      - g_milk_whole_cer_dhq
+      - sv_stuffing_dhq
+      - g_sausage_lowfat_dhq
+      - p_grain_nonwh_dhq
+      - dt_chol_dhq
+      - g_porkch_bbq_w_dhq
+      - sv_milk_whole_cof_dhq
+      - sv_soda_reg_decaf_dhq
+      - g_stk_br_w_dhq
+      - entrydays_dhq
+      - g_nuts_butter_dhq
+      - sv_tea_decaf_nosug_dhq
+      - heix6_totaldairy_dhq
+      - dt_fa18_0_dhq
+      - p_sugar_dhq
+      - dt_monofat_unk_dhq
+      - g_meal_repl_lqd_dhq
+      - g_chick_pf_s_j_dhq
+      - sv_marg_pancake_diet_dhq
+      - sv_milk_rice_not_cof_dhq
+      - sv_egg_rolls_dhq
+      - dt_lyc_dhq
+      - dt_sugar_fruit_dried_dhq
+      - g_butter_brd_reg_dhq
+      - g_crm_nd_lqd_diet_dhq
+      - g_pancake_dhq
+      - pe_fr_protein_dhq
+      - sv_grapefruit_dhq
+      - sv_hamb_dhq
+      - mped_added_sugar_dhq
+      - mped_veg_potato_dhq
+      - g_chick_br_j_dhq
+      - g_porkch_bak_j_dhq
+      - g_stk_br_r_dhq
+      - sv_ham_lunch_reg_dhq
+      - g_juice_other_dhq
+      - sv_cake_lowfat_dhq
+      - dt_sugar_candy_oth_dhq
+      - dt_sugar_croissant_dhq
+      - g_chick_bak_dhq
+      - mped_alc_bev_beer40_dhq
+      - dt_satfat_dhq
+      - dt_sugar_vegetable_dhq
+      - g_chick_dark_ns_dhq
+      - g_notpro3_dhq
+      - g_stk_bbq_m_dhq
+      - g_m_lasagna_dhq
+      - dt_caffeine_dhq
+      - g_eggs_fa_dhq
+      - mped_alc_bev_beer25_dhq
+      - sv_cereal_good_fiber_dhq
+      - sv_milk_soy_cof_dhq
+      - g_maple_syrup_dhq
+      - g_hamb_bbq_r_dhq
+      - g_whitemtminuspfbbq_dhq
+      - dt_sugar_soda_diet_dhq
+      - sv_butter_veg_lowfat_dhq
+      - mped_m_soy_dhq
+      - dt_vitetat_ndsr_dhq
+      - g_cottagech_dhq
+      - dt_isoflav50_daidzein_710_dhq
+      - dt_fa16_1_ndsr_dhq
+      - g_orangjce_dhq
+      - sv_sugar_honey_not_cof_dhq
+      - dt_phos_dhq
+      - g_chick_light_ws_dhq
+      - g_pork_dhq
+      - g_fish_other_dhq
+      - dt_zinc_dhq
+      - g_ham_lunch_reg_dhq
+      - g_tuna_dhq
+      - g_porkch_pf_j_dhq
+      - pe_fr_alc_dhq
+      - sv_coldcut_lowfat_dhq
+      - dt_sugar_pie_fruit_dhq
+      - g_pfbbq_rm_dhq
+      - sv_cheesesce_dhq
+      - p_veg_oth_dhq
+      - g_crm_nd_pwdr_diet_dhq
+      - g_red_noprocess_dhq
+      - sv_milk_1_cof_dhq
+      - g_fish_fr_fa_dhq
+      - g_stk_pf_dhq
+      - g_jelly_dhq
+      - dt_iron_whitemt_spec_dhq
+      - mped_m_meat_poultry_fish_dhq
+      - g_cheesesce_dhq
+      - g_chick_stew_w_dhq
+      - faratio_dhq
+      - p_milk_dhq
+      - p_tomato_dhq
+      - hei2015c8_seaplant_prot_dhq
+      - mped_m_poultry_dhq
+      - g_soup_noodle_rice_dhq
+      - p_fruit_dhq
+      - dt_monofat_eggs_dhq
+      - g_butter_pot_reg_dhq
+      - tot_vitaiu_csfii_dhq
+      - sv_olives_dhq
+      - heix9_fattyacid_dhq
+      - g_soda_reg_dhq
+      - g_stk_dhq
+      - g_chick_bbq_dhq
+      - sv_bacon_reg_dhq
+      - g_chick_bak_j_dhq
+      - sv_chick_fr_light_ns_dhq
+      - dt_fa18_2_csfii_dhq
+      - dt_deltatoco_dhq
+      - heix8_seaplant_prot_dhq
+      - sv_muffins_reg_dhq
+      - p_starch_dhq
+      - g_engl_muf_bagel_dhq
+      - sodden_dhq
+      - g_lard_dhq
+      - sup_vite_dhq
+      - mped_alc_bev_wine18_dhq
+      - dt_sugar_yeast_bread_white_dhq
+      - dt_flav50_epigallocatech_750_dhq
+      - sv_marg_other_reg_dhq
+      - g_yogurt_frz_dhq
+      - sv_hamb_lean_dhq
+      - dt_vitd_dhq
+      - g_milk_1_cer_dhq
+      - g_veg_med_dhq
+      - g_beans_dried_fa_dhq
+      - grnden_dhq
+      - dt_flav50_gallocatechin_794_dhq
+      - dt_flav50_peonidin_745_dhq
+      - g_milk_rice_cer_dhq
+      - g_porkch_pf_dhq
+      - sv_chick_fr_dark_ns_dhq
+      - mped_alc_bev_alc_drinks18_dhq
+      - g_liver_dhq
+      - g_rice_fa_dhq
+      - sv_pasta_salad_dhq
+      - g_porkch_br_j_dhq
+      - g_porkch_pf_w_dhq
+      - sv_tuna_can_water_dhq
+      - dt_polyfat_fish_dhq
+      - dt_fa18_1_ndsr_dhq
+      - dt_iron_redmt_dhq
+      - g_pizza_meat_dhq
+      - g_chick_br_ns_v_dhq
+      - sv_meal_repl_bar_dhq
+      - sv_spinach_raw_dhq
+      - dt_sugar_pie_pumpkin_dhq
+      - exc_nodate_dhq
+      - mped_fruit_other_dhq
+      - g_sausage_pf_dhq
+      - g_hamb_br_m_dhq
+      - g_ham_not_lunch_dhq
+      - dt_flav50_theaflavin_793_dhq
+      - dt_iron_meat_spec_dhq
+      - dt_satfat_dairy_dhq
+      - sv_salad_dress_reg_dhq
+      - g_meal_repl_bar_dhq
+      - g_sugar_sweet_dhq
+      - sv_nuts_whole_dhq
+      - sv_pasta_meat_fish_sauce_dhq
+      - sv_cheese_lowfat_dhq
+      - g_butter_pot_lowfat_dhq
+      - sv_fruit_other_dhq
+      - hei2015c3_totalfruit_dhq
+      - dt_flav50_kaempferol_786_dhq
+      - exc_death_dhq
+      - g_m_pizza_dhq
+      - g_red5_dhq
+      - sv_mayo_salad_reg_dhq
+      - sv_chick_dark_ws_dhq
+      - dt_flav50_eriodictyol_758_dhq
+      - g_pot_salad_dhq
+      - gly_load_dhq
+      - g_marg_oth_use_diet_dhq
+      - g_shortribs_dhq
+      - mped_alc_bev_dhq
+      - g_chick_bbq_ns_v_dhq
+      - g_m_hotdog_lowfat_dhq
+      - g_melon_other_dhq
+      - sv_aspartame_cof_dhq
+      - sv_beefrst_sand_dhq
+      - sv_cantaloupe_dhq
+      - sv_pasta_fa_dhq
+      - sv_peach_nect_plum_dhq
+      - sv_eggs_salad_dhq
+      - sv_engl_muf_bagel_dhq
+      - sv_chicken_dhq
+      - g_beans_green_dhq
+      - g_stuffing_dhq
+      - gly_index_dhq
+      - mped_grain_whole_dhq
+      - sv_pie_custard_dhq
+      - sv_milkshake_dhq
+      - g_chick_br_ns_w_dhq
+      - g_applesce_dhq
+      - g_chick_br_v_dhq
+      - mped_alc_bev_beer55_dhq
+      - g_milk_2_cer_dhq
+      - mped_grain_dhq
+      - g_milk_skim_cer_dhq
+      - sv_ribs_dhq
+      - sv_hotdog_lowfat_dhq
+      - g_cornbread_dhq
+      - sv_oil_other_dhq
+      - dt_thia_dhq
+      - dt_fat_meat_dhq
+      - g_marg_pot_diet_dhq
+      - drinker_dhq
+      - dt_fat_plant_dhq
+      - sv_broccoli_dhq
+      - sv_pasta_red_sauce_dhq
+      - g_equal_cof_dhq
+      - sv_cottagech_dhq
+      - dt_flav50_catechin3_795_dhq
+      - g_bread_white_dhq
+      - dgvden2005_dhq
+      - sv_hotdog_dhq
+      - dt_b6_dhq
+      - dt_fat_dairy_dhq
+      - g_pasta_salad_dhq
+      - g_porkch_br_v_dhq
+      - dt_maltose_dhq
+      - g_carrot_dhq
+      - g_tuna_can_oil_dhq
+      - g_stk_pf_m_dhq
+      - dt_niac_dhq
+      - g_poultry_ground_dhq
+      - sv_cereal_hot_dhq
+      - sv_orange_dhq
+      - dt_satfat_fish_dhq
+      - sup_cal_dhq
+      - g_pork_neck_feet_dhq
+      - sup_ribo_dhq
+      - g_chick_pf_ns_w_dhq
+      - dt_satfat_plant_dhq
+      - mped_fruit_cit_mel_ber_dhq
+      - sv_beans_fa_dhq
+      - sv_corn_dhq
+      - sv_ham_not_lunch_dhq
+      - dt_monofat_dairy_dhq
+      - g_creamch_lowfat_dhq
+      - g_stk_bbq_r_dhq
+      - sup_vitd_dhq
+      - sv_marg_pot_reg_dhq
+      - sv_yogurt_dhq
+      - mped_alc_bev_wine25_dhq
+      - sv_poultry_ground_dhq
+      - dt_satfat_unk_dhq
+      - dt_fat_eggs_dhq
+      - dt_monofat_plant_dhq
+      - hei2005_total_score_dhq
+      - g_meat_dhq
+      - g_crm_cof_dhq
+      - g_pickled_veg_frt_dhq
+      - dt_flav50_hesperetin_759_dhq
+      - dt_vite_csfii_dhq
+      - g_chick_br_dhq
+      - dt_alc_beer_dhq
+      - g_oil_other_dhq
+      - g_quick_bread_dhq
+      - vegden2015_dhq
+      - g_stk_br_m_dhq
+      - dt_sugar_quick_bread_dhq
+      - dt_sugar_cake_reg_dhq
+      - pe_fr_polyfat_dhq
+      - dt_fa4_0_dhq
+      - dt_sugar_cookie_lowfat_dhq
+      - p_whitepot_dhq
+      - dt_isoflav50_isoflavone_713_dhq
+      - hei10_satfat_dhq
+      - g_popcorn_dhq
+      - sv_grapes_dhq
+      - dt_satfat_eggs_dhq
+      - g_chick_pf_dhq
+      - sv_marg_pot_diet_dhq
+      - g_bacon_dhq
+      - hei2015c6_totaldairy_dhq
+      - dt_fa18_4_dhq
+      - g_pizza_no_meat_dhq
+      - sv_pot_swt_dhq
+      - g_cake_reg_dhq
+      - sv_icecream_lowfat_dhq
+      - sv_milk_rice_cof_dhq
+      - sv_pie_fruit_dhq
+      - hei2_wholefruit_dhq
+      - dt_betatoco_dhq
+      - g_coldcut_poultry_dhq
+      - g_veg_oth_dhq
+      - g_chick_mix_dhq
+      - sv_chick_light_ws_dhq
+      - mped_grain_nonwhole_dhq
+      - dt_flav50_catechin_749_dhq
+      - dt_isoflav50_coumestrol_715_dhq
+      - g_bread_whole_gr_dhq
+      - g_milk_1_cof_dhq
+      - dt_copper_dhq
+      - g_pork_chops_dhq
+      - g_stk_lean_dhq
+      - g_pot_swt_nfa_dhq
+      - sv_croissants_dhq
+      - g_oil_canola_dhq
+      - g_cracker_dhq
+      - g_porkch_pf_v_dhq
+      - g_milkshake_dhq
+      - sv_marg_veg_diet_dhq
+      - sv_spinach_ckd_dhq
+      - mped_fruit_dhq
+      - sv_milk_whole_cer_dhq
+      - sv_cereal_fort_dhq
+      - g_porkch_bbq_j_dhq
+      - mped_dairy_yogurt_dhq
+      - p_soy_dhq
+      - g_chips_olestra_dhq
+      - p_beef_pork_lamb_dhq
+      - g_cake_lowfat_dhq
+      - g_m_chili_dhq
+      - dt_satfat_meat_dhq
+      - dt_sugar_pie_pecan_dhq
+      - tot_ribo_dhq
+      - dt_flav50_delphinidin_741_dhq
+      - g_butter_pan_reg_dhq
+      - g_marg_pot_nofat_dhq
+      - g_m_beef_stew_dhq
+      - hei12_exfaas_dhq
+      - mped_m_fish_low_dhq
+      - g_grapefruit_dhq
+      - dt_sugar_cream_cream_sub_dhq
+      - g_gravy_dhq
+      - g_fruitpunch_reg_dhq
+      - g_beefrst_dhq
+      - g_chili_dhq
+      - g_milk_whole_cof_dhq
+      - g_marg_brd_diet_dhq
+      - p_dairy_dhq
+      - p_poultry_dhq
+      - g_pot_wht_nfa_dhq
+      - g_cereal_other_dhq
+      - g_muffin_lowfat_dhq
+      - g_vegetable_dhq
+      - g_chick_bak_w_dhq
+      - sv_apricot_dhq
+      - sv_coldcut_reg_dhq
+      - g_chick_fr_light_ws_dhq
+      - sv_peppers_dhq
+      - dt_pota_dhq
+      - p_cheese_dhq
+      - sv_butter_bread_lowfat_dhq
+      - g_beans_dried_nfa_dhq
+      - g_fruit_not_citr_dried_dhq
+      - g_egg_sub_nfa_dhq
+      - g_caul_brus_spr_dhq
+      - g_cheese_lowfat_dhq
+      - g_milk_2_not_cof_dhq
+      - sv_chili_dhq
+      - p_veggrn_dhq
+      - g_hamb_pf_m_dhq
+      - dt_satfat_animal_dhq
+      - dt_flav50_isorhamnetin_785_dhq
+      - dt_fa8_0_dhq
+      - g_fish_nf_nfa_dhq
+      - p_yogurt_dhq
+      - g_process_3_dhq
+      - sv_candy_oth_dhq
+      - sv_milk_skim_cer_dhq
+      - hei4_darkveg_dhq
+      - sv_rice_fa_dhq
+      - g_cereal_not_ckd_dhq
+      - g_oysters_dhq
+      - dt_fructose_dhq
+      - g_chick_stew_v_dhq
+      - p_veg_dhq
+      - g_chick_pf_j_dhq
+      - mped_veg_dark_green_dhq
+      - g_marg_nofat_dhq
+      - mped_veg_other_dhq
+      - sv_onion_dhq
+      - dt_alphacarot_dhq
+      - sv_milk_rice_cer_dhq
+      - sv_marg_pancake_fat_free_dhq
+      - g_butter_brd_lowfat_dhq
+      - dt_flav50_myricetin_788_dhq
+      - g_beefrst_not_sand_dhq
+      - g_chow_mein_dhq
+      - g_chick_pf_v_dhq
+      - hei2015c13_addsug_dhq
+      - g_stk_reg_dhq
+      - dt_sugar_meal_repl_bar_dhq
+      - exc_kcal_dhq
+      - g_marg_pan_reg_dhq
+      - g_salad_dress_reg_dhq
+      - g_plantain_dhq
+      - p_mt_chick_fish_dhq
+      - mped_alc_bev_wine40_dhq
+      - g_hamb_bbq_m_dhq
+      - sv_milk_skim_not_cof_dhq
+      - tot_niac_dhq
+      - dt_fa6_0_dhq
+      - dt_prot_dhq
+      - dt_sugar_milk_rice_dhq
+      - dt_sugar_orangjce_dhq
+      - p_egg_dhq
+      - sv_chick_fr_light_ws_dhq
+      - sv_milk_2_not_cof_dhq
+      - g_pasta_fa_dhq
+      - g_candy_oth_dhq
+      - dt_vitaact_ndsr_dhq
+      - dt_iron_dhq
+      - mped_alc_bev_alc_drinks55_dhq
+      - g_apple_dhq
+      - g_meatlf_dhq
+      - sv_jam_jelly_dhq
+      - g_granola_dhq
+      - sv_butter_other_lowfat_dhq
+      - g_chick_br_s_w_dhq
+      - sv_cookie_reg_dhq
+      - dt_selenium_dhq
+      - sv_cabbage_sauerkraut_dhq
+      - g_chick_fr_light_ns_dhq
+      - sv_peppers_hot_dhq
+      - hei6_wholegrain_dhq
+      - dt_fat_unk_dhq
+      - g_marg_pot_reg_dhq
+      - sv_milk_skim_cof_dhq
+      - sv_salad_dress_nofat_dhq
+      - g_chick_bbq_ns_w_dhq
+      - dt_sugar_cake_lowfat_dhq
+      - g_notpro6_dhq
+      - dt_flav50_epigallocatech_753_dhq
+      - g_bacon_pf_dhq
+      - tot_b12_dhq
+      - dt_sugar_tomatojce_dhq
+      - dt_trans_fatty_acid_ndsr_dhq
+      - heix3_totalfruit_dhq
+      - dhq_compdays
+      - tot_cal_dhq
+      - sv_veg_oth_dhq
+      - tot_fol_ndsr_dhq
+      - dt_flav50_epicatechin_752_dhq
+      - g_sausage_dhq
+      - sofa_perc2010_dhq
+      - grbnden2015_dhq
+      - sv_egg_sub_nfa_dhq
+      - sv_veal_venison_lamb_dhq
+      - dt_isoflav50_biochanina_721_dhq
+      - sv_cereal_hi_fiber_dhq
+      - g_stk_br_dhq
+      - dt_fat_animal_dhq
+      - dt_isoflav50_formononeti_720_dhq
+      - sv_biscuit_dhq
+      - g_red_process_dhq
+      - dairyden_dhq
+      - tot_vite_csfii_dhq
+      - sv_liquor_dhq
+      - sv_pears_dhq
+      - exc_freq_dhq
+      - mped_veg_tomato_dhq
+      - sv_fruitpunch_reg_dhq
+      - g_cheese_reg_dhq
+      - g_sausage_pf_j_dhq
+      - sv_oil_canola_dhq
+      - dt_sugar_cornbread_dhq
+      - g_beer_dhq
+      - g_hamb_pf_dhq
+      - sv_milk_whole_not_cof_dhq
+      - whfrden_dhq
+      - dt_fa14_0_dhq
+      - sv_pork_neck_feet_dhq
+      - sv_tomato_raw_dhq
+      - hei8_meatbean_dhq
+      - p_organ_dhq
+      - g_mayo_salad_diet_dhq
+      - dt_isoflav50_genistein_711_dhq
+      - g_tomato_salsa_dhq
+      - g_icecream_lowfat_dhq
+      - g_chick_bbq_v_dhq
+      - sv_butter_pot_lowfat_dhq
+      - hei2015c12_sfat_dhq
+      - g_ham_lunch_dhq
+      - sv_muffins_lowfat_dhq
+      - g_chick_br_w_dhq
+      - g_chips_lowfat_dhq
+      - dt_galactose_dhq
+      - g_lasagna_dhq
+      - g_yeast_bread_white_dhq
+      - sv_marg_other_fat_free_dhq
+      - p_cit_mel_ber_dhq
+      - g_fruit_salad_dhq
+      - g_hotdog_dhq
+      - hei2015c1_totalveg_dhq
+      - dt_fiber_sol_ndsr_dhq
+      - dt_sugar_cookie_reg_dhq
+      - sv_coffee_reg_nosug_dhq
+      - g_cereal_hot_nfa_dhq
+      - seaplden2015_dhq
+      - dt_betacarot_dhq
+      - dt_polyfat_meat_dhq
+      - sup_vita_iu_dhq
+      - mped_alc_bev_beer18_dhq
+      - sv_crm_sour_reg_dhq
+      - g_fruitpunch_diet_dhq
+      - g_process_5_dhq
+      - g_chick_fr_dark_ns_dhq
+      - g_banana_dhq
+      - sv_pizza_no_meat_dhq
+      - dt_sugar_misc_syrup_dhq
+      - sup_fol_dhq
+      - sv_mexican_dhq
+      - dt_sugar_cake_cookie_pie_dhq
+      - mped_alc_bev_wine55_dhq
+      - dt_polyfat_plant_dhq
+      - sv_soup_veg_dhq
+      - g_eggs_salad_dhq
+      - heix4_wholefruit_dhq
+      - g_peppers_hot_dhq
+      - g_stk_pf_w_dhq
+      - g_porkch_bak_v_dhq
+      - sv_beef_stew_dhq
+      - dt_cal_dhq
+      - dt_fa12_0_dhq
+      - g_chick_bak_v_dhq
+      - sv_crm_nd_liq_diet_dhq
+      - dt_sugar_fruitpunch_reg_dhq
+      - g_creamch_reg_dhq
+      - sv_marg_bread_reg_dhq
+      - g_fruit_dhq
+      - g_marg_pan_diet_dhq
+      - entryage_dhq
+      - sv_crm_whip_sub_dhq
+      - g_m_meatlf_dhq
+      - g_milk_1_not_cof_dhq
+      - dt_sugar_fruit_dhq
+      - heix5_wholegrain_dhq
+      - mped_alc_bev_alc_drinks40_dhq
+      - p_alc_dhq
+      - g_hamb_br_r_dhq
+      - tot_fol_csfii_dhq
+  dqx:
+    Props:
+      - dqx_id
+      - sup_vitaact
+      - mped_m_fish_low
+      - dgvden2005
+      - mped_veg_orange
+      - tot_copper
+      - p_milk_cottagech
+      - p_veg_garlic
+      - tot_b6_now
+      - p_veg_tomato_fres h_in
+      - g_apricot
+      - g_lett_leaf
+      - hei8_meatbean
+      - dt_flav50_gallocate chin_794
+      - g_marg
+      - g_cucum
+      - mped_dairy
+      - g_onion
+      - mped_discfat_oil
+      - sv_soda
+      - rec_cod
+      - heix4_wholefruit
+      - g_process_bacnsau s
+      - hei2015c4_wholefru it
+      - seaplden2015
+      - dt_fat
+      - p_cit_mel_ber
+      - g_hamb_bq_v
+      - hei2015c11_refined grain
+      - g_hamb_bq_m
+      - p_dairy_cottagech
+      - sv_butter
+      - g_fruitmix
+      - g_coldcut
+      - g_redpfwv
+      - dt_lyc
+      - mped_m_poultry
+      - tot_vitc_now
+      - sv_whitesce
+      - p_cheese
+      - dt_flav50_theaflavin _755
+      - sv_brocc
+      - carb_alc
+      - p_dairy_butter
+      - dt_vitare_csfii
+      - sv_crucveg
+      - sv_chick_oth
+      - lyc_tomatosce
+      - sv_tomato_can
+      - dt_sugar_fruit_dried
+      - dt_prot_dairy
+      - hei6_wholegrain
+      - g_applesce
+      - mped_m_fish_high
+      - fib_legume
+      - dt_zinc
+      - g_straw_in
+      - sv_pizza
+      - g_porkrst
+      - dt_kcal
+      - g_carrot_cook
+      - dt_fiber_insol_ndsr
+      - dt_prot_animal
+      - dt_fa4_0
+      - p_whitepot
+      - dt_ribo
+      - dt_fructose
+      - g_chick_nopfdf
+      - sv_bread_dark
+      - sv_cottagech
+      - mped_dairy_milk
+      - p_fruit_watermln
+      - sv_gfruit_out
+      - sv_soup_oth
+      - sv_fruit
+      - lyc_ketchup
+      - p_fruit_plum
+      - sv_coffee
+      - mped_dairy_yogurt
+      - g_soup_oth
+      - g_redbrl
+      - dt_carb
+      - hei12_exfaas
+      - p_fruit_ojce
+      - p_fruit_gfruit_out
+      - hei2015c12_sfat
+      - p_veg_celery
+      - dt_flav50_epigalloc atechin_750
+      - frtden
+      - hei11_sodium
+      - dt_sugar_yogurt
+      - sup_vitaact_now
+      - p_cheese_icecrm
+      - dt_alc_alc_drinks
+      - hei4_darkveg
+      - g_dairy
+      - sv_sausage
+      - sup_vita_now
+      - g_saus_pf_w
+      - dt_fa22_6
+      - g_milk_whole
+      - fat18_3_grain
+      - sv_meatlf
+      - p_dairy_cheese
+      - rec_vite
+      - sv_garlic
+      - sv_lett_leaf
+      - sv_cake
+      - tot_iron
+      - heix6_totaldairy
+      - tot_vitaiu_csfii
+      - dt_fa18_1_ndsr
+      - dt_sugar_candy_ch oc
+      - g_chick
+      - sv_ham
+      - p_veg_lett_head
+      - g_hamb_br_w
+      - fat18_3_redmt
+      - dt_sugar_cereal_no t_ckd
+      - mped_m_meat
+      - g_redbbq
+      - sv_mixedish
+      - drinker
+      - tot_vitaact_ndsr
+      - dt_alc
+      - sup_vite_iu_now
+      - g_crm_swt
+      - g_rednotpf
+      - cal_nondairy
+      - g_orange_out
+      - sv_cer_othfib
+      - g_stk_br_r
+      - g_vegmed
+      - tot_selenium_now
+      - mped_veg
+      - dt_betatoco
+      - g_gfruit_in
+      - dt_sugar_tomatojce
+      - g_saus_pf_v
+      - g_milk_skim
+      - sv_donut
+      - sv_pancake
+      - dt_flav50_thearubigi ns_756
+      - dt_iron
+      - mped_alc_bev_liqu or
+      - sv_greens8
+      - dt_deltatoco
+      - sup_b6_now
+      - sup_selen
+      - fat18_3_dairy
+      - carb_whole_grain
+      - g_beer
+      - tot_foleq_ndsr
+      - p_lunch
+      - g_stk_br_w
+      - dt_sugar_frt_not_cit r_dried
+      - gly_index
+      - rec_bcomp
+      - qxn_physicact_now
+      - g_non_red5
+      - sv_applesce
+      - exc_death
+      - p_fruit_apple_in
+      - dt_sugar_soda
+      - tot_iron_now
+      - p_milk_milk_whole
+      - g_gravy
+      - dt_flav50_apigenin_ 770
+      - sv_orange_in
+      - p_fruit_orange_out
+      - g_process
+      - sv_icecrm
+      - sv_pear_in
+      - sup_phos_now
+      - fat18_3_chips
+      - sv_celery
+      - g_cer_othcold
+      - dt_flav50_theaflavin _792
+      - mped_fruit_cit_mel_ ber
+      - sv_bacon
+      - tot_fol_csfii_now
+      - tot_cal
+      - dt_flav50_quercetin _789
+      - sv_applejce
+      - dt_copper
+      - exc_freq
+      - p_veg_cauli
+      - p_veg_lett_leaf
+      - g_saladdress
+      - g_hamb_br_r
+      - p_yogurt
+      - g_pear
+      - heix12_sofaas
+      - mped_veg_potato
+      - mped_veg_other
+      - g_watermln_in
+      - sup_foleq
+      - addsug_perc2015
+      - dt_starch
+      - dt_sugar_otherjce
+      - g_hamb_pf_m
+      - sv_milk_whole
+      - tot_foleq_ndsr_now
+      - g_stk_bq_m
+      - g_bacon
+      - dt_sugar_yogurt_frz
+      - fat18_3_pot_fried
+      - hei7_milk
+      - sv_stew
+      - dt_flav50_epicatech in_751
+      - g_candy_oth
+      - p_poultry
+      - g_saus_pf_j
+      - grbnden2010
+      - dt_alc_beer
+      - heix8_seaplant_prot
+      - tot_thia_now
+      - sup_iodine_now
+      - dt_caffeine
+      - g_beans
+      - p_cit_mel_ber_gfrui t_in
+      - hei2015c1_totalveg
+      - g_corn_in
+      - p_soy
+      - sv_beans
+      - dt_iron_redmt_spec
+      - sv_cer_fort
+      - tot_betacarot_now
+      - sv_watermln
+      - p_veg_spin_raw
+      - g_hamb_pf_v
+      - g_redbrlwv
+      - sfat_perc2015
+      - g_liver
+      - dt_fa16_0
+      - sup_betacarot
+      - p_veg_fresh
+      - sv_pea
+      - mped_m_organ
+      - dt_mag
+      - p_egg
+      - p_veg_brocc
+      - sv_cer_cook
+      - dt_sodium
+      - p_fruit_cantaloupe
+      - dt_kcal_no_alc
+      - fib_fruit
+      - g_veg
+      - sup_pantho_now
+      - mped_added_sugar
+      - g_lasagna
+      - p_tomato
+      - dt_flav50_hespereti n_759
+      - g_meatlf
+      - g_porkch_bq
+      - sv_eggs
+      - g_spagh
+      - g_hamb_stk_porkch
+      - g_straw
+      - tot_niac_now
+      - sv_fruitmix
+      - sv_milk_cer
+      - wgrnden
+      - g_totmeat
+      - p_fruit_orange_in
+      - hei3_totalveg
+      - sup_iodine
+      - g_milk_1to2
+      - p_cheese_yogurt_fr z
+      - dt_isoflav50_biocha nina_721
+      - hei2005_total_score
+      - dt_vitetat_ndsr
+      - sv_cauli
+      - dt_vite_csfii
+      - dt_fa22_5
+      - g_pot_fried
+      - g_grpepper
+      - sv_fish_oth
+      - g_rednotbbq
+      - p_cheese_milk_who le
+      - dt_galactose
+      - p_veg_grpepper
+      - mped_alc_bev_beer
+      - sv_ketchup
+      - g_soda
+      - g_redpfrm
+      - g_peanut
+      - p_organ
+      - dt_isoflav50_formo noneti_720
+      - p_fruit_jce
+      - mped_veg_cruc
+      - p_fruit_nojce
+      - dt_fa18_3
+      - p_fruit
+      - dt_flav50_luteolin_7 73
+      - dt_sugar_fruitpunch
+      - p_milk
+      - dt_foleq_ndsr
+      - hei2015c6_totaldair y
+      - dt_fiber_csfii
+      - fat18_3_fish
+      - p_cit_mel_ber_gfrui t_out
+      - sv_ojce
+      - g_beefrst
+      - g_pancake
+      - dqx_completedvalid
+      - g_tomatosce
+      - sv_straw_out
+      - heix11_refinedgrain
+      - g_redmt
+      - heiX1_totalveg
+      - sv_pie_pump
+      - meatden2010
+      - dt_flav50_malvidin_ 742
+      - sv_marg
+      - dt_alc_wine
+      - tot_b12
+      - sv_lett_head
+      - sv_watermln_in
+      - dt_fa16_1_ndsr
+      - g_beangr
+      - p_veg_allium
+      - g_hamb_br_m
+      - g_red_noprocess
+      - mped_m_nut_seed
+      - p_alc_wine
+      - g_rice_brown
+      - dqx_compdays
+      - tot_ribo
+      - dt_folfort_csfii
+      - g_spin_raw
+      - g_orange_in
+      - tot_phos_now
+      - dt_sugar_icecrm
+      - p_dairy_crm_sour
+      - p_milk_milk_skim
+      - dt_vitc
+      - mped_veg_dark_gre en
+      - g_pie_pump
+      - fat18_3_poultry
+      - sup_mag_now
+      - p_milk_crm_sour
+      - g_fruitpunch
+      - sup_fol
+      - g_squash_win
+      - sv_straw_in
+      - hei9_oil
+      - dt_fa10_0
+      - g_meatlf_roast
+      - sv_candy_choc
+      - g_tea
+      - p_fruit_peach_in
+      - sup_fol_now
+      - fib_legume_nopea
+      - g_stk_pf_m
+      - rec_stress
+      - g_mixedish
+      - g_redmtw
+      - sv_milk_1to2
+      - sv_beet
+      - sup_vitd_now
+      - g_cer_cook
+      - dt_iron_meat_spec
+      - g_ketchup
+      - sv_crm_sour
+      - sv_gravy
+      - tot_vitaiu_csfii_now
+      - g_redbbqrm
+      - rgden
+      - mped_alc_bev
+      - sv_cabb
+      - dqx_age
+      - dt_alc_liquor
+      - dt_glucose
+      - rec_oneaday
+      - p_alc
+      - g_chick_bk
+      - g_liquor
+      - sv_fish_fr
+      - dt_prot
+      - p_fruit_grapes
+      - dt_fol_ndsr
+      - g_crm_sour
+      - sv_milk_skim
+      - g_cauli
+      - g_apple_in
+      - sv_tomato_fresh_in
+      - g_sausage
+      - p_dairy_milk_1to2
+      - dt_sugar_jelly
+      - dt_flav50_naringeni n_762
+      - dt_maltose
+      - sup_vite
+      - g_grain
+      - hei2015_total_score
+      - g_crucveg
+      - sv_cheese
+      - p_cheese_crm_swt
+      - dt_fa18_1_csfii
+      - sv_pie_oth
+      - g_chili
+      - sup_cal
+      - g_stew_pasta
+      - dt_fat_animal
+      - g_ojce
+      - dt_betacarot_eq
+      - g_cracker
+      - p_yogurt_milk_skim
+      - dt_flav50_catechin_ 749
+      - sv_orange_out
+      - g_crucveg_exc_cab b
+      - mped_veg_tomato
+      - p_yogurt_yogurt_frz
+      - g_spin_cook
+      - g_redpf
+      - cal_dairy
+      - dt_isoflav50_genist ein_711
+      - g_apple_out
+      - g_pot_swt
+      - dt_iron_redmt
+      - g_stk_pf_v
+      - p_seafood
+      - rec_cal
+      - p_yogurt_cottagech
+      - sup_biotin
+      - p_yogurt_butter
+      - sv_pot_fried
+      - sodden
+      - lyc_tomato_fresh
+      - mped_alc_bev_alc_ drinks
+      - g_bacnsaus
+      - g_porkch_br
+      - g_cabb
+      - dt_isoflav50_glycite in_712
+      - p_dairy
+      - faratio
+      - tot_vite_csfii_now
+      - sv_shellfish
+      - p_dairy_yogurt_frz
+      - sup_vita
+      - p_sugar
+      - fat18_3_veg
+      - g_hamb
+      - dt_iron_whitemt
+      - p_cheese_milk_cer
+      - sv_wine
+      - g_redmtwv
+      - dt_sugar_pie_pump
+      - p_yogurt_milk_cer
+      - hei2015c10_sodium
+      - g_garlic
+      - g_stk_bq_r
+      - g_tofu
+      - g_cottagech
+      - sv_cookie
+      - g_mt_stew
+      - dairyden
+      - hei5_totalgrain
+      - dt_folnat_ndsr
+      - lyc_gfruit
+      - dt_alphacarot
+      - g_gfruit
+      - sv_spin_cook
+      - fat18_3_eggs
+      - gly_load
+      - p_dairy_icecrm
+      - g_celery
+      - heix10_sodium
+      - g_bread_dark
+      - g_carrot_raw
+      - g_tomato_fresh_out
+      - lyc_tomatojce
+      - g_bac_pf_v
+      - g_gfruit_out
+      - g_soup_veg
+      - fib_citrus
+      - sup_ribo
+      - dt_flav50_eriodictyo l_758
+      - sup_vite_now
+      - p_milk_butter
+      - g_yogurt
+      - g_chick_st
+      - g_orange
+      - sv_chip
+      - dt_folsyn_ndsr
+      - sup_biotin_now
+      - g_chip
+      - rec_vitc
+      - dt_fa20_4
+      - g_porkch_pf
+      - carb_other_grain
+      - sv_tofu
+      - lyc_tomato_can
+      - g_cake
+      - sv_banana
+      - sv_brussel
+      - meatden2005
+      - sv_rice_brown
+      - tot_phos
+      - g_pear_out
+      - dt_vitd
+      - p_milk_yogurt_frz
+      - sv_peach_can
+      - dt_trans_fatty_acid_ ndsr
+      - p_milk_milk_cer
+      - p_cheese_whitesce
+      - g_stew
+      - carb_fruit
+      - fat18_3_bev
+      - g_corn
+      - sv_squash_sum
+      - g_mt_spagh
+      - p_nuts
+      - sup_vitd
+      - g_grapes
+      - p_yogurt_crm_swt
+      - g_stk_bq_v
+      - sv_onion
+      - mped_m_meat_poul try_fish
+      - tot_vitd_now
+      - sv_spin_raw
+      - dt_flav50_theaflavin _791
+      - oilden2005
+      - dt_oligo
+      - p_veg
+      - g_redmt_cowgoat
+      - g_hamb_bq_w
+      - dt_sugar_ojce
+      - g_tomatojce
+      - g_stk_br_v
+      - g_fat_veg
+      - p_cit_mel_ber_oran ge_out
+      - sv_squash_win
+      - sup_iron_now
+      - p_tomatofr
+      - g_yogurt_frz
+      - dt_fa18_2_csfii
+      - g_ham
+      - sup_niac_now
+      - dt_vitaact_ndsr
+      - g_hotdog
+      - g_bread_wht
+      - dt_cal
+      - dt_selenium
+      - dt_isoflav50_daidzei n_710
+      - tot_fol_csfii
+      - sv_coldcut
+      - sup_b12_now
+      - p_fruit_applejce
+      - sv_pineapp
+      - g_candy_choc
+      - dt_fa22_1
+      - sv_fruitpunch
+      - g_plum_in
+      - dt_isoflav50_isoflav one_713
+      - hei2_wholefruit
+      - sv_cer_fib
+      - sv_hamb
+      - sv_hotdog
+      - p_veg_cabb
+      - mped_m_soy
+      - p_fruit_gfruit_in
+      - sv_tomatojce
+      - sup_thia
+      - whfrden
+      - mped_m_frank
+      - g_pear_in
+      - dt_thia
+      - sv_carrot_cook
+      - tot_thia
+      - dt_fa14_0
+      - tot_cal_now
+      - g_whitemt
+      - p_grain
+      - dqx_completed
+      - p_cit_mel_ber_ojce
+      - dt_fa18_0
+      - p_mt_chick_fish
+      - sv_candy_oth
+      - sv_othgrains
+      - hei2010_total_score
+      - p_fruit_straw_in
+      - dt_flav50_delphinidi n_741
+      - dt_prot_animal_dair y
+      - sup_b12
+      - tot_vitc
+      - rec_multi
+      - g_cer_fort
+      - sofa_perc2010
+      - sup_iron
+      - sup_cal_now
+      - dt_iron_whitemt_sp ec
+      - heix3_totalfruit
+      - dt_vitaiu_csfii
+      - sv_tomatosce
+      - heix7_totprot
+      - dt_flav50_pelargoni din_743
+      - g_pie_oth
+      - sv_cucum
+      - g_fruit
+      - dt_satfat
+      - g_hamb_br_v
+      - sv_crucveg_exc_ca bb
+      - dt_fat_dairy
+      - tot_b6
+      - fib_wheat_own
+      - g_wine
+      - dt_pota
+      - g_applejce
+      - fib_grain
+      - sv_chili
+      - p_dairy_milk_skim
+      - sv_prune
+      - dt_sugar_pie_oth
+      - sup_copper_now
+      - dt_sugar_fruit
+      - sup_vitc_now
+      - tot_vite_csfii
+      - totmiss
+      - g_coffee
+      - sv_apple_out
+      - sv_liquor
+      - p_fat
+      - g_straw_out
+      - dt_betacarot
+      - g_peach_can
+      - sv_soup_veg
+      - fat18_3_sweets
+      - p_fruit_pear_out
+      - sup_ribo_now
+      - g_corn_out
+      - sv_vegmed
+      - p_yogurt_crm_sour
+      - g_tomato_fresh
+      - sv_beangr
+      - p_yogurt_icecrm
+      - p_veg_cucum
+      - carb_junk_food
+      - g_bac_pf_w
+      - g_chick_pfdf
+      - sv_grapes
+      - dt_sugar_applejce
+      - g_fish_oth
+      - dt_fol_csfii
+      - sup_thia_now
+      - dt_flav50_peonidin_ 745
+      - g_pineapp
+      - rec_thera
+      - fat18_3_peanut
+      - dt_fa6_0
+      - dt_flav50_petunidin _746
+      - g_raisin
+      - carb_veg
+      - entryage_dqx
+      - dt_sugar_bread_cor n
+      - dt_betacry
+      - p_dairy_crm_swt
+      - dt_sugar_cookie
+      - p_cheese_milk_1to2
+      - g_stk_br_m
+      - sv_spagh
+      - g_bac_pf_j
+      - sv_corn_out
+      - hei2015c9_fattyacid
+      - hei2015c3_totalfruit
+      - dt_sugar
+      - tot_selenium
+      - sv_crm_swt
+      - p_veg_brussel
+      - g_tuna
+      - dt_fat_plant
+      - p_milk_cheese
+      - p_cheese_cottagec h
+      - hei10_satfat
+      - g_butter
+      - sv_tuna
+      - carb_other
+      - p_veg_cruc
+      - fib_veg
+      - tot_zinc
+      - dt_fa12_0
+      - p_grain_nonwh
+      - sup_zinc_now
+      - grbnden2015
+      - p_fruit_apple_out
+      - g_peach_in
+      - protden2015
+      - dt_sugar_donut
+      - carb_potato
+      - p_veg_carrot_raw
+      - rec_vita
+      - mped_alc_bev_wine
+      - sv_porkrst
+      - g_hamb_pf_r
+      - g_stew_meatlf_past a_roast
+      - exc_kcal
+      - mped_legume
+      - dt_fiber_ndsr
+      - dt_sugar_cake_coo kie_pie
+      - sup_pantho
+      - sofa_perc2005
+      - sv_stk
+      - sv_grpepper
+      - dt_isoflav50_coume strol_715
+      - g_pot_oth
+      - p_alc_beer
+      - g_porkch
+      - rec_sup_not_cal
+      - p_dairy_milk_whole
+      - g_eggs
+      - fib_wheat_platz
+      - sv_gfruit
+      - sup_zinc
+      - dt_lut_zeax
+      - g_apple
+      - grnden
+      - carb_dairy
+      - g_tomato_can
+      - g_prune
+      - dt_polyfat
+      - g_stk
+      - hei2015c2_green_a nd_bean
+      - hei2015c5_wholegra in
+      - vegden2010
+      - sup_phos
+      - p_grain_wh
+      - g_cheese
+      - dt_flav50_isorhamn etin_785
+      - mped_m_egg
+      - g_squash_sum
+      - dt_fa16_1_csfii
+      - sup_betacarot_now
+      - dt_fa20_1
+      - mped_veg_starchy
+      - g_redbbqwv
+      - g_pea
+      - g_cantaloupe_in
+      - dt_gammatoco
+      - g_lett_head
+      - sv_cracker
+      - p_veggrn
+      - dt_meth
+      - g_cer_othfib
+      - sv_yogurt
+      - dt_lactose
+      - dt_sugar_candy_ot h
+      - sv_pear_out
+      - p_yogurt_cheese
+      - g_rice_wht
+      - g_chick_bq
+      - g_stk_pf_r
+      - p_yogurt_milk_1to2
+      - seaplden2010
+      - p_cheese_crm_sour
+      - g_jelly
+      - g_greens8
+      - sv_cer_othcold
+      - dt_b6
+      - sv_carrot_raw
+      - dt_phos
+      - mped_grain_whole
+      - heix2_green_and_b ean
+      - dt_niac
+      - sv_tomato_fresh_o ut
+      - tot_mag
+      - p_milk_milk_1to2
+      - sup_vite_iu
+      - g_milk_cer
+      - p_dairy_whitesce
+      - dt_fa20_5
+      - p_fruit_banana
+      - g_otherfoods
+      - g_chick_br
+      - tot_b12_now
+      - g_beverage
+      - g_mt_lasagna
+      - sv_saladdress
+      - p_dairy_milk_cer
+      - p_fruit_otherjce
+      - fat18_3_vegfat_see doil
+      - g_pizza
+      - p_vegyell
+      - tot_folfort_csfii
+      - dt_fa18_2_ndsr
+      - sv_biscuit
+      - p_yogurt_yogurt
+      - sv_bread_wht
+      - sv_bread_corn
+      - tot_vitaact_ndsr_no w
+      - g_cer_fib
+      - sv_apricot
+      - sv_pot_oth
+      - sv_raisin
+      - p_dairy_yogurt
+      - dt_prot_plant
+      - g_biscuit
+      - dt_flav50_catechin3 _795
+      - hei2015c13_addsug
+      - vegden2005
+      - p_cheese_cheese
+      - p_cheese_butter
+      - lyc_watermln
+      - p_veg_oth
+      - mped_grain
+      - g_icecrm
+      - sv_corn_in
+      - sup_mag
+      - tot_vitetat_ndsr_no w
+      - sv_apple_in
+      - hei1_totalfruit
+      - tot_zinc_now
+      - tot_niac
+      - tot_mag_now
+      - ph_any_dqx
+      - sv_beer
+      - dt_fa8_0
+      - dt_sucrose
+      - sv_chick_df
+      - sv_tomato_fresh
+      - dt_flav50_epicatech in_752
+      - g_redbrlrm
+      - pctsfat2005
+      - mped_fruit
+      - p_cit_mel_ber_oran ge_in
+      - dt_flav50_theaflavin _793
+      - fat18_3_fruit
+      - p_milk_icecrm
+      - p_milk_whitesce
+      - g_seafood
+      - sv_pot_swt
+      - dt_iron_meat
+      - sv_greens
+      - p_milk_yogurt
+      - p_veg_onion
+      - dt_flav50_kaempfer ol_786
+      - dt_flav50_epigalloc atechin_753
+      - g_cookie
+      - sv_peach_in
+      - sv_peanut
+      - hei2015c8_seaplant _prot
+      - g_redmtv
+      - g_othgrains
+      - g_greens
+      - sv_fat_veg
+      - sv_otherjce
+      - mped_fruit_other
+      - sv_lasagna
+      - sup_b6
+      - dt_carot
+      - dt_sugar_vegetable
+      - dt_sugar_crm_swt
+      - tot_ribo_now
+      - p_cheese_milk_ski m
+      - mped_discfat_solid
+      - dt_fa18_4
+      - sv_beefrst
+      - g_hamb_pf_w
+      - sv_porkch
+      - dt_sugar_cake
+      - g_otherjce
+      - g_fish_fr
+      - g_shellfish
+      - g_banana
+      - g_red5
+      - g_porkch_bk
+      - sv_cantaloupe
+      - p_cit_mel_ber_othe rjce
+      - rec_vitd
+      - g_brussel
+      - g_tomato_fresh_in
+      - sv_gfruit_in
+      - sup_foleq_now
+      - p_starch
+      - exc_nodate
+      - dt_chol
+      - heix5_wholegrain
+      - sv_plum
+      - p_bean
+      - dt_inulin
+      - dt_fat_animal_dairy
+      - dt_flav50_cyanidin_ 731
+      - heix9_fattyacid
+      - g_stk_bq_w
+      - dt_flav50_myricetin _788
+      - sup_niac
+      - p_yogurt_whitesce
+      - sup_copper
+      - vegden2015
+      - dt_theobromine
+      - pctx_dt_kcal
+      - tot_vitd
+      - p_veg_tomato_fres h_out
+      - g_sugar
+      - p_fruit_oth
+      - tot_vitetat_ndsr
+      - sv_veget
+      - g_redmtrm
+      - p_fruit_pear_in
+      - g_rednotbrl
+      - rec_betacarot
+      - p_cheese_yogurt
+      - p_beef_pork_lamb
+      - sv_tea
+      - dt_sugar_biscuit
+      - g_brocc
+      - p_yogurt_milk_whol e
+      - dt_monofat
+      - sv_yogurt_frz
+      - mped_dairy_cheese
+      - p_alc_liquor
+      - hei2015c7_totprot
+      - tot_copper_now
+      - p_cit_mel_ber_citru s
+      - sv_jelly
+      - sv_liver
+      - sup_selen_now
+      - g_hamb_bq_r
+      - g_beet
+      - g_stk_pf_w
+      - p_milk_crm_swt
+      - sup_vitc
+      - entrydays_dqx
+      - sv_sugar
+      - carb_soft_drink
+      - sv_rice_wht
+      - tot_folfort_csfii_no w
+      - dt_sugar_pancake
+      - tot_betacarot
+      - g_donut
+      - dt_fiber_sol_ndsr
+      - mped_grain_nonwh ole
+      - g_bread_corn
+      - qxn_physicact_40
+      - dt_b12
+      - p_fruit_fresh
+      - g_whitesce
+      - dt_sugar_bread_wh t
+  sqx:
+    Props:
+      - sqx_id
+      - sqxo_bph
+      - sqxbq_cig_change
+      - sqx_gain_area
+      - sqx_twins
+      - sqx_fh_breast
+      - sqx_aspirin_freq
+      - sqx_any_fmed
+      - sqx_active_comp
+      - sqx_bald45
+      - sqx_osteopora
+      - sqxo_hrt
+      - sqx_acetam
+      - sqxbq_hrt_ageswitch
+      - sqxo_stroke
+      - sqx_smk_behv
+      - sqx_calisthen_lev
+      - sqx_aspirin
+      - sqx_asthmaa
+      - sqxbq_osteopor
+      - sqx_lift_weights_lev
+      - sqx_smk_wake
+      - sqx_age
+      - sqxo_hrt_ageswitch
+      - sqx_aleve
+      - sqx_bmi70sc
+      - sqx_cig_years
+      - sqx_diabetesa
+      - sqx_broke_oth_bone
+      - sqxbq_hrt_type1
+      - sqxo_hrt_type1
+      - sqx_bmi40s
+      - sqx_broke_none
+      - sqx_medipren
+      - sqxbq_cig_stat
+      - sqx_smk_try_quit
+      - sqxo_hrt_agestop
+      - sqx_bisphos
+      - sqxo_ovaries
+      - sqxbq_stroke
+      - ph_any_sqx
+      - sqx_oth_nsaid
+      - sqxbq_hrt_chng
+      - sqx_actonel
+      - sqx_fh_endo
+      - sqx_nicotine_gum
+      - sqxo_hyperten
+      - sqx_smk_lgt
+      - sqx_breastfed
+      - sqx_didronel
+      - sqxo_bpha
+      - sqxo_arthritis
+      - sqx_fh_pros
+      - sqx_nuprin
+      - sqx_wt30s
+      - sqx_worry_lungca
+      - sqxo_osteopor
+      - sqx_fh_blad
+      - sqx_aspirin_str
+      - sqx_bmi60s
+      - sqx_cycle
+      - sqx_lift_weights
+      - sqxbq_arthritis
+      - sqxbq_hearta
+      - sqx_fh_lymph
+      - sqxbq_ovariesr
+      - sqx_nicotine_oth
+      - sqx_smk_crave1
+      - sqx_swim
+      - sqxo_hyster
+      - sqxo_diabetes
+      - sqx_aerobics
+      - sqx_workstat
+      - sqx_bmi50s
+      - sqx_height
+      - sqx_status
+      - sqx_fh_othr
+      - sqx_jog_lev
+      - sqxo_hrt_status
+      - sqx_fosamax
+      - sqxbq_arthritist
+      - sqx_dance_lev
+      - sqx_strenuous
+      - sqxo_race7
+      - sqx_bmi_curc
+      - sqxbq_marital
+      - sqx_smk_his
+      - sqxbq_hrt2curr
+      - sqx_cycle_lev
+      - sqx_naprosyn
+      - sqxo_hrt_age
+      - sqx_zyban
+      - sqx_smokea
+      - sqx_cholesterola
+      - sqx_income
+      - sqx_indocin
+      - sqx_nsaid_freq
+      - sqx_dance
+      - sqx_smk30days
+      - sqx_brst_biop
+      - sqxo_hrt2curr
+      - sqxo_hispanic
+      - sqx_acetam_yrs
+      - sqx_bmi30sc
+      - sqxbq_hystera
+      - sqx_garden_lev
+      - sqx_risk_lungca
+      - sqx_days
+      - sqx_sons
+      - sqx_walk_mi
+      - sqx_mammo
+      - sqx_smk_quit_dur
+      - sqxo_ovariesr
+      - pack_years_bqelsesqx
+      - sqx_urinatea
+      - sqx_broke_vertebra
+      - sqx_forteo
+      - sqx_smk100
+      - sqx_papsmear
+      - sqxo_ovariesa
+      - sqx_fh_dnkn
+      - sqx_waist_hip
+      - sqx_smk_crave4
+      - sqx_wt40s
+      - sqx_fh_cancer_f
+      - sqx_nsaid_yrs
+      - sqx_garden
+      - sqx_advise_quit
+      - sqx_evista
+      - sqx_bmi30s
+      - sqx_sit_ht
+      - sqx_heartaa
+      - sqx_bmi50sc
+      - sqxo_hrt_chng
+      - sqx_valid
+      - sqx_cholesterol
+      - sqx_smk_menthol
+      - sqx_strokea
+      - sqx_lose_area
+      - sqx_emphysemaa
+      - sqxbq_diabetes
+      - sqx_jog
+      - sqx_smk_crave3
+      - sqx_wt50s
+      - sqx_shop
+      - sqx_fh_lung
+      - sqx_vioxx
+      - sqx_fh_ovar
+      - sqxo_emphysema
+      - sqx_aerobics_lev
+      - sqx_moderate_time
+      - sqx_nvr_smk_reg
+      - sqx_none_nsaid
+      - sqxo_arthritist
+      - sqxbq_hrt_status
+      - sqx_celebrex
+      - sqx_dad_age
+      - sqxbq_hyperten
+      - sqx_broke_arm
+      - sqx_aspirin_yrs
+      - sqx_smk_exp_work
+      - sqxbq_bph
+      - sqx_housework
+      - sqx_moderate
+      - sqxbq_hrt_age
+      - sqx_boniva
+      - sqx_brothers
+      - sqx_broke_hip
+      - sqx_pace
+      - sqx_wt_curr
+      - sqx_miacalcin
+      - sqxbq_race7
+      - sqx_smk_ftnd
+      - sqx_swim_lev
+      - sqx_motrin
+      - sqx_fh_leuk
+      - sqx_asthma
+      - sqx_wt70s
+      - sqx_acetam_freq
+      - sqxbq_ovariesa
+      - sqx_smk_exp_adult
+      - sqx_smk_exp_child
+      - sqxbq_hrt_type2
+      - sqx_wt60s
+      - sqx_years_quit
+      - sqx_daughters
+      - sqx_sisters
+      - sqx_bmi40sc
+      - sqx_stairs
+      - sqx_amt_smk
+      - sqx_bmi70s
+      - sqxbq_ovaries
+      - sqx_active
+      - sqx_smk_aid_none
+      - sqxbq_bpha
+      - sqx_work_act
+      - sqx_brst_biopnum
+      - sqx_mom_age
+      - sqxo_pack_years_curr
+      - sqx_nolvadex
+      - sqxbq_hyster
+      - sqx_urinate
+      - sqxo_cig_stat
+      - sqxo_hearta
+      - sqx_substatus
+      - sqx_bmi60sc
+      - sqxbq_hrt_agestop
+      - sqx_brst_biopa
+      - sqx_arthritisa
+      - sqxo_marital
+      - sqx_advil
+      - sqx_smk_crave2
+      - sqxo_hrt_type2
+      - sqxbq_hispanic
+      - sqx_bmi_curr
+      - sqx_nsaid
+      - sqxbq_hrt
+      - sqx_nicotine_patch
+      - sqxo_hystera
+      - sqx_fh_colo
+      - sqx_bextra
+      - sqx_religion
+      - sqx_smk_plan_quit
+      - sqxbq_emphysema
+      - sqx_smk_age_quit
+      - sqx_calisthen
+      - sqx_hypertena
+      - sqx_strenuous_time
+Relationships:
+  breast_case_of_cohort:
+    Mul: many_to_one
+    Ends:
+      - Src: breast_case
+        Dst: cohort
+    Props: null
+  elig_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: breast_elig
+        Dst: breast_case
+    Props: null
+  exit_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: breast_exit
+        Dst: breast_case
+    Props: null
+  demo_of_breast_case:
+    Mul: many_to_one
+    Ends:
+      - Src: demo
+        Dst: breast_case
+    Props: null
+  of_clinical_trial:
+    Mul: many_to_one
+    Ends:
+      - Src: cohort
+        Dst: clinical_trial
+    Props: null
+  regn_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: breast_regn
+        Dst: breast_case
+    Props: null
+  diag_of_breast_case:
+    Mul: many_to_one
+    Ends:
+      - Src: breast_diag
+        Dst: breast_case
+    Props: null
+  mort_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: mort
+        Dst: breast_case
+    Props: null
+  breast_mort_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: breast_mort
+        Dst: breast_case
+    Props: null
+  comp_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: comp
+        Dst: breast_case
+    Props: null
+  risk_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: risk
+        Dst: breast_case
+    Props: null
+  breast_hist_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: breast_hist
+        Dst: breast_case
+    Props: null
+  nsaid_use_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: nsaid_use
+        Dst: breast_case
+    Props: null
+  health_cond_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: health_cond
+        Dst: breast_case
+    Props: null
+  fem_health_cond_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: fem_health_cond
+        Dst: breast_case
+    Props: null
+  colo_case_of_cohort:
+    Mul: many_to_one
+    Ends:
+      - Src: colo_case
+        Dst: cohort
+    Props: null
+  elig_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: colo_elig
+        Dst: colo_case
+    Props: null
+  exit_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: colo_exit
+        Dst: colo_case
+    Props: null
+  demo_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: demo
+        Dst: colo_case
+    Props: null
+  regn_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: colo_regn
+        Dst: colo_case
+    Props: null
+  screen_of_colo_case:
+    Mul: many_to_one
+    Ends:
+      - Src: colo_screen
+        Dst: colo_case
+    Props: null
+  diag_of_colo_case:
+    Mul: many_to_one
+    Ends:
+      - Src: colo_diag
+        Dst: colo_case
+    Props: null
+  treat_of_colo_case:
+    Mul: many_to_one
+    Ends:
+      - Src: colo_treat
+        Dst: colo_case
+    Props: null
+  mort_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: mort
+        Dst: colo_case
+    Props: null
+  colo_mort_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: colo_mort
+        Dst: colo_case
+    Props: null
+  comp_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: comp
+        Dst: colo_case
+    Props: null
+  risk_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: risk
+        Dst: colo_case
+    Props: null
+  colo_hist_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: colo_hist
+        Dst: colo_case
+    Props: null
+  nsaid_use_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: nsaid_use
+        Dst: colo_case
+    Props: null
+  health_cond_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: health_cond
+        Dst: colo_case
+    Props: null
+  fem_health_cond_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: fem_health_cond
+        Dst: colo_case
+    Props: null
+  male_health_cond_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: male_health_cond
+        Dst: colo_case
+    Props: null
+  lung_case_of_cohort:
+    Mul: many_to_one
+    Ends:
+      - Src: lung_case
+        Dst: cohort
+    Props: null
+  elig_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: lung_elig
+        Dst: lung_case
+    Props: null
+  exit_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: lung_exit
+        Dst: lung_case
+    Props: null
+  demo_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: demo
+        Dst: lung_case
+    Props: null
+  regn_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: lung_regn
+        Dst: lung_case
+    Props: null
+  screen_of_lung_case:
+    Mul: many_to_one
+    Ends:
+      - Src: lung_screen
+        Dst: lung_case
+    Props: null
+  diag_of_lung_case:
+    Mul: many_to_one
+    Ends:
+      - Src: lung_diag
+        Dst: lung_case
+    Props: null
+  treat_of_lung_case:
+    Mul: many_to_one
+    Ends:
+      - Src: lung_treat
+        Dst: lung_case
+    Props: null
+  mort_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: mort
+        Dst: lung_case
+    Props: null
+  lung_mort_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: lung_mort
+        Dst: lung_case
+    Props: null
+  comp_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: comp
+        Dst: lung_case
+    Props: null
+  risk_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: risk
+        Dst: lung_case
+    Props: null
+  lung_hist_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: lung_hist
+        Dst: lung_case
+    Props: null
+  nsaid_use_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: nsaid_use
+        Dst: lung_case
+    Props: null
+  health_cond_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: health_cond
+        Dst: lung_case
+    Props: null
+  fem_health_cond_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: fem_health_cond
+        Dst: lung_case
+    Props: null
+  male_health_cond_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: male_health_cond
+        Dst: lung_case
+    Props: null
+  ovar_case_of_cohort:
+    Mul: many_to_one
+    Ends:
+      - Src: ovar_case
+        Dst: cohort
+    Props: null
+  elig_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: ovar_elig
+        Dst: ovar_case
+    Props: null
+  exit_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: ovar_exit
+        Dst: ovar_case
+    Props: null
+  demo_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: demo
+        Dst: ovar_case
+    Props: null
+  regn_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: ovar_regn
+        Dst: ovar_case
+    Props: null
+  screen_of_ovar_case:
+    Mul: many_to_one
+    Ends:
+      - Src: ovar_screen
+        Dst: ovar_case
+    Props: null
+  diag_of_ovar_case:
+    Mul: many_to_one
+    Ends:
+      - Src: ovar_diag
+        Dst: ovar_case
+    Props: null
+  treat_of_ovar_case:
+    Mul: many_to_one
+    Ends:
+      - Src: ovar_treat
+        Dst: ovar_case
+    Props: null
+  mort_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: mort
+        Dst: ovar_case
+    Props: null
+  ovar_mort_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: ovar_mort
+        Dst: ovar_case
+    Props: null
+  comp_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: comp
+        Dst: ovar_case
+    Props: null
+  risk_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: risk
+        Dst: ovar_case
+    Props: null
+  ovar_hist_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: ovar_hist
+        Dst: ovar_case
+    Props: null
+  nsaid_use_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: nsaid_use
+        Dst: ovar_case
+    Props: null
+  health_cond_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: health_cond
+        Dst: ovar_case
+    Props: null
+  fem_health_cond_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: fem_health_cond
+        Dst: ovar_case
+    Props: null
+  pros_case_of_cohort:
+    Mul: many_to_one
+    Ends:
+      - Src: pros_case
+        Dst: cohort
+    Props: null
+  elig_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: pros_elig
+        Dst: pros_case
+    Props: null
+  exit_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: pros_exit
+        Dst: pros_case
+    Props: null
+  demo_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: demo
+        Dst: pros_case
+    Props: null
+  regn_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: pros_regn
+        Dst: pros_case
+    Props: null
+  screen_of_pros_case:
+    Mul: many_to_one
+    Ends:
+      - Src: pros_screen
+        Dst: pros_case
+    Props: null
+  diag_of_pros_case:
+    Mul: many_to_one
+    Ends:
+      - Src: pros_diag
+        Dst: pros_case
+    Props: null
+  treat_of_pros_case:
+    Mul: many_to_one
+    Ends:
+      - Src: pros_treat
+        Dst: pros_case
+    Props: null
+  mort_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: mort
+        Dst: pros_case
+    Props: null
+  pros_mort_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: pros_mort
+        Dst: pros_case
+    Props: null
+  comp_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: comp
+        Dst: pros_case
+    Props: null
+  risk_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: risk
+        Dst: pros_case
+    Props: null
+  pros_hist_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: pros_hist
+        Dst: pros_case
+    Props: null
+  nsaid_use_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: nsaid_use
+        Dst: pros_case
+    Props: null
+  health_cond_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: health_cond
+        Dst: pros_case
+    Props: null
+  male_health_cond_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: male_health_cond
+        Dst: pros_case
+    Props: null
+  dhq_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dhq
+        Dst: pros_case
+    Props: null
+  dhq_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dhq
+        Dst: lung_case
+    Props: null
+  dhq_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dhq
+        Dst: colo_case
+    Props: null
+  dhq_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dhq
+        Dst: ovar_case
+    Props: null
+  dhq_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dhq
+        Dst: breast_case
+    Props: null
+  dqx_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dqx
+        Dst: pros_case
+    Props: null
+  dqx_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dqx
+        Dst: lung_case
+    Props: null
+  dqx_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dqx
+        Dst: colo_case
+    Props: null
+  dqx_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dqx
+        Dst: ovar_case
+    Props: null
+  dqx_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dqx
+        Dst: breast_case
+    Props: null
+  sqx_of_pros_case:
+    Mul: one_to_one
+    Ends:
+      - Src: sqx
+        Dst: pros_case
+    Props: null
+  sqx_of_lung_case:
+    Mul: one_to_one
+    Ends:
+      - Src: sqx
+        Dst: lung_case
+    Props: null
+  sqx_of_colo_case:
+    Mul: one_to_one
+    Ends:
+      - Src: sqx
+        Dst: colo_case
+    Props: null
+  sqx_of_ovar_case:
+    Mul: one_to_one
+    Ends:
+      - Src: sqx
+        Dst: ovar_case
+    Props: null
+  sqx_of_breast_case:
+    Mul: one_to_one
+    Ends:
+      - Src: sqx
+        Dst: breast_case
+    Props: null
+  visit_of_pros_case:
+    Mul: many_to_one
+    Ends:
+      - Src: visit
+        Dst: pros_case
+    Props: null
+  visit_of_lung_case:
+    Mul: many_to_one
+    Ends:
+      - Src: visit
+        Dst: lung_case
+    Props: null
+  visit_of_colo_case:
+    Mul: many_to_one
+    Ends:
+      - Src: visit
+        Dst: colo_case
+    Props: null
+  visit_of_ovar_case:
+    Mul: many_to_one
+    Ends:
+      - Src: visit
+        Dst: ovar_case
+    Props: null
+  visit_of_breast_case:
+    Mul: many_to_one
+    Ends:
+      - Src: visit
+        Dst: breast_case
+    Props: null
