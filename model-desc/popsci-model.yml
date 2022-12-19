@@ -13,8 +13,6 @@ Nodes:
   cohort:
     Props:
       - cohort_id
-      - arm
-      - center
       - disease
   demo:
     Props:
@@ -147,6 +145,8 @@ Nodes:
   breast_case:
     Props:
       - breast_case_id
+      - arm
+      - center
       - ph_first_cancer_age
       - ph_first_cancer
       - j_ph_breast_trial
@@ -246,6 +246,8 @@ Nodes:
   colo_case:
     Props:
       - colo_case_id
+      - arm
+      - center
       - ph_first_cancer_age
       - ph_first_cancer
       - j_ph_colo_trial
@@ -449,6 +451,8 @@ Nodes:
   lung_case:
     Props:
       - lung_case_id
+      - arm
+      - center
       - ph_first_cancer_age
       - j_ph_lung_trial
       - ph_first_cancer
@@ -577,6 +581,8 @@ Nodes:
   ovar_case:
     Props:
       - ovar_case_id
+      - arm
+      - center
       - ph_first_cancer_age
       - ph_first_cancer
       - j_ph_osumm_trial
@@ -703,6 +709,8 @@ Nodes:
   pros_case:
     Props:
       - pros_case_id
+      - arm
+      - center
       - ph_first_cancer_age
       - ph_first_cancer
       - j_ph_pros_trial
