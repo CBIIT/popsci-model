@@ -1,64 +1,64 @@
 PropDefinitions:
-#property of clinical_trial
+#property of clinical_trial, cohort
   clinical_trial_id:
     Desc: The Trial ID assigned to trial by ClinicalTrials.gov.
-    Src: study_id
+    Src: ClinicalTrials.gov
     Type: string
     Req: true
     Private: false
 #property of clinical_trial
   clinical_trial_short_name:
     Desc: An abbreviated title of the clinical trial
-    Src: study_name
+    Src: ClinicalTrials.gov
     Type: string
     Req: true
     Private: false
 #property of clinical_trial
   clinical_trial_description:
     Desc: A brief description of clinical study.
-    Src: NA
+    Src: ClinicalTrials.gov
     Type: string
     Req: true
     Private: false
 #property of clinical_trial
   clinical_trial_designation:
     Desc: A concise name for clinical study
-    Src: NA
+    Src: ClinicalTrials.gov
     Type: string
     Req: true
     Private: false
 #property of clinical_trial
   clinical_trial_long_name:
     Desc: The complete name of the clinical trial, eg. Targeted Therapy Directed by Genetic Testing in Treating Patients with Advanced Refractory Solid Tumors, Lymphomas, or Multiple Myeloma (The MATCH Screening Trial).
-    Src: NA
+    Src: ClinicalTrials.gov
     Type: string
     Req: true
     Private: false
 #property of clinical_trial
   clinical_trial_type:
     Desc: Clinical trial type
-    Src: NA
+    Src: ClinicalTrials.gov
     Type: string
     Req: true
     Private: false
 #property of clinical_trial
   lead_organization:
     Desc: Lead Organization
-    Src: NA
+    Src: ClinicalTrials.gov
     Type: string
     Req: true
     Private: false
 #property of clinical_trial
   principal_investigators:
     Desc: Principal Investigators
-    Src: NA
+    Src: ClinicalTrials.gov
     Type: string
     Req: true
     Private: false
 #property of clinical_trial
   dbgap_accession_number:
     Desc: The dbgap accession number provided for the trial or arm.
-    Src: None
+    Src: dbGaP
     Type: string
     Req: false
     Private: false
@@ -85,18 +85,26 @@ PropDefinitions:
     Req: true
     Private: false
 #property of demo
-  bmi_curc:
-    Desc: This is the World Health Organization (WHO) standard categorization of BMI. BMI is considered out of range if any of the following occur: - Weight is less than 60 pounds - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males - After BMI is calculated, BMI is less than 15
+  age:
+    Desc: Age at trial entry, computed from date of birth and randomization date.
     Src: All dictionaries
-    Type:
-      - "No Form|Not Answered|Height Or Weight Not In Reasonable Range|0-18.5|18.5-25|25-30|30+"
+    Type: number
     Req: true
     Private: false
 #property of demo
-  weight50_f:
-    Desc: Question 22 - "What is or was your weight at these ages?" Weights less than 60 pounds are out of range.
+  agelevel:
+    Desc: Categorical version of age, created from the derived age variable.
     Src: All dictionaries
-    Type: number
+    Type:
+      - "<= 59|60-64|65-69|>= 70"
+    Req: true
+    Private: false
+#property of demo
+  sex:
+    Desc: Sex of the participant.
+    Src: All dictionaries
+    Type:
+      - "Female | Male"
     Req: true
     Private: false
 #property of demo
@@ -110,66 +118,11 @@ PropDefinitions:
     Req: true
     Private: false
 #property of demo
-  state:
-    Desc: Question 1 - "In what state or foreign country were you born?" Participants who were born in Canadian provinces and territories were collapsed into Canada. Participants born in the different U.S. Territories were collapsed into a single U.S. territories category.
+  hispanic_f:
+    Desc: BQ Form Versions 1 and 2: Question 2. BQ Form Version 3: Question 2a. What is your race or ethnicity?
     Src: All dictionaries
     Type:
-      - "Missing|Foreign Country|Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|District Of Columbia|Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|Wisconsin|Wyoming|Puerto Rico|U.S. Territories|Canada"
-    Req: true
-    Private: false
-#property of demo
-  occupat:
-    Desc: Question 5 - "Which of these categories best describes your current working situation?"
-    Src: All dictionaries
-    Type:
-      - "No Form|Not Answered|Homemaker|Working|Unemployed|Retired|Extended Sick Leave|Disabled|Other"
-    Req: true
-    Private: false
-#property of demo
-  educat:
-    Desc: Question 3 - "What is the highest grade or level of schooling you completed?"
-    Src: All dictionaries
-    Type:
-      - "No Form|Not Answered|Less Than 8 Years|8-11 Years|12 Years Or Completed High School|Post High School Training Other Than College|Some College|College Graduate|Postgraduate"
-    Req: true
-    Private: false
-#property of demo
-  bmi_50c:
-    Desc: This is the World Health Organization (WHO) standard categorization of BMI. BMI is considered out of range if any of the following occur: - Weight is less than 60 pounds - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males After BMI is calculated, BMI is less than 15
-    Src: All dictionaries
-    Type:
-      - "No Form|Not Answered|Height Or Weight Not In Reasonable Range|0-18.5|18.5-25|25-30|30+"
-    Req: true
-    Private: false
-#property of demo
-  marital:
-    Desc: Question 4 - "What is your current marital status?"
-    Src: All dictionaries
-    Type:
-      - "No Form|Not Answered|Married Or Living As Married|Widowed|Divorced|Separated|Never Married"
-    Req: true
-    Private: false
-#property of demo
-  sisters:
-    Desc: Question 18 - "How many full and half-sisters do you have, both living and deceased?" Participants with more than seven sisters are collapsed into "7 or more".
-    Src: All dictionaries
-    Type:
-      - "No Form|Not Answered|None|One|Two|Three|Four|Five|Six|Seven Or More"
-    Req: true
-    Private: false
-#property of demo
-  agelevel:
-    Desc: Categorical version of age, created from the derived age variable.
-    Src: All dictionaries
-    Type:
-      - "<= 59|60-64|65-69|>= 70"
-    Req: true
-    Private: false
-#property of demo
-  bmi_50:
-    Desc: BMI is considered out of range if any of the following occur: - Weight is less than 60 pounds - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males After BMI is calculated, BMI is less than 15
-    Src: All dictionaries
-    Type: number
+      - "No Form|Not Answered|Not Hispanic|Hispanic"
     Req: true
     Private: false
 #property of demo
@@ -181,16 +134,55 @@ PropDefinitions:
     Req: true
     Private: false
 #property of demo
-  hispanic_f:
-    Desc: BQ Form Versions 1 and 2: Question 2. BQ Form Version 3: Question 2a. What is your race or ethnicity?
+  sisters:
+    Desc: Question 18 - "How many full and half-sisters do you have, both living and deceased?" Participants with more than seven sisters are collapsed into "7 or more".
     Src: All dictionaries
     Type:
-      - "No Form|Not Answered|Not Hispanic|Hispanic"
+      - "No Form|Not Answered|None|One|Two|Three|Four|Five|Six|Seven Or More"
     Req: true
     Private: false
 #property of demo
-  age:
-    Desc: Age at trial entry, computed from date of birth and randomization date.
+  marital:
+    Desc: Question 4 - "What is your current marital status?"
+    Src: All dictionaries
+    Type:
+      - "No Form|Not Answered|Married Or Living As Married|Widowed|Divorced|Separated|Never Married"
+    Req: true
+    Private: false
+#property of demo
+  educat:
+    Desc: Question 3 - "What is the highest grade or level of schooling you completed?"
+    Src: All dictionaries
+    Type:
+      - "No Form|Not Answered|Less Than 8 Years|8-11 Years|12 Years Or Completed High School|Post High School Training Other Than College|Some College|College Graduate|Postgraduate"
+    Req: true
+    Private: false
+#property of demo
+  occupat:
+    Desc: Question 5 - "Which of these categories best describes your current working situation?"
+    Src: All dictionaries
+    Type:
+      - "No Form|Not Answered|Homemaker|Working|Unemployed|Retired|Extended Sick Leave|Disabled|Other"
+    Req: true
+    Private: false
+#property of demo
+  state:
+    Desc: Question 1 - "In what state or foreign country were you born?" Participants who were born in Canadian provinces and territories were collapsed into Canada. Participants born in the different U.S. Territories were collapsed into a single U.S. territories category.
+    Src: All dictionaries
+    Type:
+      - "Missing|Foreign Country|Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|District Of Columbia|Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|Wisconsin|Wyoming|Puerto Rico|U.S. Territories|Canada"
+    Req: true
+    Private: false
+#property of demo
+  height_f:
+    Desc: Question 23 - "How tall are you?" Height is considered out of range if any of the following occur: - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males After BMI is calculated, BMI is less than 15
+    Src: All dictionaries
+    Type: number
+    Req: true
+    Private: false
+#property of demo
+  weight_f:
+    Desc: Question 22 - "What is or was your weight at these ages?" Weights less than 60 pounds are out of range.
     Src: All dictionaries
     Type: number
     Req: true
@@ -198,6 +190,28 @@ PropDefinitions:
 #property of demo
   weight20_f:
     Desc: Question 22 - "What is or was your weight at these ages?" Weights less than 60 pounds are out of range.
+    Src: All dictionaries
+    Type: number
+    Req: true
+    Private: false
+#property of demo
+  weight50_f:
+    Desc: Question 22 - "What is or was your weight at these ages?" Weights less than 60 pounds are out of range.
+    Src: All dictionaries
+    Type: number
+    Req: true
+    Private: false
+#property of demo
+  bmi_curc:
+    Desc: This is the World Health Organization (WHO) standard categorization of BMI. BMI is considered out of range if any of the following occur: - Weight is less than 60 pounds - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males - After BMI is calculated, BMI is less than 15
+    Src: All dictionaries
+    Type:
+      - "No Form|Not Answered|Height Or Weight Not In Reasonable Range|0-18.5|18.5-25|25-30|30+"
+    Req: true
+    Private: false
+#property of demo
+  bmi_curr:
+    Desc: BMI is considered out of range if any of the following occur: - Weight is less than 60 pounds - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males - After BMI is calculated, BMI is less than 15
     Src: All dictionaries
     Type: number
     Req: true
@@ -211,27 +225,6 @@ PropDefinitions:
     Req: true
     Private: false
 #property of demo
-  height_f:
-    Desc: Question 23 - "How tall are you?" Height is considered out of range if any of the following occur: - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males After BMI is calculated, BMI is less than 15
-    Src: All dictionaries
-    Type: number
-    Req: true
-    Private: false
-#property of demo
-  bmi_curr:
-    Desc: BMI is considered out of range if any of the following occur: - Weight is less than 60 pounds - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males - After BMI is calculated, BMI is less than 15
-    Src: All dictionaries
-    Type: number
-    Req: true
-    Private: false
-#property of demo
-  weight_f:
-    Desc: Question 22 - "What is or was your weight at these ages?" Weights less than 60 pounds are out of range.
-    Src: All dictionaries
-    Type: number
-    Req: true
-    Private: false
-#property of demo
   bmi_20:
     Desc: BMI is considered out of range if any of the following occur: - Weight is less than 60 pounds - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males
     Src: All dictionaries
@@ -239,11 +232,18 @@ PropDefinitions:
     Req: true
     Private: false
 #property of demo
-  sex:
-    Desc: Sex of the participant.
+  bmi_50c:
+    Desc: This is the World Health Organization (WHO) standard categorization of BMI. BMI is considered out of range if any of the following occur: - Weight is less than 60 pounds - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males After BMI is calculated, BMI is less than 15
     Src: All dictionaries
     Type:
-      - "Female | Male"
+      - "No Form|Not Answered|Height Or Weight Not In Reasonable Range|0-18.5|18.5-25|25-30|30+"
+    Req: true
+    Private: false
+#property of demo
+  bmi_50:
+    Desc: BMI is considered out of range if any of the following occur: - Weight is less than 60 pounds - Height is less than 48 inches - Height is greater than 78 inches for females - Height is greater than 84 inches for males After BMI is calculated, BMI is less than 15
+    Src: All dictionaries
+    Type: number
     Req: true
     Private: false
 #property of mort

@@ -13,31 +13,32 @@ Nodes:
   cohort:
     Props:
       - cohort_id
+      - clinical_trial_id
       - disease
   demo:
     Props:
       - demo_id
-      - bmi_curc
-      - weight50_f
-      - race7
-      - state
-      - occupat
-      - educat
-      - bmi_50c
-      - marital
-      - sisters
-      - agelevel
-      - bmi_50
-      - brothers
-      - hispanic_f
       - age
-      - weight20_f
-      - bmi_20c
-      - height_f
-      - bmi_curr
-      - weight_f
-      - bmi_20
+      - agelevel
       - sex
+      - race7
+      - hispanic_f
+      - brothers
+      - sisters
+      - marital
+      - educat
+      - occupat
+      - state
+      - height_f
+      - weight_f
+      - weight20_f
+      - weight50_f
+      - bmi_curc
+      - bmi_curr
+      - bmi_20c
+      - bmi_20
+      - bmi_50c
+      - bmi_50
   mort:
     Props:
       - mort_id
