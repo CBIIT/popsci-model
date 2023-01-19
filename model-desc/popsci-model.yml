@@ -150,49 +150,49 @@ Nodes:
       - center
       - ph_first_cancer_age
       - ph_first_cancer
-      - j_ph_breast_trial
-      - j_ph_any_trial
+      - ph_breast_trial
+      - ph_any_trial
       - rndyear
   breast_elig:
     Props:
       - breast_elig_id
-      - j_breast_eligible_dhq
-      - j_ph_any_dqx
-      - j_ph_breast_sqx
-      - j_ph_breast_dqx
-      - j_ph_breast_dhq
-      - j_ph_any_sqx
+      - breast_eligible_dhq
+      - ph_any_dqx
+      - ph_breast_sqx
+      - ph_breast_dqx
+      - ph_breast_dhq
+      - ph_any_sqx
       - entryage_muq
-      - j_ph_breast_bq
-      - j_breast_eligible_bq
+      - ph_breast_bq
+      - breast_eligible_bq
       - entryage_bq
       - entrydays_bq
       - entrydays_dhq
-      - j_ph_any_muq
-      - j_ph_any_dhq
-      - j_breast_eligible_sqx
-      - j_ph_breast_muq
-      - j_breast_eligible_dqx
+      - ph_any_muq
+      - ph_any_dhq
+      - breast_eligible_sqx
+      - ph_breast_muq
+      - breast_eligible_dqx
       - entryage_sqx
       - entrydays_dqx
       - entrydays_sqx
-      - j_ph_any_bq
+      - ph_any_bq
       - entryage_dqx
       - entryage_dhq
       - entrydays_muq
-      - j_breast_eligible_muq
+      - breast_eligible_muq
   breast_exit:
     Props:
       - breast_exit_id
-      - j_breast_exitdays
-      - j_breast_exitstat
+      - breast_exitdays
+      - breast_exitstat
       - mortality_exitdays
       - mortality_exitage
-      - j_fstcan_exitage
+      - fstcan_exitage
       - mortality_exitstat
-      - j_fstcan_exitdays
-      - j_breast_exitage
-      - j_fstcan_exitstat
+      - fstcan_exitdays
+      - breast_exitage
+      - fstcan_exitstat
   breast_regn:
     Props:
       - breast_regn_id
@@ -202,37 +202,37 @@ Nodes:
       - queried_any_registry_stat
   breast_diag:
     Props:
-      - node_id
-      - j_breast_clinstage
-      - j_breast_candxdays
-      - j_breast_pathstage_n
-      - j_breast_stage_n
-      - j_breast_mets_source
-      - j_er_status
-      - j_breast_pathstage
-      - j_breast_cancer
-      - j_breast_has_mets
+      - breast_diag_id
+      - breast_clinstage
+      - breast_candxdays
+      - breast_pathstage_n
+      - breast_stage_n
+      - breast_mets_source
+      - er_status
+      - breast_pathstage
+      - breast_cancer
+      - breast_has_mets
       - breast_registry_stat_cat
-      - j_bc_her2_stat
-      - j_breast_summary_stage_raw
-      - j_breast_clinstage_n
-      - j_breast_is_first_dx
-      - j_breast_stage_t
-      - j_pr_status
-      - j_breast_clinstage_m
-      - j_breast_summary_stage_enhanced
-      - j_breast_clinstage_7e
-      - j_breast_pathstage_m
-      - j_breast_stage_7e
-      - j_breast_stage
-      - j_breast_clinstage_t
-      - j_breast_pathstage_t
-      - j_breast_mets_conflict
-      - j_bc_her2summ
-      - j_breast_stage_m
-      - j_breast_pathstage_7e
-      - j_breast_mets_conflict_source
-      - j_breast_tmrsize
+      - bc_her2_stat
+      - breast_summary_stage_raw
+      - breast_clinstage_n
+      - breast_is_first_dx
+      - breast_stage_t
+      - pr_status
+      - breast_clinstage_m
+      - breast_summary_stage_enhanced
+      - breast_clinstage_7e
+      - breast_pathstage_m
+      - breast_stage_7e
+      - breast_stage
+      - breast_clinstage_t
+      - breast_pathstage_t
+      - breast_mets_conflict
+      - bc_her2summ
+      - breast_stage_m
+      - breast_pathstage_7e
+      - breast_mets_conflict_source
+      - breast_tmrsize
   breast_mort:
     Props:
       - breast_mort_id
@@ -251,49 +251,37 @@ Nodes:
       - center
       - ph_first_cancer_age
       - ph_first_cancer
-      - j_ph_colo_trial
-      - j_ph_any_trial
+      - ph_colo_trial
+      - ph_any_trial
       - rndyear
   colo_elig:
     Props:
       - colo_elig_id
-      - j_ph_colo_dqx
-      - j_ph_any_dqx
-      - j_ph_colo_muq
-      - j_ph_any_sqx
+      - ph_colo_dqx
+      - ph_any_dqx
+      - ph_colo_muq
+      - ph_any_sqx
       - entryage_muq
-      - j_colo_eligible_dhq
-      - j_ph_colo_sqx
-      - j_colo_eligible_bq
-      - j_colo_eligible_muq
+      - colo_eligible_dhq
+      - ph_colo_sqx
+      - colo_eligible_bq
+      - colo_eligible_muq
       - entryage_bq
       - entrydays_bq
       - entrydays_dhq
-      - j_ph_colo_bq
-      - j_ph_any_dhq
-      - j_ph_any_muq
-      - j_ph_colo_dhq
+      - ph_colo_bq
+      - ph_any_dhq
+      - ph_any_muq
+      - ph_colo_dhq
       - entryage_sqx
       - entrydays_dqx
       - entrydays_sqx
-      - j_ph_any_bq
-      - j_colo_eligible_sqx
+      - ph_any_bq
+      - colo_eligible_sqx
       - entryage_dqx
       - entryage_dhq
-      - j_colo_eligible_dqx
+      - colo_eligible_dqx
       - entrydays_muq
-  colo_exit:
-    Props:
-      - colo_exit_id
-      - mortality_exitage
-      - mortality_exitdays
-      - j_colo_exitstat
-      - j_colo_exitdays
-      - j_fstcan_exitage
-      - mortality_exitstat
-      - j_colo_exitage
-      - j_fstcan_exitdays
-      - j_fstcan_exitstat
   colo_regn:
     Props:
       - colo_regn_id
@@ -305,119 +293,332 @@ Nodes:
   colo_screen:
     Props:
       - colo_screen_id
-      - adeneith0/3/5/35
-      - sizerght_days0/3/5/35
-      - othfind_divlosis0/3/5/35
-      - villeith0/3/5/35
-      - colsw_left0/3/5/35
-      - largrght0/3/5/35
-      - advleft_days0/3/5/35
-      - adveith0/3/5/35
-      - largrght_days0/3/5/35
+      - adeneith0
+      - adeneith3
+      - adeneith35
+      - adeneith5
+      - sizerght_days0
+      - sizerght_days3
+      - sizerght_days35
+      - sizerght_days5
+      - othfind_divlosis0
+      - othfind_divlosis3
+      - othfind_divlosis35
+      - othfind_divlosis5
+      - villeith0
+      - villeith3
+      - villeith35
+      - villeith5
+      - colsw_left0
+      - colsw_left3
+      - colsw_left35
+      - colsw_left5
+      - largrght0
+      - largrght3
+      - largrght35
+      - largrght5
+      - advleft_days0
+      - advleft_days3
+      - advleft_days35
+      - advleft_days5
+      - adveith0
+      - adveith3
+      - adveith35
+      - adveith5
+      - largrght_days0
+      - largrght_days3
+      - largrght_days35
+      - largrght_days5
       - t0_div_disease_any
-      - dyspw_left0/3/5/35
-      - sizeleft0/3/5/35
-      - lessize0/3/5/35
-      - dyspleft_days0/3/5/35
-      - sizerght0/3/5/35
-      - rsizleft0/3/5/35
-      - numadv0/3/5/35
-      - villrght0/3/5/35
-      - insirght0/3/5/35
-      - rsizeith0/3/5/35
-      - rsizrght0/3/5/35
-      - colsw_left_days0/3/5/35
-      - adenleft_days0/3/5/35
-      - adveith_days0/3/5/35
-      - villleft0/3/5/35
-      - colsw_eith_days0/3/5/35
-      - aden_count_eith0/3/5/35
-      - fsg_result0/3/5/35
-      - aden_count_left0/3/5/35
-      - villleft_days0/3/5/35
-      - dyspw_rght0/3/5/35
-      - largeith0/3/5/35
-      - villeith_days0/3/5/35
-      - largleft0/3/5/35
-      - othfind_divlitis0/3/5/35
-      - colo_mra_stat0/3/5/35
-      - lessize_cat0/3/5/35
-      - dyspeith_days0/3/5/35
-      - hadcolsc_days0/3/5/35
-      - advleft0/3/5/35
+      - dyspw_left0
+      - dyspw_left3
+      - dyspw_left35
+      - dyspw_left5
+      - sizeleft0
+      - sizeleft3
+      - sizeleft35
+      - sizeleft5
+      - lessize0
+      - lessize3
+      - lessize35
+      - lessize5
+      - dyspleft_days0
+      - dyspleft_days3
+      - dyspleft_days35
+      - dyspleft_days5
+      - sizerght0
+      - sizerght3
+      - sizerght35
+      - sizerght5
+      - rsizleft0
+      - rsizleft3
+      - rsizleft35
+      - rsizleft5
+      - numadv0
+      - numadv3
+      - numadv35
+      - numadv5
+      - villrght0
+      - villrght3
+      - villrght35
+      - villrght5
+      - insirght0
+      - insirght3
+      - insirght35
+      - insirght5
+      - rsizeith0
+      - rsizeith3
+      - rsizeith35
+      - rsizeith5
+      - rsizrght0
+      - rsizrght3
+      - rsizrght35
+      - rsizrght5
+      - colsw_left_days0
+      - colsw_left_days3
+      - colsw_left_days35
+      - colsw_left_days5
+      - adenleft_days0
+      - adenleft_days3
+      - adenleft_days35
+      - adenleft_days5
+      - adveith_days0
+      - adveith_days3
+      - adveith_days35
+      - adveith_days5
+      - villleft0
+      - villleft3
+      - villleft35
+      - villleft5
+      - colsw_eith_days0
+      - colsw_eith_days3
+      - colsw_eith_days35
+      - colsw_eith_days5
+      - aden_count_eith0
+      - aden_count_eith3
+      - aden_count_eith35
+      - aden_count_eith5
+      - fsg_result0
+      - fsg_result3
+      - fsg_result35
+      - fsg_result5
+      - aden_count_left0
+      - aden_count_left3
+      - aden_count_left35
+      - aden_count_left5
+      - villleft_days0
+      - villleft_days3
+      - villleft_days35
+      - villleft_days5
+      - dyspw_rght0
+      - dyspw_rght3
+      - dyspw_rght35
+      - dyspw_rght5
+      - largeith0
+      - largeith3
+      - largeith35
+      - largeith5
+      - villeith_days0
+      - villeith_days3
+      - villeith_days35
+      - villeith_days5
+      - largleft0
+      - largleft3
+      - largleft35
+      - largleft5
+      - othfind_divlitis0
+      - othfind_divlitis3
+      - othfind_divlitis35
+      - othfind_divlitis5
+      - colo_mra_stat0
+      - colo_mra_stat3
+      - colo_mra_stat35
+      - colo_mra_stat5
+      - lessize_cat0
+      - lessize_cat3
+      - lessize_cat35
+      - lessize_cat5
+      - dyspeith_days0
+      - dyspeith_days3
+      - dyspeith_days35
+      - dyspeith_days5
+      - hadcolsc_days0
+      - hadcolsc_days3
+      - hadcolsc_days35
+      - hadcolsc_days5
+      - advleft0
+      - advleft3
+      - advleft35
+      - advleft5
       - protocolc
-      - adenrght0/3/5/35
-      - villrght_days0/3/5/35
-      - dyspeith0/3/5/35
-      - hadcolsc0/3/5/35
-      - inad_div0/3/5/35
-      - dyspw_eith0/3/5/35
-      - insieith0/3/5/35
-      - sizeleft_days0/3/5/35
-      - fsg_in0/3/5/35
-      - adenleft0/3/5/35
-      - adenrght_days0/3/5/35
-      - advrght0/3/5/35
-      - largleft_days0/3/5/35
-      - multeith0/3/5/35
-      - sizeeith0/3/5/35
-      - dysprght0/3/5/35
-      - dyspleft0/3/5/35
-      - sizeeith_days0/3/5/35
-      - numnoadv0/3/5/35
-      - advrght_days0/3/5/35
-      - fsg_days0/3/5/35
-      - adeneith_days0/3/5/35
-      - colsw_eith0/3/5/35
-      - insileft0/3/5/35
-      - hadcolsc12mon0/3/5/35
-      - multrght0/3/5/35
-      - dysprght_days0/3/5/35
-      - aden_count_rght0/3/5/35
-      - largeith_days0/3/5/35
-      - colsw_rght0/3/5/35
-      - colsw_rght_days0/3/5/35
-      - multleft0/3/5/35
+      - adenrght0
+      - adenrght3
+      - adenrght35
+      - adenrght5
+      - villrght_days0
+      - villrght_days3
+      - villrght_days35
+      - villrght_days5
+      - dyspeith0
+      - dyspeith3
+      - dyspeith35
+      - dyspeith5
+      - hadcolsc0
+      - hadcolsc3
+      - hadcolsc35
+      - hadcolsc5
+      - inad_div0
+      - inad_div3
+      - inad_div35
+      - inad_div5
+      - dyspw_eith0
+      - dyspw_eith3
+      - dyspw_eith35
+      - dyspw_eith5
+      - insieith0
+      - insieith3
+      - insieith35
+      - insieith5
+      - sizeleft_days0
+      - sizeleft_days3
+      - sizeleft_days35
+      - sizeleft_days5
+      - fsg_in0
+      - fsg_in3
+      - fsg_in35
+      - fsg_in5
+      - adenleft0
+      - adenleft3
+      - adenleft35
+      - adenleft5
+      - adenrght_days0
+      - adenrght_days3
+      - adenrght_days35
+      - adenrght_days5
+      - advrght0
+      - advrght3
+      - advrght35
+      - advrght5
+      - largleft_days0
+      - largleft_days3
+      - largleft_days35
+      - largleft_days5
+      - multeith0
+      - multeith3
+      - multeith35
+      - multeith5
+      - sizeeith0
+      - sizeeith3
+      - sizeeith35
+      - sizeeith5
+      - dysprght0
+      - dysprght3
+      - dysprght35
+      - dysprght5
+      - dyspleft0
+      - dyspleft3
+      - dyspleft35
+      - dyspleft5
+      - sizeeith_days0
+      - sizeeith_days3
+      - sizeeith_days35
+      - sizeeith_days5
+      - numnoadv0
+      - numnoadv3
+      - numnoadv35
+      - numnoadv5
+      - advrght_days0
+      - advrght_days3
+      - advrght_days35
+      - advrght_days5
+      - fsg_days0
+      - fsg_days3
+      - fsg_days35
+      - fsg_days5
+      - adeneith_days0
+      - adeneith_days3
+      - adeneith_days35
+      - adeneith_days5
+      - colsw_eith0
+      - colsw_eith3
+      - colsw_eith35
+      - colsw_eith5
+      - insileft0
+      - insileft3
+      - insileft35
+      - insileft5
+      - hadcolsc12mon0
+      - hadcolsc12mon3
+      - hadcolsc12mon35
+      - hadcolsc12mon5
+      - multrght0
+      - multrght3
+      - multrght35
+      - multrght5
+      - dysprght_days0
+      - dysprght_days3
+      - dysprght_days35
+      - dysprght_days5
+      - aden_count_rght0
+      - aden_count_rght3
+      - aden_count_rght35
+      - aden_count_rght5
+      - largeith_days0
+      - largeith_days3
+      - largeith_days35
+      - largeith_days5
+      - colsw_rght0
+      - colsw_rght3
+      - colsw_rght35
+      - colsw_rght5
+      - colsw_rght_days0
+      - colsw_rght_days3
+      - colsw_rght_days35
+      - colsw_rght_days5
+      - multleft0
+      - multleft3
+      - multleft35
+      - multleft5
   colo_diag:
     Props:
       - colo_diag_id
-      - j_colo_location_summary
-      - j_colo_grade
-      - j_colo_mets_conflict
-      - j_colo_histtype
-      - j_colo_icdo2_tmrloc
-      - j_colo_pathstage_t
-      - j_colo_stage_n
+      - colo_location_summary
+      - colo_grade
+      - colo_mets_conflict
+      - colo_histtype
+      - colo_icdo2_tmrloc
+      - colo_pathstage_t
+      - colo_stage_n
       - reassurvc
-      - j_colo_clinstage
-      - j_colo_has_mets
-      - j_colo_cancer
-      - j_colo_clinstage_7e
-      - j_colo_pathstage
-      - j_colo_stage
+      - colo_clinstage
+      - colo_has_mets
+      - colo_cancer
+      - colo_clinstage_7e
+      - colo_pathstage
+      - colo_stage
       - reassympc
-      - j_colo_clinstage_n
-      - j_colo_pathstage_7e
-      - j_colo_location
-      - j_colo_stage_t
-      - j_colo_stage_7e
-      - j_colo_clinstage_t
-      - j_colo_pathstage_m
-      - j_colo_pathstage_n
-      - j_intstatc_cat
+      - colo_clinstage_n
+      - colo_pathstage_7e
+      - colo_location
+      - colo_stage_t
+      - colo_stage_7e
+      - colo_clinstage_t
+      - colo_pathstage_m
+      - colo_pathstage_n
+      - intstatc_cat
       - reasfollc
-      - j_colo_clinstage_m
-      - j_colo_cancer_type
-      - j_colo_mets_source
-      - j_colo_stage_m
-      - j_colo_is_first_dx
-      - j_colo_location_side
-      - j_colo_mets_conflict_source
+      - colo_clinstage_m
+      - colo_cancer_type
+      - colo_mets_source
+      - colo_stage_m
+      - colo_is_first_dx
+      - colo_location_side
+      - colo_mets_conflict_source
       - reasothc
-      - j_colo_summary_stage_enhanced
-      - j_candxdaysc
-      - j_num_cancc
-      - j_colo_summary_stage_raw
+      - colo_summary_stage_enhanced
+      - candxdaysc
+      - num_cancc
+      - colo_summary_stage_raw
       - colo_registry_stat_cat
   colo_treat:
     Props:
@@ -455,50 +656,50 @@ Nodes:
       - arm
       - center
       - ph_first_cancer_age
-      - j_ph_lung_trial
+      - ph_lung_trial
       - ph_first_cancer
-      - j_ph_any_trial
+      - ph_any_trial
       - rndyear
   lung_elig:
     Props:
       - lung_elig_id
-      - j_ph_any_dqx
-      - j_lung_eligible_dhq
-      - j_ph_any_sqx
+      - ph_any_dqx
+      - lung_eligible_dhq
+      - ph_any_sqx
       - entryage_muq
-      - j_ph_lung_bq
-      - j_ph_lung_dqx
-      - j_lung_eligible_sqx
+      - ph_lung_bq
+      - ph_lung_dqx
+      - lung_eligible_sqx
       - entryage_bq
       - entrydays_bq
       - entrydays_dhq
-      - j_ph_any_muq
-      - j_ph_any_dhq
-      - j_lung_eligible_bq
+      - ph_any_muq
+      - ph_any_dhq
+      - lung_eligible_bq
       - entryage_sqx
       - entrydays_dqx
-      - j_ph_lung_dhq
-      - j_ph_lung_sqx
+      - ph_lung_dhq
+      - ph_lung_sqx
       - entrydays_sqx
-      - j_ph_any_bq
-      - j_ph_lung_muq
-      - j_lung_eligible_muq
+      - ph_any_bq
+      - ph_lung_muq
+      - lung_eligible_muq
       - entryage_dqx
       - entryage_dhq
-      - j_lung_eligible_dqx
+      - lung_eligible_dqx
       - entrydays_muq
   lung_exit:
     Props:
       - lung_exit_id
-      - j_lung_exitage
+      - lung_exitage
       - mortality_exitage
       - mortality_exitdays
-      - j_lung_exitstat
-      - j_fstcan_exitage
+      - lung_exitstat
+      - fstcan_exitage
       - mortality_exitstat
-      - j_lung_exitdays
-      - j_fstcan_exitdays
-      - j_fstcan_exitstat
+      - lung_exitdays
+      - fstcan_exitdays
+      - fstcan_exitstat
   lung_regn:
     Props:
       - lung_regn_id
@@ -510,50 +711,62 @@ Nodes:
   lung_screen:
     Props:
       - lung_screen_id
-      - lung_mra_stat0-3
-      - xry_days0-3
-      - xry_result0-3
+      - lung_mra_stat0
+      - lung_mra_stat1
+      - lung_mra_stat2
+      - lung_mra_stat3
+      - xry_days0
+      - xry_days1
+      - xry_days2
+      - xry_days3
+      - xry_result0
+      - xry_result1
+      - xry_result2
+      - xry_result3
       - xry_prot
-      - biopllink0-3
+      - biopllink0
+      - biopllink1
+      - biopllink2
+      - biopllink3
       - nlst_flag
   lung_diag:
     Props:
       - lung_diag_id
-      - j_lung_clinstage_n
+      - lung_clinstage_n
       - reasfolll
-      - j_lung_summary_stage_enhanced
-      - j_lung_pathstage_t
-      - j_lung_is_carcinoid
-      - j_lung_clinstage
-      - j_lung_mets_source
-      - j_num_cancl
-      - j_lung_clinstage_m
-      - j_lung_is_first_dx
-      - j_lung_stage
-      - j_lung_cancer
-      - j_lung_has_mets
-      - j_lung_mets_conflict_source
+      - lung_summary_stage_enhanced
+      - lung_pathstage_t
+      - lung_is_carcinoid
+      - lung_clinstage
+      - lung_mets_source
+      - num_cancl
+      - lung_clinstage_m
+      - lung_is_first_dx
+      - lung_stage
+      - lung_cancer
+      - lung_has_mets
+      - lung_mets_conflict_source
       - lung_registry_stat_cat
-      - j_lung_stage_t
-      - j_lung_grade
-      - j_lung_stage_n
-      - j_lung_pathstage_7e
-      - j_lung_clinstage_t
-      - j_lung_pathstage_m
-      - j_lung_stage_7e
-      - j_lung_summary_stage_raw
-      - j_lung_pathstage
-      - j_lung_stage_m
-      - j_candxdaysl
-      - j_intstatl_cat
-      - j_lung_mets_conflict
+      - lung_stage_t
+      - lung_grade
+      - lung_stage_n
+      - lung_pathstage_7e
+      - lung_clinstage_t
+      - lung_pathstage_m
+      - lung_stage_7e
+      - lung_summary_stage_raw
+      - lung_pathstage
+      - lung_stage_m
+      - candxdaysl
+      - intstatl_cat
+      - lung_mets_conflict
       - reassurvl
-      - j_lung_cancer_type
-      - j_lung_histtype_cat
-      - j_lung_clinstage_7e
+      - lung_cancer_type
+      - lung_histtype_cat
+      - lung_clinstage_7e
       - reassympl
-      - j_lung_histtype
-      - j_lung_pathstage_n
+      - lung_histtype
+      - lung_pathstage_n
       - reasothl
   lung_treat:
     Props:
@@ -570,8 +783,8 @@ Nodes:
   lung_mort:
     Props:
       - lung_mort_id
-      - d_dthp
-      - f_dthp
+      - d_dthl
+      - f_dthl
   lung_hist:
     Props:
       - lung_histid
@@ -586,105 +799,145 @@ Nodes:
       - center
       - ph_first_cancer_age
       - ph_first_cancer
-      - j_ph_osumm_trial
-      - j_ph_any_trial
+      - ph_osumm_trial
+      - ph_any_trial
       - rndyear
   ovar_elig:
     Props:
       - ovar_elig_id
-      - j_ph_osumm_dhq
-      - j_ph_any_dqx
-      - j_ph_osumm_bq
-      - j_ph_any_sqx
-      - j_osumm_eligible_sqx
+      - ph_osumm_dhq
+      - ph_any_dqx
+      - ph_osumm_bq
+      - ph_any_sqx
+      - osumm_eligible_sqx
       - entryage_muq
-      - j_osumm_eligible_bq
-      - j_osumm_eligible_muq
-      - j_osumm_eligible_dqx
-      - j_ph_osumm_dqx
+      - osumm_eligible_bq
+      - osumm_eligible_muq
+      - osumm_eligible_dqx
+      - ph_osumm_dqx
       - entryage_bq
       - entrydays_bq
       - entrydays_dhq
-      - j_ph_any_muq
-      - j_ph_any_dhq
-      - j_osumm_eligible_dhq
+      - ph_any_muq
+      - ph_any_dhq
+      - osumm_eligible_dhq
       - entryage_sqx
       - entrydays_dqx
       - entrydays_sqx
-      - j_ph_any_bq
+      - ph_any_bq
       - entryage_dqx
       - entryage_dhq
-      - j_ph_osumm_sqx
+      - ph_osumm_sqx
       - entrydays_muq
-      - j_ph_osumm_muq
+      - ph_osumm_muq
   ovar_exit:
     Props:
       - ovar_exit_id
-      - j_ovar_exitstat
+      - ovar_exitstat
       - mortality_exitage
       - mortality_exitdays
-      - j_ovar_exitdays
-      - j_fstcan_exitage
+      - ovar_exitdays
+      - fstcan_exitage
       - mortality_exitstat
-      - j_ovar_exitage
-      - j_fstcan_exitdays
-      - j_fstcan_exitstat
+      - ovar_exitage
+      - fstcan_exitdays
+      - fstcan_exitstat
   ovar_regn:
     Props:
       - ovar_regn_id
       - osumm_registry_stat_cat
       - dual
-      - reconsent_outcome_day s
+      - reconsent_outcome_days
       - queried_any_registry
       - reconsent_outcome
-      - queried_any_registry_sta t
   ovar_screen:
     Props:
       - ovar_screen_id
-      - ca125_result0-5
-      - tvu_days0-3
-      - ca125_level0-5
-      - ca125ii_level0-5
-      - biopolink0-5
-      - ca125_src0-5
-      - ca125_days0-5
-      - ovar_mra_stat0-5
+      - ca125_result0
+      - ca125_result1
+      - ca125_result2
+      - ca125_result3
+      - ca125_result4
+      - ca125_result5
+      - tvu_days0
+      - tvu_days1
+      - tvu_days2
+      - tvu_days3
+      - ca125_level0
+      - ca125_level1
+      - ca125_level2
+      - ca125_level3
+      - ca125_level4
+      - ca125_level5
+      - ca125ii_level0
+      - ca125ii_level1
+      - ca125ii_level2
+      - ca125ii_level3
+      - ca125ii_level4
+      - ca125ii_level5
+      - biopolink0
+      - biopolink1
+      - biopolink2
+      - biopolink3
+      - biopolink4
+      - biopolink5
+      - ca125_src0
+      - ca125_src1
+      - ca125_src2
+      - ca125_src3
+      - ca125_src4
+      - ca125_src5
+      - ca125_days0
+      - ca125_days1
+      - ca125_days2
+      - ca125_days3
+      - ca125_days4
+      - ca125_days5
+      - ovar_mra_stat0
+      - ovar_mra_stat1
+      - ovar_mra_stat2
+      - ovar_mra_stat3
+      - ovar_mra_stat4
+      - ovar_mra_stat5
       - orem_fyro
       - ca125_prot
-      - tvu_result0-3
+      - tvu_result0
+      - tvu_result1
+      - tvu_result2
+      - tvu_result3
   ovar_diag:
     Props:
       - ovar_diag_id
-      - j_osumm_stage_t
+      - osumm_stage_t
       - reasothosumm
       - reassymposumm
-      - j_osumm_stage
-      - j_intstatosumm_cat
-      - j_osumm_clinstage_n
-      - j_osumm_cancer
-      - j_osumm_stage_n
-      - j_candxdaysosumm
-      - j_osumm_is_first_dx
-      - j_osumm_mets_source
-      - j_osumm_summary_stage_enhanced
-      - j_osumm_stage_7e
-      - j_osumm_clinstage_t
-      - j_osumm_mets_conflict_ source
-      - j_osumm_pathstage_n
-      - j_osumm_summary_stage_raw
-      - j_osumm_has_mets
-      - j_osumm_clinstage
-      - j_osumm_mets_conflict
-      - j_osumm_clinstage_7e
-      - j_osumm_clinstage_m
-      - j_osumm_pathstage
-      - j_osumm_pathstage_m
+      - osumm_stage
+      - intstatosumm_cat
+      - osumm_clinstage_n
+      - osumm_cancer
+      - osumm_stage_n
+      - candxdaysosumm
+      - osumm_is_first_dx
+      - osumm_mets_source
+      - osumm_summary_stage_enhanced
+      - osumm_stage_7e
+      - osumm_clinstage_t
+      - osumm_mets_conflict_source
+      - osumm_pathstage_n
+      - osumm_summary_stage_raw
+      - osumm_has_mets
+      - osumm_clinstage
+      - osumm_mets_conflict
+      - osumm_clinstage_7e
+      - osumm_clinstage_m
+      - osumm_pathstage
+      - osumm_pathstage_m
       - reasfollosumm
       - reassurvosumm
-      - j_osumm_pathstage_7e
-      - j_cancerosumm
-      - j_osumm_pathstage_t
-      - j_osumm_stage_m
+      - osumm_pathstage_7e
+      - cancerosumm
+      - osumm_pathstage_t
+      - osumm_stage_m
   ovar_treat:
     Props:
       - ovar_treat_id
@@ -714,49 +967,49 @@ Nodes:
       - center
       - ph_first_cancer_age
       - ph_first_cancer
-      - j_ph_pros_trial
-      - j_ph_any_trial
+      - ph_pros_trial
+      - ph_any_trial
       - rndyear
   pros_elig:
     Props:
       - pros_elig_id
-      - j_ph_any_dqx
-      - j_pros_eligible_dhq
-      - j_ph_any_sqx
+      - ph_any_dqx
+      - pros_eligible_dhq
+      - ph_any_sqx
       - entryage_muq
-      - j_ph_pros_sqx
-      - j_pros_eligible_muq
+      - ph_pros_sqx
+      - pros_eligible_muq
       - entryage_bq
       - entrydays_bq
       - entrydays_dhq
-      - j_ph_any_muq
-      - j_ph_any_dhq
-      - j_pros_eligible_dqx
-      - j_ph_pros_dhq
+      - ph_any_muq
+      - ph_any_dhq
+      - pros_eligible_dqx
+      - ph_pros_dhq
       - entryage_sqx
       - entrydays_dqx
-      - j_ph_pros_dqx
+      - ph_pros_dqx
       - entrydays_sqx
-      - j_pros_eligible_bq
-      - j_ph_any_bq
-      - j_ph_pros_bq
-      - j_pros_eligible_sqx
+      - pros_eligible_bq
+      - ph_any_bq
+      - ph_pros_bq
+      - pros_eligible_sqx
       - entryage_dqx
       - entryage_dhq
-      - j_ph_pros_muq
+      - ph_pros_muq
       - entrydays_muq
   pros_exit:
     Props:
       - pros_exit_id
-      - j_pros_exitdays
+      - pros_exitdays
       - mortality_exitage
       - mortality_exitdays
-      - j_pros_exitstat
-      - j_fstcan_exitage
+      - pros_exitstat
+      - fstcan_exitage
       - mortality_exitstat
-      - j_pros_exitage
-      - j_fstcan_exitdays
-      - j_fstcan_exitstat
+      - pros_exitage
+      - fstcan_exitdays
+      - fstcan_exitstat
   pros_regn:
     Props:
       - pros_regn_id
@@ -768,54 +1021,85 @@ Nodes:
   pros_screen:
     Props:
       - pros_screen_id
-      - pros_mra_stat0-5
+      - pros_mra_stat0
+      - pros_mra_stat1
+      - pros_mra_stat2
+      - pros_mra_stat3
+      - pros_mra_stat4
+      - pros_mra_stat5
       - psa_prot
-      - dre_result0-3
-      - psa_days0-5
-      - dre_days0-3
-      - biopplink0-5
-      - psa_result0-5
-      - psa_level0-5
+      - dre_result0
+      - dre_result1
+      - dre_result2
+      - dre_result3
+      - psa_days0
+      - psa_days1
+      - psa_days2
+      - psa_days3
+      - psa_days4
+      - psa_days5
+      - dre_days0
+      - dre_days1
+      - dre_days2
+      - dre_days3
+      - biopplink0
+      - biopplink1
+      - biopplink2
+      - biopplink3
+      - biopplink4
+      - biopplink5
+      - psa_result0
+      - psa_result1
+      - psa_result2
+      - psa_result3
+      - psa_result4
+      - psa_result5
+      - psa_level0
+      - psa_level1
+      - psa_level2
+      - psa_level3
+      - psa_level4
+      - psa_level5
   pros_diag:
     Props:
       - pros_diag_id
-      - j_pros_gleason_prost
-      - j_pros_gleason_source
-      - j_pros_stage_7e
-      - j_pros_summary_stage_enhanced
-      - j_intstatp_cat
-      - j_pros_is_first_dx
-      - j_pros_mets_conflict_source
-      - j_pros_mets_conflict
-      - j_pros_stage
-      - j_pros_histtype
+      - pros_gleason_prost
+      - pros_gleason_source
+      - pros_stage_7e
+      - pros_summary_stage_enhanced
+      - intstatp_cat
+      - pros_is_first_dx
+      - pros_mets_conflict_source
+      - pros_mets_conflict
+      - pros_stage
+      - pros_histtype
       - reasfollp
-      - j_pros_pathstage_7e
-      - j_pros_pathstage_t
+      - pros_pathstage_7e
+      - pros_pathstage_t
       - pros_registry_stat_cat
-      - j_pros_clinstage_m
-      - j_dx_psa_gap
-      - j_pros_stage_t
+      - pros_clinstage_m
+      - dx_psa_gap
+      - pros_stage_t
       - reasothp
-      - j_pros_grade
-      - j_pros_pathstage_n
-      - j_pros_mets_source
-      - j_pros_pathstage
-      - j_pros_clinstage_7e
-      - j_pros_clinstage
-      - j_pros_cancer
-      - j_pros_clinstage_t
-      - j_pros_stage_m
-      - j_pros_gleason
-      - j_pros_gleason_biop
-      - j_pros_pathstage_m
-      - j_pros_clinstage_n
-      - j_pros_summary_stage_raw
-      - j_pros_stage_n
+      - pros_grade
+      - pros_pathstage_n
+      - pros_mets_source
+      - pros_pathstage
+      - pros_clinstage_7e
+      - pros_clinstage
+      - pros_cancer
+      - pros_clinstage_t
+      - pros_stage_m
+      - pros_gleason
+      - pros_gleason_biop
+      - pros_pathstage_m
+      - pros_clinstage_n
+      - pros_summary_stage_raw
+      - pros_stage_n
       - reassurvp
-      - j_dx_psa
-      - j_pros_has_mets
-      - j_candxdaysp
+      - dx_psa
+      - pros_has_mets
+      - candxdaysp
       - reassympp
   pros_treat:
     Props:
@@ -835,10 +1119,19 @@ Nodes:
   pros_hist:
     Props:
       - pros_hist_id
-      - pros_fh_age
+      - vasect_f
       - pros_fh
-      - pros_fh_cnt
       - fh_cancer
+      - surg_any
+      - pros_fh_cnt
+      - surg_resection
+      - rectal_history
+      - pros_fh_age
+      - psa_history
+      - surg_age
+      - surg_biopsy
+      - vasecta
+      - surg_prostatectomy
   dhq:
     Props:
       - dhq_id
@@ -913,10 +1206,10 @@ Nodes:
       - g_icecream_reg_dhq
       - sv_oil_olive_dhq
       - dt_flav50_pelargonidin_743_dhq
-      - g_chick_bbq_j_dhq
+      - g_chick_bbq_dhq
       - g_whitemt_dhq
       - g_porkch_bak_dhq
-      - g_chick_bbq_ns_j_dhq
+      - g_chick_bbq_ns_dhq
       - sv_chick_dark_ns_dhq
       - sv_marg_veg_fat_free_dhq
       - g_hamb_br_dhq
@@ -1099,7 +1392,7 @@ Nodes:
       - g_sausage_pf_w_dhq
       - dt_alc_wine_dhq
       - sup_copper_dhq
-      - g_chick_bbq_s_j_dhq
+      - g_chick_bbq_s_dhq
       - sv_candy_choc_dhq
       - sv_tomatojce_dhq
       - sv_milk_1_not_cof_dhq
@@ -1218,7 +1511,6 @@ Nodes:
       - sv_sausage_dhq
       - sv_applesce_dhq
       - g_mayo_diet_dhq
-      - g_chick_stew_j_dhq
       - sv_marg_pot_fat_free_dhq
       - sv_cheesecake_dhq
       - g_mayo_sand_reg_dhq
@@ -1273,7 +1565,7 @@ Nodes:
       - dt_flav50_theaflavin_792_dhq
       - dt_sugar_candy_choc_dhq
       - g_butter_reg_dhq
-      - g_chick_br_s_j_dhq
+      - g_chick_br_s_dhq
       - sv_macaroni_dhq
       - sv_strawberry_dhq
       - g_hamb_br_v_dhq
@@ -1350,7 +1642,7 @@ Nodes:
       - g_marg_reg_dhq
       - g_beefrst_sand_dhq
       - dt_monofat_fish_dhq
-      - g_chick_pf_ns_j_dhq
+      - g_chick_pf_ns_dhq
       - sv_coldcut_dhq
       - sv_eggs_white_dhq
       - mped_veg_dhq
@@ -1372,14 +1664,14 @@ Nodes:
       - dt_sugar_soda_reg_dhq
       - g_pasta_ckd_cereal_rice_dhq
       - g_olives_dhq
-      - g_chick_br_ns_j_dhq
+      - g_chick_br_ns_dhq
       - g_stk_bbq_v_dhq
       - hei2015c10_sodium_dhq
       - sv_marg_bread_diet_dhq
       - sv_butter_other_reg_dhq
       - sv_beefrst_not_sand_dhq
       - hei2015c4_wholefruit_dhq
-      - g_bacon_pf_j_dhq
+      - g_bacon_pf_dhq
       - dt_fa18_3_dhq
       - dt_alc_dhq
       - g_bak_dhq
@@ -1427,7 +1719,7 @@ Nodes:
       - p_sugar_dhq
       - dt_monofat_unk_dhq
       - g_meal_repl_lqd_dhq
-      - g_chick_pf_s_j_dhq
+      - g_chick_pf_s_dhq
       - sv_marg_pancake_diet_dhq
       - sv_milk_rice_not_cof_dhq
       - sv_egg_rolls_dhq
@@ -1441,8 +1733,7 @@ Nodes:
       - sv_hamb_dhq
       - mped_added_sugar_dhq
       - mped_veg_potato_dhq
-      - g_chick_br_j_dhq
-      - g_porkch_bak_j_dhq
+      - g_chick_br_dhq
       - g_stk_br_r_dhq
       - sv_ham_lunch_reg_dhq
       - g_juice_other_dhq
@@ -1481,7 +1772,7 @@ Nodes:
       - dt_zinc_dhq
       - g_ham_lunch_reg_dhq
       - g_tuna_dhq
-      - g_porkch_pf_j_dhq
+      - g_porkch_pf_dhq
       - pe_fr_alc_dhq
       - sv_coldcut_lowfat_dhq
       - dt_sugar_pie_fruit_dhq
@@ -1512,9 +1803,7 @@ Nodes:
       - heix9_fattyacid_dhq
       - g_soda_reg_dhq
       - g_stk_dhq
-      - g_chick_bbq_dhq
       - sv_bacon_reg_dhq
-      - g_chick_bak_j_dhq
       - sv_chick_fr_light_ns_dhq
       - dt_fa18_2_csfii_dhq
       - dt_deltatoco_dhq
@@ -1539,13 +1828,11 @@ Nodes:
       - dt_flav50_gallocatechin_794_dhq
       - dt_flav50_peonidin_745_dhq
       - g_milk_rice_cer_dhq
-      - g_porkch_pf_dhq
       - sv_chick_fr_dark_ns_dhq
       - mped_alc_bev_alc_drinks18_dhq
       - g_liver_dhq
       - g_rice_fa_dhq
       - sv_pasta_salad_dhq
-      - g_porkch_br_j_dhq
       - g_porkch_pf_w_dhq
       - sv_tuna_can_water_dhq
       - dt_polyfat_fish_dhq
@@ -1665,7 +1952,6 @@ Nodes:
       - g_pickled_veg_frt_dhq
       - dt_flav50_hesperetin_759_dhq
       - dt_vite_csfii_dhq
-      - g_chick_br_dhq
       - dt_alc_beer_dhq
       - g_oil_other_dhq
       - g_quick_bread_dhq
@@ -1718,7 +2004,6 @@ Nodes:
       - mped_fruit_dhq
       - sv_milk_whole_cer_dhq
       - sv_cereal_fort_dhq
-      - g_porkch_bbq_j_dhq
       - mped_dairy_yogurt_dhq
       - p_soy_dhq
       - g_chips_olestra_dhq
@@ -1780,7 +2065,6 @@ Nodes:
       - dt_fructose_dhq
       - g_chick_stew_v_dhq
       - p_veg_dhq
-      - g_chick_pf_j_dhq
       - mped_veg_dark_green_dhq
       - g_marg_nofat_dhq
       - mped_veg_other_dhq
@@ -1837,7 +2121,6 @@ Nodes:
       - dt_sugar_cake_lowfat_dhq
       - g_notpro6_dhq
       - dt_flav50_epigallocatech_753_dhq
-      - g_bacon_pf_dhq
       - tot_b12_dhq
       - dt_sugar_tomatojce_dhq
       - dt_trans_fatty_acid_ndsr_dhq
@@ -1867,7 +2150,6 @@ Nodes:
       - mped_veg_tomato_dhq
       - sv_fruitpunch_reg_dhq
       - g_cheese_reg_dhq
-      - g_sausage_pf_j_dhq
       - sv_oil_canola_dhq
       - dt_sugar_cornbread_dhq
       - g_beer_dhq
@@ -1945,6 +2227,23 @@ Nodes:
       - p_alc_dhq
       - g_hamb_br_r_dhq
       - tot_fol_csfii_dhq
+      - g_bacon_pf_j_dhq
+      - g_chick_bak_j_dhq
+      - g_chick_bbq_j_dhq
+      - g_chick_bbq_ns_j_dhq
+      - g_chick_bbq_s_j_dhq
+      - g_chick_br_j_dhq
+      - g_chick_br_ns_j_dhq
+      - g_chick_br_s_j_dhq
+      - g_chick_pf_j_dhq
+      - g_chick_pf_ns_j_dhq
+      - g_chick_pf_s_j_dhq
+      - g_chick_stew_j_dhq
+      - g_porkch_bak_j_dhq
+      - g_porkch_bbq_j_dhq
+      - g_porkch_br_j_dhq
+      - g_porkch_pf_j_dhq
+      - g_sausage_pf_j_dhq
   dqx:
     Props:
       - dqx_id
@@ -1956,11 +2255,11 @@ Nodes:
       - p_milk_cottagech
       - p_veg_garlic
       - tot_b6_now
-      - p_veg_tomato_fres h_in
+      - p_veg_tomato_fresh_in
       - g_apricot
       - g_lett_leaf
       - hei8_meatbean
-      - dt_flav50_gallocate chin_794
+      - dt_flav50_gallocatechin_794
       - g_marg
       - g_cucum
       - mped_dairy
@@ -1969,13 +2268,13 @@ Nodes:
       - sv_soda
       - rec_cod
       - heix4_wholefruit
-      - g_process_bacnsau s
-      - hei2015c4_wholefru it
+      - g_process_bacnsaus
+      - hei2015c4_wholefruit
       - seaplden2015
       - dt_fat
       - p_cit_mel_ber
       - g_hamb_bq_v
-      - hei2015c11_refined grain
+      - hei2015c11_refinedgrain
       - g_hamb_bq_m
       - p_dairy_cottagech
       - sv_butter
@@ -1987,7 +2286,7 @@ Nodes:
       - tot_vitc_now
       - sv_whitesce
       - p_cheese
-      - dt_flav50_theaflavin _755
+      - dt_flav50_theaflavin_755
       - sv_brocc
       - carb_alc
       - p_dairy_butter
@@ -2034,7 +2333,7 @@ Nodes:
       - p_fruit_gfruit_out
       - hei2015c12_sfat
       - p_veg_celery
-      - dt_flav50_epigalloc atechin_750
+      - dt_flav50_epigallocatechin_750
       - frtden
       - hei11_sodium
       - dt_sugar_yogurt
@@ -2059,13 +2358,13 @@ Nodes:
       - heix6_totaldairy
       - tot_vitaiu_csfii
       - dt_fa18_1_ndsr
-      - dt_sugar_candy_ch oc
+      - dt_sugar_candy_choc
       - g_chick
       - sv_ham
       - p_veg_lett_head
       - g_hamb_br_w
       - fat18_3_redmt
-      - dt_sugar_cereal_no t_ckd
+      - dt_sugar_cereal_not_ckd
       - mped_m_meat
       - g_redbbq
       - sv_mixedish
@@ -2089,9 +2388,9 @@ Nodes:
       - g_milk_skim
       - sv_donut
       - sv_pancake
-      - dt_flav50_thearubigi ns_756
+      - dt_flav50_thearubigins_756
       - dt_iron
-      - mped_alc_bev_liqu or
+      - mped_alc_bev_liquor
       - sv_greens8
       - dt_deltatoco
       - sup_b6_now
@@ -2102,7 +2401,7 @@ Nodes:
       - tot_foleq_ndsr
       - p_lunch
       - g_stk_br_w
-      - dt_sugar_frt_not_cit r_dried
+      - dt_sugar_frt_not_citr_dried
       - gly_index
       - rec_bcomp
       - qxn_physicact_now
@@ -2114,7 +2413,7 @@ Nodes:
       - tot_iron_now
       - p_milk_milk_whole
       - g_gravy
-      - dt_flav50_apigenin_ 770
+      - dt_flav50_apigenin_770
       - sv_orange_in
       - p_fruit_orange_out
       - g_process
@@ -2124,12 +2423,12 @@ Nodes:
       - fat18_3_chips
       - sv_celery
       - g_cer_othcold
-      - dt_flav50_theaflavin _792
-      - mped_fruit_cit_mel_ ber
+      - dt_flav50_theaflavin_792
+      - mped_fruit_cit_mel_ber
       - sv_bacon
       - tot_fol_csfii_now
       - tot_cal
-      - dt_flav50_quercetin _789
+      - dt_flav50_quercetin_789
       - sv_applejce
       - dt_copper
       - exc_freq
@@ -2156,7 +2455,7 @@ Nodes:
       - fat18_3_pot_fried
       - hei7_milk
       - sv_stew
-      - dt_flav50_epicatech in_751
+      - dt_flav50_epicatechin_751
       - g_candy_oth
       - p_poultry
       - g_saus_pf_j
@@ -2167,7 +2466,7 @@ Nodes:
       - sup_iodine_now
       - dt_caffeine
       - g_beans
-      - p_cit_mel_ber_gfrui t_in
+      - p_cit_mel_ber_gfruit_in
       - hei2015c1_totalveg
       - g_corn_in
       - p_soy
@@ -2199,7 +2498,7 @@ Nodes:
       - mped_added_sugar
       - g_lasagna
       - p_tomato
-      - dt_flav50_hespereti n_759
+      - dt_flav50_hesperetin_759
       - g_meatlf
       - g_porkch_bq
       - sv_eggs
@@ -2215,8 +2514,8 @@ Nodes:
       - hei3_totalveg
       - sup_iodine
       - g_milk_1to2
-      - p_cheese_yogurt_fr z
-      - dt_isoflav50_biocha nina_721
+      - p_cheese_yogurt_frz
+      - dt_isoflav50_biochanina_721
       - hei2005_total_score
       - dt_vitetat_ndsr
       - sv_cauli
@@ -2226,7 +2525,7 @@ Nodes:
       - g_grpepper
       - sv_fish_oth
       - g_rednotbbq
-      - p_cheese_milk_who le
+      - p_cheese_milk_whole
       - dt_galactose
       - p_veg_grpepper
       - mped_alc_bev_beer
@@ -2235,20 +2534,20 @@ Nodes:
       - g_redpfrm
       - g_peanut
       - p_organ
-      - dt_isoflav50_formo noneti_720
+      - dt_isoflav50_formononeti_720
       - p_fruit_jce
       - mped_veg_cruc
       - p_fruit_nojce
       - dt_fa18_3
       - p_fruit
-      - dt_flav50_luteolin_7 73
+      - dt_flav50_luteolin_773
       - dt_sugar_fruitpunch
       - p_milk
       - dt_foleq_ndsr
-      - hei2015c6_totaldair y
+      - hei2015c6_totaldairy
       - dt_fiber_csfii
       - fat18_3_fish
-      - p_cit_mel_ber_gfrui t_out
+      - p_cit_mel_ber_gfruit_out
       - sv_ojce
       - g_beefrst
       - g_pancake
@@ -2260,7 +2559,7 @@ Nodes:
       - heiX1_totalveg
       - sv_pie_pump
       - meatden2010
-      - dt_flav50_malvidin_ 742
+      - dt_flav50_malvidin_742
       - sv_marg
       - dt_alc_wine
       - tot_b12
@@ -2284,7 +2583,7 @@ Nodes:
       - p_dairy_crm_sour
       - p_milk_milk_skim
       - dt_vitc
-      - mped_veg_dark_gre en
+      - mped_veg_dark_green
       - g_pie_pump
       - fat18_3_poultry
       - sup_mag_now
@@ -2337,7 +2636,7 @@ Nodes:
       - g_sausage
       - p_dairy_milk_1to2
       - dt_sugar_jelly
-      - dt_flav50_naringeni n_762
+      - dt_flav50_naringenin_762
       - dt_maltose
       - sup_vite
       - g_grain
@@ -2355,15 +2654,15 @@ Nodes:
       - dt_betacarot_eq
       - g_cracker
       - p_yogurt_milk_skim
-      - dt_flav50_catechin_ 749
+      - dt_flav50_catechin_749
       - sv_orange_out
-      - g_crucveg_exc_cab b
+      - g_crucveg_exc_cabb
       - mped_veg_tomato
       - p_yogurt_yogurt_frz
       - g_spin_cook
       - g_redpf
       - cal_dairy
-      - dt_isoflav50_genist ein_711
+      - dt_isoflav50_genistein_711
       - g_apple_out
       - g_pot_swt
       - dt_iron_redmt
@@ -2376,11 +2675,11 @@ Nodes:
       - sv_pot_fried
       - sodden
       - lyc_tomato_fresh
-      - mped_alc_bev_alc_ drinks
+      - mped_alc_bev_alc_drinks
       - g_bacnsaus
       - g_porkch_br
       - g_cabb
-      - dt_isoflav50_glycite in_712
+      - dt_isoflav50_glycitein_712
       - p_dairy
       - faratio
       - tot_vite_csfii_now
@@ -2424,7 +2723,7 @@ Nodes:
       - g_soup_veg
       - fib_citrus
       - sup_ribo
-      - dt_flav50_eriodictyo l_758
+      - dt_flav50_eriodictyol_758
       - sup_vite_now
       - p_milk_butter
       - g_yogurt
@@ -2450,7 +2749,7 @@ Nodes:
       - dt_vitd
       - p_milk_yogurt_frz
       - sv_peach_can
-      - dt_trans_fatty_acid_ ndsr
+      - dt_trans_fatty_acid_ndsr
       - p_milk_milk_cer
       - p_cheese_whitesce
       - g_stew
@@ -2465,10 +2764,10 @@ Nodes:
       - p_yogurt_crm_swt
       - g_stk_bq_v
       - sv_onion
-      - mped_m_meat_poul try_fish
+      - mped_m_meat_poultry_fish
       - tot_vitd_now
       - sv_spin_raw
-      - dt_flav50_theaflavin _791
+      - dt_flav50_theaflavin_791
       - oilden2005
       - dt_oligo
       - p_veg
@@ -2478,7 +2777,7 @@ Nodes:
       - g_tomatojce
       - g_stk_br_v
       - g_fat_veg
-      - p_cit_mel_ber_oran ge_out
+      - p_cit_mel_ber_orange_out
       - sv_squash_win
       - sup_iron_now
       - p_tomatofr
@@ -2491,7 +2790,7 @@ Nodes:
       - g_bread_wht
       - dt_cal
       - dt_selenium
-      - dt_isoflav50_daidzei n_710
+      - dt_isoflav50_daidzein_710
       - tot_fol_csfii
       - sv_coldcut
       - sup_b12_now
@@ -2501,7 +2800,7 @@ Nodes:
       - dt_fa22_1
       - sv_fruitpunch
       - g_plum_in
-      - dt_isoflav50_isoflav one_713
+      - dt_isoflav50_isoflavone_713
       - hei2_wholefruit
       - sv_cer_fib
       - sv_hamb
@@ -2529,8 +2828,8 @@ Nodes:
       - sv_othgrains
       - hei2010_total_score
       - p_fruit_straw_in
-      - dt_flav50_delphinidi n_741
-      - dt_prot_animal_dair y
+      - dt_flav50_delphinidin_741
+      - dt_prot_animal_dairy
       - sup_b12
       - tot_vitc
       - rec_multi
@@ -2538,18 +2837,18 @@ Nodes:
       - sofa_perc2010
       - sup_iron
       - sup_cal_now
-      - dt_iron_whitemt_sp ec
+      - dt_iron_whitemt_spec
       - heix3_totalfruit
       - dt_vitaiu_csfii
       - sv_tomatosce
       - heix7_totprot
-      - dt_flav50_pelargoni din_743
+      - dt_flav50_pelargonidin_743
       - g_pie_oth
       - sv_cucum
       - g_fruit
       - dt_satfat
       - g_hamb_br_v
-      - sv_crucveg_exc_ca bb
+      - sv_crucveg_exc_cabb
       - dt_fat_dairy
       - tot_b6
       - fib_wheat_own
@@ -2592,16 +2891,16 @@ Nodes:
       - g_fish_oth
       - dt_fol_csfii
       - sup_thia_now
-      - dt_flav50_peonidin_ 745
+      - dt_flav50_peonidin_745
       - g_pineapp
       - rec_thera
       - fat18_3_peanut
       - dt_fa6_0
-      - dt_flav50_petunidin _746
+      - dt_flav50_petunidin_746
       - g_raisin
       - carb_veg
       - entryage_dqx
-      - dt_sugar_bread_cor n
+      - dt_sugar_bread_corn
       - dt_betacry
       - p_dairy_crm_swt
       - dt_sugar_cookie
@@ -2619,7 +2918,7 @@ Nodes:
       - g_tuna
       - dt_fat_plant
       - p_milk_cheese
-      - p_cheese_cottagec h
+      - p_cheese_cottagech
       - hei10_satfat
       - g_butter
       - sv_tuna
@@ -2641,16 +2940,16 @@ Nodes:
       - mped_alc_bev_wine
       - sv_porkrst
       - g_hamb_pf_r
-      - g_stew_meatlf_past a_roast
+      - g_stew_meatlf_pasta_roast
       - exc_kcal
       - mped_legume
       - dt_fiber_ndsr
-      - dt_sugar_cake_coo kie_pie
+      - dt_sugar_cake_cookie_pie
       - sup_pantho
       - sofa_perc2005
       - sv_stk
       - sv_grpepper
-      - dt_isoflav50_coume strol_715
+      - dt_isoflav50_coumestrol_715
       - g_pot_oth
       - p_alc_beer
       - g_porkch
@@ -2668,13 +2967,13 @@ Nodes:
       - g_prune
       - dt_polyfat
       - g_stk
-      - hei2015c2_green_a nd_bean
-      - hei2015c5_wholegra in
+      - hei2015c2_green_and_bean
+      - hei2015c5_wholegrain
       - vegden2010
       - sup_phos
       - p_grain_wh
       - g_cheese
-      - dt_flav50_isorhamn etin_785
+      - dt_flav50_isorhamnetin_785
       - mped_m_egg
       - g_squash_sum
       - dt_fa16_1_csfii
@@ -2692,7 +2991,7 @@ Nodes:
       - g_cer_othfib
       - sv_yogurt
       - dt_lactose
-      - dt_sugar_candy_ot h
+      - dt_sugar_candy_oth
       - sv_pear_out
       - p_yogurt_cheese
       - g_rice_wht
@@ -2708,9 +3007,9 @@ Nodes:
       - sv_carrot_raw
       - dt_phos
       - mped_grain_whole
-      - heix2_green_and_b ean
+      - heix2_green_and_bean
       - dt_niac
-      - sv_tomato_fresh_o ut
+      - sv_tomato_fresh_out
       - tot_mag
       - p_milk_milk_1to2
       - sup_vite_iu
@@ -2726,7 +3025,7 @@ Nodes:
       - sv_saladdress
       - p_dairy_milk_cer
       - p_fruit_otherjce
-      - fat18_3_vegfat_see doil
+      - fat18_3_vegfat_seedoil
       - g_pizza
       - p_vegyell
       - tot_folfort_csfii
@@ -2735,7 +3034,7 @@ Nodes:
       - p_yogurt_yogurt
       - sv_bread_wht
       - sv_bread_corn
-      - tot_vitaact_ndsr_no w
+      - tot_vitaact_ndsr_now
       - g_cer_fib
       - sv_apricot
       - sv_pot_oth
@@ -2743,7 +3042,7 @@ Nodes:
       - p_dairy_yogurt
       - dt_prot_plant
       - g_biscuit
-      - dt_flav50_catechin3 _795
+      - dt_flav50_catechin3_795
       - hei2015c13_addsug
       - vegden2005
       - p_cheese_cheese
@@ -2754,7 +3053,7 @@ Nodes:
       - g_icecrm
       - sv_corn_in
       - sup_mag
-      - tot_vitetat_ndsr_no w
+      - tot_vitetat_ndsr_now
       - sv_apple_in
       - hei1_totalfruit
       - tot_zinc_now
@@ -2766,12 +3065,12 @@ Nodes:
       - dt_sucrose
       - sv_chick_df
       - sv_tomato_fresh
-      - dt_flav50_epicatech in_752
+      - dt_flav50_epicatechin_752
       - g_redbrlrm
       - pctsfat2005
       - mped_fruit
-      - p_cit_mel_ber_oran ge_in
-      - dt_flav50_theaflavin _793
+      - p_cit_mel_ber_orange_in
+      - dt_flav50_theaflavin_793
       - fat18_3_fruit
       - p_milk_icecrm
       - p_milk_whitesce
@@ -2781,12 +3080,12 @@ Nodes:
       - sv_greens
       - p_milk_yogurt
       - p_veg_onion
-      - dt_flav50_kaempfer ol_786
-      - dt_flav50_epigalloc atechin_753
+      - dt_flav50_kaempferol_786
+      - dt_flav50_epigallocatechin_753
       - g_cookie
       - sv_peach_in
       - sv_peanut
-      - hei2015c8_seaplant _prot
+      - hei2015c8_seaplant_prot
       - g_redmtv
       - g_othgrains
       - g_greens
@@ -2799,7 +3098,7 @@ Nodes:
       - dt_sugar_vegetable
       - dt_sugar_crm_swt
       - tot_ribo_now
-      - p_cheese_milk_ski m
+      - p_cheese_milk_skim
       - mped_discfat_solid
       - dt_fa18_4
       - sv_beefrst
@@ -2813,7 +3112,7 @@ Nodes:
       - g_red5
       - g_porkch_bk
       - sv_cantaloupe
-      - p_cit_mel_ber_othe rjce
+      - p_cit_mel_ber_otherjce
       - rec_vitd
       - g_brussel
       - g_tomato_fresh_in
@@ -2827,10 +3126,10 @@ Nodes:
       - p_bean
       - dt_inulin
       - dt_fat_animal_dairy
-      - dt_flav50_cyanidin_ 731
+      - dt_flav50_cyanidin_731
       - heix9_fattyacid
       - g_stk_bq_w
-      - dt_flav50_myricetin _788
+      - dt_flav50_myricetin_788
       - sup_niac
       - p_yogurt_whitesce
       - sup_copper
@@ -2838,7 +3137,7 @@ Nodes:
       - dt_theobromine
       - pctx_dt_kcal
       - tot_vitd
-      - p_veg_tomato_fres h_out
+      - p_veg_tomato_fresh_out
       - g_sugar
       - p_fruit_oth
       - tot_vitetat_ndsr
@@ -2852,14 +3151,14 @@ Nodes:
       - sv_tea
       - dt_sugar_biscuit
       - g_brocc
-      - p_yogurt_milk_whol e
+      - p_yogurt_milk_whole
       - dt_monofat
       - sv_yogurt_frz
       - mped_dairy_cheese
       - p_alc_liquor
       - hei2015c7_totprot
       - tot_copper_now
-      - p_cit_mel_ber_citru s
+      - p_cit_mel_ber_citrus
       - sv_jelly
       - sv_liver
       - sup_selen_now
@@ -2872,18 +3171,18 @@ Nodes:
       - sv_sugar
       - carb_soft_drink
       - sv_rice_wht
-      - tot_folfort_csfii_no w
+      - tot_folfort_csfii_now
       - dt_sugar_pancake
       - tot_betacarot
       - g_donut
       - dt_fiber_sol_ndsr
-      - mped_grain_nonwh ole
+      - mped_grain_nonwhole
       - g_bread_corn
       - qxn_physicact_40
       - dt_b12
       - p_fruit_fresh
       - g_whitesce
-      - dt_sugar_bread_wh t
+      - dt_sugar_bread_wht
   sqx:
     Props:
       - sqx_id
