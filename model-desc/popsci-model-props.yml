@@ -1,6 +1,13 @@
 PropDefinitions:
-#property of clinical_trial, cohort
+#property of clinical_trial
   clinical_trial_id:
+    Desc: "Node ID"
+    Src: CTOS
+    Type: string
+    Req: true
+    Private: false
+#property of clinical_trial, cohort
+  clinical_trials_gov_id:
     Desc: "Trial ID"
     Src: ClinicalTrials.gov
     Type: string
@@ -65,7 +72,7 @@ PropDefinitions:
 #property of cohort
   cohort_id:
     Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
+    Src: CTOS
     Type: string
     Req: true
     Private: false

@@ -2,6 +2,7 @@ Nodes:
   clinical_trial:
     Props:
       - clinical_trial_id
+      - clinical_trials_gov_id
       - clinical_trial_short_name
       - clinical_trial_description
       - clinical_trial_designation
@@ -13,7 +14,7 @@ Nodes:
   cohort:
     Props:
       - cohort_id
-      - clinical_trial_id
+      - clinical_trials_gov_id
       - disease
   demo:
     Props:
