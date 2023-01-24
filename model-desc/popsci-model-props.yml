@@ -7554,35 +7554,79 @@ PropDefinitions:
       - "Yes"
     Req: false
     Private: false
-#property of lung_hist
-  lung_histid:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
+#property of lung_hist, pros_hist
+  vasecta:
+    Desc: "Age at Vasectomy"
+    Src: Prostate.Registry.Dictionary.pdf
     Type: string
-    Req: true
-    Private: false
-#property of lung_hist
-  lung_fh:
-    Desc: "Family History of Lung Cancer"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "Missing"
-      - "No"
-      - "Yes, Immediate Family Member"
-      - "Possibly - Relative Or Cancer Type Not Clear"
     Req: false
     Private: false
 #property of lung_hist
   lung_fh_age:
-    Desc: "Age of Youngest Relative with Lung Cancer"
+    Desc: "Age of Youngest Relative  with Lung Cancer"
     Src: Lung.Registry.Dictionary.pdf
     Type: number
     Req: false
     Private: false
 #property of lung_hist
+  xray_history:
+    Desc: "Had a Chest X-Ray in Past 3 Years?"
+    Src: Lung.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of lung_hist, pros_hist
+  surg_age:
+    Desc: "Age at First Prostate Surgery"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of lung_hist
+  lung_fh:
+    Desc: "Family History of Lung  Cancer"
+    Src: Lung.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of lung_hist, pros_hist
+  surg_biopsy:
+    Desc: "Ever Have Biopsy of Prostate?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of lung_hist, pros_hist
+  surg_prostatectomy:
+    Desc: "Ever Had Prostatectomy for Benign Disease?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of lung_hist, pros_hist
+  surg_resection:
+    Desc: "Ever Had Transurethral Resection of Prostate?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of lung_hist, pros_hist
+  vasect_f:
+    Desc: "Had a Vasectomy?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: true
+    Private: false
+#property of lung_hist, pros_hist
+  surg_any:
+    Desc: "Ever Have Any Prostate Surgeries?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of lung_hist
   lung_fh_cnt:
-    Desc: "# of Relatives with Lung Cancer"
+    Desc: "# of Relatives with Lung  Cancer"
     Src: Lung.Registry.Dictionary.pdf
     Type: number
     Req: false
@@ -10066,22 +10110,8 @@ Cancer"
     Req: true
     Private: false
 #property of pros_hist
-  vasect_f:
-    Desc: "Had a Vasectomy?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: true
-    Private: false
-#property of pros_hist
   pros_fh:
     Desc: "Family History of Prostate  Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of pros_hist
-  surg_any:
-    Desc: "Ever Have Any Prostate Surgeries?"
     Src: Prostate.Registry.Dictionary.pdf
     Type: string
     Req: false
@@ -10091,13 +10121,6 @@ Cancer"
     Desc: "# of Relatives with Prostate Cancer"
     Src: Prostate.Registry.Dictionary.pdf
     Type: number
-    Req: false
-    Private: false
-#property of pros_hist
-  surg_resection:
-    Desc: "Ever Had Transurethral Resection of Prostate?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
     Req: false
     Private: false
 #property of pros_hist
@@ -10117,34 +10140,6 @@ Cancer"
 #property of pros_hist
   psa_history:
     Desc: "Had Blood Test for Prostate Cancer in Past 3 Years?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of pros_hist
-  surg_age:
-    Desc: "Age at First Prostate Surgery"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of pros_hist
-  surg_biopsy:
-    Desc: "Ever Have Biopsy of Prostate?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of pros_hist
-  vasecta:
-    Desc: "Age at Vasectomy"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of pros_hist
-  surg_prostatectomy:
-    Desc: "Ever Had Prostatectomy for Benign Disease?"
     Src: Prostate.Registry.Dictionary.pdf
     Type: string
     Req: false

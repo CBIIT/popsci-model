@@ -788,9 +788,16 @@ Nodes:
       - f_dthl
   lung_hist:
     Props:
-      - lung_histid
-      - lung_fh
+      - vasecta
       - lung_fh_age
+      - xray_history
+      - surg_age
+      - lung_fh
+      - surg_biopsy
+      - surg_prostatectomy
+      - surg_resection
+      - vasect_f
+      - surg_any
       - fh_cancer
       - lung_fh_cnt
   ovar_case:
