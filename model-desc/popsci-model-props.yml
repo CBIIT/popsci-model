@@ -1957,39 +1957,35 @@ PropDefinitions:
       - "Censor"
     Req: false
     Private: false
-#property of breast_exit, lung_exit, ovar_exit, pros_exit
+#property of breast_exit, colo_exit, lung_exit, ovar_exit, pros_exit
   mortality_exitdays:
     Desc: "Days Until Mortality Exit"
     Src: Prostate.Registry.Dictionary.pdf
     Type: number
     Req: false
     Private: false
-#property of breast_exit, lung_exit, ovar_exit, pros_exit
+#property of breast_exit, colo_exit, lung_exit, ovar_exit, pros_exit
   mortality_exitage:
     Desc: "Exit Age for Mortality"
     Src: Prostate.Registry.Dictionary.pdf
     Type: number
     Req: false
     Private: false
-#property of breast_exit, lung_exit, ovar_exit, pros_exit
+#property of breast_exit, colo_exit, lung_exit, ovar_exit, pros_exit
   fstcan_exitage:
     Desc: "First Cancer Incidence Exit Age"
     Src: Prostate.Registry.Dictionary.pdf
     Type: number
     Req: false
     Private: false
-#property of breast_exit, lung_exit, ovar_exit, pros_exit
+#property of breast_exit, colo_exit, lung_exit, ovar_exit, pros_exit
   mortality_exitstat:
     Desc: "Exit Status for Mortality"
     Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "Death"
-      - "Last NDI/Cutoff"
-      - "Refusal"
-      - "Other"
+    Type: string
     Req: false
     Private: false
-#property of breast_exit, lung_exit, ovar_exit, pros_exit
+#property of breast_exit, colo_exit, lung_exit, ovar_exit, pros_exit
   fstcan_exitdays:
     Desc: "Days Until First Cancer Incidence Exit"
     Src: Prostate.Registry.Dictionary.pdf
@@ -2003,20 +1999,11 @@ PropDefinitions:
     Type: number
     Req: false
     Private: false
-#property of breast_exit, lung_exit, ovar_exit, pros_exit
+#property of breast_exit, colo_exit, lung_exit, ovar_exit, pros_exit
   fstcan_exitstat:
     Desc: "First Cancer Incidence Exit Status"
     Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No Time at Risk"
-      - "Confirmed Cancer"
-      - "Confirmed In Situ/Borderline/LMP/Non-T arget Cancer"
-      - "Last Participant Contact Prior to Unconfirmed Report"
-      - "Last Participant Contact"
-      - "Death"
-      - "Date Lost, Prior to Death"
-      - "Registry Search Completeness Date"
-      - "Censor"
+    Type: string
     Req: false
     Private: false
 #property of breast_regn
@@ -2765,6 +2752,27 @@ PropDefinitions:
     Type:
       - "No"
       - "Yes"
+    Req: false
+    Private: false
+#property of colo_exit
+  colo_exitage:
+    Desc: "Colorectal Incidence Exit  Age"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of colo_exit
+  colo_exitstat:
+    Desc: "Colorectal Incidence Exit  Status"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of colo_exit
+  colo_exitdays:
+    Desc: "Days Until Colorectal  Incidence Exit"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type: number
     Req: false
     Private: false
 #property of colo_regn
@@ -6458,23 +6466,81 @@ PropDefinitions:
       - "Yes"
     Req: false
     Private: false
+#property of colo_hist, lung_hist, pros_hist
+  surg_biopsy:
+    Desc: "Ever Have Biopsy of Prostate?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of colo_hist, lung_hist, pros_hist
+  surg_resection:
+    Desc: "Ever Had Transurethral Resection of Prostate?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
 #property of colo_hist
-  colo_hist_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
+  colorect_history:
+    Desc: "Had Procedure to Examine Colon/Rectum in Past 3 Years?"
+    Src: Colorectal.Registry.Dictionary.pdf
     Type: string
     Req: true
+    Private: false
+#property of colo_hist
+  colscrn_history:
+    Desc: "Had Colonoscopy or Test for Blood in Stool In Past 3 Years?"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type: string
+    Req: true
+    Private: false
+#property of colo_hist
+  colo_fh_age:
+    Desc: "Age of Youngest Relative  with Colorectal Cancer"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type: number
+    Req: true
+    Private: false
+#property of colo_hist, lung_hist, pros_hist
+  vasect_f:
+    Desc: "Had a Vasectomy?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: true
+    Private: false
+#property of colo_hist, lung_hist, pros_hist
+  vasecta:
+    Desc: "Age at Vasectomy"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of colo_hist
+  stool_history:
+    Desc: "Had a Test for Blood in Stool in Past 3 Years?"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type: string
+    Req: true
+    Private: false
+#property of colo_hist, lung_hist, pros_hist
+  surg_age:
+    Desc: "Age at First Prostate Surgery"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
+    Req: false
     Private: false
 #property of colo_hist
   colo_fh:
     Desc: "Family History of Colorectal Cancer"
     Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "Missing"
-      - "No"
-      - "Yes, Immediate Family Member"
-      - "Possibly - Relative Or Cancer Type Not Clear"
+    Type: string
+    Req: true
+    Private: false
+#property of colo_hist, lung_hist, pros_hist
+  surg_prostatectomy:
+    Desc: "Ever Had Prostatectomy for Benign Disease?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
     Req: false
     Private: false
 #property of colo_hist
@@ -6482,13 +6548,13 @@ PropDefinitions:
     Desc: "# of Relatives with Colorectal Cancer"
     Src: Colorectal.Registry.Dictionary.pdf
     Type: number
-    Req: false
+    Req: true
     Private: false
-#property of colo_hist
-  colo_fh_age:
-    Desc: "Age of Youngest Relative with Colorectal Cancer"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type: number
+#property of colo_hist, lung_hist, pros_hist
+  surg_any:
+    Desc: "Ever Have Any Prostate Surgeries?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: string
     Req: false
     Private: false
 #property of lung_case
@@ -7554,13 +7620,6 @@ PropDefinitions:
       - "Yes"
     Req: false
     Private: false
-#property of lung_hist, pros_hist
-  vasecta:
-    Desc: "Age at Vasectomy"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
 #property of lung_hist
   lung_fh_age:
     Desc: "Age of Youngest Relative  with Lung Cancer"
@@ -7575,52 +7634,10 @@ PropDefinitions:
     Type: string
     Req: false
     Private: false
-#property of lung_hist, pros_hist
-  surg_age:
-    Desc: "Age at First Prostate Surgery"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
 #property of lung_hist
   lung_fh:
     Desc: "Family History of Lung  Cancer"
     Src: Lung.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of lung_hist, pros_hist
-  surg_biopsy:
-    Desc: "Ever Have Biopsy of Prostate?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of lung_hist, pros_hist
-  surg_prostatectomy:
-    Desc: "Ever Had Prostatectomy for Benign Disease?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of lung_hist, pros_hist
-  surg_resection:
-    Desc: "Ever Had Transurethral Resection of Prostate?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of lung_hist, pros_hist
-  vasect_f:
-    Desc: "Had a Vasectomy?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: string
-    Req: true
-    Private: false
-#property of lung_hist, pros_hist
-  surg_any:
-    Desc: "Ever Have Any Prostate Surgeries?"
-    Src: Prostate.Registry.Dictionary.pdf
     Type: string
     Req: false
     Private: false

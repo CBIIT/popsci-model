@@ -283,6 +283,17 @@ Nodes:
       - entryage_dhq
       - colo_eligible_dqx
       - entrydays_muq
+  colo_exit:
+    Props:
+      - fstcan_exitdays
+      - fstcan_exitage
+      - mortality_exitdays
+      - fstcan_exitstat
+      - colo_exitage
+      - mortality_exitage
+      - mortality_exitstat
+      - colo_exitstat
+      - colo_exitdays
   colo_regn:
     Props:
       - colo_regn_id
@@ -646,11 +657,20 @@ Nodes:
       - d_dthc
   colo_hist:
     Props:
-      - colo_hist_id
-      - colo_fh
-      - colo_fh_cnt
-      - fh_cancer
+      - surg_biopsy
+      - surg_resection
+      - colorect_history
+      - colscrn_history
       - colo_fh_age
+      - vasect_f
+      - vasecta
+      - stool_history
+      - surg_age
+      - colo_fh
+      - surg_prostatectomy
+      - colo_fh_cnt
+      - surg_any
+      - fh_cancer
   lung_case:
     Props:
       - lung_case_id
