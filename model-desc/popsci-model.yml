@@ -808,6 +808,7 @@ Nodes:
       - f_dthl
   lung_hist:
     Props:
+      - lung_hist_id
       - vasecta
       - lung_fh_age
       - xray_history

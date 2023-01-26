@@ -7621,6 +7621,13 @@ PropDefinitions:
     Req: false
     Private: false
 #property of lung_hist
+  lung_hist_id:
+    Desc: "Node ID"
+    Src: PLCO-Pilot-Data-Set
+    Type: string
+    Req: true
+    Private: false
+#property of lung_hist
   lung_fh_age:
     Desc: "Age of Youngest Relative  with Lung Cancer"
     Src: Lung.Registry.Dictionary.pdf
