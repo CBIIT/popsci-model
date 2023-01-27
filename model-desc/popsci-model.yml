@@ -831,6 +831,7 @@ Nodes:
       - ph_osumm_trial
       - ph_any_trial
       - rndyear
+      - ovary_trial_flag
   ovar_elig:
     Props:
       - ovar_elig_id
@@ -982,13 +983,18 @@ Nodes:
   ovar_hist:
     Props:
       - ovar_hist_id
-      - breast_fh_age
-      - ovarsumm_fh_cnt
-      - breast_fh_cnt
-      - ovarsumm_fh
-      - breast_fh
-      - ovarsumm_fh_age
+      - ca125_history
       - fh_cancer
+      - breast_fh_age
+      - ovarsumm_fh_age
+      - ovarsumm_fh
+      - mammo_history
+      - breast_fh
+      - papsmear_history
+      - ovarsumm_fh_cnt
+      - usound_history
+      - pelvic_history
+      - breast_fh_cnt
   pros_case:
     Props:
       - pros_case_id

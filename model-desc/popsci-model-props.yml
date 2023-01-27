@@ -2614,27 +2614,21 @@ PropDefinitions:
     Desc: "Age of Youngest Relative with Breast Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: number
-    Req: false
+    Req: true
     Private: false
 #property of breast_hist, ovar_hist
   breast_fh_cnt:
     Desc: "# of Relatives with Breast Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: number
-    Req: false
+    Req: true
     Private: false
 #property of breast_hist, ovar_hist
   breast_fh:
     Desc: "Family History of Female Breast Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "Missing"
-      - "No"
-      - "Yes, Immediate Female Family Member"
-      - "Male Relative Only"
-      - "Possibly - Relative Or Cancer Type Not Clear"
-    Req: false
+    Type: string
+    Req: true
     Private: false
 #property of colo_case
   colo_case_id:
@@ -7671,6 +7665,13 @@ PropDefinitions:
       - "Yes"
     Req: false
     Private: false
+#property of ovar_case
+  ovary_trial_flag:
+    Desc: "Had Ovaries at Baseline"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
 #property of ovar_elig
   ovar_elig_id:
     Desc: "Node ID"
@@ -8909,30 +8910,60 @@ Cancer"
     Req: true
     Private: false
 #property of ovar_hist
-  ovarsumm_fh_cnt:
-    Desc: "# of Relatives with Ovarian Summary Cancer"
+  ca125_history:
+    Desc: "Had Blood Test For Ovarian Cancer in Past 3 Years? Had Blood Test For Ovarian Cancer in Past 3 Years?"
     Src: Ovarian.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of ovar_hist
-  ovarsumm_fh:
-    Desc: "Family History of Ovarian Summary Cancer"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "Missing"
-      - "No"
-      - "Yes, Immediate Family Member"
-      - "Possibly - Relative Or Cancer Type Not Clear"
-    Req: false
+    Type: string
+    Req: true
     Private: false
 #property of ovar_hist
   ovarsumm_fh_age:
     Desc: "Age of Youngest Relative with Ovarian Summary Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: number
-    Req: false
+    Req: true
+    Private: false
+#property of ovar_hist
+  ovarsumm_fh:
+    Desc: "Family History of Ovarian Summary Cancer"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type: string
+    Req: true
+    Private: false
+#property of ovar_hist
+  mammo_history:
+    Desc: "Had Mammogram in Past 3 Years? Had Mammogram in Past 3 Years?"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type: string
+    Req: true
+    Private: false
+#property of ovar_hist
+  papsmear_history:
+    Desc: "Had Pap Smear in Past 3 Years? Had Pap Smear in Past 3 Years?"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type: string
+    Req: true
+    Private: false
+#property of ovar_hist
+  ovarsumm_fh_cnt:
+    Desc: "# of Relatives with Ovarian Summary Cancer"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type: number
+    Req: true
+    Private: false
+#property of ovar_hist
+  usound_history:
+    Desc: "Had Ultrasound/Scan of the Ovaries In Past 3 Years? Had Ultrasound/Scan of the Ovaries In Past 3 Years?"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type: string
+    Req: true
+    Private: false
+#property of ovar_hist
+  pelvic_history:
+    Desc: "Had Pelvic Exam in Past 3 Years? Had Pelvic Exam in Past 3 Years?"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type: string
+    Req: true
     Private: false
 #property of pros_case
   pros_case_id:
