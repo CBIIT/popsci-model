@@ -1701,6 +1701,15 @@ PropDefinitions:
     Type: number
     Req: false
     Private: false
+#property of breast_case, colo_case, lung_case, ovar_case, pros_case
+  biosp_f:
+    Desc: "Has Biospecimen"
+    Src: plco_biosp_f
+    Type:
+      - "Yes"
+      - "No"
+    Req: false
+    Private: false
 #property of breast_elig
   breast_elig_id:
     Desc: "Node ID"

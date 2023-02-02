@@ -154,6 +154,7 @@ Nodes:
       - ph_breast_trial
       - ph_any_trial
       - rndyear
+      - biosp_f
   breast_elig:
     Props:
       - breast_elig_id
@@ -255,6 +256,7 @@ Nodes:
       - ph_colo_trial
       - ph_any_trial
       - rndyear
+      - biosp_f
   colo_elig:
     Props:
       - colo_elig_id
@@ -681,6 +683,7 @@ Nodes:
       - ph_first_cancer
       - ph_any_trial
       - rndyear
+      - biosp_f
   lung_elig:
     Props:
       - lung_elig_id
@@ -832,6 +835,7 @@ Nodes:
       - ph_any_trial
       - rndyear
       - ovary_trial_flag
+      - biosp_f
   ovar_elig:
     Props:
       - ovar_elig_id
@@ -1005,6 +1009,7 @@ Nodes:
       - ph_pros_trial
       - ph_any_trial
       - rndyear
+      - biosp_f
   pros_elig:
     Props:
       - pros_elig_id
