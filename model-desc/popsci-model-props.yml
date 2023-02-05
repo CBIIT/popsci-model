@@ -396,11 +396,7 @@ PropDefinitions:
       - "No Form"
       - "Missing"
       - "Not Applicable"
-      - "Lung"
-      - "Colon"
-      - "Ovarian"
-      - "Peritoneal"
-      - "Fallopian Tube"
+      - "Prostate"
       - "Pancreas"
       - "Melanoma of the Skin"
       - "Bladder"
@@ -410,32 +406,41 @@ PropDefinitions:
       - "Glioma"
       - "Renal"
       - "Thyroid"
+      - "Lung"
       - "Head and Neck"
       - "Liver"
-      - "Upper-Gastrointestinal"
-      - "Biliary"
       - "Small Intestine"
       - "Colon: Appendix"
       - "Colon: Large Intestine, NOS"
       - "Anus, Anal Canal, and Anorectum"
       - "Retroperitoneum"
       - "Peritoneum, Omentum and Mesentary"
+      - "Other Digestive Organs"
       - "Lung and Bronchus"
       - "Pleura"
       - "Trachea, Mediastinum and Other Resp Organs"
+      - "Upper-Gastrointestinal"
       - "Bones and Joints"
+      - "Biliary"
       - "Soft Tissue including Heart"
+      - "Male Breast"
       - "Other Non-Epithelial Skin"
       - "Cervix Uteri"
       - "Vagina"
       - "Vulva"
       - "Other Female Genital Organs"
+      - "Testis"
+      - "Penis"
+      - "Other Male Genital Organs"
       - "Ureter"
       - "Other Urinary Organs"
+      - "Colon"
       - "Eye and Orbit"
       - "Other Endocrine including Thymus"
       - "Miscellaneous"
       - "In situ, benign or unknown behavior neoplasm"
+      - "Ovarian"
+      - "Peritoneal"
       - "Septicemia"
       - "Other Infectious and Parasitic Diseases"
       - "Diabetes Mellitus"
@@ -454,6 +459,7 @@ PropDefinitions:
       - "Congenital Anomalies"
       - "Symptoms, Signs and Ill-Defined Conditions"
       - "Other death"
+      - "Fallopian Tube"
       - "Unnatural Death"
       - "All other endocrine and metabolic diseases and immunity disorders"
       - "All other diseases of blood and blood-forming organs"
@@ -477,9 +483,7 @@ PropDefinitions:
       - "No Form"
       - "Missing"
       - "Not Dead"
-      - "Lung"
-      - "Colorectal"
-      - "Ovarian, Peritoneal, and Fallopian Tube"
+      - "Prostate"
       - "Pancreas"
       - "Melanoma of the Skin"
       - "Bladder"
@@ -489,10 +493,14 @@ PropDefinitions:
       - "Glioma"
       - "Renal"
       - "Thyroid"
+      - "Lung"
       - "Head and Neck"
       - "Liver"
       - "Upper-Gastrointestinal"
       - "Biliary"
+      - "Male Breast"
+      - "Colorectal"
+      - "Ovarian, Peritoneal, and Fallopian Tube"
       - "Other Cancer"
       - "Not Cancer"
     Req: false
@@ -505,9 +513,7 @@ PropDefinitions:
       - "No Form"
       - "Missing"
       - "Not Dead"
-      - "Lung"
-      - "Colorectal"
-      - "Ovarian, Peritoneal, and Fallopian Tube"
+      - "Prostate"
       - "Pancreas"
       - "Melanoma of the Skin"
       - "Bladder"
@@ -517,10 +523,14 @@ PropDefinitions:
       - "Glioma"
       - "Renal"
       - "Thyroid"
+      - "Lung"
       - "Head and Neck"
       - "Liver"
       - "Upper-Gastrointestinal"
       - "Biliary"
+      - "Male Breast"
+      - "Colorectal"
+      - "Ovarian, Peritoneal, and Fallopian Tube"
       - "Other Cancer"
       - "Not Cancer"
     Req: false
@@ -542,22 +552,23 @@ PropDefinitions:
       - "No Form"
       - "Missing"
       - "Not applicable"
-      - "Lung"
-      - "Colorectal"
-      - "Ovarian"
-      - "Peritoneal"
-      - "Fallopian Tube"
+      - "Prostate"
       - "Non-PLCO Neoplasms"
+      - "Accident"
+      - "Other"
+      - "Lung"
       - "Ischemic Heart Disease"
+      - "Colorectal"
       - "Cerebrovascular Accident"
+      - "Ovarian"
       - "Other Circulatory Disease"
+      - "Peritoneal"
       - "Respiratory Illness"
+      - "Fallopian Tube"
       - "Digestive Disease"
       - "Infectious Disease"
       - "Endocrine, Nutritional and Metabolic Diseases, and Immunity Disorders"
       - "Diseases of the Nervous System"
-      - "Accident"
-      - "Other"
     Req: false
     Private: false
 #property of mort
@@ -575,22 +586,23 @@ PropDefinitions:
       - "No Form"
       - "Missing"
       - "Not applicable"
-      - "Lung"
-      - "Colorectal"
-      - "Ovarian"
-      - "Peritoneal"
-      - "Fallopian Tube"
+      - "Prostate"
       - "Non-PLCO Neoplasms"
+      - "Accident"
+      - "Other"
+      - "Lung"
       - "Ischemic Heart Disease"
+      - "Colorectal"
       - "Cerebrovascular Accident"
+      - "Ovarian"
       - "Other Circulatory Disease"
+      - "Peritoneal"
       - "Respiratory Illness"
+      - "Fallopian Tube"
       - "Digestive Disease"
       - "Infectious Disease"
       - "Endocrine, Nutritional and Metabolic Diseases, and Immunity Disorders"
       - "Diseases of the Nervous System"
-      - "Accident"
-      - "Other"
     Req: false
     Private: false
 #property of mort
@@ -601,11 +613,7 @@ PropDefinitions:
       - "No Form"
       - "Missing"
       - "Not Applicable"
-      - "Lung"
-      - "Colon"
-      - "Ovarian"
-      - "Peritoneal"
-      - "Fallopian Tube"
+      - "Prostate"
       - "Pancreas"
       - "Melanoma of the Skin"
       - "Bladder"
@@ -615,32 +623,41 @@ PropDefinitions:
       - "Glioma"
       - "Renal"
       - "Thyroid"
+      - "Lung"
       - "Head and Neck"
       - "Liver"
-      - "Upper-Gastrointestinal"
-      - "Biliary"
       - "Small Intestine"
       - "Colon: Appendix"
       - "Colon: Large Intestine, NOS"
       - "Anus, Anal Canal, and Anorectum"
       - "Retroperitoneum"
       - "Peritoneum, Omentum and Mesentary"
+      - "Other Digestive Organs"
       - "Lung and Bronchus"
       - "Pleura"
       - "Trachea, Mediastinum and Other Resp Organs"
+      - "Upper-Gastrointestinal"
       - "Bones and Joints"
+      - "Biliary"
       - "Soft Tissue including Heart"
+      - "Male Breast"
       - "Other Non-Epithelial Skin"
       - "Cervix Uteri"
       - "Vagina"
       - "Vulva"
       - "Other Female Genital Organs"
+      - "Testis"
+      - "Penis"
+      - "Other Male Genital Organs"
       - "Ureter"
       - "Other Urinary Organs"
+      - "Colon"
       - "Eye and Orbit"
       - "Other Endocrine including Thymus"
       - "Miscellaneous"
       - "In situ, benign or unknown behavior neoplasm"
+      - "Ovarian"
+      - "Peritoneal"
       - "Septicemia"
       - "Other Infectious and Parasitic Diseases"
       - "Diabetes Mellitus"
@@ -659,6 +676,7 @@ PropDefinitions:
       - "Congenital Anomalies"
       - "Symptoms, Signs and Ill-Defined Conditions"
       - "Other death"
+      - "Fallopian Tube"
       - "Unnatural Death"
       - "All other endocrine and metabolic diseases and immunity disorders"
       - "All other diseases of blood and blood-forming organs"
@@ -738,7 +756,7 @@ PropDefinitions:
   cig_stop:
     Desc: "# of Years Since Stopped Smoking Cigarettes"
     Src: All dictionaries
-    Type: number
+    Type: string
     Req: false
     Private: false
 #property of risk
@@ -1629,19 +1647,18 @@ PropDefinitions:
     Type:
       - "Missing"
       - "No Personal History of Cancer"
-      - "Adrenal Glands"
-      - "Bladder"
-      - "Bone"
-      - "Brain"
-      - "Breast"
+      - "Abdomen"
       - "Digestive System"
       - "Esophagus"
+      - "Fallopian Tubes"
+      - "Female Genital, Unspec"
       - "Hodgkins Disease"
       - "Intestine"
       - "Ill Defined Back, Hip, Hand"
       - "Kidney"
       - "Larynx"
       - "Leukemia"
+      - "Adrenal Glands"
       - "Liver"
       - "Lung"
       - "Lymph Nodes"
@@ -1649,29 +1666,39 @@ PropDefinitions:
       - "Melanoma"
       - "Mouth"
       - "Non-Hodgkin's Lymphoma"
+      - "Ovarian"
       - "Pancreas"
+      - "Bladder"
       - "Peritoneum"
       - "Prostate"
       - "Skin"
       - "Stomach"
       - "Testicular"
       - "Thyroid"
+      - "Uterus"
+      - "Vagina"
+      - "Bone"
       - "Endocrine Glands"
+      - "Endometrium"
       - "Eye"
       - "Gallbladder"
       - "Hematopoetic"
       - "Kaposi's Sarcoma"
+      - "Brain"
       - "Multiple Myeloma"
       - "Nasopharynx, Nasal Cavity, Sinuses"
       - "Penis"
       - "Spinal Cord and Cranial Nerves"
+      - "Spleen"
+      - "Breast"
       - "Ureter Urinary Glands"
       - "Urinary Tract"
+      - "Cervical and Uterine"
+      - "Cervical"
       - "Colorectal"
       - "Multiple Non-PLCO Cancers"
       - "Other"
       - "Don't Know"
-      - "Not Ascertained"
     Req: false
     Private: false
 #property of breast_case
@@ -1774,7 +1801,7 @@ PropDefinitions:
       - "No Form"
       - "No"
       - "Yes"
-      - "Unknown - BQ History Unknown and No Cancer History from Another Source"
+      - "Unknown"
     Req: false
     Private: false
 #property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
@@ -1843,7 +1870,7 @@ PropDefinitions:
       - "No Form"
       - "No"
       - "Yes"
-      - "_Unknown - BQ History Unknown and No Cancer History from Another Source_"
+      - "Unknown"
     Req: false
     Private: false
 #property of breast_elig
@@ -2623,21 +2650,21 @@ PropDefinitions:
     Desc: "Age of Youngest Relative with Breast Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: number
-    Req: true
+    Req: false
     Private: false
 #property of breast_hist, ovar_hist
   breast_fh_cnt:
     Desc: "# of Relatives with Breast Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: number
-    Req: true
+    Req: false
     Private: false
 #property of breast_hist, ovar_hist
   breast_fh:
     Desc: "Family History of Female Breast Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of colo_case
   colo_case_id:
@@ -6488,28 +6515,28 @@ PropDefinitions:
     Desc: "Had Procedure to Examine Colon/Rectum in Past 3 Years?"
     Src: Colorectal.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of colo_hist
   colscrn_history:
     Desc: "Had Colonoscopy or Test for Blood in Stool In Past 3 Years?"
     Src: Colorectal.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of colo_hist
   colo_fh_age:
     Desc: "Age of Youngest Relative  with Colorectal Cancer"
     Src: Colorectal.Registry.Dictionary.pdf
     Type: number
-    Req: true
+    Req: false
     Private: false
 #property of colo_hist, lung_hist, pros_hist
   vasect_f:
     Desc: "Had a Vasectomy?"
     Src: Prostate.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of colo_hist, lung_hist, pros_hist
   vasecta:
@@ -6523,7 +6550,7 @@ PropDefinitions:
     Desc: "Had a Test for Blood in Stool in Past 3 Years?"
     Src: Colorectal.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of colo_hist, lung_hist, pros_hist
   surg_age:
@@ -6537,7 +6564,7 @@ PropDefinitions:
     Desc: "Family History of Colorectal Cancer"
     Src: Colorectal.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of colo_hist, lung_hist, pros_hist
   surg_prostatectomy:
@@ -6551,7 +6578,7 @@ PropDefinitions:
     Desc: "# of Relatives with Colorectal Cancer"
     Src: Colorectal.Registry.Dictionary.pdf
     Type: number
-    Req: true
+    Req: false
     Private: false
 #property of colo_hist, lung_hist, pros_hist
   surg_any:
@@ -7170,7 +7197,7 @@ PropDefinitions:
       - "Grade Cannot Be Assessed (GX)"
       - "Well Differentiated (G1)"
       - "Moderately Differentiated (G2)"
-      - "Poorly Differentiated (G3) 5=Undifferentiated (G4)"
+      - "Poorly Differentiated (G3)"
       - "Undifferentiated (G4)"
       - "Not Available"
     Req: false
@@ -8577,10 +8604,12 @@ Status"
       - "T1c"
       - "T2"
       - "T2a"
-      - "T2b 230=T2c"
+      - "T2b"
+      - "T2c"
       - "T3"
       - "T3a"
-      - "T3b 330=T3c"
+      - "T3b"
+      - "T3c"
       - "TX"
     Req: false
     Private: false
@@ -8789,6 +8818,7 @@ Status"
       - "Fallopian Tube"
       - "Ovarian Low Malignancy Potential Tumor"
       - "Peritoneal Low Malignancy Potential Tumor"
+      - "No Value Assigned"
     Req: false
     Private: false
 #property of ovar_diag
@@ -8923,56 +8953,56 @@ Cancer"
     Desc: "Had Blood Test For Ovarian Cancer in Past 3 Years? Had Blood Test For Ovarian Cancer in Past 3 Years?"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of ovar_hist
   ovarsumm_fh_age:
     Desc: "Age of Youngest Relative with Ovarian Summary Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: number
-    Req: true
+    Req: false
     Private: false
 #property of ovar_hist
   ovarsumm_fh:
     Desc: "Family History of Ovarian Summary Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of ovar_hist
   mammo_history:
     Desc: "Had Mammogram in Past 3 Years? Had Mammogram in Past 3 Years?"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of ovar_hist
   papsmear_history:
     Desc: "Had Pap Smear in Past 3 Years? Had Pap Smear in Past 3 Years?"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of ovar_hist
   ovarsumm_fh_cnt:
     Desc: "# of Relatives with Ovarian Summary Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: number
-    Req: true
+    Req: false
     Private: false
 #property of ovar_hist
   usound_history:
     Desc: "Had Ultrasound/Scan of the Ovaries In Past 3 Years? Had Ultrasound/Scan of the Ovaries In Past 3 Years?"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of ovar_hist
   pelvic_history:
     Desc: "Had Pelvic Exam in Past 3 Years? Had Pelvic Exam in Past 3 Years?"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: string
-    Req: true
+    Req: false
     Private: false
 #property of pros_case
   pros_case_id:
@@ -9230,7 +9260,8 @@ Cancer"
       - "Abnormal, Suspicious"
       - "Abnormal, Non-Suspicious"
       - "Inadequate Screen"
-      - "Not Done, Expected 9=Not Done, Not Expected"
+      - "Not Done, Expected"
+      - "Not Done, Not Expected"
     Req: false
     Private: false
 #property of pros_screen
@@ -9243,7 +9274,8 @@ Cancer"
       - "Abnormal, Suspicious"
       - "Abnormal, Non-Suspicious"
       - "Inadequate Screen"
-      - "Not Done, Expected 9=Not Done, Not Expected"
+      - "Not Done, Expected"
+      - "Not Done, Not Expected"
     Req: false
     Private: false
 #property of pros_screen
@@ -9256,7 +9288,8 @@ Cancer"
       - "Abnormal, Suspicious"
       - "Abnormal, Non-Suspicious"
       - "Inadequate Screen"
-      - "Not Done, Expected 9=Not Done, Not Expected"
+      - "Not Done, Expected"
+      - "Not Done, Not Expected"
     Req: false
     Private: false
 #property of pros_screen
@@ -9269,7 +9302,8 @@ Cancer"
       - "Abnormal, Suspicious"
       - "Abnormal, Non-Suspicious"
       - "Inadequate Screen"
-      - "Not Done, Expected 9=Not Done, Not Expected"
+      - "Not Done, Expected"
+      - "Not Done, Not Expected"
     Req: false
     Private: false
 #property of pros_screen
