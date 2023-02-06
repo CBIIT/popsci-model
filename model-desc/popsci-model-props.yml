@@ -88,6 +88,13 @@ PropDefinitions:
       - "Breast Cancer"
     Req: false
     Private: false
+#property of cohort
+  cohort_description:
+    Desc: "Cohort  Description"
+    Src: ClinicalTrials.gov
+    Type: string
+    Req: false
+    Private: false
 #property of demo
   demo_id:
     Desc: "Node ID"

@@ -16,6 +16,7 @@ Nodes:
       - cohort_id
       - clinical_trials_gov_id
       - disease
+      - cohort_description
   demo:
     Props:
       - demo_id
