@@ -888,7 +888,7 @@ PropDefinitions:
   cig_years:
     Desc: "Duration Smoked Cigarettes"
     Src: All dictionaries
-    Type: number
+    Type: string
     Req: false
     Private: false
 #property of nsaid_use
@@ -1354,6 +1354,7 @@ PropDefinitions:
       - "No Form"
       - "Not Answered"
       - "No"
+      - "Yes"
     Req: false
     Private: false
 #property of fem_health_cond
@@ -1426,6 +1427,7 @@ PropDefinitions:
       - "6-9 Years"
       - "4-5 Years"
       - "2-3 Years"
+      - "< 1 Year"
     Req: false
     Private: false
 #property of fem_health_cond
@@ -1544,9 +1546,9 @@ PropDefinitions:
       - "Not Answered"
       - "Not Applicable"
       - "<30"
-      - "30-39"
+      - "39"
       - "40-49"
-      - "50-59"
+      - "59"
       - "60-69"
       - "70+"
     Req: false
@@ -1571,9 +1573,9 @@ PropDefinitions:
       - "Not Answered"
       - "Not Applicable"
       - "<30"
-      - "30-39"
+      - "39"
       - "40-49"
-      - "50-59"
+      - "59"
       - "60-69"
       - "70+"
     Req: false
@@ -1706,6 +1708,7 @@ PropDefinitions:
       - "Multiple Non-PLCO Cancers"
       - "Other"
       - "Don't Know"
+      - "Not Ascertained"
     Req: false
     Private: false
 #property of breast_case
@@ -2790,6 +2793,13 @@ PropDefinitions:
       - "No"
       - "Yes"
     Req: false
+    Private: false
+#property of colo_exit
+  colo_exit_id:
+    Desc: "Node ID"
+    Src: PLCO-Pilot-Data-Set
+    Type: string
+    Req: true
     Private: false
 #property of colo_exit
   colo_exitage:

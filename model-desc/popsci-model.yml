@@ -288,6 +288,7 @@ Nodes:
       - entrydays_muq
   colo_exit:
     Props:
+      - colo_exit_id
       - fstcan_exitdays
       - fstcan_exitage
       - mortality_exitdays
