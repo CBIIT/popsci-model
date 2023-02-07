@@ -95,6 +95,27 @@ PropDefinitions:
     Type: string
     Req: false
     Private: false
+#property of cohort
+  cohort_title:
+    Desc: "A Title for the Cohort"
+    Src: ClinicalTrials.gov
+    Type: string
+    Req: false
+    Private: false
+#property of cohort
+  start_date:
+    Desc: "The Actual Start Date"
+    Src: ClinicalTrials.gov
+    Type: string
+    Req: false
+    Private: false
+#property of cohort
+  completion_date:
+    Desc: "The Actual Completion Date"
+    Src: ClinicalTrials.gov
+    Type: string
+    Req: false
+    Private: false
 #property of demo
   demo_id:
     Desc: "Node ID"
@@ -1519,9 +1540,10 @@ PropDefinitions:
       - "Not Answered"
       - "Not Applicable"
       - "<30"
-      - "30-39"
+      - "39"
       - "40-49"
       - "50-59"
+      - "59"
       - "60-69"
       - "70+"
     Req: false
@@ -1548,6 +1570,7 @@ PropDefinitions:
       - "<30"
       - "39"
       - "40-49"
+      - "50-59"
       - "59"
       - "60-69"
       - "70+"
@@ -1575,6 +1598,7 @@ PropDefinitions:
       - "<30"
       - "39"
       - "40-49"
+      - "50-59"
       - "59"
       - "60-69"
       - "70+"
@@ -1745,6 +1769,81 @@ PropDefinitions:
     Type:
       - "Yes"
       - "No"
+    Req: false
+    Private: false
+#property of breast_case, colo_case, lung_case, ovar_case, pros_case
+  plco_dx:
+    Desc: "Diagnosed Cancer Type"
+    Src: plco_dx
+    Type:
+      - "N/A"
+      - "Abdomen"
+      - "Adrenal glands"
+      - "Bladder"
+      - "Bone"
+      - "Brain"
+      - "Breast"
+      - "Cervix"
+      - "Diaphragm and connective tissue of thorax"
+      - "Digestive system, other and unspecified"
+      - "Esophagus"
+      - "Falopian tubes"
+      - "Female genital, other and unspecified"
+      - "Hodgkins disease"
+      - "Intestine"
+      - "Ill-defined sites"
+      - "Kidney and renal pelvis"
+      - "Larynx"
+      - "Leukemia"
+      - "Liver"
+      - "Lung"
+      - "Lymph nodes"
+      - "Male genital, other and unspecified"
+      - "Melanoma"
+      - "Lip, oral cavity, pharynx"
+      - "Non-Hodgkin's lymphoma"
+      - "Ovary"
+      - "Pancreas"
+      - "Peritoneum"
+      - "Prostate"
+      - "Skin"
+      - "Stomach"
+      - "Testis"
+      - "Thyroid"
+      - "Uterus"
+      - "Vagina"
+      - "Anus and anal canal"
+      - "Connective, subcutaneous, and other soft tissues and peripheral nervous system"
+      - "Endocrine glands"
+      - "Endometrium"
+      - "Eye"
+      - "Gallbladder"
+      - "Heart, mediastinum, and pleura"
+      - "Hematopoietic and reticulendothelial systems"
+      - "Kaposi's sarcoma"
+      - "Meninges"
+      - "Multiple myeloma"
+      - "Nasopharynx, nasal cavity, middle ear, and sinuses"
+      - "Pelvis"
+      - "Penis"
+      - "Respiratory system"
+      - "Spinal cord and cranial nerves"
+      - "Spleen"
+      - "Thymus"
+      - "Trachea"
+      - "Ureter, urinary organs"
+      - "Colorectum"
+      - "Other Cancer"
+      - "Other"
+      - "Don't know"
+      - "Not ascertained"
+    Req: false
+    Private: false
+#property of breast_case, colo_case, lung_case, ovar_case, pros_case
+  plco_dx_age:
+    Desc: "Age at Diagnosis"
+    Src: plco_dx
+    Type: number
     Req: false
     Private: false
 #property of breast_elig

@@ -17,6 +17,9 @@ Nodes:
       - clinical_trials_gov_id
       - disease
       - cohort_description
+      - cohort_title
+      - start_date
+      - completion_date
   demo:
     Props:
       - demo_id
@@ -156,6 +159,8 @@ Nodes:
       - ph_any_trial
       - rndyear
       - biosp_f
+      - plco_dx
+      - plco_dx_age
   breast_elig:
     Props:
       - breast_elig_id
@@ -258,6 +263,8 @@ Nodes:
       - ph_any_trial
       - rndyear
       - biosp_f
+      - plco_dx
+      - plco_dx_age
   colo_elig:
     Props:
       - colo_elig_id
@@ -686,6 +693,8 @@ Nodes:
       - ph_any_trial
       - rndyear
       - biosp_f
+      - plco_dx
+      - plco_dx_age
   lung_elig:
     Props:
       - lung_elig_id
@@ -838,6 +847,8 @@ Nodes:
       - rndyear
       - ovary_trial_flag
       - biosp_f
+      - plco_dx
+      - plco_dx_age
   ovar_elig:
     Props:
       - ovar_elig_id
@@ -1012,6 +1023,8 @@ Nodes:
       - ph_any_trial
       - rndyear
       - biosp_f
+      - plco_dx
+      - plco_dx_age
   pros_elig:
     Props:
       - pros_elig_id
