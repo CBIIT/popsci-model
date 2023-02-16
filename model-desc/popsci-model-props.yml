@@ -7320,13 +7320,6 @@ PropDefinitions:
       - "N2"
       - "N3"
       - "NX"
-      - "Missing data"
-      - "Not Applicable"
-      - "N0"
-      - "N1"
-      - "N2"
-      - "N3"
-      - "NX"
     Req: false
     Private: false
 #property of lung_diag
@@ -7442,13 +7435,6 @@ PropDefinitions:
     Desc: "Lung Stage M Component Lung Stage M Component"
     Src: Lung.Registry.Dictionary.pdf
     Type:
-      - "Missing data"
-      - "Not Applicable"
-      - "M0"
-      - "M1"
-      - "M1a"
-      - "M1b"
-      - "MX"
       - "Missing data"
       - "Not Applicable"
       - "M0"
@@ -7658,8 +7644,6 @@ PropDefinitions:
       - "Chemotherapy and radiation without resection"
       - "Chemotherapy only"
       - "Has treatment form, no known treatment with curative intent"
-      - "MDF for the treatment form"
-      - "Non-small cell lung cancer"
       - "MDF for the treatment form"
       - "Non-small cell lung cancer"
     Req: false
@@ -8713,8 +8697,6 @@ Status"
       - "Not Applicable"
       - "No Conflict"
       - "Trial Pathologic Mets and Registry Pathologic Non-Mets"
-      - "Trial Pathologic Non-Mets and Registry Pathologic Mets"
-      - "Trial Pathologic Non-Mets and Registry Pathologic Mets"
       - "Trial Pathologic Non-Mets and Registry Pathologic Mets"
       - "Registry Pathologic Non-Mets and Registry Other Mets"
       - "Trial Other Non-Mets and Registry Pathologic Mets"
