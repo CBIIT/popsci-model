@@ -7793,9 +7793,7 @@ PropDefinitions:
     Private: false
 #property of ovar_elig
   ph_osumm_dhq:
-    Desc: "DHQ Analysis Personal 
-History of Ovarian/Ft/Pt 
-Cancer"
+    Desc: "DHQ Analysis Personal History of Ovarian/Ft/Pt Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Form"
@@ -7805,9 +7803,7 @@ Cancer"
     Private: false
 #property of ovar_elig
   ph_osumm_bq:
-    Desc: "BQ Analysis Personal 
-History of Ovarian/Ft/Pt 
-Cancer"
+    Desc: "BQ Analysis Personal History of Ovarian/Ft/Pt Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Form"
@@ -7853,8 +7849,7 @@ Cancer"
     Private: false
 #property of ovar_elig
   ph_osumm_dqx:
-    Desc: "DQX Analysis Personal History of Ovarian/Ft/Pt 
-Cancer"
+    Desc: "DQX Analysis Personal History of Ovarian/Ft/Pt Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Form"
@@ -7873,9 +7868,7 @@ Cancer"
     Private: false
 #property of ovar_elig
   ph_osumm_sqx:
-    Desc: "SQX Analysis Personal 
-History of Ovarian/Ft/Pt 
-Cancer"
+    Desc: "SQX Analysis Personal History of Ovarian/Ft/Pt Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Form"
@@ -7885,9 +7878,7 @@ Cancer"
     Private: false
 #property of ovar_elig
   ph_osumm_muq:
-    Desc: "MUQ Analysis Personal 
-History of Ovarian/Ft/Pt 
-Cancer"
+    Desc: "MUQ Analysis Personal History of Ovarian/Ft/Pt Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Form"
@@ -8149,9 +8140,7 @@ Cancer"
     Private: false
 #property of ovar_screen
   biopolink0:
-    Desc: "Was There A Biopsy 
-Linked To The T0 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T0 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8160,9 +8149,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   biopolink1:
-    Desc: "Was There A Biopsy 
-Linked To The T1 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T1 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8171,9 +8158,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   biopolink2:
-    Desc: "Was There A Biopsy 
-Linked To The T2 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T2 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8182,9 +8167,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   biopolink3:
-    Desc: "Was There A Biopsy 
-Linked To The T3 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T3 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8193,9 +8176,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   biopolink4:
-    Desc: "Was There A Biopsy 
-Linked To The T4 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T4 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8204,9 +8185,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   biopolink5:
-    Desc: "Was There A Biopsy 
-Linked To The T5 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T5 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8323,9 +8302,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   ovar_mra_stat0:
-    Desc: "Was There A Biopsy 
-Linked To The T0 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T0 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8336,9 +8313,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   ovar_mra_stat1:
-    Desc: "Was There A Biopsy 
-Linked To The T1 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T1 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8349,9 +8324,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   ovar_mra_stat2:
-    Desc: "Was There A Biopsy 
-Linked To The T2 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T2 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8362,9 +8335,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   ovar_mra_stat3:
-    Desc: "Was There A Biopsy 
-Linked To The T3 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T3 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8375,9 +8346,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   ovar_mra_stat4:
-    Desc: "Was There A Biopsy 
-Linked To The T4 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T4 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8388,9 +8357,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_screen
   ovar_mra_stat5:
-    Desc: "Was There A Biopsy 
-Linked To The T5 
-Ovarian Screen"
+    Desc: "Was There A Biopsy Linked To The T5 Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8516,8 +8483,7 @@ Ovarian Screen"
     Private: false
 #property of ovar_diag
   reassymposumm:
-    Desc: "Reason For Initial Clinical Assessment: 
-Symptomatic (Cancer Year)?"
+    Desc: "Reason For Initial Clinical Assessment: Symptomatic (Cancer Year)?"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Form"
@@ -8550,9 +8516,7 @@ Symptomatic (Cancer Year)?"
     Private: false
 #property of ovar_diag
   intstatosumm_cat:
-    Desc: "Ovarian Cancer Screen 
-Detected vs. Interval 
-Status"
+    Desc: "Ovarian Cancer Screen Detected vs. Interval Status"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "Not Applicable"
@@ -8939,9 +8903,7 @@ Status"
     Private: false
 #property of ovar_treat
   primary_trtosumm_days:
-    Desc: "Days Until Primary 
-Treatment for Ovarian 
-Cancer"
+    Desc: "Days Until Primary Treatment for Ovarian Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: number
     Req: false
