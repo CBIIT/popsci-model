@@ -409,6 +409,905 @@ PropDefinitions:
     Type: number
     Req: false
     Private: false
+#property of case
+  case_id:
+    Desc: "Case ID"
+    Src: PLCO-Pilot-Data-Set
+    Type: string
+    Req: true
+    Private: false
+#property of case
+  arm:
+    Desc: "Randomization Arm"
+    Src: All Dictionaries
+    Type:
+      - "Intervention"
+      - "Control"
+    Req: false
+    Private: false
+#property of case
+  center:
+    Desc: "Study Center"
+    Src: All Dictionaries
+    Type:
+      - "University of Colorado"
+      - "Georgetown University"
+      - "Pacific Health Research and Education Institute (Honolulu)"
+      - "Henry Ford Health System"
+      - "University of Minnesota"
+      - "Washington University in St Louis"
+      - "University of Pittsburgh"
+      - "University of Utah"
+      - "Marshfield Clinic Research Foundation"
+      - "University of Alabama at Birmingham"
+    Req: false
+    Private: false
+#property of case
+  rndyear:
+    Desc: "Year Of Randomization"
+    Src: Breast.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of case
+  biosp_f:
+    Desc: "Has Biospecimen"
+    Src: plco_biosp_flag file from Eric
+    Type:
+      - "Yes"
+      - "No"
+    Req: false
+    Private: false
+#property of case
+  plco_dx:
+    Desc: "Diagnosed Cancer Type"
+    Src: plco_dx file from Eric
+    Type:
+      - "N/A"
+      - "Abdomen"
+      - "Adrenal glands"
+      - "Bladder"
+      - "Bone"
+      - "Brain"
+      - "Breast"
+      - "Cervix"
+      - "Diaphragm and connective tissue of thorax"
+      - "Digestive system, other and unspecified"
+      - "Esophagus"
+      - "Falopian tubes"
+      - "Female genital, other and unspecified"
+      - "Hodgkins disease"
+      - "Intestine"
+      - "Ill-defined sites"
+      - "Kidney and renal pelvis"
+      - "Larynx"
+      - "Leukemia"
+      - "Liver"
+      - "Lung"
+      - "Lymph nodes"
+      - "Male genital, other and unspecified"
+      - "Melanoma"
+      - "Lip, oral cavity, pharynx"
+      - "Non-Hodgkin's lymphoma"
+      - "Ovary"
+      - "Pancreas"
+      - "Peritoneum"
+      - "Prostate"
+      - "Skin"
+      - "Stomach"
+      - "Testis"
+      - "Thyroid"
+      - "Uterus"
+      - "Vagina"
+      - "Anus and anal canal"
+      - "Connective, subcutaneous, and other soft tissues and peripheral nervous system"
+      - "Endocrine glands"
+      - "Endometrium"
+      - "Eye"
+      - "Gallbladder"
+      - "Heart, mediastinum, and pleura"
+      - "Hematopoietic and reticulendothelial systems"
+      - "Kaposi's sarcoma"
+      - "Meninges"
+      - "Multiple myeloma"
+      - "Nasopharynx, nasal cavity, middle ear, and sinuses"
+      - "Pelvis"
+      - "Penis"
+      - "Respiratory system"
+      - "Spinal cord and cranial nerves"
+      - "Spleen"
+      - "Thymus"
+      - "Trachea"
+      - "Ureter, urinary organs"
+      - "Colorectum"
+      - "Other Cancer"
+      - "Other"
+      - "Don't know"
+      - "Not ascertained"
+    Req: false
+    Private: false
+#property of case
+  plco_dx_age:
+    Desc: "Age at Diagnosis"
+    Src: plco_dx file from Eric
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig
+  breast_elig_id:
+    Desc: "Node ID"
+    Src: PLCO-Pilot-Data-Set
+    Type: string
+    Req: true
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  ph_first_cancer_age:
+    Desc: "Age at First Personal History of Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  ph_first_cancer:
+    Desc: "First Personal History of Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "Missing"
+      - "No Personal History of Cancer"
+      - "Abdomen"
+      - "Digestive System"
+      - "Esophagus"
+      - "Fallopian Tubes"
+      - "Female Genital, Unspec"
+      - "Hodgkins Disease"
+      - "Intestine"
+      - "Ill Defined Back, Hip, Hand"
+      - "Kidney"
+      - "Larynx"
+      - "Leukemia"
+      - "Adrenal Glands"
+      - "Liver"
+      - "Lung"
+      - "Lymph Nodes"
+      - "Male Genital, Unspec"
+      - "Melanoma"
+      - "Mouth"
+      - "Non-Hodgkin's Lymphoma"
+      - "Ovarian"
+      - "Pancreas"
+      - "Bladder"
+      - "Peritoneum"
+      - "Prostate"
+      - "Skin"
+      - "Stomach"
+      - "Testicular"
+      - "Thyroid"
+      - "Uterus"
+      - "Vagina"
+      - "Bone"
+      - "Endocrine Glands"
+      - "Endometrium"
+      - "Eye"
+      - "Gallbladder"
+      - "Hematopoetic"
+      - "Kaposi's Sarcoma"
+      - "Brain"
+      - "Multiple Myeloma"
+      - "Nasopharynx, Nasal Cavity, Sinuses"
+      - "Penis"
+      - "Spinal Cord and Cranial Nerves"
+      - "Spleen"
+      - "Breast"
+      - "Ureter Urinary Glands"
+      - "Urinary Tract"
+      - "Cervical and Uterine"
+      - "Cervical"
+      - "Colorectal"
+      - "Multiple Non-PLCO Cancers"
+      - "Other"
+      - "Don't Know"
+      - "Not Ascertained"
+    Req: false
+    Private: false
+#property of breast_elig
+  ph_breast_trial:
+    Desc: "Trial Personal History of Breast Cancer"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  ph_any_trial:
+    Desc: "Trial Personal History of Any Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig
+  breast_eligible_dhq:
+    Desc: "DHQ Breast Analysis: Eligible?"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dqx
+  ph_any_dqx:
+    Desc: "PersonalHistoryofAnyCancerbeforeDQXEntry"
+    Src: DQX.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of breast_elig
+  ph_breast_sqx:
+    Desc: "SQX Analysis Personal History of Breast Cancer"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig
+  ph_breast_dqx:
+    Desc: "DQX Analysis Personal History of Breast Cancer"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig
+  ph_breast_dhq:
+    Desc: "DHQ Analysis Personal History of Breast Cancer"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, sqx
+  ph_any_sqx:
+    Desc: "Personal History of Any Cancer Before SQX Entry"
+    Src: SQX.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  entryage_muq:
+    Desc: "MUQ Analysis Entry Age"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig
+  ph_breast_bq:
+    Desc: "BQ Analysis Personal History of Breast Cancer"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig
+  breast_eligible_bq:
+    Desc: "BQ Breast Analysis: Eligible?"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  entryage_bq:
+    Desc: "BQ Analysis Entry Age"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  entrydays_bq:
+    Desc: "BQ Analysis Entry Days"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dhq
+  entrydays_dhq:
+    Desc: "Days Until DHQ Entry Date"
+    Src: DHQ.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  ph_any_muq:
+    Desc: "MUQ Analysis Personal History of Any Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dhq
+  ph_any_dhq:
+    Desc: "Personal History of Any Cancer before DHQ Entry"
+    Src: DHQ.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig
+  breast_eligible_sqx:
+    Desc: "SQX Breast Analysis: Eligible?"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of breast_elig
+  ph_breast_muq:
+    Desc: "MUQ Analysis Personal_x000D_History of Breast Cancer History of Breast Cancer"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig
+  breast_eligible_dqx:
+    Desc: "DQX Breast Analysis: Eligible?"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  entryage_sqx:
+    Desc: "SQX Analysis Entry Age"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dqx
+  entrydays_dqx:
+    Desc: "DaysUntilDQXEntryDate"
+    Src: DQX.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  entrydays_sqx:
+    Desc: "SQX Analysis Entry Days"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  ph_any_bq:
+    Desc: "BQ Analysis Personal History of Any Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+      - "Unknown"
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dqx
+  entryage_dqx:
+    Desc: "DQXEntryAge"
+    Src: DQX.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dhq
+  entryage_dhq:
+    Desc: "DHQ Entry Age"
+    Src: DHQ.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
+  entrydays_muq:
+    Desc: "MUQ Analysis Entry Days"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type: number
+    Req: false
+    Private: false
+#property of breast_elig
+  breast_eligible_muq:
+    Desc: "MUQ Breast Analysis:_x000D_Eligible? Eligible?"
+    Src: Breast.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  colo_elig_id:
+    Desc: "Node ID"
+    Src: PLCO-Pilot-Data-Set
+    Type: string
+    Req: true
+    Private: false
+#property of colo_elig
+  ph_colo_trial:
+    Desc: "Trial Personal History of Colorectal Cancer"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  ph_colo_dqx:
+    Desc: "DQX Analysis Personal History of Colorectal Cancer"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  ph_colo_muq:
+    Desc: "MUQ Analysis Personal History of Colorectal Cancer"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  colo_eligible_dhq:
+    Desc: "DHQ Colorectal Analysis: Eligible?"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  ph_colo_sqx:
+    Desc: "SQX Analysis Personal History of Colorectal Cancer"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  colo_eligible_bq:
+    Desc: "BQ Colorectal Analysis: Eligible?"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  colo_eligible_muq:
+    Desc: "MUQ Colorectal Analysis: Eligible?"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  ph_colo_bq:
+    Desc: "BQ Analysis Personal History of Colorectal Cancer"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  ph_colo_dhq:
+    Desc: "DHQ Analysis Personal History of Colorectal Cancer"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  colo_eligible_sqx:
+    Desc: "SQX Colorectal Analysis: Eligible?"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of colo_elig
+  colo_eligible_dqx:
+    Desc: "DQX Colorectal Analysis: Eligible?"
+    Src: Colorectal.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  lung_elig_id:
+    Desc: "Node ID"
+    Src: PLCO-Pilot-Data-Set
+    Type: string
+    Req: true
+    Private: false
+#property of lung_elig
+  ph_lung_trial:
+    Desc: "Trial Personal History of Lung Cancer"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  lung_eligible_dhq:
+    Desc: "DHQ Lung Analysis: Eligible?"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  ph_lung_bq:
+    Desc: "BQ Analysis Personal History of Lung Cancer"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  ph_lung_dqx:
+    Desc: "DQX Analysis Personal History of Lung Cancer"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  lung_eligible_sqx:
+    Desc: "SQX Lung Analysis: Eligible?"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  lung_eligible_bq:
+    Desc: "BQ Lung Analysis: Eligible?"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  ph_lung_dhq:
+    Desc: "DHQ Analysis Personal History of Lung Cancer"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  ph_lung_sqx:
+    Desc: "SQX Analysis Personal History of Lung Cancer"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  ph_lung_muq:
+    Desc: "MUQ Analysis Personal History of Lung Cancer"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  lung_eligible_muq:
+    Desc: "MUQ Lung Analysis: Eligible?"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of lung_elig
+  lung_eligible_dqx:
+    Desc: "DQX Lung Analysis: Eligible?"
+    Src: Lung.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  ovar_elig_id:
+    Desc: "Node ID"
+    Src: PLCO-Pilot-Data-Set
+    Type: string
+    Req: true
+    Private: false
+#property of ovar_elig
+  ovary_trial_flag:
+    Desc: "Had Ovaries at Baseline"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type: string
+    Req: false
+    Private: false
+#property of ovar_elig
+  ph_osumm_trial:
+    Desc: "Trial Personal History of Ovarian/Ft/Pt Cancer"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  ph_osumm_dhq:
+    Desc: "DHQ Analysis Personal 
+History of Ovarian/Ft/Pt 
+Cancer"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  ph_osumm_bq:
+    Desc: "BQ Analysis Personal 
+History of Ovarian/Ft/Pt 
+Cancer"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  osumm_eligible_sqx:
+    Desc: "SQX Ovarian/Ft/Pt Analysis: Eligible?"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  osumm_eligible_bq:
+    Desc: "BQ Ovarian/Ft/Pt Analysis: Eligible?"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  osumm_eligible_muq:
+    Desc: "MUQ Ovarian/Ft/Pt Analysis: Eligible?"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  osumm_eligible_dqx:
+    Desc: "DQX Ovarian/Ft/Pt Analysis: Eligible?"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  ph_osumm_dqx:
+    Desc: "DQX Analysis Personal History of Ovarian/Ft/Pt 
+Cancer"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  osumm_eligible_dhq:
+    Desc: "DHQ Ovarian/Ft/Pt Analysis: Eligible?"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  ph_osumm_sqx:
+    Desc: "SQX Analysis Personal 
+History of Ovarian/Ft/Pt 
+Cancer"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of ovar_elig
+  ph_osumm_muq:
+    Desc: "MUQ Analysis Personal 
+History of Ovarian/Ft/Pt 
+Cancer"
+    Src: Ovarian.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  pros_elig_id:
+    Desc: "Node ID"
+    Src: PLCO-Pilot-Data-Set
+    Type: string
+    Req: true
+    Private: false
+#property of pros_elig
+  ph_pros_trial:
+    Desc: "Trial Personal History of Prostate Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  pros_eligible_dhq:
+    Desc: "DHQ Prostate Analysis: Eligible?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  ph_pros_sqx:
+    Desc: "SQX Analysis Personal History of Prostate Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  pros_eligible_muq:
+    Desc: "MUQ Prostate Analysis: Eligible?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  pros_eligible_dqx:
+    Desc: "DQX Prostate Analysis: Eligible?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  ph_pros_dhq:
+    Desc: "DHQ Analysis Personal History of Prostate Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  ph_pros_dqx:
+    Desc: "DQX Analysis Personal History of Prostate Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  pros_eligible_bq:
+    Desc: "BQ Prostate Analysis: Eligible?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  ph_pros_bq:
+    Desc: "BQ Analysis Personal History of Prostate Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  pros_eligible_sqx:
+    Desc: "SQX Prostate Analysis: Eligible?"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
+#property of pros_elig
+  ph_pros_muq:
+    Desc: "MUQ Analysis Personal History of Prostate Cancer"
+    Src: Prostate.Registry.Dictionary.pdf
+    Type:
+      - "No Form"
+      - "No"
+      - "Yes"
+    Req: false
+    Private: false
 #property of mort
   mort_id:
     Desc: "Node ID"
@@ -1636,445 +2535,6 @@ PropDefinitions:
     Type: number
     Req: false
     Private: false
-#property of breast_case
-  breast_case_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
-    Type: string
-    Req: true
-    Private: false
-#property of breast_case, colo_case, lung_case, ovar_case, pros_case
-  arm:
-    Desc: "Randomization Arm"
-    Src: All Dictionaries
-    Type:
-      - "Intervention"
-      - "Control"
-    Req: false
-    Private: false
-#property of breast_case, colo_case, lung_case, ovar_case, pros_case
-  center:
-    Desc: "Study Center"
-    Src: All Dictionaries
-    Type:
-      - "University of Colorado"
-      - "Georgetown University"
-      - "Pacific Health Research and Education Institute (Honolulu)"
-      - "Henry Ford Health System"
-      - "University of Minnesota"
-      - "Washington University in St Louis"
-      - "University of Pittsburgh"
-      - "University of Utah"
-      - "Marshfield Clinic Research Foundation"
-      - "University of Alabama at Birmingham"
-    Req: false
-    Private: false
-#property of breast_case, colo_case, lung_case, ovar_case, pros_case
-  ph_first_cancer_age:
-    Desc: "Age at First Personal History of Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_case, colo_case, lung_case, ovar_case, pros_case
-  ph_first_cancer:
-    Desc: "First Personal History of Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "Missing"
-      - "No Personal History of Cancer"
-      - "Abdomen"
-      - "Digestive System"
-      - "Esophagus"
-      - "Fallopian Tubes"
-      - "Female Genital, Unspec"
-      - "Hodgkins Disease"
-      - "Intestine"
-      - "Ill Defined Back, Hip, Hand"
-      - "Kidney"
-      - "Larynx"
-      - "Leukemia"
-      - "Adrenal Glands"
-      - "Liver"
-      - "Lung"
-      - "Lymph Nodes"
-      - "Male Genital, Unspec"
-      - "Melanoma"
-      - "Mouth"
-      - "Non-Hodgkin's Lymphoma"
-      - "Ovarian"
-      - "Pancreas"
-      - "Bladder"
-      - "Peritoneum"
-      - "Prostate"
-      - "Skin"
-      - "Stomach"
-      - "Testicular"
-      - "Thyroid"
-      - "Uterus"
-      - "Vagina"
-      - "Bone"
-      - "Endocrine Glands"
-      - "Endometrium"
-      - "Eye"
-      - "Gallbladder"
-      - "Hematopoetic"
-      - "Kaposi's Sarcoma"
-      - "Brain"
-      - "Multiple Myeloma"
-      - "Nasopharynx, Nasal Cavity, Sinuses"
-      - "Penis"
-      - "Spinal Cord and Cranial Nerves"
-      - "Spleen"
-      - "Breast"
-      - "Ureter Urinary Glands"
-      - "Urinary Tract"
-      - "Cervical and Uterine"
-      - "Cervical"
-      - "Colorectal"
-      - "Multiple Non-PLCO Cancers"
-      - "Other"
-      - "Don't Know"
-      - "Not Ascertained"
-    Req: false
-    Private: false
-#property of breast_case
-  ph_breast_trial:
-    Desc: "Trial Personal History of Breast Cancer"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_case, colo_case, lung_case, ovar_case, pros_case
-  ph_any_trial:
-    Desc: "Trial Personal History of Any Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_case, colo_case, lung_case, ovar_case, pros_case
-  rndyear:
-    Desc: "Year Of Randomization"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_case, colo_case, lung_case, ovar_case, pros_case
-  biosp_f:
-    Desc: "Has Biospecimen"
-    Src: plco_biosp_f
-    Type:
-      - "Yes"
-      - "No"
-    Req: false
-    Private: false
-#property of breast_case, colo_case, lung_case, ovar_case, pros_case
-  plco_dx:
-    Desc: "Diagnosed Cancer Type"
-    Src: plco_dx
-    Type:
-      - "N/A"
-      - "Abdomen"
-      - "Adrenal glands"
-      - "Bladder"
-      - "Bone"
-      - "Brain"
-      - "Breast"
-      - "Cervix"
-      - "Diaphragm and connective tissue of thorax"
-      - "Digestive system, other and unspecified"
-      - "Esophagus"
-      - "Falopian tubes"
-      - "Female genital, other and unspecified"
-      - "Hodgkins disease"
-      - "Intestine"
-      - "Ill-defined sites"
-      - "Kidney and renal pelvis"
-      - "Larynx"
-      - "Leukemia"
-      - "Liver"
-      - "Lung"
-      - "Lymph nodes"
-      - "Male genital, other and unspecified"
-      - "Melanoma"
-      - "Lip, oral cavity, pharynx"
-      - "Non-Hodgkin's lymphoma"
-      - "Ovary"
-      - "Pancreas"
-      - "Peritoneum"
-      - "Prostate"
-      - "Skin"
-      - "Stomach"
-      - "Testis"
-      - "Thyroid"
-      - "Uterus"
-      - "Vagina"
-      - "Anus and anal canal"
-      - "Connective, subcutaneous, and other soft tissues and peripheral nervous system"
-      - "Endocrine glands"
-      - "Endometrium"
-      - "Eye"
-      - "Gallbladder"
-      - "Heart, mediastinum, and pleura"
-      - "Hematopoietic and reticulendothelial systems"
-      - "Kaposi's sarcoma"
-      - "Meninges"
-      - "Multiple myeloma"
-      - "Nasopharynx, nasal cavity, middle ear, and sinuses"
-      - "Pelvis"
-      - "Penis"
-      - "Respiratory system"
-      - "Spinal cord and cranial nerves"
-      - "Spleen"
-      - "Thymus"
-      - "Trachea"
-      - "Ureter, urinary organs"
-      - "Colorectum"
-      - "Other Cancer"
-      - "Other"
-      - "Don't know"
-      - "Not ascertained"
-    Req: false
-    Private: false
-#property of breast_case, colo_case, lung_case, ovar_case, pros_case
-  plco_dx_age:
-    Desc: "Age at Diagnosis"
-    Src: plco_dx
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig
-  breast_elig_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
-    Type: string
-    Req: true
-    Private: false
-#property of breast_elig
-  breast_eligible_dhq:
-    Desc: "DHQ Breast Analysis: Eligible?"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dqx
-  ph_any_dqx:
-    Desc: "PersonalHistoryofAnyCancerbeforeDQXEntry"
-    Src: DQX.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of breast_elig
-  ph_breast_sqx:
-    Desc: "SQX Analysis Personal History of Breast Cancer"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_elig
-  ph_breast_dqx:
-    Desc: "DQX Analysis Personal History of Breast Cancer"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_elig
-  ph_breast_dhq:
-    Desc: "DHQ Analysis Personal History of Breast Cancer"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, sqx
-  ph_any_sqx:
-    Desc: "Personal History of Any Cancer Before SQX Entry"
-    Src: SQX.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
-  entryage_muq:
-    Desc: "MUQ Analysis Entry Age"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig
-  ph_breast_bq:
-    Desc: "BQ Analysis Personal History of Breast Cancer"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_elig
-  breast_eligible_bq:
-    Desc: "BQ Breast Analysis: Eligible?"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
-  entryage_bq:
-    Desc: "BQ Analysis Entry Age"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
-  entrydays_bq:
-    Desc: "BQ Analysis Entry Days"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dhq
-  entrydays_dhq:
-    Desc: "Days Until DHQ Entry Date"
-    Src: DHQ.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
-  ph_any_muq:
-    Desc: "MUQ Analysis Personal History of Any Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dhq
-  ph_any_dhq:
-    Desc: "Personal History of Any Cancer before DHQ Entry"
-    Src: DHQ.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_elig
-  breast_eligible_sqx:
-    Desc: "SQX Breast Analysis: Eligible?"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of breast_elig
-  ph_breast_muq:
-    Desc: "MUQ Analysis Personal_x000D_History of Breast Cancer History of Breast Cancer"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_elig
-  breast_eligible_dqx:
-    Desc: "DQX Breast Analysis: Eligible?"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
-  entryage_sqx:
-    Desc: "SQX Analysis Entry Age"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dqx
-  entrydays_dqx:
-    Desc: "DaysUntilDQXEntryDate"
-    Src: DQX.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
-  entrydays_sqx:
-    Desc: "SQX Analysis Entry Days"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
-  ph_any_bq:
-    Desc: "BQ Analysis Personal History of Any Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-      - "Unknown"
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dqx
-  entryage_dqx:
-    Desc: "DQXEntryAge"
-    Src: DQX.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig, dhq
-  entryage_dhq:
-    Desc: "DHQ Entry Age"
-    Src: DHQ.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig, colo_elig, lung_elig, ovar_elig, pros_elig
-  entrydays_muq:
-    Desc: "MUQ Analysis Entry Days"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type: number
-    Req: false
-    Private: false
-#property of breast_elig
-  breast_eligible_muq:
-    Desc: "MUQ Breast Analysis:_x000D_Eligible? Eligible?"
-    Src: Breast.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
 #property of breast_exit
   breast_exit_id:
     Desc: "Node ID"
@@ -2776,124 +3236,6 @@ PropDefinitions:
     Desc: "Family History of Female Breast Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: string
-    Req: false
-    Private: false
-#property of colo_case
-  colo_case_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
-    Type: string
-    Req: true
-    Private: false
-#property of colo_case
-  ph_colo_trial:
-    Desc: "Trial Personal History of Colorectal Cancer"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of colo_elig
-  colo_elig_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
-    Type: string
-    Req: true
-    Private: false
-#property of colo_elig
-  ph_colo_dqx:
-    Desc: "DQX Analysis Personal History of Colorectal Cancer"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of colo_elig
-  ph_colo_muq:
-    Desc: "MUQ Analysis Personal History of Colorectal Cancer"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of colo_elig
-  colo_eligible_dhq:
-    Desc: "DHQ Colorectal Analysis: Eligible?"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of colo_elig
-  ph_colo_sqx:
-    Desc: "SQX Analysis Personal History of Colorectal Cancer"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of colo_elig
-  colo_eligible_bq:
-    Desc: "BQ Colorectal Analysis: Eligible?"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of colo_elig
-  colo_eligible_muq:
-    Desc: "MUQ Colorectal Analysis: Eligible?"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of colo_elig
-  ph_colo_bq:
-    Desc: "BQ Analysis Personal History of Colorectal Cancer"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of colo_elig
-  ph_colo_dhq:
-    Desc: "DHQ Analysis Personal History of Colorectal Cancer"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of colo_elig
-  colo_eligible_sqx:
-    Desc: "SQX Colorectal Analysis: Eligible?"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of colo_elig
-  colo_eligible_dqx:
-    Desc: "DQX Colorectal Analysis: Eligible?"
-    Src: Colorectal.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
     Req: false
     Private: false
 #property of colo_exit
@@ -6706,124 +7048,6 @@ PropDefinitions:
     Type: string
     Req: false
     Private: false
-#property of lung_case
-  lung_case_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
-    Type: string
-    Req: true
-    Private: false
-#property of lung_case
-  ph_lung_trial:
-    Desc: "Trial Personal History of Lung Cancer"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of lung_elig
-  lung_elig_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
-    Type: string
-    Req: true
-    Private: false
-#property of lung_elig
-  lung_eligible_dhq:
-    Desc: "DHQ Lung Analysis: Eligible?"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of lung_elig
-  ph_lung_bq:
-    Desc: "BQ Analysis Personal History of Lung Cancer"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of lung_elig
-  ph_lung_dqx:
-    Desc: "DQX Analysis Personal History of Lung Cancer"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of lung_elig
-  lung_eligible_sqx:
-    Desc: "SQX Lung Analysis: Eligible?"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of lung_elig
-  lung_eligible_bq:
-    Desc: "BQ Lung Analysis: Eligible?"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of lung_elig
-  ph_lung_dhq:
-    Desc: "DHQ Analysis Personal History of Lung Cancer"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of lung_elig
-  ph_lung_sqx:
-    Desc: "SQX Analysis Personal History of Lung Cancer"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of lung_elig
-  ph_lung_muq:
-    Desc: "MUQ Analysis Personal History of Lung Cancer"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of lung_elig
-  lung_eligible_muq:
-    Desc: "MUQ Lung Analysis: Eligible?"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of lung_elig
-  lung_eligible_dqx:
-    Desc: "DQX Lung Analysis: Eligible?"
-    Src: Lung.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
 #property of lung_exit
   lung_exit_id:
     Desc: "Node ID"
@@ -7320,6 +7544,13 @@ PropDefinitions:
       - "N2"
       - "N3"
       - "NX"
+      - "Missing data"
+      - "Not Applicable"
+      - "N0"
+      - "N1"
+      - "N2"
+      - "N3"
+      - "NX"
     Req: false
     Private: false
 #property of lung_diag
@@ -7435,6 +7666,13 @@ PropDefinitions:
     Desc: "Lung Stage M Component Lung Stage M Component"
     Src: Lung.Registry.Dictionary.pdf
     Type:
+      - "Missing data"
+      - "Not Applicable"
+      - "M0"
+      - "M1"
+      - "M1a"
+      - "M1b"
+      - "MX"
       - "Missing data"
       - "Not Applicable"
       - "M0"
@@ -7646,6 +7884,8 @@ PropDefinitions:
       - "Has treatment form, no known treatment with curative intent"
       - "MDF for the treatment form"
       - "Non-small cell lung cancer"
+      - "MDF for the treatment form"
+      - "Non-small cell lung cancer"
     Req: false
     Private: false
 #property of lung_treat
@@ -7759,131 +7999,6 @@ PropDefinitions:
     Desc: "# of Relatives with Lung  Cancer"
     Src: Lung.Registry.Dictionary.pdf
     Type: number
-    Req: false
-    Private: false
-#property of ovar_case
-  ovar_case_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
-    Type: string
-    Req: true
-    Private: false
-#property of ovar_case
-  ph_osumm_trial:
-    Desc: "Trial Personal History of Ovarian/Ft/Pt Cancer"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of ovar_case
-  ovary_trial_flag:
-    Desc: "Had Ovaries at Baseline"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type: string
-    Req: false
-    Private: false
-#property of ovar_elig
-  ovar_elig_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
-    Type: string
-    Req: true
-    Private: false
-#property of ovar_elig
-  ph_osumm_dhq:
-    Desc: "DHQ Analysis Personal History of Ovarian/Ft/Pt Cancer"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of ovar_elig
-  ph_osumm_bq:
-    Desc: "BQ Analysis Personal History of Ovarian/Ft/Pt Cancer"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of ovar_elig
-  osumm_eligible_sqx:
-    Desc: "SQX Ovarian/Ft/Pt Analysis: Eligible?"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of ovar_elig
-  osumm_eligible_bq:
-    Desc: "BQ Ovarian/Ft/Pt Analysis: Eligible?"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of ovar_elig
-  osumm_eligible_muq:
-    Desc: "MUQ Ovarian/Ft/Pt Analysis: Eligible?"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of ovar_elig
-  osumm_eligible_dqx:
-    Desc: "DQX Ovarian/Ft/Pt Analysis: Eligible?"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of ovar_elig
-  ph_osumm_dqx:
-    Desc: "DQX Analysis Personal History of Ovarian/Ft/Pt Cancer"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of ovar_elig
-  osumm_eligible_dhq:
-    Desc: "DHQ Ovarian/Ft/Pt Analysis: Eligible?"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of ovar_elig
-  ph_osumm_sqx:
-    Desc: "SQX Analysis Personal History of Ovarian/Ft/Pt Cancer"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of ovar_elig
-  ph_osumm_muq:
-    Desc: "MUQ Analysis Personal History of Ovarian/Ft/Pt Cancer"
-    Src: Ovarian.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
     Req: false
     Private: false
 #property of ovar_exit
@@ -8140,7 +8255,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   biopolink0:
-    Desc: "Was There A Biopsy Linked To The T0 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T0 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8149,7 +8266,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   biopolink1:
-    Desc: "Was There A Biopsy Linked To The T1 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T1 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8158,7 +8277,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   biopolink2:
-    Desc: "Was There A Biopsy Linked To The T2 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T2 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8167,7 +8288,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   biopolink3:
-    Desc: "Was There A Biopsy Linked To The T3 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T3 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8176,7 +8299,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   biopolink4:
-    Desc: "Was There A Biopsy Linked To The T4 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T4 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8185,7 +8310,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   biopolink5:
-    Desc: "Was There A Biopsy Linked To The T5 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T5 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -8302,7 +8429,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   ovar_mra_stat0:
-    Desc: "Was There A Biopsy Linked To The T0 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T0 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8313,7 +8442,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   ovar_mra_stat1:
-    Desc: "Was There A Biopsy Linked To The T1 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T1 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8324,7 +8455,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   ovar_mra_stat2:
-    Desc: "Was There A Biopsy Linked To The T2 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T2 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8335,7 +8468,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   ovar_mra_stat3:
-    Desc: "Was There A Biopsy Linked To The T3 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T3 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8346,7 +8481,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   ovar_mra_stat4:
-    Desc: "Was There A Biopsy Linked To The T4 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T4 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8357,7 +8494,9 @@ PropDefinitions:
     Private: false
 #property of ovar_screen
   ovar_mra_stat5:
-    Desc: "Was There A Biopsy Linked To The T5 Ovarian Screen"
+    Desc: "Was There A Biopsy 
+Linked To The T5 
+Ovarian Screen"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Positive Screen"
@@ -8483,7 +8622,8 @@ PropDefinitions:
     Private: false
 #property of ovar_diag
   reassymposumm:
-    Desc: "Reason For Initial Clinical Assessment: Symptomatic (Cancer Year)?"
+    Desc: "Reason For Initial Clinical Assessment: 
+Symptomatic (Cancer Year)?"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No Form"
@@ -8516,7 +8656,9 @@ PropDefinitions:
     Private: false
 #property of ovar_diag
   intstatosumm_cat:
-    Desc: "Ovarian Cancer Screen Detected vs. Interval Status"
+    Desc: "Ovarian Cancer Screen 
+Detected vs. Interval 
+Status"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "Not Applicable"
@@ -8661,6 +8803,8 @@ PropDefinitions:
       - "Not Applicable"
       - "No Conflict"
       - "Trial Pathologic Mets and Registry Pathologic Non-Mets"
+      - "Trial Pathologic Non-Mets and Registry Pathologic Mets"
+      - "Trial Pathologic Non-Mets and Registry Pathologic Mets"
       - "Trial Pathologic Non-Mets and Registry Pathologic Mets"
       - "Registry Pathologic Non-Mets and Registry Other Mets"
       - "Trial Other Non-Mets and Registry Pathologic Mets"
@@ -8903,7 +9047,9 @@ PropDefinitions:
     Private: false
 #property of ovar_treat
   primary_trtosumm_days:
-    Desc: "Days Until Primary Treatment for Ovarian Cancer"
+    Desc: "Days Until Primary 
+Treatment for Ovarian 
+Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: number
     Req: false
@@ -9038,124 +9184,6 @@ PropDefinitions:
     Desc: "Had Pelvic Exam in Past 3 Years? Had Pelvic Exam in Past 3 Years?"
     Src: Ovarian.Registry.Dictionary.pdf
     Type: string
-    Req: false
-    Private: false
-#property of pros_case
-  pros_case_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
-    Type: string
-    Req: true
-    Private: false
-#property of pros_case
-  ph_pros_trial:
-    Desc: "Trial Personal History of Prostate Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of pros_elig
-  pros_elig_id:
-    Desc: "Node ID"
-    Src: PLCO-Pilot-Data-Set
-    Type: string
-    Req: true
-    Private: false
-#property of pros_elig
-  pros_eligible_dhq:
-    Desc: "DHQ Prostate Analysis: Eligible?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of pros_elig
-  ph_pros_sqx:
-    Desc: "SQX Analysis Personal History of Prostate Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of pros_elig
-  pros_eligible_muq:
-    Desc: "MUQ Prostate Analysis: Eligible?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of pros_elig
-  pros_eligible_dqx:
-    Desc: "DQX Prostate Analysis: Eligible?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of pros_elig
-  ph_pros_dhq:
-    Desc: "DHQ Analysis Personal History of Prostate Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of pros_elig
-  ph_pros_dqx:
-    Desc: "DQX Analysis Personal History of Prostate Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of pros_elig
-  pros_eligible_bq:
-    Desc: "BQ Prostate Analysis: Eligible?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of pros_elig
-  ph_pros_bq:
-    Desc: "BQ Analysis Personal History of Prostate Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of pros_elig
-  pros_eligible_sqx:
-    Desc: "SQX Prostate Analysis: Eligible?"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No"
-      - "Yes"
-    Req: false
-    Private: false
-#property of pros_elig
-  ph_pros_muq:
-    Desc: "MUQ Analysis Personal History of Prostate Cancer"
-    Src: Prostate.Registry.Dictionary.pdf
-    Type:
-      - "No Form"
-      - "No"
-      - "Yes"
     Req: false
     Private: false
 #property of pros_exit

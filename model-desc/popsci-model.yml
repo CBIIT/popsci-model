@@ -44,6 +44,176 @@ Nodes:
       - bmi_20
       - bmi_50c
       - bmi_50
+  case:
+    Props:
+      - case_id
+      - arm
+      - center
+      - rndyear
+      - biosp_f
+      - plco_dx
+      - plco_dx_age
+  breast_elig:
+    Props:
+      - breast_elig_id
+      - ph_first_cancer_age
+      - ph_first_cancer
+      - ph_breast_trial
+      - ph_any_trial
+      - breast_eligible_dhq
+      - ph_any_dqx
+      - ph_breast_sqx
+      - ph_breast_dqx
+      - ph_breast_dhq
+      - ph_any_sqx
+      - entryage_muq
+      - ph_breast_bq
+      - breast_eligible_bq
+      - entryage_bq
+      - entrydays_bq
+      - entrydays_dhq
+      - ph_any_muq
+      - ph_any_dhq
+      - breast_eligible_sqx
+      - ph_breast_muq
+      - breast_eligible_dqx
+      - entryage_sqx
+      - entrydays_dqx
+      - entrydays_sqx
+      - ph_any_bq
+      - entryage_dqx
+      - entryage_dhq
+      - entrydays_muq
+      - breast_eligible_muq
+  colo_elig:
+    Props:
+      - colo_elig_id
+      - ph_first_cancer_age
+      - ph_first_cancer
+      - ph_colo_trial
+      - ph_any_trial
+      - ph_colo_dqx
+      - ph_any_dqx
+      - ph_colo_muq
+      - ph_any_sqx
+      - entryage_muq
+      - colo_eligible_dhq
+      - ph_colo_sqx
+      - colo_eligible_bq
+      - colo_eligible_muq
+      - entryage_bq
+      - entrydays_bq
+      - entrydays_dhq
+      - ph_colo_bq
+      - ph_any_dhq
+      - ph_any_muq
+      - ph_colo_dhq
+      - entryage_sqx
+      - entrydays_dqx
+      - entrydays_sqx
+      - ph_any_bq
+      - colo_eligible_sqx
+      - entryage_dqx
+      - entryage_dhq
+      - colo_eligible_dqx
+      - entrydays_muq
+  lung_elig:
+    Props:
+      - lung_elig_id
+      - ph_first_cancer_age
+      - ph_lung_trial
+      - ph_first_cancer
+      - ph_any_trial
+      - ph_any_dqx
+      - lung_eligible_dhq
+      - ph_any_sqx
+      - entryage_muq
+      - ph_lung_bq
+      - ph_lung_dqx
+      - lung_eligible_sqx
+      - entryage_bq
+      - entrydays_bq
+      - entrydays_dhq
+      - ph_any_muq
+      - ph_any_dhq
+      - lung_eligible_bq
+      - entryage_sqx
+      - entrydays_dqx
+      - ph_lung_dhq
+      - ph_lung_sqx
+      - entrydays_sqx
+      - ph_any_bq
+      - ph_lung_muq
+      - lung_eligible_muq
+      - entryage_dqx
+      - entryage_dhq
+      - lung_eligible_dqx
+      - entrydays_muq
+  ovar_elig:
+    Props:
+      - ovar_elig_id
+      - ovary_trial_flag
+      - ph_first_cancer_age
+      - ph_first_cancer
+      - ph_osumm_trial
+      - ph_any_trial
+      - ph_osumm_dhq
+      - ph_any_dqx
+      - ph_osumm_bq
+      - ph_any_sqx
+      - osumm_eligible_sqx
+      - entryage_muq
+      - osumm_eligible_bq
+      - osumm_eligible_muq
+      - osumm_eligible_dqx
+      - ph_osumm_dqx
+      - entryage_bq
+      - entrydays_bq
+      - entrydays_dhq
+      - ph_any_muq
+      - ph_any_dhq
+      - osumm_eligible_dhq
+      - entryage_sqx
+      - entrydays_dqx
+      - entrydays_sqx
+      - ph_any_bq
+      - entryage_dqx
+      - entryage_dhq
+      - ph_osumm_sqx
+      - entrydays_muq
+      - ph_osumm_muq
+  pros_elig:
+    Props:
+      - pros_elig_id
+      - ph_first_cancer_age
+      - ph_first_cancer
+      - ph_pros_trial
+      - ph_any_trial
+      - ph_any_dqx
+      - pros_eligible_dhq
+      - ph_any_sqx
+      - entryage_muq
+      - ph_pros_sqx
+      - pros_eligible_muq
+      - entryage_bq
+      - entrydays_bq
+      - entrydays_dhq
+      - ph_any_muq
+      - ph_any_dhq
+      - pros_eligible_dqx
+      - ph_pros_dhq
+      - entryage_sqx
+      - entrydays_dqx
+      - ph_pros_dqx
+      - entrydays_sqx
+      - pros_eligible_bq
+      - ph_any_bq
+      - ph_pros_bq
+      - pros_eligible_sqx
+      - entryage_dqx
+      - entryage_dhq
+      - ph_pros_muq
+      - entrydays_muq
   mort:
     Props:
       - mort_id
@@ -148,47 +318,6 @@ Nodes:
     Props:
       - visit_id
       - visit_year_from_index
-  breast_case:
-    Props:
-      - breast_case_id
-      - arm
-      - center
-      - ph_first_cancer_age
-      - ph_first_cancer
-      - ph_breast_trial
-      - ph_any_trial
-      - rndyear
-      - biosp_f
-      - plco_dx
-      - plco_dx_age
-  breast_elig:
-    Props:
-      - breast_elig_id
-      - breast_eligible_dhq
-      - ph_any_dqx
-      - ph_breast_sqx
-      - ph_breast_dqx
-      - ph_breast_dhq
-      - ph_any_sqx
-      - entryage_muq
-      - ph_breast_bq
-      - breast_eligible_bq
-      - entryage_bq
-      - entrydays_bq
-      - entrydays_dhq
-      - ph_any_muq
-      - ph_any_dhq
-      - breast_eligible_sqx
-      - ph_breast_muq
-      - breast_eligible_dqx
-      - entryage_sqx
-      - entrydays_dqx
-      - entrydays_sqx
-      - ph_any_bq
-      - entryage_dqx
-      - entryage_dhq
-      - entrydays_muq
-      - breast_eligible_muq
   breast_exit:
     Props:
       - breast_exit_id
@@ -252,47 +381,6 @@ Nodes:
       - breast_fh_age
       - breast_fh_cnt
       - breast_fh
-  colo_case:
-    Props:
-      - colo_case_id
-      - arm
-      - center
-      - ph_first_cancer_age
-      - ph_first_cancer
-      - ph_colo_trial
-      - ph_any_trial
-      - rndyear
-      - biosp_f
-      - plco_dx
-      - plco_dx_age
-  colo_elig:
-    Props:
-      - colo_elig_id
-      - ph_colo_dqx
-      - ph_any_dqx
-      - ph_colo_muq
-      - ph_any_sqx
-      - entryage_muq
-      - colo_eligible_dhq
-      - ph_colo_sqx
-      - colo_eligible_bq
-      - colo_eligible_muq
-      - entryage_bq
-      - entrydays_bq
-      - entrydays_dhq
-      - ph_colo_bq
-      - ph_any_dhq
-      - ph_any_muq
-      - ph_colo_dhq
-      - entryage_sqx
-      - entrydays_dqx
-      - entrydays_sqx
-      - ph_any_bq
-      - colo_eligible_sqx
-      - entryage_dqx
-      - entryage_dhq
-      - colo_eligible_dqx
-      - entrydays_muq
   colo_exit:
     Props:
       - colo_exit_id
@@ -682,47 +770,6 @@ Nodes:
       - colo_fh_cnt
       - surg_any
       - fh_cancer
-  lung_case:
-    Props:
-      - lung_case_id
-      - arm
-      - center
-      - ph_first_cancer_age
-      - ph_lung_trial
-      - ph_first_cancer
-      - ph_any_trial
-      - rndyear
-      - biosp_f
-      - plco_dx
-      - plco_dx_age
-  lung_elig:
-    Props:
-      - lung_elig_id
-      - ph_any_dqx
-      - lung_eligible_dhq
-      - ph_any_sqx
-      - entryage_muq
-      - ph_lung_bq
-      - ph_lung_dqx
-      - lung_eligible_sqx
-      - entryage_bq
-      - entrydays_bq
-      - entrydays_dhq
-      - ph_any_muq
-      - ph_any_dhq
-      - lung_eligible_bq
-      - entryage_sqx
-      - entrydays_dqx
-      - ph_lung_dhq
-      - ph_lung_sqx
-      - entrydays_sqx
-      - ph_any_bq
-      - ph_lung_muq
-      - lung_eligible_muq
-      - entryage_dqx
-      - entryage_dhq
-      - lung_eligible_dqx
-      - entrydays_muq
   lung_exit:
     Props:
       - lung_exit_id
@@ -835,48 +882,6 @@ Nodes:
       - surg_any
       - fh_cancer
       - lung_fh_cnt
-  ovar_case:
-    Props:
-      - ovar_case_id
-      - arm
-      - center
-      - ph_first_cancer_age
-      - ph_first_cancer
-      - ph_osumm_trial
-      - ph_any_trial
-      - rndyear
-      - ovary_trial_flag
-      - biosp_f
-      - plco_dx
-      - plco_dx_age
-  ovar_elig:
-    Props:
-      - ovar_elig_id
-      - ph_osumm_dhq
-      - ph_any_dqx
-      - ph_osumm_bq
-      - ph_any_sqx
-      - osumm_eligible_sqx
-      - entryage_muq
-      - osumm_eligible_bq
-      - osumm_eligible_muq
-      - osumm_eligible_dqx
-      - ph_osumm_dqx
-      - entryage_bq
-      - entrydays_bq
-      - entrydays_dhq
-      - ph_any_muq
-      - ph_any_dhq
-      - osumm_eligible_dhq
-      - entryage_sqx
-      - entrydays_dqx
-      - entrydays_sqx
-      - ph_any_bq
-      - entryage_dqx
-      - entryage_dhq
-      - ph_osumm_sqx
-      - entrydays_muq
-      - ph_osumm_muq
   ovar_exit:
     Props:
       - ovar_exit_id
@@ -1012,47 +1017,6 @@ Nodes:
       - usound_history
       - pelvic_history
       - breast_fh_cnt
-  pros_case:
-    Props:
-      - pros_case_id
-      - arm
-      - center
-      - ph_first_cancer_age
-      - ph_first_cancer
-      - ph_pros_trial
-      - ph_any_trial
-      - rndyear
-      - biosp_f
-      - plco_dx
-      - plco_dx_age
-  pros_elig:
-    Props:
-      - pros_elig_id
-      - ph_any_dqx
-      - pros_eligible_dhq
-      - ph_any_sqx
-      - entryage_muq
-      - ph_pros_sqx
-      - pros_eligible_muq
-      - entryage_bq
-      - entrydays_bq
-      - entrydays_dhq
-      - ph_any_muq
-      - ph_any_dhq
-      - pros_eligible_dqx
-      - ph_pros_dhq
-      - entryage_sqx
-      - entrydays_dqx
-      - ph_pros_dqx
-      - entrydays_sqx
-      - pros_eligible_bq
-      - ph_any_bq
-      - ph_pros_bq
-      - pros_eligible_sqx
-      - entryage_dqx
-      - entryage_dhq
-      - ph_pros_muq
-      - entrydays_muq
   pros_exit:
     Props:
       - pros_exit_id
@@ -3469,609 +3433,315 @@ Nodes:
       - sqx_hypertena
       - sqx_strenuous_time
 Relationships:
-  breast_case_of_cohort:
+  breast_diag_of_case:
     Mul: many_to_one
     Ends:
-      - Src: breast_case
-        Dst: cohort
+      - Src: breast_diag
+        Dst: case
     Props: null
-  elig_of_breast_case:
+  breast_elig_of_case:
     Mul: one_to_one
     Ends:
       - Src: breast_elig
-        Dst: breast_case
+        Dst: case
     Props: null
-  exit_of_breast_case:
+  breast_exit_of_case:
     Mul: one_to_one
     Ends:
       - Src: breast_exit
-        Dst: breast_case
+        Dst: case
     Props: null
-  demo_of_breast_case:
+  breast_hist_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: breast_hist
+        Dst: case
+    Props: null
+  breast_mort_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: breast_mort
+        Dst: case
+    Props: null
+  breast_regn_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: breast_regn
+        Dst: case
+    Props: null
+  colo_diag_of_case:
     Mul: many_to_one
     Ends:
-      - Src: demo
-        Dst: breast_case
+      - Src: colo_diag
+        Dst: case
     Props: null
-  of_clinical_trial:
+  colo_elig_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: colo_elig
+        Dst: case
+    Props: null
+  colo_exit_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: colo_exit
+        Dst: case
+    Props: null
+  colo_hist_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: colo_hist
+        Dst: case
+    Props: null
+  colo_mort_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: colo_mort
+        Dst: case
+    Props: null
+  colo_regn_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: colo_regn
+        Dst: case
+    Props: null
+  colo_screen_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: colo_screen
+        Dst: case
+    Props: null
+  colo_treat_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: colo_treat
+        Dst: case
+    Props: null
+  comp_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: comp
+        Dst: case
+    Props: null
+  demo_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: demo
+        Dst: case
+    Props: null
+  dhq_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dhq
+        Dst: case
+    Props: null
+  dqx_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: dqx
+        Dst: case
+    Props: null
+  fem_health_cond_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: fem_health_cond
+        Dst: case
+    Props: null
+  health_cond_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: health_cond
+        Dst: case
+    Props: null
+  lung_diag_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: lung_diag
+        Dst: case
+    Props: null
+  lung_elig_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: lung_elig
+        Dst: case
+    Props: null
+  lung_exit_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: lung_exit
+        Dst: case
+    Props: null
+  lung_hist_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: lung_hist
+        Dst: case
+    Props: null
+  lung_mort_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: lung_mort
+        Dst: case
+    Props: null
+  lung_regn_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: lung_regn
+        Dst: case
+    Props: null
+  lung_screen_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: lung_screen
+        Dst: case
+    Props: null
+  lung_treat_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: lung_treat
+        Dst: case
+    Props: null
+  male_health_cond_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: male_health_cond
+        Dst: case
+    Props: null
+  mort_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: mort
+        Dst: case
+    Props: null
+  nsaid_use_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: nsaid_use
+        Dst: case
+    Props: null
+  ovar_diag_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: ovar_diag
+        Dst: case
+    Props: null
+  ovar_elig_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: ovar_elig
+        Dst: case
+    Props: null
+  ovar_exit_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: ovar_exit
+        Dst: case
+    Props: null
+  ovar_hist_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: ovar_hist
+        Dst: case
+    Props: null
+  ovar_mort_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: ovar_mort
+        Dst: case
+    Props: null
+  ovar_regn_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: ovar_regn
+        Dst: case
+    Props: null
+  ovar_screen_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: ovar_screen
+        Dst: case
+    Props: null
+  ovar_treat_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: ovar_treat
+        Dst: case
+    Props: null
+  pros_diag_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: pros_diag
+        Dst: case
+    Props: null
+  pros_elig_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: pros_elig
+        Dst: case
+    Props: null
+  pros_exit_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: pros_exit
+        Dst: case
+    Props: null
+  pros_hist_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: pros_hist
+        Dst: case
+    Props: null
+  pros_mort_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: pros_mort
+        Dst: case
+    Props: null
+  pros_regn_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: pros_regn
+        Dst: case
+    Props: null
+  pros_screen_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: pros_screen
+        Dst: case
+    Props: null
+  pros_treat_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: pros_treat
+        Dst: case
+    Props: null
+  risk_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: risk
+        Dst: case
+    Props: null
+  sqx_of_case:
+    Mul: one_to_one
+    Ends:
+      - Src: sqx
+        Dst: case
+    Props: null
+  visit_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: visit
+        Dst: case
+    Props: null
+  cohort:
     Mul: many_to_one
     Ends:
       - Src: cohort
         Dst: clinical_trial
     Props: null
-  regn_of_breast_case:
-    Mul: one_to_one
+  case_of_cohort:
+    Mul: many_to_many
     Ends:
-      - Src: breast_regn
-        Dst: breast_case
-    Props: null
-  diag_of_breast_case:
-    Mul: many_to_one
-    Ends:
-      - Src: breast_diag
-        Dst: breast_case
-    Props: null
-  mort_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: mort
-        Dst: breast_case
-    Props: null
-  breast_mort_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: breast_mort
-        Dst: breast_case
-    Props: null
-  comp_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: comp
-        Dst: breast_case
-    Props: null
-  risk_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: risk
-        Dst: breast_case
-    Props: null
-  breast_hist_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: breast_hist
-        Dst: breast_case
-    Props: null
-  nsaid_use_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: nsaid_use
-        Dst: breast_case
-    Props: null
-  health_cond_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: health_cond
-        Dst: breast_case
-    Props: null
-  fem_health_cond_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: fem_health_cond
-        Dst: breast_case
-    Props: null
-  colo_case_of_cohort:
-    Mul: many_to_one
-    Ends:
-      - Src: colo_case
+      - Src: case
         Dst: cohort
-    Props: null
-  elig_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: colo_elig
-        Dst: colo_case
-    Props: null
-  exit_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: colo_exit
-        Dst: colo_case
-    Props: null
-  demo_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: demo
-        Dst: colo_case
-    Props: null
-  regn_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: colo_regn
-        Dst: colo_case
-    Props: null
-  screen_of_colo_case:
-    Mul: many_to_one
-    Ends:
-      - Src: colo_screen
-        Dst: colo_case
-    Props: null
-  diag_of_colo_case:
-    Mul: many_to_one
-    Ends:
-      - Src: colo_diag
-        Dst: colo_case
-    Props: null
-  treat_of_colo_case:
-    Mul: many_to_one
-    Ends:
-      - Src: colo_treat
-        Dst: colo_case
-    Props: null
-  mort_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: mort
-        Dst: colo_case
-    Props: null
-  colo_mort_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: colo_mort
-        Dst: colo_case
-    Props: null
-  comp_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: comp
-        Dst: colo_case
-    Props: null
-  risk_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: risk
-        Dst: colo_case
-    Props: null
-  colo_hist_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: colo_hist
-        Dst: colo_case
-    Props: null
-  nsaid_use_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: nsaid_use
-        Dst: colo_case
-    Props: null
-  health_cond_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: health_cond
-        Dst: colo_case
-    Props: null
-  fem_health_cond_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: fem_health_cond
-        Dst: colo_case
-    Props: null
-  male_health_cond_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: male_health_cond
-        Dst: colo_case
-    Props: null
-  lung_case_of_cohort:
-    Mul: many_to_one
-    Ends:
-      - Src: lung_case
-        Dst: cohort
-    Props: null
-  elig_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: lung_elig
-        Dst: lung_case
-    Props: null
-  exit_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: lung_exit
-        Dst: lung_case
-    Props: null
-  demo_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: demo
-        Dst: lung_case
-    Props: null
-  regn_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: lung_regn
-        Dst: lung_case
-    Props: null
-  screen_of_lung_case:
-    Mul: many_to_one
-    Ends:
-      - Src: lung_screen
-        Dst: lung_case
-    Props: null
-  diag_of_lung_case:
-    Mul: many_to_one
-    Ends:
-      - Src: lung_diag
-        Dst: lung_case
-    Props: null
-  treat_of_lung_case:
-    Mul: many_to_one
-    Ends:
-      - Src: lung_treat
-        Dst: lung_case
-    Props: null
-  mort_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: mort
-        Dst: lung_case
-    Props: null
-  lung_mort_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: lung_mort
-        Dst: lung_case
-    Props: null
-  comp_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: comp
-        Dst: lung_case
-    Props: null
-  risk_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: risk
-        Dst: lung_case
-    Props: null
-  lung_hist_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: lung_hist
-        Dst: lung_case
-    Props: null
-  nsaid_use_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: nsaid_use
-        Dst: lung_case
-    Props: null
-  health_cond_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: health_cond
-        Dst: lung_case
-    Props: null
-  fem_health_cond_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: fem_health_cond
-        Dst: lung_case
-    Props: null
-  male_health_cond_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: male_health_cond
-        Dst: lung_case
-    Props: null
-  ovar_case_of_cohort:
-    Mul: many_to_one
-    Ends:
-      - Src: ovar_case
-        Dst: cohort
-    Props: null
-  elig_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: ovar_elig
-        Dst: ovar_case
-    Props: null
-  exit_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: ovar_exit
-        Dst: ovar_case
-    Props: null
-  demo_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: demo
-        Dst: ovar_case
-    Props: null
-  regn_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: ovar_regn
-        Dst: ovar_case
-    Props: null
-  screen_of_ovar_case:
-    Mul: many_to_one
-    Ends:
-      - Src: ovar_screen
-        Dst: ovar_case
-    Props: null
-  diag_of_ovar_case:
-    Mul: many_to_one
-    Ends:
-      - Src: ovar_diag
-        Dst: ovar_case
-    Props: null
-  treat_of_ovar_case:
-    Mul: many_to_one
-    Ends:
-      - Src: ovar_treat
-        Dst: ovar_case
-    Props: null
-  mort_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: mort
-        Dst: ovar_case
-    Props: null
-  ovar_mort_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: ovar_mort
-        Dst: ovar_case
-    Props: null
-  comp_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: comp
-        Dst: ovar_case
-    Props: null
-  risk_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: risk
-        Dst: ovar_case
-    Props: null
-  ovar_hist_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: ovar_hist
-        Dst: ovar_case
-    Props: null
-  nsaid_use_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: nsaid_use
-        Dst: ovar_case
-    Props: null
-  health_cond_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: health_cond
-        Dst: ovar_case
-    Props: null
-  fem_health_cond_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: fem_health_cond
-        Dst: ovar_case
-    Props: null
-  pros_case_of_cohort:
-    Mul: many_to_one
-    Ends:
-      - Src: pros_case
-        Dst: cohort
-    Props: null
-  elig_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: pros_elig
-        Dst: pros_case
-    Props: null
-  exit_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: pros_exit
-        Dst: pros_case
-    Props: null
-  demo_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: demo
-        Dst: pros_case
-    Props: null
-  regn_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: pros_regn
-        Dst: pros_case
-    Props: null
-  screen_of_pros_case:
-    Mul: many_to_one
-    Ends:
-      - Src: pros_screen
-        Dst: pros_case
-    Props: null
-  diag_of_pros_case:
-    Mul: many_to_one
-    Ends:
-      - Src: pros_diag
-        Dst: pros_case
-    Props: null
-  treat_of_pros_case:
-    Mul: many_to_one
-    Ends:
-      - Src: pros_treat
-        Dst: pros_case
-    Props: null
-  mort_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: mort
-        Dst: pros_case
-    Props: null
-  pros_mort_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: pros_mort
-        Dst: pros_case
-    Props: null
-  comp_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: comp
-        Dst: pros_case
-    Props: null
-  risk_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: risk
-        Dst: pros_case
-    Props: null
-  pros_hist_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: pros_hist
-        Dst: pros_case
-    Props: null
-  nsaid_use_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: nsaid_use
-        Dst: pros_case
-    Props: null
-  health_cond_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: health_cond
-        Dst: pros_case
-    Props: null
-  male_health_cond_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: male_health_cond
-        Dst: pros_case
-    Props: null
-  dhq_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: dhq
-        Dst: pros_case
-    Props: null
-  dhq_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: dhq
-        Dst: lung_case
-    Props: null
-  dhq_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: dhq
-        Dst: colo_case
-    Props: null
-  dhq_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: dhq
-        Dst: ovar_case
-    Props: null
-  dhq_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: dhq
-        Dst: breast_case
-    Props: null
-  dqx_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: dqx
-        Dst: pros_case
-    Props: null
-  dqx_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: dqx
-        Dst: lung_case
-    Props: null
-  dqx_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: dqx
-        Dst: colo_case
-    Props: null
-  dqx_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: dqx
-        Dst: ovar_case
-    Props: null
-  dqx_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: dqx
-        Dst: breast_case
-    Props: null
-  sqx_of_pros_case:
-    Mul: one_to_one
-    Ends:
-      - Src: sqx
-        Dst: pros_case
-    Props: null
-  sqx_of_lung_case:
-    Mul: one_to_one
-    Ends:
-      - Src: sqx
-        Dst: lung_case
-    Props: null
-  sqx_of_colo_case:
-    Mul: one_to_one
-    Ends:
-      - Src: sqx
-        Dst: colo_case
-    Props: null
-  sqx_of_ovar_case:
-    Mul: one_to_one
-    Ends:
-      - Src: sqx
-        Dst: ovar_case
-    Props: null
-  sqx_of_breast_case:
-    Mul: one_to_one
-    Ends:
-      - Src: sqx
-        Dst: breast_case
-    Props: null
-  visit_of_pros_case:
-    Mul: many_to_one
-    Ends:
-      - Src: visit
-        Dst: pros_case
-    Props: null
-  visit_of_lung_case:
-    Mul: many_to_one
-    Ends:
-      - Src: visit
-        Dst: lung_case
-    Props: null
-  visit_of_colo_case:
-    Mul: many_to_one
-    Ends:
-      - Src: visit
-        Dst: colo_case
-    Props: null
-  visit_of_ovar_case:
-    Mul: many_to_one
-    Ends:
-      - Src: visit
-        Dst: ovar_case
-    Props: null
-  visit_of_breast_case:
-    Mul: many_to_one
-    Ends:
-      - Src: visit
-        Dst: breast_case
     Props: null
