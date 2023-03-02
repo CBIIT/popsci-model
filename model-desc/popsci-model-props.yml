@@ -1095,9 +1095,7 @@ PropDefinitions:
     Private: false
 #property of ovar_elig
   ph_osumm_dhq:
-    Desc: "DHQ Analysis Personal 
-History of Ovarian/Ft/Pt 
-Cancer"
+    Desc: "DHQ Analysis Personal History of Ovarian/Ft/Pt Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -1107,9 +1105,7 @@ Cancer"
     Private: false
 #property of ovar_elig
   ph_osumm_bq:
-    Desc: "BQ Analysis Personal 
-History of Ovarian/Ft/Pt 
-Cancer"
+    Desc: "BQ Analysis Personal History of Ovarian/Ft/Pt Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -1175,9 +1171,7 @@ Cancer"
     Private: false
 #property of ovar_elig
   ph_osumm_sqx:
-    Desc: "SQX Analysis Personal 
-History of Ovarian/Ft/Pt 
-Cancer"
+    Desc: "SQX Analysis Personal History of Ovarian/Ft/Pt Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
@@ -1187,9 +1181,7 @@ Cancer"
     Private: false
 #property of ovar_elig
   ph_osumm_muq:
-    Desc: "MUQ Analysis Personal 
-History of Ovarian/Ft/Pt 
-Cancer"
+    Desc: "MUQ Analysis Personal History of Ovarian/Ft/Pt Cancer"
     Src: Ovarian.Registry.Dictionary.pdf
     Type:
       - "No"
