@@ -1,146 +1,6 @@
 repo https://github.com/CBIIT/popsci-model
-commit 2629801
+commit c723c43
 node	property	value_or_TYPE
-breast_case	arm	Control
-breast_case	arm	Intervention
-breast_case	biosp_f	No
-breast_case	biosp_f	Yes
-breast_case	breast_case_id	STRING
-breast_case	center	Georgetown University
-breast_case	center	Henry Ford Health System
-breast_case	center	Marshfield Clinic Research Foundation
-breast_case	center	Pacific Health Research and Education Institute (Honolulu)
-breast_case	center	University of Alabama at Birmingham
-breast_case	center	University of Colorado
-breast_case	center	University of Minnesota
-breast_case	center	University of Pittsburgh
-breast_case	center	University of Utah
-breast_case	center	Washington University in St Louis
-breast_case	ph_any_trial	No
-breast_case	ph_any_trial	Unknown
-breast_case	ph_any_trial	Yes
-breast_case	ph_breast_trial	No
-breast_case	ph_breast_trial	Unknown
-breast_case	ph_breast_trial	Yes
-breast_case	ph_first_cancer	Abdomen
-breast_case	ph_first_cancer	Adrenal Glands
-breast_case	ph_first_cancer	Bladder
-breast_case	ph_first_cancer	Bone
-breast_case	ph_first_cancer	Brain
-breast_case	ph_first_cancer	Breast
-breast_case	ph_first_cancer	Cervical
-breast_case	ph_first_cancer	Cervical and Uterine
-breast_case	ph_first_cancer	Colorectal
-breast_case	ph_first_cancer	Digestive System
-breast_case	ph_first_cancer	Don't Know
-breast_case	ph_first_cancer	Endocrine Glands
-breast_case	ph_first_cancer	Endometrium
-breast_case	ph_first_cancer	Esophagus
-breast_case	ph_first_cancer	Eye
-breast_case	ph_first_cancer	Fallopian Tubes
-breast_case	ph_first_cancer	Female Genital, Unspec
-breast_case	ph_first_cancer	Gallbladder
-breast_case	ph_first_cancer	Hematopoetic
-breast_case	ph_first_cancer	Hodgkins Disease
-breast_case	ph_first_cancer	Ill Defined Back, Hip, Hand
-breast_case	ph_first_cancer	Intestine
-breast_case	ph_first_cancer	Kaposi's Sarcoma
-breast_case	ph_first_cancer	Kidney
-breast_case	ph_first_cancer	Larynx
-breast_case	ph_first_cancer	Leukemia
-breast_case	ph_first_cancer	Liver
-breast_case	ph_first_cancer	Lung
-breast_case	ph_first_cancer	Lymph Nodes
-breast_case	ph_first_cancer	Male Genital, Unspec
-breast_case	ph_first_cancer	Melanoma
-breast_case	ph_first_cancer	Missing
-breast_case	ph_first_cancer	Mouth
-breast_case	ph_first_cancer	Multiple Myeloma
-breast_case	ph_first_cancer	Multiple Non-PLCO Cancers
-breast_case	ph_first_cancer	Nasopharynx, Nasal Cavity, Sinuses
-breast_case	ph_first_cancer	No Personal History of Cancer
-breast_case	ph_first_cancer	Non-Hodgkin's Lymphoma
-breast_case	ph_first_cancer	Not Ascertained
-breast_case	ph_first_cancer	Other
-breast_case	ph_first_cancer	Ovarian
-breast_case	ph_first_cancer	Pancreas
-breast_case	ph_first_cancer	Penis
-breast_case	ph_first_cancer	Peritoneum
-breast_case	ph_first_cancer	Prostate
-breast_case	ph_first_cancer	Skin
-breast_case	ph_first_cancer	Spinal Cord and Cranial Nerves
-breast_case	ph_first_cancer	Spleen
-breast_case	ph_first_cancer	Stomach
-breast_case	ph_first_cancer	Testicular
-breast_case	ph_first_cancer	Thyroid
-breast_case	ph_first_cancer	Ureter Urinary Glands
-breast_case	ph_first_cancer	Urinary Tract
-breast_case	ph_first_cancer	Uterus
-breast_case	ph_first_cancer	Vagina
-breast_case	ph_first_cancer_age	NUMBER
-breast_case	plco_dx	Abdomen
-breast_case	plco_dx	Adrenal glands
-breast_case	plco_dx	Anus and anal canal
-breast_case	plco_dx	Bladder
-breast_case	plco_dx	Bone
-breast_case	plco_dx	Brain
-breast_case	plco_dx	Breast
-breast_case	plco_dx	Cervix
-breast_case	plco_dx	Colorectum
-breast_case	plco_dx	Connective, subcutaneous, and other soft tissues and peripheral nervous system
-breast_case	plco_dx	Diaphragm and connective tissue of thorax
-breast_case	plco_dx	Digestive system, other and unspecified
-breast_case	plco_dx	Don't know
-breast_case	plco_dx	Endocrine glands
-breast_case	plco_dx	Endometrium
-breast_case	plco_dx	Esophagus
-breast_case	plco_dx	Eye
-breast_case	plco_dx	Falopian tubes
-breast_case	plco_dx	Female genital, other and unspecified
-breast_case	plco_dx	Gallbladder
-breast_case	plco_dx	Heart, mediastinum, and pleura
-breast_case	plco_dx	Hematopoietic and reticulendothelial systems
-breast_case	plco_dx	Hodgkins disease
-breast_case	plco_dx	Ill-defined sites
-breast_case	plco_dx	Intestine
-breast_case	plco_dx	Kaposi's sarcoma
-breast_case	plco_dx	Kidney and renal pelvis
-breast_case	plco_dx	Larynx
-breast_case	plco_dx	Leukemia
-breast_case	plco_dx	Lip, oral cavity, pharynx
-breast_case	plco_dx	Liver
-breast_case	plco_dx	Lung
-breast_case	plco_dx	Lymph nodes
-breast_case	plco_dx	Male genital, other and unspecified
-breast_case	plco_dx	Melanoma
-breast_case	plco_dx	Meninges
-breast_case	plco_dx	Multiple myeloma
-breast_case	plco_dx	N/A
-breast_case	plco_dx	Nasopharynx, nasal cavity, middle ear, and sinuses
-breast_case	plco_dx	Non-Hodgkin's lymphoma
-breast_case	plco_dx	Not ascertained
-breast_case	plco_dx	Other
-breast_case	plco_dx	Other Cancer
-breast_case	plco_dx	Ovary
-breast_case	plco_dx	Pancreas
-breast_case	plco_dx	Pelvis
-breast_case	plco_dx	Penis
-breast_case	plco_dx	Peritoneum
-breast_case	plco_dx	Prostate
-breast_case	plco_dx	Respiratory system
-breast_case	plco_dx	Skin
-breast_case	plco_dx	Spinal cord and cranial nerves
-breast_case	plco_dx	Spleen
-breast_case	plco_dx	Stomach
-breast_case	plco_dx	Testis
-breast_case	plco_dx	Thymus
-breast_case	plco_dx	Thyroid
-breast_case	plco_dx	Trachea
-breast_case	plco_dx	Ureter, urinary organs
-breast_case	plco_dx	Uterus
-breast_case	plco_dx	Vagina
-breast_case	plco_dx_age	NUMBER
-breast_case	rndyear	NUMBER
 breast_diag	bc_her2_stat	0
 breast_diag	bc_her2_stat	1+
 breast_diag	bc_her2_stat	2+
@@ -478,6 +338,9 @@ breast_elig	ph_any_sqx	No
 breast_elig	ph_any_sqx	No Form
 breast_elig	ph_any_sqx	Unknown
 breast_elig	ph_any_sqx	Yes
+breast_elig	ph_any_trial	No
+breast_elig	ph_any_trial	Unknown
+breast_elig	ph_any_trial	Yes
 breast_elig	ph_breast_bq	No
 breast_elig	ph_breast_bq	No Form
 breast_elig	ph_breast_bq	Unknown
@@ -497,6 +360,65 @@ breast_elig	ph_breast_sqx	No
 breast_elig	ph_breast_sqx	No Form
 breast_elig	ph_breast_sqx	Unknown
 breast_elig	ph_breast_sqx	Yes
+breast_elig	ph_breast_trial	No
+breast_elig	ph_breast_trial	Unknown
+breast_elig	ph_breast_trial	Yes
+breast_elig	ph_first_cancer	Abdomen
+breast_elig	ph_first_cancer	Adrenal Glands
+breast_elig	ph_first_cancer	Bladder
+breast_elig	ph_first_cancer	Bone
+breast_elig	ph_first_cancer	Brain
+breast_elig	ph_first_cancer	Breast
+breast_elig	ph_first_cancer	Cervical
+breast_elig	ph_first_cancer	Cervical and Uterine
+breast_elig	ph_first_cancer	Colorectal
+breast_elig	ph_first_cancer	Digestive System
+breast_elig	ph_first_cancer	Don't Know
+breast_elig	ph_first_cancer	Endocrine Glands
+breast_elig	ph_first_cancer	Endometrium
+breast_elig	ph_first_cancer	Esophagus
+breast_elig	ph_first_cancer	Eye
+breast_elig	ph_first_cancer	Fallopian Tubes
+breast_elig	ph_first_cancer	Female Genital, Unspec
+breast_elig	ph_first_cancer	Gallbladder
+breast_elig	ph_first_cancer	Hematopoetic
+breast_elig	ph_first_cancer	Hodgkins Disease
+breast_elig	ph_first_cancer	Ill Defined Back, Hip, Hand
+breast_elig	ph_first_cancer	Intestine
+breast_elig	ph_first_cancer	Kaposi's Sarcoma
+breast_elig	ph_first_cancer	Kidney
+breast_elig	ph_first_cancer	Larynx
+breast_elig	ph_first_cancer	Leukemia
+breast_elig	ph_first_cancer	Liver
+breast_elig	ph_first_cancer	Lung
+breast_elig	ph_first_cancer	Lymph Nodes
+breast_elig	ph_first_cancer	Male Genital, Unspec
+breast_elig	ph_first_cancer	Melanoma
+breast_elig	ph_first_cancer	Missing
+breast_elig	ph_first_cancer	Mouth
+breast_elig	ph_first_cancer	Multiple Myeloma
+breast_elig	ph_first_cancer	Multiple Non-PLCO Cancers
+breast_elig	ph_first_cancer	Nasopharynx, Nasal Cavity, Sinuses
+breast_elig	ph_first_cancer	No Personal History of Cancer
+breast_elig	ph_first_cancer	Non-Hodgkin's Lymphoma
+breast_elig	ph_first_cancer	Not Ascertained
+breast_elig	ph_first_cancer	Other
+breast_elig	ph_first_cancer	Ovarian
+breast_elig	ph_first_cancer	Pancreas
+breast_elig	ph_first_cancer	Penis
+breast_elig	ph_first_cancer	Peritoneum
+breast_elig	ph_first_cancer	Prostate
+breast_elig	ph_first_cancer	Skin
+breast_elig	ph_first_cancer	Spinal Cord and Cranial Nerves
+breast_elig	ph_first_cancer	Spleen
+breast_elig	ph_first_cancer	Stomach
+breast_elig	ph_first_cancer	Testicular
+breast_elig	ph_first_cancer	Thyroid
+breast_elig	ph_first_cancer	Ureter Urinary Glands
+breast_elig	ph_first_cancer	Urinary Tract
+breast_elig	ph_first_cancer	Uterus
+breast_elig	ph_first_cancer	Vagina
+breast_elig	ph_first_cancer_age	NUMBER
 breast_exit	breast_exit_id	STRING
 breast_exit	breast_exitage	NUMBER
 breast_exit	breast_exitdays	NUMBER
@@ -547,6 +469,84 @@ breast_regn	reconsent_outcome	Refused Prior to Re-Consent
 breast_regn	reconsent_outcome	Refused by Default/Follow-up
 breast_regn	reconsent_outcome	Refused by Request
 breast_regn	reconsent_outcome_days	NUMBER
+case	arm	Control
+case	arm	Intervention
+case	biosp_f	No
+case	biosp_f	Yes
+case	case_id	STRING
+case	center	Georgetown University
+case	center	Henry Ford Health System
+case	center	Marshfield Clinic Research Foundation
+case	center	Pacific Health Research and Education Institute (Honolulu)
+case	center	University of Alabama at Birmingham
+case	center	University of Colorado
+case	center	University of Minnesota
+case	center	University of Pittsburgh
+case	center	University of Utah
+case	center	Washington University in St Louis
+case	plco_dx	Abdomen
+case	plco_dx	Adrenal glands
+case	plco_dx	Anus and anal canal
+case	plco_dx	Bladder
+case	plco_dx	Bone
+case	plco_dx	Brain
+case	plco_dx	Breast
+case	plco_dx	Cervix
+case	plco_dx	Colorectum
+case	plco_dx	Connective, subcutaneous, and other soft tissues and peripheral nervous system
+case	plco_dx	Diaphragm and connective tissue of thorax
+case	plco_dx	Digestive system, other and unspecified
+case	plco_dx	Don't know
+case	plco_dx	Endocrine glands
+case	plco_dx	Endometrium
+case	plco_dx	Esophagus
+case	plco_dx	Eye
+case	plco_dx	Falopian tubes
+case	plco_dx	Female genital, other and unspecified
+case	plco_dx	Gallbladder
+case	plco_dx	Heart, mediastinum, and pleura
+case	plco_dx	Hematopoietic and reticulendothelial systems
+case	plco_dx	Hodgkins disease
+case	plco_dx	Ill-defined sites
+case	plco_dx	Intestine
+case	plco_dx	Kaposi's sarcoma
+case	plco_dx	Kidney and renal pelvis
+case	plco_dx	Larynx
+case	plco_dx	Leukemia
+case	plco_dx	Lip, oral cavity, pharynx
+case	plco_dx	Liver
+case	plco_dx	Lung
+case	plco_dx	Lymph nodes
+case	plco_dx	Male genital, other and unspecified
+case	plco_dx	Melanoma
+case	plco_dx	Meninges
+case	plco_dx	Multiple myeloma
+case	plco_dx	N/A
+case	plco_dx	Nasopharynx, nasal cavity, middle ear, and sinuses
+case	plco_dx	Non-Hodgkin's lymphoma
+case	plco_dx	Not ascertained
+case	plco_dx	Other
+case	plco_dx	Other Cancer
+case	plco_dx	Ovary
+case	plco_dx	Pancreas
+case	plco_dx	Pelvis
+case	plco_dx	Penis
+case	plco_dx	Peritoneum
+case	plco_dx	Prostate
+case	plco_dx	Respiratory system
+case	plco_dx	Skin
+case	plco_dx	Spinal cord and cranial nerves
+case	plco_dx	Spleen
+case	plco_dx	Stomach
+case	plco_dx	Testis
+case	plco_dx	Thymus
+case	plco_dx	Thyroid
+case	plco_dx	Trachea
+case	plco_dx	Ureter, urinary organs
+case	plco_dx	Uterus
+case	plco_dx	Vagina
+case	plco_dx_age	NUMBER
+case	rndyear	NUMBER
 clinical_trial	clinical_trial_description	STRING
 clinical_trial	clinical_trial_designation	STRING
 clinical_trial	clinical_trial_id	STRING
@@ -568,145 +568,6 @@ cohort	disease	Lung Cancer
 cohort	disease	Ovarian Cancer
 cohort	disease	Prostate Cancer
 cohort	start_date	STRING
-colo_case	arm	Control
-colo_case	arm	Intervention
-colo_case	biosp_f	No
-colo_case	biosp_f	Yes
-colo_case	center	Georgetown University
-colo_case	center	Henry Ford Health System
-colo_case	center	Marshfield Clinic Research Foundation
-colo_case	center	Pacific Health Research and Education Institute (Honolulu)
-colo_case	center	University of Alabama at Birmingham
-colo_case	center	University of Colorado
-colo_case	center	University of Minnesota
-colo_case	center	University of Pittsburgh
-colo_case	center	University of Utah
-colo_case	center	Washington University in St Louis
-colo_case	colo_case_id	STRING
-colo_case	ph_any_trial	No
-colo_case	ph_any_trial	Unknown
-colo_case	ph_any_trial	Yes
-colo_case	ph_colo_trial	No
-colo_case	ph_colo_trial	Yes
-colo_case	ph_first_cancer	Abdomen
-colo_case	ph_first_cancer	Adrenal Glands
-colo_case	ph_first_cancer	Bladder
-colo_case	ph_first_cancer	Bone
-colo_case	ph_first_cancer	Brain
-colo_case	ph_first_cancer	Breast
-colo_case	ph_first_cancer	Cervical
-colo_case	ph_first_cancer	Cervical and Uterine
-colo_case	ph_first_cancer	Colorectal
-colo_case	ph_first_cancer	Digestive System
-colo_case	ph_first_cancer	Don't Know
-colo_case	ph_first_cancer	Endocrine Glands
-colo_case	ph_first_cancer	Endometrium
-colo_case	ph_first_cancer	Esophagus
-colo_case	ph_first_cancer	Eye
-colo_case	ph_first_cancer	Fallopian Tubes
-colo_case	ph_first_cancer	Female Genital, Unspec
-colo_case	ph_first_cancer	Gallbladder
-colo_case	ph_first_cancer	Hematopoetic
-colo_case	ph_first_cancer	Hodgkins Disease
-colo_case	ph_first_cancer	Ill Defined Back, Hip, Hand
-colo_case	ph_first_cancer	Intestine
-colo_case	ph_first_cancer	Kaposi's Sarcoma
-colo_case	ph_first_cancer	Kidney
-colo_case	ph_first_cancer	Larynx
-colo_case	ph_first_cancer	Leukemia
-colo_case	ph_first_cancer	Liver
-colo_case	ph_first_cancer	Lung
-colo_case	ph_first_cancer	Lymph Nodes
-colo_case	ph_first_cancer	Male Genital, Unspec
-colo_case	ph_first_cancer	Melanoma
-colo_case	ph_first_cancer	Missing
-colo_case	ph_first_cancer	Mouth
-colo_case	ph_first_cancer	Multiple Myeloma
-colo_case	ph_first_cancer	Multiple Non-PLCO Cancers
-colo_case	ph_first_cancer	Nasopharynx, Nasal Cavity, Sinuses
-colo_case	ph_first_cancer	No Personal History of Cancer
-colo_case	ph_first_cancer	Non-Hodgkin's Lymphoma
-colo_case	ph_first_cancer	Not Ascertained
-colo_case	ph_first_cancer	Other
-colo_case	ph_first_cancer	Ovarian
-colo_case	ph_first_cancer	Pancreas
-colo_case	ph_first_cancer	Penis
-colo_case	ph_first_cancer	Peritoneum
-colo_case	ph_first_cancer	Prostate
-colo_case	ph_first_cancer	Skin
-colo_case	ph_first_cancer	Spinal Cord and Cranial Nerves
-colo_case	ph_first_cancer	Spleen
-colo_case	ph_first_cancer	Stomach
-colo_case	ph_first_cancer	Testicular
-colo_case	ph_first_cancer	Thyroid
-colo_case	ph_first_cancer	Ureter Urinary Glands
-colo_case	ph_first_cancer	Urinary Tract
-colo_case	ph_first_cancer	Uterus
-colo_case	ph_first_cancer	Vagina
-colo_case	ph_first_cancer_age	NUMBER
-colo_case	plco_dx	Abdomen
-colo_case	plco_dx	Adrenal glands
-colo_case	plco_dx	Anus and anal canal
-colo_case	plco_dx	Bladder
-colo_case	plco_dx	Bone
-colo_case	plco_dx	Brain
-colo_case	plco_dx	Breast
-colo_case	plco_dx	Cervix
-colo_case	plco_dx	Colorectum
-colo_case	plco_dx	Connective, subcutaneous, and other soft tissues and peripheral nervous system
-colo_case	plco_dx	Diaphragm and connective tissue of thorax
-colo_case	plco_dx	Digestive system, other and unspecified
-colo_case	plco_dx	Don't know
-colo_case	plco_dx	Endocrine glands
-colo_case	plco_dx	Endometrium
-colo_case	plco_dx	Esophagus
-colo_case	plco_dx	Eye
-colo_case	plco_dx	Falopian tubes
-colo_case	plco_dx	Female genital, other and unspecified
-colo_case	plco_dx	Gallbladder
-colo_case	plco_dx	Heart, mediastinum, and pleura
-colo_case	plco_dx	Hematopoietic and reticulendothelial systems
-colo_case	plco_dx	Hodgkins disease
-colo_case	plco_dx	Ill-defined sites
-colo_case	plco_dx	Intestine
-colo_case	plco_dx	Kaposi's sarcoma
-colo_case	plco_dx	Kidney and renal pelvis
-colo_case	plco_dx	Larynx
-colo_case	plco_dx	Leukemia
-colo_case	plco_dx	Lip, oral cavity, pharynx
-colo_case	plco_dx	Liver
-colo_case	plco_dx	Lung
-colo_case	plco_dx	Lymph nodes
-colo_case	plco_dx	Male genital, other and unspecified
-colo_case	plco_dx	Melanoma
-colo_case	plco_dx	Meninges
-colo_case	plco_dx	Multiple myeloma
-colo_case	plco_dx	N/A
-colo_case	plco_dx	Nasopharynx, nasal cavity, middle ear, and sinuses
-colo_case	plco_dx	Non-Hodgkin's lymphoma
-colo_case	plco_dx	Not ascertained
-colo_case	plco_dx	Other
-colo_case	plco_dx	Other Cancer
-colo_case	plco_dx	Ovary
-colo_case	plco_dx	Pancreas
-colo_case	plco_dx	Pelvis
-colo_case	plco_dx	Penis
-colo_case	plco_dx	Peritoneum
-colo_case	plco_dx	Prostate
-colo_case	plco_dx	Respiratory system
-colo_case	plco_dx	Skin
-colo_case	plco_dx	Spinal cord and cranial nerves
-colo_case	plco_dx	Spleen
-colo_case	plco_dx	Stomach
-colo_case	plco_dx	Testis
-colo_case	plco_dx	Thymus
-colo_case	plco_dx	Thyroid
-colo_case	plco_dx	Trachea
-colo_case	plco_dx	Ureter, urinary organs
-colo_case	plco_dx	Uterus
-colo_case	plco_dx	Vagina
-colo_case	plco_dx_age	NUMBER
-colo_case	rndyear	NUMBER
 colo_diag	candxdaysc	NUMBER
 colo_diag	colo_cancer	Confirmed Cancer
 colo_diag	colo_cancer	No Confirmed Cancer
@@ -1061,6 +922,9 @@ colo_elig	ph_any_sqx	No
 colo_elig	ph_any_sqx	No Form
 colo_elig	ph_any_sqx	Unknown
 colo_elig	ph_any_sqx	Yes
+colo_elig	ph_any_trial	No
+colo_elig	ph_any_trial	Unknown
+colo_elig	ph_any_trial	Yes
 colo_elig	ph_colo_bq	No
 colo_elig	ph_colo_bq	No Form
 colo_elig	ph_colo_bq	Yes
@@ -1076,6 +940,64 @@ colo_elig	ph_colo_muq	Yes
 colo_elig	ph_colo_sqx	No
 colo_elig	ph_colo_sqx	No Form
 colo_elig	ph_colo_sqx	Yes
+colo_elig	ph_colo_trial	No
+colo_elig	ph_colo_trial	Yes
+colo_elig	ph_first_cancer	Abdomen
+colo_elig	ph_first_cancer	Adrenal Glands
+colo_elig	ph_first_cancer	Bladder
+colo_elig	ph_first_cancer	Bone
+colo_elig	ph_first_cancer	Brain
+colo_elig	ph_first_cancer	Breast
+colo_elig	ph_first_cancer	Cervical
+colo_elig	ph_first_cancer	Cervical and Uterine
+colo_elig	ph_first_cancer	Colorectal
+colo_elig	ph_first_cancer	Digestive System
+colo_elig	ph_first_cancer	Don't Know
+colo_elig	ph_first_cancer	Endocrine Glands
+colo_elig	ph_first_cancer	Endometrium
+colo_elig	ph_first_cancer	Esophagus
+colo_elig	ph_first_cancer	Eye
+colo_elig	ph_first_cancer	Fallopian Tubes
+colo_elig	ph_first_cancer	Female Genital, Unspec
+colo_elig	ph_first_cancer	Gallbladder
+colo_elig	ph_first_cancer	Hematopoetic
+colo_elig	ph_first_cancer	Hodgkins Disease
+colo_elig	ph_first_cancer	Ill Defined Back, Hip, Hand
+colo_elig	ph_first_cancer	Intestine
+colo_elig	ph_first_cancer	Kaposi's Sarcoma
+colo_elig	ph_first_cancer	Kidney
+colo_elig	ph_first_cancer	Larynx
+colo_elig	ph_first_cancer	Leukemia
+colo_elig	ph_first_cancer	Liver
+colo_elig	ph_first_cancer	Lung
+colo_elig	ph_first_cancer	Lymph Nodes
+colo_elig	ph_first_cancer	Male Genital, Unspec
+colo_elig	ph_first_cancer	Melanoma
+colo_elig	ph_first_cancer	Missing
+colo_elig	ph_first_cancer	Mouth
+colo_elig	ph_first_cancer	Multiple Myeloma
+colo_elig	ph_first_cancer	Multiple Non-PLCO Cancers
+colo_elig	ph_first_cancer	Nasopharynx, Nasal Cavity, Sinuses
+colo_elig	ph_first_cancer	No Personal History of Cancer
+colo_elig	ph_first_cancer	Non-Hodgkin's Lymphoma
+colo_elig	ph_first_cancer	Not Ascertained
+colo_elig	ph_first_cancer	Other
+colo_elig	ph_first_cancer	Ovarian
+colo_elig	ph_first_cancer	Pancreas
+colo_elig	ph_first_cancer	Penis
+colo_elig	ph_first_cancer	Peritoneum
+colo_elig	ph_first_cancer	Prostate
+colo_elig	ph_first_cancer	Skin
+colo_elig	ph_first_cancer	Spinal Cord and Cranial Nerves
+colo_elig	ph_first_cancer	Spleen
+colo_elig	ph_first_cancer	Stomach
+colo_elig	ph_first_cancer	Testicular
+colo_elig	ph_first_cancer	Thyroid
+colo_elig	ph_first_cancer	Ureter Urinary Glands
+colo_elig	ph_first_cancer	Urinary Tract
+colo_elig	ph_first_cancer	Uterus
+colo_elig	ph_first_cancer	Vagina
+colo_elig	ph_first_cancer_age	NUMBER
 colo_exit	colo_exit_id	STRING
 colo_exit	colo_exitage	NUMBER
 colo_exit	colo_exitdays	NUMBER
@@ -4658,145 +4580,6 @@ health_cond	stroke_f	No
 health_cond	stroke_f	No Form
 health_cond	stroke_f	Not Answered
 health_cond	stroke_f	Yes
-lung_case	arm	Control
-lung_case	arm	Intervention
-lung_case	biosp_f	No
-lung_case	biosp_f	Yes
-lung_case	center	Georgetown University
-lung_case	center	Henry Ford Health System
-lung_case	center	Marshfield Clinic Research Foundation
-lung_case	center	Pacific Health Research and Education Institute (Honolulu)
-lung_case	center	University of Alabama at Birmingham
-lung_case	center	University of Colorado
-lung_case	center	University of Minnesota
-lung_case	center	University of Pittsburgh
-lung_case	center	University of Utah
-lung_case	center	Washington University in St Louis
-lung_case	lung_case_id	STRING
-lung_case	ph_any_trial	No
-lung_case	ph_any_trial	Unknown
-lung_case	ph_any_trial	Yes
-lung_case	ph_first_cancer	Abdomen
-lung_case	ph_first_cancer	Adrenal Glands
-lung_case	ph_first_cancer	Bladder
-lung_case	ph_first_cancer	Bone
-lung_case	ph_first_cancer	Brain
-lung_case	ph_first_cancer	Breast
-lung_case	ph_first_cancer	Cervical
-lung_case	ph_first_cancer	Cervical and Uterine
-lung_case	ph_first_cancer	Colorectal
-lung_case	ph_first_cancer	Digestive System
-lung_case	ph_first_cancer	Don't Know
-lung_case	ph_first_cancer	Endocrine Glands
-lung_case	ph_first_cancer	Endometrium
-lung_case	ph_first_cancer	Esophagus
-lung_case	ph_first_cancer	Eye
-lung_case	ph_first_cancer	Fallopian Tubes
-lung_case	ph_first_cancer	Female Genital, Unspec
-lung_case	ph_first_cancer	Gallbladder
-lung_case	ph_first_cancer	Hematopoetic
-lung_case	ph_first_cancer	Hodgkins Disease
-lung_case	ph_first_cancer	Ill Defined Back, Hip, Hand
-lung_case	ph_first_cancer	Intestine
-lung_case	ph_first_cancer	Kaposi's Sarcoma
-lung_case	ph_first_cancer	Kidney
-lung_case	ph_first_cancer	Larynx
-lung_case	ph_first_cancer	Leukemia
-lung_case	ph_first_cancer	Liver
-lung_case	ph_first_cancer	Lung
-lung_case	ph_first_cancer	Lymph Nodes
-lung_case	ph_first_cancer	Male Genital, Unspec
-lung_case	ph_first_cancer	Melanoma
-lung_case	ph_first_cancer	Missing
-lung_case	ph_first_cancer	Mouth
-lung_case	ph_first_cancer	Multiple Myeloma
-lung_case	ph_first_cancer	Multiple Non-PLCO Cancers
-lung_case	ph_first_cancer	Nasopharynx, Nasal Cavity, Sinuses
-lung_case	ph_first_cancer	No Personal History of Cancer
-lung_case	ph_first_cancer	Non-Hodgkin's Lymphoma
-lung_case	ph_first_cancer	Not Ascertained
-lung_case	ph_first_cancer	Other
-lung_case	ph_first_cancer	Ovarian
-lung_case	ph_first_cancer	Pancreas
-lung_case	ph_first_cancer	Penis
-lung_case	ph_first_cancer	Peritoneum
-lung_case	ph_first_cancer	Prostate
-lung_case	ph_first_cancer	Skin
-lung_case	ph_first_cancer	Spinal Cord and Cranial Nerves
-lung_case	ph_first_cancer	Spleen
-lung_case	ph_first_cancer	Stomach
-lung_case	ph_first_cancer	Testicular
-lung_case	ph_first_cancer	Thyroid
-lung_case	ph_first_cancer	Ureter Urinary Glands
-lung_case	ph_first_cancer	Urinary Tract
-lung_case	ph_first_cancer	Uterus
-lung_case	ph_first_cancer	Vagina
-lung_case	ph_first_cancer_age	NUMBER
-lung_case	ph_lung_trial	No
-lung_case	ph_lung_trial	Yes
-lung_case	plco_dx	Abdomen
-lung_case	plco_dx	Adrenal glands
-lung_case	plco_dx	Anus and anal canal
-lung_case	plco_dx	Bladder
-lung_case	plco_dx	Bone
-lung_case	plco_dx	Brain
-lung_case	plco_dx	Breast
-lung_case	plco_dx	Cervix
-lung_case	plco_dx	Colorectum
-lung_case	plco_dx	Connective, subcutaneous, and other soft tissues and peripheral nervous system
-lung_case	plco_dx	Diaphragm and connective tissue of thorax
-lung_case	plco_dx	Digestive system, other and unspecified
-lung_case	plco_dx	Don't know
-lung_case	plco_dx	Endocrine glands
-lung_case	plco_dx	Endometrium
-lung_case	plco_dx	Esophagus
-lung_case	plco_dx	Eye
-lung_case	plco_dx	Falopian tubes
-lung_case	plco_dx	Female genital, other and unspecified
-lung_case	plco_dx	Gallbladder
-lung_case	plco_dx	Heart, mediastinum, and pleura
-lung_case	plco_dx	Hematopoietic and reticulendothelial systems
-lung_case	plco_dx	Hodgkins disease
-lung_case	plco_dx	Ill-defined sites
-lung_case	plco_dx	Intestine
-lung_case	plco_dx	Kaposi's sarcoma
-lung_case	plco_dx	Kidney and renal pelvis
-lung_case	plco_dx	Larynx
-lung_case	plco_dx	Leukemia
-lung_case	plco_dx	Lip, oral cavity, pharynx
-lung_case	plco_dx	Liver
-lung_case	plco_dx	Lung
-lung_case	plco_dx	Lymph nodes
-lung_case	plco_dx	Male genital, other and unspecified
-lung_case	plco_dx	Melanoma
-lung_case	plco_dx	Meninges
-lung_case	plco_dx	Multiple myeloma
-lung_case	plco_dx	N/A
-lung_case	plco_dx	Nasopharynx, nasal cavity, middle ear, and sinuses
-lung_case	plco_dx	Non-Hodgkin's lymphoma
-lung_case	plco_dx	Not ascertained
-lung_case	plco_dx	Other
-lung_case	plco_dx	Other Cancer
-lung_case	plco_dx	Ovary
-lung_case	plco_dx	Pancreas
-lung_case	plco_dx	Pelvis
-lung_case	plco_dx	Penis
-lung_case	plco_dx	Peritoneum
-lung_case	plco_dx	Prostate
-lung_case	plco_dx	Respiratory system
-lung_case	plco_dx	Skin
-lung_case	plco_dx	Spinal cord and cranial nerves
-lung_case	plco_dx	Spleen
-lung_case	plco_dx	Stomach
-lung_case	plco_dx	Testis
-lung_case	plco_dx	Thymus
-lung_case	plco_dx	Thyroid
-lung_case	plco_dx	Trachea
-lung_case	plco_dx	Ureter, urinary organs
-lung_case	plco_dx	Uterus
-lung_case	plco_dx	Vagina
-lung_case	plco_dx_age	NUMBER
-lung_case	rndyear	NUMBER
 lung_diag	candxdaysl	NUMBER
 lung_diag	intstatl_cat	Control with cancer
 lung_diag	intstatl_cat	Interval
@@ -5111,6 +4894,65 @@ lung_elig	ph_any_sqx	No
 lung_elig	ph_any_sqx	No Form
 lung_elig	ph_any_sqx	Unknown
 lung_elig	ph_any_sqx	Yes
+lung_elig	ph_any_trial	No
+lung_elig	ph_any_trial	Unknown
+lung_elig	ph_any_trial	Yes
+lung_elig	ph_first_cancer	Abdomen
+lung_elig	ph_first_cancer	Adrenal Glands
+lung_elig	ph_first_cancer	Bladder
+lung_elig	ph_first_cancer	Bone
+lung_elig	ph_first_cancer	Brain
+lung_elig	ph_first_cancer	Breast
+lung_elig	ph_first_cancer	Cervical
+lung_elig	ph_first_cancer	Cervical and Uterine
+lung_elig	ph_first_cancer	Colorectal
+lung_elig	ph_first_cancer	Digestive System
+lung_elig	ph_first_cancer	Don't Know
+lung_elig	ph_first_cancer	Endocrine Glands
+lung_elig	ph_first_cancer	Endometrium
+lung_elig	ph_first_cancer	Esophagus
+lung_elig	ph_first_cancer	Eye
+lung_elig	ph_first_cancer	Fallopian Tubes
+lung_elig	ph_first_cancer	Female Genital, Unspec
+lung_elig	ph_first_cancer	Gallbladder
+lung_elig	ph_first_cancer	Hematopoetic
+lung_elig	ph_first_cancer	Hodgkins Disease
+lung_elig	ph_first_cancer	Ill Defined Back, Hip, Hand
+lung_elig	ph_first_cancer	Intestine
+lung_elig	ph_first_cancer	Kaposi's Sarcoma
+lung_elig	ph_first_cancer	Kidney
+lung_elig	ph_first_cancer	Larynx
+lung_elig	ph_first_cancer	Leukemia
+lung_elig	ph_first_cancer	Liver
+lung_elig	ph_first_cancer	Lung
+lung_elig	ph_first_cancer	Lymph Nodes
+lung_elig	ph_first_cancer	Male Genital, Unspec
+lung_elig	ph_first_cancer	Melanoma
+lung_elig	ph_first_cancer	Missing
+lung_elig	ph_first_cancer	Mouth
+lung_elig	ph_first_cancer	Multiple Myeloma
+lung_elig	ph_first_cancer	Multiple Non-PLCO Cancers
+lung_elig	ph_first_cancer	Nasopharynx, Nasal Cavity, Sinuses
+lung_elig	ph_first_cancer	No Personal History of Cancer
+lung_elig	ph_first_cancer	Non-Hodgkin's Lymphoma
+lung_elig	ph_first_cancer	Not Ascertained
+lung_elig	ph_first_cancer	Other
+lung_elig	ph_first_cancer	Ovarian
+lung_elig	ph_first_cancer	Pancreas
+lung_elig	ph_first_cancer	Penis
+lung_elig	ph_first_cancer	Peritoneum
+lung_elig	ph_first_cancer	Prostate
+lung_elig	ph_first_cancer	Skin
+lung_elig	ph_first_cancer	Spinal Cord and Cranial Nerves
+lung_elig	ph_first_cancer	Spleen
+lung_elig	ph_first_cancer	Stomach
+lung_elig	ph_first_cancer	Testicular
+lung_elig	ph_first_cancer	Thyroid
+lung_elig	ph_first_cancer	Ureter Urinary Glands
+lung_elig	ph_first_cancer	Urinary Tract
+lung_elig	ph_first_cancer	Uterus
+lung_elig	ph_first_cancer	Vagina
+lung_elig	ph_first_cancer_age	NUMBER
 lung_elig	ph_lung_bq	No
 lung_elig	ph_lung_bq	No Form
 lung_elig	ph_lung_bq	Yes
@@ -5126,6 +4968,8 @@ lung_elig	ph_lung_muq	Yes
 lung_elig	ph_lung_sqx	No
 lung_elig	ph_lung_sqx	No Form
 lung_elig	ph_lung_sqx	Yes
+lung_elig	ph_lung_trial	No
+lung_elig	ph_lung_trial	Yes
 lung_exit	fstcan_exitage	NUMBER
 lung_exit	fstcan_exitdays	NUMBER
 lung_exit	fstcan_exitstat	STRING
@@ -5278,7 +5122,6 @@ lung_treat	primary_trtl_nsc	Resection of one lobe or less without chemotherapy
 lung_treat	primary_trtl_nsc	Resection of two lobes or more without chemotherapy
 lung_treat	primary_trtl_nsc	Small cell lung cancer
 lung_treat	primary_trtl_nsc_days	NUMBER
-lung_treat	primary_trtl_small	Chemotherapy and radiation without resection
 lung_treat	primary_trtl_small	Chemotherapy and resection without radiation
 lung_treat	primary_trtl_small	Chemotherapy only
 lung_treat	primary_trtl_small	Chemotherapy, resection, and radiation
@@ -5622,146 +5465,6 @@ nsaid_use	ibuppd	No Form
 nsaid_use	ibuppd	None
 nsaid_use	ibuppd	Not Answered
 nsaid_use	nsaid_use_id	STRING
-ovar_case	arm	Control
-ovar_case	arm	Intervention
-ovar_case	biosp_f	No
-ovar_case	biosp_f	Yes
-ovar_case	center	Georgetown University
-ovar_case	center	Henry Ford Health System
-ovar_case	center	Marshfield Clinic Research Foundation
-ovar_case	center	Pacific Health Research and Education Institute (Honolulu)
-ovar_case	center	University of Alabama at Birmingham
-ovar_case	center	University of Colorado
-ovar_case	center	University of Minnesota
-ovar_case	center	University of Pittsburgh
-ovar_case	center	University of Utah
-ovar_case	center	Washington University in St Louis
-ovar_case	ovar_case_id	STRING
-ovar_case	ovary_trial_flag	STRING
-ovar_case	ph_any_trial	No
-ovar_case	ph_any_trial	Unknown
-ovar_case	ph_any_trial	Yes
-ovar_case	ph_first_cancer	Abdomen
-ovar_case	ph_first_cancer	Adrenal Glands
-ovar_case	ph_first_cancer	Bladder
-ovar_case	ph_first_cancer	Bone
-ovar_case	ph_first_cancer	Brain
-ovar_case	ph_first_cancer	Breast
-ovar_case	ph_first_cancer	Cervical
-ovar_case	ph_first_cancer	Cervical and Uterine
-ovar_case	ph_first_cancer	Colorectal
-ovar_case	ph_first_cancer	Digestive System
-ovar_case	ph_first_cancer	Don't Know
-ovar_case	ph_first_cancer	Endocrine Glands
-ovar_case	ph_first_cancer	Endometrium
-ovar_case	ph_first_cancer	Esophagus
-ovar_case	ph_first_cancer	Eye
-ovar_case	ph_first_cancer	Fallopian Tubes
-ovar_case	ph_first_cancer	Female Genital, Unspec
-ovar_case	ph_first_cancer	Gallbladder
-ovar_case	ph_first_cancer	Hematopoetic
-ovar_case	ph_first_cancer	Hodgkins Disease
-ovar_case	ph_first_cancer	Ill Defined Back, Hip, Hand
-ovar_case	ph_first_cancer	Intestine
-ovar_case	ph_first_cancer	Kaposi's Sarcoma
-ovar_case	ph_first_cancer	Kidney
-ovar_case	ph_first_cancer	Larynx
-ovar_case	ph_first_cancer	Leukemia
-ovar_case	ph_first_cancer	Liver
-ovar_case	ph_first_cancer	Lung
-ovar_case	ph_first_cancer	Lymph Nodes
-ovar_case	ph_first_cancer	Male Genital, Unspec
-ovar_case	ph_first_cancer	Melanoma
-ovar_case	ph_first_cancer	Missing
-ovar_case	ph_first_cancer	Mouth
-ovar_case	ph_first_cancer	Multiple Myeloma
-ovar_case	ph_first_cancer	Multiple Non-PLCO Cancers
-ovar_case	ph_first_cancer	Nasopharynx, Nasal Cavity, Sinuses
-ovar_case	ph_first_cancer	No Personal History of Cancer
-ovar_case	ph_first_cancer	Non-Hodgkin's Lymphoma
-ovar_case	ph_first_cancer	Not Ascertained
-ovar_case	ph_first_cancer	Other
-ovar_case	ph_first_cancer	Ovarian
-ovar_case	ph_first_cancer	Pancreas
-ovar_case	ph_first_cancer	Penis
-ovar_case	ph_first_cancer	Peritoneum
-ovar_case	ph_first_cancer	Prostate
-ovar_case	ph_first_cancer	Skin
-ovar_case	ph_first_cancer	Spinal Cord and Cranial Nerves
-ovar_case	ph_first_cancer	Spleen
-ovar_case	ph_first_cancer	Stomach
-ovar_case	ph_first_cancer	Testicular
-ovar_case	ph_first_cancer	Thyroid
-ovar_case	ph_first_cancer	Ureter Urinary Glands
-ovar_case	ph_first_cancer	Urinary Tract
-ovar_case	ph_first_cancer	Uterus
-ovar_case	ph_first_cancer	Vagina
-ovar_case	ph_first_cancer_age	NUMBER
-ovar_case	ph_osumm_trial	No
-ovar_case	ph_osumm_trial	Yes
-ovar_case	plco_dx	Abdomen
-ovar_case	plco_dx	Adrenal glands
-ovar_case	plco_dx	Anus and anal canal
-ovar_case	plco_dx	Bladder
-ovar_case	plco_dx	Bone
-ovar_case	plco_dx	Brain
-ovar_case	plco_dx	Breast
-ovar_case	plco_dx	Cervix
-ovar_case	plco_dx	Colorectum
-ovar_case	plco_dx	Connective, subcutaneous, and other soft tissues and peripheral nervous system
-ovar_case	plco_dx	Diaphragm and connective tissue of thorax
-ovar_case	plco_dx	Digestive system, other and unspecified
-ovar_case	plco_dx	Don't know
-ovar_case	plco_dx	Endocrine glands
-ovar_case	plco_dx	Endometrium
-ovar_case	plco_dx	Esophagus
-ovar_case	plco_dx	Eye
-ovar_case	plco_dx	Falopian tubes
-ovar_case	plco_dx	Female genital, other and unspecified
-ovar_case	plco_dx	Gallbladder
-ovar_case	plco_dx	Heart, mediastinum, and pleura
-ovar_case	plco_dx	Hematopoietic and reticulendothelial systems
-ovar_case	plco_dx	Hodgkins disease
-ovar_case	plco_dx	Ill-defined sites
-ovar_case	plco_dx	Intestine
-ovar_case	plco_dx	Kaposi's sarcoma
-ovar_case	plco_dx	Kidney and renal pelvis
-ovar_case	plco_dx	Larynx
-ovar_case	plco_dx	Leukemia
-ovar_case	plco_dx	Lip, oral cavity, pharynx
-ovar_case	plco_dx	Liver
-ovar_case	plco_dx	Lung
-ovar_case	plco_dx	Lymph nodes
-ovar_case	plco_dx	Male genital, other and unspecified
-ovar_case	plco_dx	Melanoma
-ovar_case	plco_dx	Meninges
-ovar_case	plco_dx	Multiple myeloma
-ovar_case	plco_dx	N/A
-ovar_case	plco_dx	Nasopharynx, nasal cavity, middle ear, and sinuses
-ovar_case	plco_dx	Non-Hodgkin's lymphoma
-ovar_case	plco_dx	Not ascertained
-ovar_case	plco_dx	Other
-ovar_case	plco_dx	Other Cancer
-ovar_case	plco_dx	Ovary
-ovar_case	plco_dx	Pancreas
-ovar_case	plco_dx	Pelvis
-ovar_case	plco_dx	Penis
-ovar_case	plco_dx	Peritoneum
-ovar_case	plco_dx	Prostate
-ovar_case	plco_dx	Respiratory system
-ovar_case	plco_dx	Skin
-ovar_case	plco_dx	Spinal cord and cranial nerves
-ovar_case	plco_dx	Spleen
-ovar_case	plco_dx	Stomach
-ovar_case	plco_dx	Testis
-ovar_case	plco_dx	Thymus
-ovar_case	plco_dx	Thyroid
-ovar_case	plco_dx	Trachea
-ovar_case	plco_dx	Ureter, urinary organs
-ovar_case	plco_dx	Uterus
-ovar_case	plco_dx	Vagina
-ovar_case	plco_dx_age	NUMBER
-ovar_case	rndyear	NUMBER
 ovar_diag	cancerosumm	Fallopian Tube
 ovar_diag	cancerosumm	Invasive Ovarian
 ovar_diag	cancerosumm	No Cancer
@@ -6022,6 +5725,7 @@ ovar_elig	osumm_eligible_muq	Yes
 ovar_elig	osumm_eligible_sqx	No
 ovar_elig	osumm_eligible_sqx	Yes
 ovar_elig	ovar_elig_id	STRING
+ovar_elig	ovary_trial_flag	STRING
 ovar_elig	ph_any_bq	No
 ovar_elig	ph_any_bq	No Form
 ovar_elig	ph_any_bq	Unknown
@@ -6038,6 +5742,65 @@ ovar_elig	ph_any_sqx	No
 ovar_elig	ph_any_sqx	No Form
 ovar_elig	ph_any_sqx	Unknown
 ovar_elig	ph_any_sqx	Yes
+ovar_elig	ph_any_trial	No
+ovar_elig	ph_any_trial	Unknown
+ovar_elig	ph_any_trial	Yes
+ovar_elig	ph_first_cancer	Abdomen
+ovar_elig	ph_first_cancer	Adrenal Glands
+ovar_elig	ph_first_cancer	Bladder
+ovar_elig	ph_first_cancer	Bone
+ovar_elig	ph_first_cancer	Brain
+ovar_elig	ph_first_cancer	Breast
+ovar_elig	ph_first_cancer	Cervical
+ovar_elig	ph_first_cancer	Cervical and Uterine
+ovar_elig	ph_first_cancer	Colorectal
+ovar_elig	ph_first_cancer	Digestive System
+ovar_elig	ph_first_cancer	Don't Know
+ovar_elig	ph_first_cancer	Endocrine Glands
+ovar_elig	ph_first_cancer	Endometrium
+ovar_elig	ph_first_cancer	Esophagus
+ovar_elig	ph_first_cancer	Eye
+ovar_elig	ph_first_cancer	Fallopian Tubes
+ovar_elig	ph_first_cancer	Female Genital, Unspec
+ovar_elig	ph_first_cancer	Gallbladder
+ovar_elig	ph_first_cancer	Hematopoetic
+ovar_elig	ph_first_cancer	Hodgkins Disease
+ovar_elig	ph_first_cancer	Ill Defined Back, Hip, Hand
+ovar_elig	ph_first_cancer	Intestine
+ovar_elig	ph_first_cancer	Kaposi's Sarcoma
+ovar_elig	ph_first_cancer	Kidney
+ovar_elig	ph_first_cancer	Larynx
+ovar_elig	ph_first_cancer	Leukemia
+ovar_elig	ph_first_cancer	Liver
+ovar_elig	ph_first_cancer	Lung
+ovar_elig	ph_first_cancer	Lymph Nodes
+ovar_elig	ph_first_cancer	Male Genital, Unspec
+ovar_elig	ph_first_cancer	Melanoma
+ovar_elig	ph_first_cancer	Missing
+ovar_elig	ph_first_cancer	Mouth
+ovar_elig	ph_first_cancer	Multiple Myeloma
+ovar_elig	ph_first_cancer	Multiple Non-PLCO Cancers
+ovar_elig	ph_first_cancer	Nasopharynx, Nasal Cavity, Sinuses
+ovar_elig	ph_first_cancer	No Personal History of Cancer
+ovar_elig	ph_first_cancer	Non-Hodgkin's Lymphoma
+ovar_elig	ph_first_cancer	Not Ascertained
+ovar_elig	ph_first_cancer	Other
+ovar_elig	ph_first_cancer	Ovarian
+ovar_elig	ph_first_cancer	Pancreas
+ovar_elig	ph_first_cancer	Penis
+ovar_elig	ph_first_cancer	Peritoneum
+ovar_elig	ph_first_cancer	Prostate
+ovar_elig	ph_first_cancer	Skin
+ovar_elig	ph_first_cancer	Spinal Cord and Cranial Nerves
+ovar_elig	ph_first_cancer	Spleen
+ovar_elig	ph_first_cancer	Stomach
+ovar_elig	ph_first_cancer	Testicular
+ovar_elig	ph_first_cancer	Thyroid
+ovar_elig	ph_first_cancer	Ureter Urinary Glands
+ovar_elig	ph_first_cancer	Urinary Tract
+ovar_elig	ph_first_cancer	Uterus
+ovar_elig	ph_first_cancer	Vagina
+ovar_elig	ph_first_cancer_age	NUMBER
 ovar_elig	ph_osumm_bq	No
 ovar_elig	ph_osumm_bq	No Form
 ovar_elig	ph_osumm_bq	Yes
@@ -6053,6 +5816,8 @@ ovar_elig	ph_osumm_muq	Yes
 ovar_elig	ph_osumm_sqx	No
 ovar_elig	ph_osumm_sqx	No Form
 ovar_elig	ph_osumm_sqx	Yes
+ovar_elig	ph_osumm_trial	No
+ovar_elig	ph_osumm_trial	Yes
 ovar_exit	fstcan_exitage	NUMBER
 ovar_exit	fstcan_exitdays	NUMBER
 ovar_exit	fstcan_exitstat	STRING
@@ -6285,145 +6050,6 @@ ovar_treat	primary_trtosumm	Pending Treatment Form
 ovar_treat	primary_trtosumm	Surgery Only
 ovar_treat	primary_trtosumm	Surgery and Chemotherapy
 ovar_treat	primary_trtosumm_days	NUMBER
-pros_case	arm	Control
-pros_case	arm	Intervention
-pros_case	biosp_f	No
-pros_case	biosp_f	Yes
-pros_case	center	Georgetown University
-pros_case	center	Henry Ford Health System
-pros_case	center	Marshfield Clinic Research Foundation
-pros_case	center	Pacific Health Research and Education Institute (Honolulu)
-pros_case	center	University of Alabama at Birmingham
-pros_case	center	University of Colorado
-pros_case	center	University of Minnesota
-pros_case	center	University of Pittsburgh
-pros_case	center	University of Utah
-pros_case	center	Washington University in St Louis
-pros_case	ph_any_trial	No
-pros_case	ph_any_trial	Unknown
-pros_case	ph_any_trial	Yes
-pros_case	ph_first_cancer	Abdomen
-pros_case	ph_first_cancer	Adrenal Glands
-pros_case	ph_first_cancer	Bladder
-pros_case	ph_first_cancer	Bone
-pros_case	ph_first_cancer	Brain
-pros_case	ph_first_cancer	Breast
-pros_case	ph_first_cancer	Cervical
-pros_case	ph_first_cancer	Cervical and Uterine
-pros_case	ph_first_cancer	Colorectal
-pros_case	ph_first_cancer	Digestive System
-pros_case	ph_first_cancer	Don't Know
-pros_case	ph_first_cancer	Endocrine Glands
-pros_case	ph_first_cancer	Endometrium
-pros_case	ph_first_cancer	Esophagus
-pros_case	ph_first_cancer	Eye
-pros_case	ph_first_cancer	Fallopian Tubes
-pros_case	ph_first_cancer	Female Genital, Unspec
-pros_case	ph_first_cancer	Gallbladder
-pros_case	ph_first_cancer	Hematopoetic
-pros_case	ph_first_cancer	Hodgkins Disease
-pros_case	ph_first_cancer	Ill Defined Back, Hip, Hand
-pros_case	ph_first_cancer	Intestine
-pros_case	ph_first_cancer	Kaposi's Sarcoma
-pros_case	ph_first_cancer	Kidney
-pros_case	ph_first_cancer	Larynx
-pros_case	ph_first_cancer	Leukemia
-pros_case	ph_first_cancer	Liver
-pros_case	ph_first_cancer	Lung
-pros_case	ph_first_cancer	Lymph Nodes
-pros_case	ph_first_cancer	Male Genital, Unspec
-pros_case	ph_first_cancer	Melanoma
-pros_case	ph_first_cancer	Missing
-pros_case	ph_first_cancer	Mouth
-pros_case	ph_first_cancer	Multiple Myeloma
-pros_case	ph_first_cancer	Multiple Non-PLCO Cancers
-pros_case	ph_first_cancer	Nasopharynx, Nasal Cavity, Sinuses
-pros_case	ph_first_cancer	No Personal History of Cancer
-pros_case	ph_first_cancer	Non-Hodgkin's Lymphoma
-pros_case	ph_first_cancer	Not Ascertained
-pros_case	ph_first_cancer	Other
-pros_case	ph_first_cancer	Ovarian
-pros_case	ph_first_cancer	Pancreas
-pros_case	ph_first_cancer	Penis
-pros_case	ph_first_cancer	Peritoneum
-pros_case	ph_first_cancer	Prostate
-pros_case	ph_first_cancer	Skin
-pros_case	ph_first_cancer	Spinal Cord and Cranial Nerves
-pros_case	ph_first_cancer	Spleen
-pros_case	ph_first_cancer	Stomach
-pros_case	ph_first_cancer	Testicular
-pros_case	ph_first_cancer	Thyroid
-pros_case	ph_first_cancer	Ureter Urinary Glands
-pros_case	ph_first_cancer	Urinary Tract
-pros_case	ph_first_cancer	Uterus
-pros_case	ph_first_cancer	Vagina
-pros_case	ph_first_cancer_age	NUMBER
-pros_case	ph_pros_trial	No
-pros_case	ph_pros_trial	Yes
-pros_case	plco_dx	Abdomen
-pros_case	plco_dx	Adrenal glands
-pros_case	plco_dx	Anus and anal canal
-pros_case	plco_dx	Bladder
-pros_case	plco_dx	Bone
-pros_case	plco_dx	Brain
-pros_case	plco_dx	Breast
-pros_case	plco_dx	Cervix
-pros_case	plco_dx	Colorectum
-pros_case	plco_dx	Connective, subcutaneous, and other soft tissues and peripheral nervous system
-pros_case	plco_dx	Diaphragm and connective tissue of thorax
-pros_case	plco_dx	Digestive system, other and unspecified
-pros_case	plco_dx	Don't know
-pros_case	plco_dx	Endocrine glands
-pros_case	plco_dx	Endometrium
-pros_case	plco_dx	Esophagus
-pros_case	plco_dx	Eye
-pros_case	plco_dx	Falopian tubes
-pros_case	plco_dx	Female genital, other and unspecified
-pros_case	plco_dx	Gallbladder
-pros_case	plco_dx	Heart, mediastinum, and pleura
-pros_case	plco_dx	Hematopoietic and reticulendothelial systems
-pros_case	plco_dx	Hodgkins disease
-pros_case	plco_dx	Ill-defined sites
-pros_case	plco_dx	Intestine
-pros_case	plco_dx	Kaposi's sarcoma
-pros_case	plco_dx	Kidney and renal pelvis
-pros_case	plco_dx	Larynx
-pros_case	plco_dx	Leukemia
-pros_case	plco_dx	Lip, oral cavity, pharynx
-pros_case	plco_dx	Liver
-pros_case	plco_dx	Lung
-pros_case	plco_dx	Lymph nodes
-pros_case	plco_dx	Male genital, other and unspecified
-pros_case	plco_dx	Melanoma
-pros_case	plco_dx	Meninges
-pros_case	plco_dx	Multiple myeloma
-pros_case	plco_dx	N/A
-pros_case	plco_dx	Nasopharynx, nasal cavity, middle ear, and sinuses
-pros_case	plco_dx	Non-Hodgkin's lymphoma
-pros_case	plco_dx	Not ascertained
-pros_case	plco_dx	Other
-pros_case	plco_dx	Other Cancer
-pros_case	plco_dx	Ovary
-pros_case	plco_dx	Pancreas
-pros_case	plco_dx	Pelvis
-pros_case	plco_dx	Penis
-pros_case	plco_dx	Peritoneum
-pros_case	plco_dx	Prostate
-pros_case	plco_dx	Respiratory system
-pros_case	plco_dx	Skin
-pros_case	plco_dx	Spinal cord and cranial nerves
-pros_case	plco_dx	Spleen
-pros_case	plco_dx	Stomach
-pros_case	plco_dx	Testis
-pros_case	plco_dx	Thymus
-pros_case	plco_dx	Thyroid
-pros_case	plco_dx	Trachea
-pros_case	plco_dx	Ureter, urinary organs
-pros_case	plco_dx	Uterus
-pros_case	plco_dx	Vagina
-pros_case	plco_dx_age	NUMBER
-pros_case	pros_case_id	STRING
-pros_case	rndyear	NUMBER
 pros_diag	candxdaysp	NUMBER
 pros_diag	dx_psa	NUMBER
 pros_diag	dx_psa_gap	NUMBER
@@ -6721,6 +6347,65 @@ pros_elig	ph_any_sqx	No
 pros_elig	ph_any_sqx	No Form
 pros_elig	ph_any_sqx	Unknown
 pros_elig	ph_any_sqx	Yes
+pros_elig	ph_any_trial	No
+pros_elig	ph_any_trial	Unknown
+pros_elig	ph_any_trial	Yes
+pros_elig	ph_first_cancer	Abdomen
+pros_elig	ph_first_cancer	Adrenal Glands
+pros_elig	ph_first_cancer	Bladder
+pros_elig	ph_first_cancer	Bone
+pros_elig	ph_first_cancer	Brain
+pros_elig	ph_first_cancer	Breast
+pros_elig	ph_first_cancer	Cervical
+pros_elig	ph_first_cancer	Cervical and Uterine
+pros_elig	ph_first_cancer	Colorectal
+pros_elig	ph_first_cancer	Digestive System
+pros_elig	ph_first_cancer	Don't Know
+pros_elig	ph_first_cancer	Endocrine Glands
+pros_elig	ph_first_cancer	Endometrium
+pros_elig	ph_first_cancer	Esophagus
+pros_elig	ph_first_cancer	Eye
+pros_elig	ph_first_cancer	Fallopian Tubes
+pros_elig	ph_first_cancer	Female Genital, Unspec
+pros_elig	ph_first_cancer	Gallbladder
+pros_elig	ph_first_cancer	Hematopoetic
+pros_elig	ph_first_cancer	Hodgkins Disease
+pros_elig	ph_first_cancer	Ill Defined Back, Hip, Hand
+pros_elig	ph_first_cancer	Intestine
+pros_elig	ph_first_cancer	Kaposi's Sarcoma
+pros_elig	ph_first_cancer	Kidney
+pros_elig	ph_first_cancer	Larynx
+pros_elig	ph_first_cancer	Leukemia
+pros_elig	ph_first_cancer	Liver
+pros_elig	ph_first_cancer	Lung
+pros_elig	ph_first_cancer	Lymph Nodes
+pros_elig	ph_first_cancer	Male Genital, Unspec
+pros_elig	ph_first_cancer	Melanoma
+pros_elig	ph_first_cancer	Missing
+pros_elig	ph_first_cancer	Mouth
+pros_elig	ph_first_cancer	Multiple Myeloma
+pros_elig	ph_first_cancer	Multiple Non-PLCO Cancers
+pros_elig	ph_first_cancer	Nasopharynx, Nasal Cavity, Sinuses
+pros_elig	ph_first_cancer	No Personal History of Cancer
+pros_elig	ph_first_cancer	Non-Hodgkin's Lymphoma
+pros_elig	ph_first_cancer	Not Ascertained
+pros_elig	ph_first_cancer	Other
+pros_elig	ph_first_cancer	Ovarian
+pros_elig	ph_first_cancer	Pancreas
+pros_elig	ph_first_cancer	Penis
+pros_elig	ph_first_cancer	Peritoneum
+pros_elig	ph_first_cancer	Prostate
+pros_elig	ph_first_cancer	Skin
+pros_elig	ph_first_cancer	Spinal Cord and Cranial Nerves
+pros_elig	ph_first_cancer	Spleen
+pros_elig	ph_first_cancer	Stomach
+pros_elig	ph_first_cancer	Testicular
+pros_elig	ph_first_cancer	Thyroid
+pros_elig	ph_first_cancer	Ureter Urinary Glands
+pros_elig	ph_first_cancer	Urinary Tract
+pros_elig	ph_first_cancer	Uterus
+pros_elig	ph_first_cancer	Vagina
+pros_elig	ph_first_cancer_age	NUMBER
 pros_elig	ph_pros_bq	No
 pros_elig	ph_pros_bq	No Form
 pros_elig	ph_pros_bq	Yes
@@ -6736,6 +6421,8 @@ pros_elig	ph_pros_muq	Yes
 pros_elig	ph_pros_sqx	No
 pros_elig	ph_pros_sqx	No Form
 pros_elig	ph_pros_sqx	Yes
+pros_elig	ph_pros_trial	No
+pros_elig	ph_pros_trial	Yes
 pros_elig	pros_elig_id	STRING
 pros_elig	pros_eligible_bq	No
 pros_elig	pros_eligible_bq	Yes
@@ -8431,107 +8118,58 @@ visit	visit_id	STRING
 visit	visit_year_from_index	NUMBER
 
 relationship	source_node	destination_node	property	value_or_TYPE
-breast_case_of_cohort	breast_case	cohort	NA	NA
-breast_hist_of_breast_case	breast_hist	breast_case	NA	NA
-breast_mort_of_breast_case	breast_mort	breast_case	NA	NA
-colo_case_of_cohort	colo_case	cohort	NA	NA
-colo_hist_of_colo_case	colo_hist	colo_case	NA	NA
-colo_mort_of_colo_case	colo_mort	colo_case	NA	NA
-comp_of_breast_case	comp	breast_case	NA	NA
-comp_of_colo_case	comp	colo_case	NA	NA
-comp_of_lung_case	comp	lung_case	NA	NA
-comp_of_ovar_case	comp	ovar_case	NA	NA
-comp_of_pros_case	comp	pros_case	NA	NA
-demo_of_breast_case	demo	breast_case	NA	NA
-demo_of_colo_case	demo	colo_case	NA	NA
-demo_of_lung_case	demo	lung_case	NA	NA
-demo_of_ovar_case	demo	ovar_case	NA	NA
-demo_of_pros_case	demo	pros_case	NA	NA
-dhq_of_breast_case	dhq	breast_case	NA	NA
-dhq_of_colo_case	dhq	colo_case	NA	NA
-dhq_of_lung_case	dhq	lung_case	NA	NA
-dhq_of_ovar_case	dhq	ovar_case	NA	NA
-dhq_of_pros_case	dhq	pros_case	NA	NA
-diag_of_breast_case	breast_diag	breast_case	NA	NA
-diag_of_colo_case	colo_diag	colo_case	NA	NA
-diag_of_lung_case	lung_diag	lung_case	NA	NA
-diag_of_ovar_case	ovar_diag	ovar_case	NA	NA
-diag_of_pros_case	pros_diag	pros_case	NA	NA
-dqx_of_breast_case	dqx	breast_case	NA	NA
-dqx_of_colo_case	dqx	colo_case	NA	NA
-dqx_of_lung_case	dqx	lung_case	NA	NA
-dqx_of_ovar_case	dqx	ovar_case	NA	NA
-dqx_of_pros_case	dqx	pros_case	NA	NA
-elig_of_breast_case	breast_elig	breast_case	NA	NA
-elig_of_colo_case	colo_elig	colo_case	NA	NA
-elig_of_lung_case	lung_elig	lung_case	NA	NA
-elig_of_ovar_case	ovar_elig	ovar_case	NA	NA
-elig_of_pros_case	pros_elig	pros_case	NA	NA
-exit_of_breast_case	breast_exit	breast_case	NA	NA
-exit_of_colo_case	colo_exit	colo_case	NA	NA
-exit_of_lung_case	lung_exit	lung_case	NA	NA
-exit_of_ovar_case	ovar_exit	ovar_case	NA	NA
-exit_of_pros_case	pros_exit	pros_case	NA	NA
-fem_health_cond_of_breast_case	fem_health_cond	breast_case	NA	NA
-fem_health_cond_of_colo_case	fem_health_cond	colo_case	NA	NA
-fem_health_cond_of_lung_case	fem_health_cond	lung_case	NA	NA
-fem_health_cond_of_ovar_case	fem_health_cond	ovar_case	NA	NA
-health_cond_of_breast_case	health_cond	breast_case	NA	NA
-health_cond_of_colo_case	health_cond	colo_case	NA	NA
-health_cond_of_lung_case	health_cond	lung_case	NA	NA
-health_cond_of_ovar_case	health_cond	ovar_case	NA	NA
-health_cond_of_pros_case	health_cond	pros_case	NA	NA
-lung_case_of_cohort	lung_case	cohort	NA	NA
-lung_hist_of_lung_case	lung_hist	lung_case	NA	NA
-lung_mort_of_lung_case	lung_mort	lung_case	NA	NA
-male_health_cond_of_colo_case	male_health_cond	colo_case	NA	NA
-male_health_cond_of_lung_case	male_health_cond	lung_case	NA	NA
-male_health_cond_of_pros_case	male_health_cond	pros_case	NA	NA
-mort_of_breast_case	mort	breast_case	NA	NA
-mort_of_colo_case	mort	colo_case	NA	NA
-mort_of_lung_case	mort	lung_case	NA	NA
-mort_of_ovar_case	mort	ovar_case	NA	NA
-mort_of_pros_case	mort	pros_case	NA	NA
-nsaid_use_of_breast_case	nsaid_use	breast_case	NA	NA
-nsaid_use_of_colo_case	nsaid_use	colo_case	NA	NA
-nsaid_use_of_lung_case	nsaid_use	lung_case	NA	NA
-nsaid_use_of_ovar_case	nsaid_use	ovar_case	NA	NA
-nsaid_use_of_pros_case	nsaid_use	pros_case	NA	NA
-of_clinical_trial	cohort	clinical_trial	NA	NA
-ovar_case_of_cohort	ovar_case	cohort	NA	NA
-ovar_hist_of_ovar_case	ovar_hist	ovar_case	NA	NA
-ovar_mort_of_ovar_case	ovar_mort	ovar_case	NA	NA
-pros_case_of_cohort	pros_case	cohort	NA	NA
-pros_hist_of_pros_case	pros_hist	pros_case	NA	NA
-pros_mort_of_pros_case	pros_mort	pros_case	NA	NA
-regn_of_breast_case	breast_regn	breast_case	NA	NA
-regn_of_colo_case	colo_regn	colo_case	NA	NA
-regn_of_lung_case	lung_regn	lung_case	NA	NA
-regn_of_ovar_case	ovar_regn	ovar_case	NA	NA
-regn_of_pros_case	pros_regn	pros_case	NA	NA
-risk_of_breast_case	risk	breast_case	NA	NA
-risk_of_colo_case	risk	colo_case	NA	NA
-risk_of_lung_case	risk	lung_case	NA	NA
-risk_of_ovar_case	risk	ovar_case	NA	NA
-risk_of_pros_case	risk	pros_case	NA	NA
-screen_of_colo_case	colo_screen	colo_case	NA	NA
-screen_of_lung_case	lung_screen	lung_case	NA	NA
-screen_of_ovar_case	ovar_screen	ovar_case	NA	NA
-screen_of_pros_case	pros_screen	pros_case	NA	NA
-sqx_of_breast_case	sqx	breast_case	NA	NA
-sqx_of_colo_case	sqx	colo_case	NA	NA
-sqx_of_lung_case	sqx	lung_case	NA	NA
-sqx_of_ovar_case	sqx	ovar_case	NA	NA
-sqx_of_pros_case	sqx	pros_case	NA	NA
-treat_of_colo_case	colo_treat	colo_case	NA	NA
-treat_of_lung_case	lung_treat	lung_case	NA	NA
-treat_of_ovar_case	ovar_treat	ovar_case	NA	NA
-treat_of_pros_case	pros_treat	pros_case	NA	NA
-visit_of_breast_case	visit	breast_case	NA	NA
-visit_of_colo_case	visit	colo_case	NA	NA
-visit_of_lung_case	visit	lung_case	NA	NA
-visit_of_ovar_case	visit	ovar_case	NA	NA
-visit_of_pros_case	visit	pros_case	NA	NA
+breast_diag_of_case	breast_diag	case	NA	NA
+breast_elig_of_case	breast_elig	case	NA	NA
+breast_exit_of_case	breast_exit	case	NA	NA
+breast_hist_of_case	breast_hist	case	NA	NA
+breast_mort_of_case	breast_mort	case	NA	NA
+breast_regn_of_case	breast_regn	case	NA	NA
+case_of_cohort	case	cohort	NA	NA
+cohort	cohort	clinical_trial	NA	NA
+colo_diag_of_case	colo_diag	case	NA	NA
+colo_elig_of_case	colo_elig	case	NA	NA
+colo_exit_of_case	colo_exit	case	NA	NA
+colo_hist_of_case	colo_hist	case	NA	NA
+colo_mort_of_case	colo_mort	case	NA	NA
+colo_regn_of_case	colo_regn	case	NA	NA
+colo_screen_of_case	colo_screen	case	NA	NA
+colo_treat_of_case	colo_treat	case	NA	NA
+comp_of_case	comp	case	NA	NA
+demo_of_case	demo	case	NA	NA
+dhq_of_case	dhq	case	NA	NA
+dqx_of_case	dqx	case	NA	NA
+fem_health_cond_of_case	fem_health_cond	case	NA	NA
+health_cond_of_case	health_cond	case	NA	NA
+lung_diag_of_case	lung_diag	case	NA	NA
+lung_elig_of_case	lung_elig	case	NA	NA
+lung_exit_of_case	lung_exit	case	NA	NA
+lung_hist_of_case	lung_hist	case	NA	NA
+lung_mort_of_case	lung_mort	case	NA	NA
+lung_regn_of_case	lung_regn	case	NA	NA
+lung_screen_of_case	lung_screen	case	NA	NA
+lung_treat_of_case	lung_treat	case	NA	NA
+male_health_cond_of_case	male_health_cond	case	NA	NA
+mort_of_case	mort	case	NA	NA
+nsaid_use_of_case	nsaid_use	case	NA	NA
+ovar_diag_of_case	ovar_diag	case	NA	NA
+ovar_elig_of_case	ovar_elig	case	NA	NA
+ovar_exit_of_case	ovar_exit	case	NA	NA
+ovar_hist_of_case	ovar_hist	case	NA	NA
+ovar_mort_of_case	ovar_mort	case	NA	NA
+ovar_regn_of_case	ovar_regn	case	NA	NA
+ovar_screen_of_case	ovar_screen	case	NA	NA
+ovar_treat_of_case	ovar_treat	case	NA	NA
+pros_diag_of_case	pros_diag	case	NA	NA
+pros_elig_of_case	pros_elig	case	NA	NA
+pros_exit_of_case	pros_exit	case	NA	NA
+pros_hist_of_case	pros_hist	case	NA	NA
+pros_mort_of_case	pros_mort	case	NA	NA
+pros_regn_of_case	pros_regn	case	NA	NA
+pros_screen_of_case	pros_screen	case	NA	NA
+pros_treat_of_case	pros_treat	case	NA	NA
+risk_of_case	risk	case	NA	NA
+sqx_of_case	sqx	case	NA	NA
+visit_of_case	visit	case	NA	NA
 
 property	description
 addsug_perc2015	PERCENTOFCALORIESFROMADDEDSUGAR
@@ -8608,12 +8246,12 @@ biopllink0	Was There A Biopsy Linked To The T0 Lung Screen
 biopllink1	Was There A Biopsy Linked To The T1 Lung Screen
 biopllink2	Was There A Biopsy Linked To The T2 Lung Screen
 biopllink3	Was There A Biopsy Linked To The T3 Lung Screen
-biopolink0	Was There A Biopsy Linked To The T0 Ovarian Screen
-biopolink1	Was There A Biopsy Linked To The T1 Ovarian Screen
-biopolink2	Was There A Biopsy Linked To The T2 Ovarian Screen
-biopolink3	Was There A Biopsy Linked To The T3 Ovarian Screen
-biopolink4	Was There A Biopsy Linked To The T4 Ovarian Screen
-biopolink5	Was There A Biopsy Linked To The T5 Ovarian Screen
+biopolink0	Was There A Biopsy  Linked To The T0  Ovarian Screen
+biopolink1	Was There A Biopsy  Linked To The T1  Ovarian Screen
+biopolink2	Was There A Biopsy  Linked To The T2  Ovarian Screen
+biopolink3	Was There A Biopsy  Linked To The T3  Ovarian Screen
+biopolink4	Was There A Biopsy  Linked To The T4  Ovarian Screen
+biopolink5	Was There A Biopsy  Linked To The T5  Ovarian Screen
 biopplink0	Was There A Biopsy Linked To The T0 Prostate Screen
 biopplink1	Was There A Biopsy Linked To The T1 Prostate Screen
 biopplink2	Was There A Biopsy Linked To The T2 Prostate Screen
@@ -8631,7 +8269,6 @@ bq_adminm	Method of Questionnaire Administration
 bq_age	Age at BQ
 bq_compdays	Days Until BQ Completion
 breast_candxdays	Days Until Breast Cancer Diagnosis
-breast_case_id	Node ID
 breast_clinstage	Breast Clinical Stage (AJCC 5th Edition)
 breast_clinstage_7e	Breast Clinical Stage (AJCC 7th Edition)
 breast_clinstage_m	Breast Clinical Stage M Component
@@ -8717,6 +8354,7 @@ carb_potato	CarbohydratefromPotatoes(g/day)
 carb_soft_drink	CarbohydratefromSoftDrinks(g/day)
 carb_veg	CarbohydratefromVegetables(g/day)
 carb_whole_grain	CarbohydratefromWholeGrains(g/day)
+case_id	Case ID
 center	Study Center
 cig_stat	Cigarette Smoking Status
 cig_stop	# of Years Since Stopped Smoking Cigarettes
@@ -8734,7 +8372,6 @@ cohort_id	Node ID
 cohort_title	A Title for the Cohort
 colo_cancer	Confirmed Colorectal Cancer
 colo_cancer_type	Colorectal Cancer Type
-colo_case_id	Node ID
 colo_clinstage	Colorectal Clinical Stage (AJCC 5th Edition)
 colo_clinstage_7e	Colorectal Clinical Stage (AJCC 7th Edition)
 colo_clinstage_m	Colorectal Clinical Stage M Component
@@ -10113,7 +9750,7 @@ insirght35	In Situ Carcinoma Found on Right Side Following Positive T35 Screen
 insirght5	In Situ Carcinoma Found on Right Side Following Positive T5 Screen
 intstatc_cat	Colorectal Cancer Screen Detected vs. Interval Status
 intstatl_cat	Lung Cancer Screen Detected vs. Interval Status
-intstatosumm_cat	Ovarian Cancer Screen Detected vs. Interval Status
+intstatosumm_cat	Ovarian Cancer Screen  Detected vs. Interval  Status
 intstatp_cat	Prostate Cancer Screen Detected vs. Interval Status
 is_dead_with_cod	Is Dead with Cause Of Death
 largeith0	Large Adenoma Found Following Positive T0 Screen
@@ -10154,7 +9791,6 @@ liver_comorbidity	Liver Comorbidities
 lmenstr	Age at Menopause
 lung_cancer	Confirmed Lung Cancer
 lung_cancer_type	Lung Cancer Type
-lung_case_id	Node ID
 lung_clinstage	Lung Clinical Stage (AJCC 5th Edition)
 lung_clinstage_7e	Lung Clinical Stage (AJCC 7th Edition)
 lung_clinstage_m	Lung Clinical Stage M Component
@@ -10368,7 +10004,6 @@ othfind_divlosis0	Other Irregular Findings: Diverticulosis at T0
 othfind_divlosis3	Other Irregular Findings: Diverticulosis at T3
 othfind_divlosis35	Other Irregular Findings: Diverticulosis at T35
 othfind_divlosis5	Other Irregular Findings: Diverticulosis at T3
-ovar_case_id	Node ID
 ovar_diag_id	Node ID
 ovar_elig_id	Node ID
 ovar_exit_id	Node ID
@@ -10377,12 +10012,12 @@ ovar_exitdays	Days Until Ovarian Incidence Exit
 ovar_exitstat	Ovarian Incidence Exit Status
 ovar_hist_id	Node ID
 ovar_mort_id	Node ID
-ovar_mra_stat0	Was There A Biopsy Linked To The T0 Ovarian Screen
-ovar_mra_stat1	Was There A Biopsy Linked To The T1 Ovarian Screen
-ovar_mra_stat2	Was There A Biopsy Linked To The T2 Ovarian Screen
-ovar_mra_stat3	Was There A Biopsy Linked To The T3 Ovarian Screen
-ovar_mra_stat4	Was There A Biopsy Linked To The T4 Ovarian Screen
-ovar_mra_stat5	Was There A Biopsy Linked To The T5 Ovarian Screen
+ovar_mra_stat0	Was There A Biopsy  Linked To The T0  Ovarian Screen
+ovar_mra_stat1	Was There A Biopsy  Linked To The T1  Ovarian Screen
+ovar_mra_stat2	Was There A Biopsy  Linked To The T2  Ovarian Screen
+ovar_mra_stat3	Was There A Biopsy  Linked To The T3  Ovarian Screen
+ovar_mra_stat4	Was There A Biopsy  Linked To The T4  Ovarian Screen
+ovar_mra_stat5	Was There A Biopsy  Linked To The T5  Ovarian Screen
 ovar_regn_id	Node ID
 ovar_screen_id	Node ID
 ovar_treat_id	Node ID
@@ -10591,11 +10226,11 @@ ph_lung_dqx	DQX Analysis Personal History of Lung Cancer
 ph_lung_muq	MUQ Analysis Personal History of Lung Cancer
 ph_lung_sqx	SQX Analysis Personal History of Lung Cancer
 ph_lung_trial	Trial Personal History of Lung Cancer
-ph_osumm_bq	BQ Analysis Personal History of Ovarian/Ft/Pt Cancer
-ph_osumm_dhq	DHQ Analysis Personal History of Ovarian/Ft/Pt Cancer
-ph_osumm_dqx	DQX Analysis Personal History of Ovarian/Ft/Pt Cancer
-ph_osumm_muq	MUQ Analysis Personal History of Ovarian/Ft/Pt Cancer
-ph_osumm_sqx	SQX Analysis Personal History of Ovarian/Ft/Pt Cancer
+ph_osumm_bq	BQ Analysis Personal  History of Ovarian/Ft/Pt  Cancer
+ph_osumm_dhq	DHQ Analysis Personal  History of Ovarian/Ft/Pt  Cancer
+ph_osumm_dqx	DQX Analysis Personal History of Ovarian/Ft/Pt  Cancer
+ph_osumm_muq	MUQ Analysis Personal  History of Ovarian/Ft/Pt  Cancer
+ph_osumm_sqx	SQX Analysis Personal  History of Ovarian/Ft/Pt  Cancer
 ph_osumm_trial	Trial Personal History of Ovarian/Ft/Pt Cancer
 ph_pros_bq	BQ Analysis Personal History of Prostate Cancer
 ph_pros_dhq	DHQ Analysis Personal History of Prostate Cancer
@@ -10616,12 +10251,11 @@ primary_trtl_nsc_days	Days Until Primary Treatment for Non-Small Cell Lung Cance
 primary_trtl_small	Known Primary Treatment for Small Cell Lung Cancer
 primary_trtl_small_days	Days Until Primary Treatment for Small Cell Lung Cancer
 primary_trtosumm	Known Primary Treatment for Ovarian Cancer
-primary_trtosumm_days	Days Until Primary Treatment for Ovarian Cancer
+primary_trtosumm_days	Days Until Primary  Treatment for Ovarian  Cancer
 primary_trtp	Known Primary Treatment for Prostate Cancer
 primary_trtp_days	Days Until Primary Treatment for Prostate Cancer
 principal_investigators	Principal Investigators
 pros_cancer	Confirmed Prostate Cancer
-pros_case_id	Node ID
 pros_clinstage	Prostate Clinical Stage (AJCC 5th Edition)
 pros_clinstage_7e	Prostate Clinical Stage (AJCC 7th Edition)
 pros_clinstage_m	Prostate Clinical Stage M Component
