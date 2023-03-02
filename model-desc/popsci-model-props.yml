@@ -7870,7 +7870,6 @@ Cancer"
       - "MDF for the treatment form"
       - "Non-small cell lung cancer"
       - "MDF for the treatment form"
-      - "Non-small cell lung cancer"
     Req: false
     Private: false
 #property of lung_treat
