@@ -7544,13 +7544,6 @@ Cancer"
       - "N2"
       - "N3"
       - "NX"
-      - "Missing data"
-      - "Not Applicable"
-      - "N0"
-      - "N1"
-      - "N2"
-      - "N3"
-      - "NX"
     Req: false
     Private: false
 #property of lung_diag
@@ -7666,13 +7659,6 @@ Cancer"
     Desc: "Lung Stage M Component Lung Stage M Component"
     Src: Lung.Registry.Dictionary.pdf
     Type:
-      - "Missing data"
-      - "Not Applicable"
-      - "M0"
-      - "M1"
-      - "M1a"
-      - "M1b"
-      - "MX"
       - "Missing data"
       - "Not Applicable"
       - "M0"
