@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/popsci-model
-commit c723c43
+commit 222977c
 node	property	value_or_TYPE
 breast_diag	bc_her2_stat	0
 breast_diag	bc_her2_stat	1+
@@ -4527,6 +4527,32 @@ fem_health_cond	uterine_fib	No
 fem_health_cond	uterine_fib	No Form
 fem_health_cond	uterine_fib	Not Answered
 fem_health_cond	uterine_fib	Yes
+file	file_description	STRING
+file	file_format	STRING
+file	file_location	STRING
+file	file_name	STRING
+file	file_size	NUMBER
+file	file_status	error
+file	file_status	invalid
+file	file_status	live
+file	file_status	md5summed
+file	file_status	md5summing
+file	file_status	redacted
+file	file_status	released
+file	file_status	submitted
+file	file_status	suppressed
+file	file_status	uploaded
+file	file_status	uploading
+file	file_status	validated
+file	file_status	validating
+file	file_type	BAM File
+file	file_type	Fastq File
+file	file_type	Peer Reviewed Paper
+file	file_type	Study Protocol
+file	file_type	Study Questionnaire
+file	file_type	Variant Report
+file	md5sum	STRING
+file	uuid	STRING
 health_cond	arthrit_f	No
 health_cond	arthrit_f	No Form
 health_cond	arthrit_f	Not Answered
@@ -8139,6 +8165,8 @@ demo_of_case	demo	case	NA	NA
 dhq_of_case	dhq	case	NA	NA
 dqx_of_case	dqx	case	NA	NA
 fem_health_cond_of_case	fem_health_cond	case	NA	NA
+file_of_case	file	case	NA	NA
+file_of_cohort	file	cohort	NA	NA
 health_cond_of_case	health_cond	case	NA	NA
 lung_diag_of_case	lung_diag	case	NA	NA
 lung_elig_of_case	lung_elig	case	NA	NA
@@ -8931,6 +8959,13 @@ fib_legume_nopea	FiberfromLegumesExcludingPeas,Peanuts,andStringBeans(CSFII)(g/d
 fib_veg	FiberfromVegetables(CSFII)(g/day)
 fib_wheat_own	FiberfromWheat(CSFII)(Own)(g/day)
 fib_wheat_platz	FiberfromWheat(CSFII)(Platz1997)(g/day)
+file_description	File Description
+file_format	Format
+file_location	File Location
+file_name	File Name
+file_size	Size
+file_status	Status
+file_type	File Type
 frtden	DENSITYOFTOTALFRUITPER1000KCAL
 frtden_dhq	DENSITY OF TOTAL FRUIT PER 1000 KCAL
 fsg_days0	Days Until T0 FSG
@@ -9843,6 +9878,7 @@ lyc_tomatosce	LycopenefromTomato/SpaghettiSauce(NDS-R)(mcg/day)
 lyc_watermln	LycopenefromWatermelon(NDS-R)(mcg/day)
 male_health_id	Node ID
 marital	Marital Status
+md5sum	md5
 meatden2005	DENSITYOFMPEDTOTALMEAT/PROTEIN(INCLUDINGALLOCATEDLEGUMES)PER1000KCAL--HEI2005SPECIFIC
 meatden2005_dhq	DENSITY OF MPED TOTAL MEAT/PROTEIN (INCLUDING ALLOCATED LEGUMES) PER 1000 KCAL -- HEI2005 SPECIFIC
 meatden2010	DENSITYOFMPED/FPEDTOTALMEAT/PROTEIN(INCLUDINGALLOCATEDLEGUMES)PER1000KCAL--HEI2010SPECIFIC
@@ -11183,6 +11219,7 @@ tvu_result1	Result of T1 TVU
 tvu_result2	Result of T2 TVU
 tvu_result3	Result of T3 TVU
 urinatea	Age At Which Began Waking Up To Urinate More Than Once At Night
+uuid	UUID
 vasecta	Age at Vasectomy
 vegden2005	DENSITYOFMPEDTOTALVEGETABLES(INCLUDINGALLOCATEDLEGUMES)PER1000KCAL--HEI2005SPECIFIC
 vegden2005_dhq	DENSITY OF MPED TOTAL VEGETABLES (INCLUDING ALLOCATED LEGUMES) PER 1000 KCAL -- HEI2005 SPECIFIC
