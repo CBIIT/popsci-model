@@ -55,6 +55,7 @@ Nodes:
       - plco_dx_age
   file:
     Props:
+      - file_id
       - file_description
       - file_format
       - file_location

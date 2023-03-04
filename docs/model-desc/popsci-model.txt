@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/popsci-model
-commit 222977c
+commit d5a3e53
 node	property	value_or_TYPE
 breast_diag	bc_her2_stat	0
 breast_diag	bc_her2_stat	1+
@@ -4529,6 +4529,7 @@ fem_health_cond	uterine_fib	Not Answered
 fem_health_cond	uterine_fib	Yes
 file	file_description	STRING
 file	file_format	STRING
+file	file_id	STRING
 file	file_location	STRING
 file	file_name	STRING
 file	file_size	NUMBER
@@ -8961,6 +8962,7 @@ fib_wheat_own	FiberfromWheat(CSFII)(Own)(g/day)
 fib_wheat_platz	FiberfromWheat(CSFII)(Platz1997)(g/day)
 file_description	File Description
 file_format	Format
+file_id	File ID
 file_location	File Location
 file_name	File Name
 file_size	Size
