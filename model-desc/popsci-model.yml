@@ -53,6 +53,17 @@ Nodes:
       - biosp_f
       - plco_dx
       - plco_dx_age
+  file:
+    Props:
+      - file_description
+      - file_format
+      - file_location
+      - file_name
+      - file_size
+      - file_status
+      - file_type
+      - md5sum
+      - uuid
   breast_elig:
     Props:
       - breast_elig_id
