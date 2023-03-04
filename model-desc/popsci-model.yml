@@ -3756,3 +3756,15 @@ Relationships:
       - Src: case
         Dst: cohort
     Props: null
+  file_of_case:
+    Mul: many_to_one
+    Ends:
+      - Src: file
+        Dst: case
+    Props: null
+  file_of_cohort:
+    Mul: many_to_many
+    Ends:
+      - Src: file
+        Dst: cohort
+    Props: null
