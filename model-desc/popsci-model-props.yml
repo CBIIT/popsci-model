@@ -368,27 +368,27 @@ PropDefinitions:
       - Origin: caDSR
         Code: 'code/ID'
         Value: Data Element Name  
-      Src: PSc
-      Type: integer
-      Req: 'Yes'
+    Src: PSc
+    Type: integer
+    Req: 'Yes'
   study_participant_maximum_age:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
       - Origin: caDSR
         Code: 'code/ID'
         Value: Data Element Name  
-      Src: PSc
-      Type: integer
-      Req: 'Yes'
+    Src: PSc
+    Type: integer
+    Req: 'Yes'
   study_participant_median_age:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
       - Origin: caDSR
         Code: 'code/ID'
         Value: Data Element Name  
-      Src: PSc
-      Type: number
-      Req: 'Yes'
+    Src: PSc
+    Type: number
+    Req: 'Yes'
   race:
     Desc: The text for reporting information about race based on the Office of Management and Budget (OMB) categories. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
