@@ -74,7 +74,9 @@ PropDefinitions:
         Value: Study Name Text  
     Src: DSS
     Type: string
-    Req: 'Yes'  
+    Req: 'Yes'
+    Tags:
+      Labeled: Study Name
   study_short_name:
     Desc:  The acronym or abbreviated form of the title for a research data collection. <br>CDE ID = 11459812 <br>This property is used as the key via which child records, e.g. the study demographic record and disease coverage records, can be associated with the appropriate study during data loading, and to identify the correct records during data updates.
     Term:
@@ -85,6 +87,8 @@ PropDefinitions:
     Type: string
     Req: 'Yes'
     Key: true
+    Tags:
+      Labeled: Study Code 
   study_id:
     Desc: Any external identifier by which the study in question is already known. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -94,6 +98,8 @@ PropDefinitions:
     Src: FNL
     Type: string
     Req: 'No'
+    Tags:
+      Labeled: Study ID 
   study_phs_id:
     Desc: The PHS-assigned identifier by which the study in question is known. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -103,6 +109,8 @@ PropDefinitions:
     Src: PSc
     Type: string
     Req: 'No'
+    Tags:
+      Labeled: PHS ID 
   dbgap_accession_id:
     Desc: The dbGaP-assigned identifier by which the study in question is known. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -112,6 +120,8 @@ PropDefinitions:
     Src: PSc
     Type: string
     Req: 'No'
+    Tags:
+      Labeled: dbGaP ID 
   study_description: 
     Desc: A narrative description of the study outlining its design, conduct and data collection goals. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -121,6 +131,8 @@ PropDefinitions:
     Src: PSc
     Type: string
     Req: 'Yes'
+    Tags:
+      Labeled: Description
   study_type: 
     Desc: A classification of the study based upon the primary intent of the study's activities. <br>CDE ID = 11160683
     Term:
@@ -153,6 +165,8 @@ PropDefinitions:
       - Transcriptomics Research
       - Treatment Study
     Req: 'Yes'
+    Tags:
+      Labeled: Study Type
   study_design: 
     Desc: Text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -166,6 +180,8 @@ PropDefinitions:
       - Cohort # Cohort Studies compare two groups, such as subjects with exposure/risk factor to subjects without exposure/risk 
       - Cross-sectional # Observation of a defined population at a single point in time or during a specific time interval to examine associations between for example, disease and potential risk factors
     Req: 'Yes'
+    Tags:
+      Labeled: Study Design
   study_status: 
     Desc: An indicator as to the status of the study as of its submission. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -177,6 +193,9 @@ PropDefinitions:
       - Active # Data collection still in progress
       - Closed # Data collection completed, data analysis in progress
       - Completed # Data collected and analyzed
+    Req: Preferred
+    Tags:
+      Labeled: Status 
   study_beginning_year:
     Desc: The year in which the study began enrolling study perticipants. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -204,6 +223,8 @@ PropDefinitions:
     Src: PSc
     Type: integer
     Req: 'Yes'
+    Tags:
+      Labeled: Participant Count
   biospecimen_collection:
     Desc: A Boolean indication as to whether the study in question included the collection of biospecimens from any of the participants enrolled in the study, that gives no indication as to the type and/or number of any such biospecimens. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Src: PSc
@@ -211,6 +232,8 @@ PropDefinitions:
       - 'Yes'
       - 'No'
     Req: Preferred
+    Tags:
+      Labeled: Biospecimen Collection
   # study_personnel properties
   person_first_name:
     Desc: The first or given name of each individual who is responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 10624731
@@ -221,6 +244,8 @@ PropDefinitions:
     Src: DSS
     Type: string
     Req: 'Yes'
+    Tags:
+      Labeled: Full Name
   person_last_name:
     Desc: The last or family name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 10624733
     Term:
@@ -230,6 +255,8 @@ PropDefinitions:
     Src: DSS
     Type: string
     Req: 'Yes'
+    Tags:
+      Labeled: Full Name
   person_middle_name:
     Desc: The middle name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 10624732
     Term:
@@ -239,6 +266,8 @@ PropDefinitions:
     Src: DSS
     Type: string
     Req: 'No'
+    Tags:
+      Labeled: Full Name
   person_orcid_id:
     Desc: A persistent unique digital identifier assigned to a principal investigator by the Open Researcher and Contributor ID (ORCID) organization. <br>CDE ID = 10624734
     Term:
@@ -248,6 +277,8 @@ PropDefinitions:
     Src: DSS
     Type: string
     Req: Preferred
+    Tags:
+      Labeled: ORCID ID
   person_email_address:
     Desc: text <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -257,6 +288,8 @@ PropDefinitions:
     Src: value
     Type: string
     Req: Preferred
+    Tags:
+      Labeled: Email Address
   person_role:
     Desc: An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given indivdual may be assigned multiple roles for the study in question. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -270,7 +303,9 @@ PropDefinitions:
       - General Dogs Body
       - Statistician
       - Principal Investigator
-    Req: 'Yes'  
+    Req: 'Yes'
+    Tags:
+      Labeled: Role/Position
   # associated_link properties
   associated_link_id:  
     Desc: A unique identifier of each associated link record, used to identify the correct associated link records during data updates. <br>NO CDE REQUIRED
@@ -351,6 +386,8 @@ PropDefinitions:
     Src: PSc
     Type: string
     Req: 'Yes'
+    Tags:
+      Labeled: Countries
   # study_state_province_territory properties
   study_state_province_territory:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
@@ -361,6 +398,8 @@ PropDefinitions:
     Src: PSc
     Type: string
     Req: 'Yes'
+    Tags:
+      Labeled: States, Provinces and Territories
   # study_demographic properties
   study_participant_minimum_age:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
@@ -371,6 +410,8 @@ PropDefinitions:
     Src: PSc
     Type: integer
     Req: 'Yes'
+    Tags:
+      Labeled: Minimum Participant Age
   study_participant_maximum_age:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -380,6 +421,8 @@ PropDefinitions:
     Src: PSc
     Type: integer
     Req: 'Yes'
+    Tags:
+      Labeled: Maximum Participant Age 
   study_participant_median_age:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -389,6 +432,8 @@ PropDefinitions:
     Src: PSc
     Type: number
     Req: 'Yes'
+    Tags:
+      Labeled: Median Participant Age 
   race:
     Desc: The text for reporting information about race based on the Office of Management and Budget (OMB) categories. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -405,6 +450,8 @@ PropDefinitions:
         - Not Reported
         - Unknown
     Req: 'Yes'
+    Tags:
+      Labeled: Race Representation
   ethnicity:
     Desc: The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -420,6 +467,8 @@ PropDefinitions:
         - Not reported
         - Unknown
     Req: 'Yes'
+     Tags:
+      Labeled: Ethnic Representation
   sex:
     Desc: text CDE ID = 6343385
     Term:
@@ -435,6 +484,8 @@ PropDefinitions:
         - Male
         - Unknown
     Req: 'Yes'
+    Tags:
+      Labeled: Sex Representation
   gender:
     Desc: Characteristics of people that are socially constructed, including norms, behaviors, and roles based on their sex. As a social construct, these norms, behaviors, and roles vary from society to society and can change over time. <br>CDE ID = 10748236
     Term:
@@ -459,6 +510,8 @@ PropDefinitions:
         - Response Declined # per CMB data values
         - Unknown # per CMB data values
     Req: 'Yes'
+    Tags:
+      Labeled: Gender Representation
   ncbi_taxonomy_id:
     Desc: A label provided by NCBI Taxonomy Database (https://www.ncbi.nlm.nih.gov/taxonomy/),  which uniquely identifies group or category, at any level, in a system for classifying plants or animals (including humans) providing ranked categories for the classification of organisms according to their suspected evolutionary relationships. <br>CDE ID = 10543100
     Term:
@@ -497,6 +550,8 @@ PropDefinitions:
       - Prostate Carcinoma                              # meddra code 10036910 
       - Small Cell Lung Carcinoma                       # meddra code 10041071
     Req: 'Yes'
+    Tags:
+      Labeled: Primary Diagnoses Examined
   # comorbidity properties
   comorbidity_disease_term:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
@@ -512,6 +567,8 @@ PropDefinitions:
       - Inflammatory Bowel Disease
       - Crohn's Disease
     Req: 'Yes'
+    Tags:
+      Labeled: Comorbities Examined
   # data_collection properties
   # data_collection_grouping:
   #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
@@ -548,6 +605,8 @@ PropDefinitions:
       - Primary Disease # Diseases
       - Comorbidity # Diseases
     Req: 'No'
+    Tags:
+      Labeled: Data Collection Categories
   # data_collection_category_annotation_coverage:
   #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
   #   Term:
@@ -573,6 +632,8 @@ PropDefinitions:
     Src: FNL
     Type: integer
     Req: Preferred
+    Tags:
+      Labeled: Variable Count
   # data_file properties
   data_file_name:
     Desc: The literal label for an electronic data file, inclusive of file extension(s). <br>CDE ID = 11284037
@@ -583,6 +644,8 @@ PropDefinitions:
     Src: DSS
     Type: string
     Req: 'Yes'
+    Tags:
+      Labeled: File Name
   data_file_type:
     Desc: A curated indicator as to the type of content represented by the data file <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -597,6 +660,8 @@ PropDefinitions:
       - Variant Call File
       - Variant Report
     Req: 'Yes'
+    Tags:
+      Labeled: File Type
   data_file_description:
     Desc: A free text field that can be used to document the content and other details about an electronic file that may not be captured elsewhere. For example, the file's derivation from a specimen of normal tissue versus tumor tissue. <br>CDE ID = 11280338
     Term:
@@ -606,6 +671,8 @@ PropDefinitions:
     Src: DSS
     Type: string
     Req: 'Yes'
+    Tags:
+      Labeled: Description
   data_file_format:
     Desc: A defined organization or layout representing and structuring data in a computer file; the electronic format of the file, as derived during file validation <br>With the actual values of this property being loader derived, the acceptable values currently specified are in place only to support the generation of mock data <br>CDE ID = 11416926
     Term:
@@ -620,6 +687,8 @@ PropDefinitions:
       - vcf
       - zip
     Req: 'Yes'
+    Tags:
+      Labeled: Format
   data_file_size:
     Desc: The measure, expressed in bytes, as to how much space a data file takes up on a storage medium. <br>CDE ID = 11479876
     Term:
@@ -629,6 +698,8 @@ PropDefinitions:
     Src: DSS
     Type: number
     Req: 'Yes'
+    Tags:
+      Labeled: Size
   data_file_checksum_value:
     Desc: A small-sized block of data derived from a file for the purpose of detecting errors that may have been introduced during file transmission and/or storage and used to verify data integrity. <br>CDE ID = 11480133
     Term:
