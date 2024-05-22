@@ -467,7 +467,7 @@ PropDefinitions:
         - Not reported
         - Unknown
     Req: 'Yes'
-     Tags:
+    Tags:
       Labeled: Ethnic Representation
   sex:
     Desc: text CDE ID = 6343385
