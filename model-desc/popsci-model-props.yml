@@ -100,17 +100,6 @@ PropDefinitions:
     Req: 'No'
     Tags:
       Labeled: Study ID 
-  study_phs_id:
-    Desc: The PHS-assigned identifier by which the study in question is known. <br>NOT CURRENTLY ASSIGNED ANY CDE
-    Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
-    Src: PSc
-    Type: string
-    Req: 'No'
-    Tags:
-      Labeled: PHS ID 
   dbgap_accession_id:
     Desc: The dbGaP-assigned identifier by which the study in question is known. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -197,7 +186,7 @@ PropDefinitions:
     Tags:
       Labeled: Status 
   study_beginning_year:
-    Desc: The year in which the study began enrolling study perticipants. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The year in which the study was initiated. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
       - Origin: caDSR
         Code: 'code/ID'
@@ -206,13 +195,31 @@ PropDefinitions:
     Type: number
     Req: 'Yes'
   study_ending_year:
-    Desc: The year in which the study completed data collection. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The year in which the study was completed. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Term:
+      - Origin: caDSR
+        Code: 'code/ID'
+        Value: Data Element Name  
+    Src: PSc
+    Type: string
+    Req: 'Yes'
+  enrollment_beginning_year:
+    Desc: The year in which the study began enrolling participants. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
       - Origin: caDSR
         Code: 'code/ID'
         Value: Data Element Name  
     Src: PSc
     Type: number
+    Req: 'Yes'
+  enrollment_ending_year:
+    Desc: The year in which the study stopped enrolling participants. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Term:
+      - Origin: caDSR
+        Code: 'code/ID'
+        Value: Data Element Name  
+    Src: PSc
+    Type: string
     Req: 'Yes'    
   number_of_participants:
     Desc: The total number of participants included in the study as of its submission. <br>NOT CURRENTLY ASSIGNED ANY CDE
@@ -236,33 +243,33 @@ PropDefinitions:
       Labeled: Biospecimen Collection
   # study_personnel properties
   person_first_name:
-    Desc: The first or given name of each individual who is responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 10624731
+    Desc: <A word or group of words indicating a person's first (personal or given) name; the name that precedes the surname. Synonym = Given Name.> The first or given name of each individual who is responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179589
     Term:
-      - Origin: caDSR - NCI Standard
-        Code: '10624731'
-        Value: Principal Investigator First Name Text 
+      - Origin: CSAERS/NCI Standard
+        Code: '2179589'
+        Value: Person Given/First Name
     Src: DSS
     Type: string
     Req: 'Yes'
     Tags:
       Labeled: Full Name
   person_last_name:
-    Desc: The last or family name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 10624733
+    Desc: <A means of identifying an individual by using a word or group of words indicating a person's last (family) name. Synonym = Last Name, Surname.> The last or family name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179591
     Term:
-      - Origin: caDSR - NCI Standard
-        Code: '10624733'
-        Value: Principal Investigator Last Name Text  
+      - Origin: CSAERS/NCI Standard
+        Code: '2179591'
+        Value: Person Family/Last Name
     Src: DSS
     Type: string
     Req: 'Yes'
     Tags:
       Labeled: Full Name
   person_middle_name:
-    Desc: The middle name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 10624732
+    Desc: <A means of identifying an individual by using a word or group of words indicating a person's middle name.> The middle name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179590
     Term:
-      - Origin: caDSR - NCI Standard
-        Code: '10624732'
-        Value: Principal Investigator Middle Name Text  
+      - Origin: CSAERS/NCI Standard
+        Code: '2179590'
+        Value: Person Middle Name 
     Src: DSS
     Type: string
     Req: 'No'
@@ -271,9 +278,9 @@ PropDefinitions:
   person_orcid_id:
     Desc: A persistent unique digital identifier assigned to a principal investigator by the Open Researcher and Contributor ID (ORCID) organization. <br>CDE ID = 10624734
     Term:
-      - Origin: caDSR - NCI Standard
+      - Origin: caDSR - CRDC
         Code: '10624734'
-        Value: Principal Investigator ORCID Text
+        Value: Person ORCID Text
     Src: DSS
     Type: string
     Req: Preferred
@@ -291,11 +298,11 @@ PropDefinitions:
     Tags:
       Labeled: Email Address
   person_role:
-    Desc: An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given indivdual may be assigned multiple roles for the study in question. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: <The text that describes the distinguishable characteristics of the action or activity assigned to or required or expected of a person in a formal association with a group or organization.> An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given indivdual may be assigned multiple roles for the study in question. <br>CDE ID = 2201713
     Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+      - Origin: caDSR - NCI Standard
+        Code: '2201713'
+        Value: Person Affiliation Role Text Type 
     Src: SIT
     Enum:
       - Data Analyst
@@ -303,7 +310,7 @@ PropDefinitions:
       - General Dogs Body
       - Statistician
       - Principal Investigator
-    Req: 'Yes'
+    Req: 'Yes'  
     Tags:
       Labeled: Role/Position
   # associated_link properties
@@ -407,9 +414,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: 'code/ID'
         Value: Data Element Name  
-    Src: PSc
-    Type: integer
-    Req: 'Yes'
+      Src: PSc
+      Type: integer
+      Req: 'Yes'
     Tags:
       Labeled: Minimum Participant Age
   study_participant_maximum_age:
@@ -418,9 +425,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: 'code/ID'
         Value: Data Element Name  
-    Src: PSc
-    Type: integer
-    Req: 'Yes'
+      Src: PSc
+      Type: integer
+      Req: 'Yes'
     Tags:
       Labeled: Maximum Participant Age 
   study_participant_median_age:
@@ -429,9 +436,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: 'code/ID'
         Value: Data Element Name  
-    Src: PSc
-    Type: number
-    Req: 'Yes'
+      Src: PSc
+      Type: number
+      Req: 'Yes'
     Tags:
       Labeled: Median Participant Age 
   race:

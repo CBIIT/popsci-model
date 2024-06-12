@@ -48,7 +48,6 @@ Nodes:
       - study_name #11459810
       - study_short_name #11459812
       - study_id
-      - study_phs_id
       - dbgap_accession_id
       - study_description
       - study_type #11160683 per CV
@@ -56,6 +55,8 @@ Nodes:
       - study_status # per CV
       - study_beginning_year
       - study_ending_year
+      - enrollment_beginning_year
+      - enrollment_ending_year
       - number_of_participants
       - biospecimen_collection
   study_personnel:
