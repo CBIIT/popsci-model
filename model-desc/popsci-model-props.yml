@@ -414,9 +414,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: 'code/ID'
         Value: Data Element Name  
-      Src: PSc
-      Type: integer
-      Req: 'Yes'
+    Src: PSc
+    Type: integer
+    Req: 'Yes'
     Tags:
       Labeled: Minimum Participant Age
   study_participant_maximum_age:
@@ -425,9 +425,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: 'code/ID'
         Value: Data Element Name  
-      Src: PSc
-      Type: integer
-      Req: 'Yes'
+    Src: PSc
+    Type: integer
+    Req: 'Yes'
     Tags:
       Labeled: Maximum Participant Age 
   study_participant_median_age:
@@ -436,9 +436,9 @@ PropDefinitions:
       - Origin: caDSR
         Code: 'code/ID'
         Value: Data Element Name  
-      Src: PSc
-      Type: number
-      Req: 'Yes'
+    Src: PSc
+    Type: number
+    Req: 'Yes'
     Tags:
       Labeled: Median Participant Age 
   race:
