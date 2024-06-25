@@ -164,10 +164,24 @@ PropDefinitions:
         Value: Data Element Name 
     Src: PSc
     Enum:
-      - Case-Control # Patients who already have a certain condition are compared with people who do not
-      - Case Series # Cases are not compared to subjects without the manifestations of interest; Case Series studies are primarily descriptive reports observed in groups under study.
-      - Cohort # Cohort Studies compare two groups, such as subjects with exposure/risk factor to subjects without exposure/risk 
-      - Cross-sectional # Observation of a defined population at a single point in time or during a specific time interval to examine associations between for example, disease and potential risk factors
+      # - Case-Control # Patients who already have a certain condition are compared with people who do not
+      # - Case Series # Cases are not compared to subjects without the manifestations of interest; Case Series studies are primarily descriptive reports observed in groups under study.
+      # - Cohort # Cohort Studies compare two groups, such as subjects with exposure/risk factor to subjects without exposure/risk 
+      # - Cross-sectional # Observation of a defined population at a single point in time or during a specific time interval to examine associations between for example, disease and potential risk factors
+      # # Acceptable values listed below are the actual values propsed by the working group
+      - Case Series
+      - Case-control Studies
+      - Nested case-control
+      - Cohort Studies - prospective
+      - Cohort Studies - retrospective
+      - Consortia
+      - Cross-sectional Studies
+      - Descriptive Epidemiology
+      - Registry linkage Studies
+      - Family-based Studies
+      - Clinical Trials
+      - Methods Development
+      - Other
     Req: 'Yes'
     Tags:
       Labeled: Study Design
@@ -178,31 +192,12 @@ PropDefinitions:
         Code: 'code/ID'
         Value: Data Element Name 
     Src: FNL
-    Enum:
+    Enum: # Acceptable values listed here are the actual values propsed by the working group
       - Active # Data collection still in progress
       - Closed # Data collection completed, data analysis in progress
-      - Completed # Data collected and analyzed
     Req: Preferred
     Tags:
       Labeled: Status 
-  study_beginning_year:
-    Desc: The year in which the study was initiated. <br>NOT CURRENTLY ASSIGNED ANY CDE
-    Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
-    Src: PSc
-    Type: number
-    Req: 'Yes'
-  study_ending_year:
-    Desc: The year in which the study was completed. <br>NOT CURRENTLY ASSIGNED ANY CDE
-    Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
-    Src: PSc
-    Type: string
-    Req: 'Yes'
   enrollment_beginning_year:
     Desc: The year in which the study began enrolling participants. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -214,6 +209,24 @@ PropDefinitions:
     Req: 'Yes'
   enrollment_ending_year:
     Desc: The year in which the study stopped enrolling participants. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Term:
+      - Origin: caDSR
+        Code: 'code/ID'
+        Value: Data Element Name  
+    Src: PSc
+    Type: number
+    Req: 'Yes'
+  study_beginning_year:
+    Desc: The year in which the study was initiated. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Term:
+      - Origin: caDSR
+        Code: 'code/ID'
+        Value: Data Element Name  
+    Src: PSc
+    Type: number
+    Req: 'Yes'
+  study_ending_year:
+    Desc: The year in which the study was completed. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
       - Origin: caDSR
         Code: 'code/ID'
@@ -275,17 +288,28 @@ PropDefinitions:
     Req: 'No'
     Tags:
       Labeled: Full Name
-  person_orcid_id:
-    Desc: A persistent unique digital identifier assigned to a principal investigator by the Open Researcher and Contributor ID (ORCID) organization. <br>CDE ID = 10624734
+  # person_orcid_id:
+  #   Desc: A persistent unique digital identifier assigned to a principal investigator by the Open Researcher and Contributor ID (ORCID) organization. <br>CDE ID = 10624734
+  #   Term:
+  #     - Origin: caDSR - CRDC
+  #       Code: '10624734'
+  #       Value: Person ORCID Text
+  #   Src: DSS
+  #   Type: string
+  #   Req: Preferred
+  #   Tags:
+  #     Labeled: ORCID ID
+  person_institution:
+    Desc: text here
     Term:
-      - Origin: caDSR - CRDC
-        Code: '10624734'
-        Value: Person ORCID Text
-    Src: DSS
+      - Origin: caDSR
+        Code: 'code/ID'
+        Value: Data Element Name
+    Src: PSc
     Type: string
-    Req: Preferred
+    Req: 'Yes'
     Tags:
-      Labeled: ORCID ID
+      - Labeled: Institution
   person_email_address:
     Desc: text <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -304,15 +328,40 @@ PropDefinitions:
         Code: '2201713'
         Value: Person Affiliation Role Text Type 
     Src: SIT
-    Enum:
-      - Data Analyst
-      - Data Coordinator
-      - General Dogs Body
-      - Statistician
-      - Principal Investigator
+    Type:
+      value_type: list
+      Enum:
+        #- Data Analyst
+        #- Data Coordinator
+        #- General Dogs Body
+        #- Statistician
+        #- Principal Investigator
+        # Acceptable values listed below are the 22 actual values propsed by the working group
+        - Co-Investigator
+        - Contact Person
+        - Coordinator
+        - Data Manager
+        - Investigator
+        - Principal Investigator
+        - Program Director
+        - Program Specialist
+        - Project Coordinator
+        - Project Officer
+        - Protocol Author
+        - Protocol Chair
+        - Protocol Chair at an Organization
+        - Protocol Lead Investigator
+        - Site Coordinator
+        - Site Investigator
+        - Site Leader
+        - Site Personnel
+        - Sponsor
+        - Study Chair
+        - Study Chairperson
+        - Study Coordinator
     Req: 'Yes'  
     Tags:
-      Labeled: Role/Position
+      Labeled: Position or Role
   # associated_link properties
   associated_link_id:  
     Desc: A unique identifier of each associated link record, used to identify the correct associated link records during data updates. <br>NO CDE REQUIRED
@@ -342,12 +391,17 @@ PropDefinitions:
     Type: string
     Req: 'Yes'
   # publication properties
+  publication_record_id:
+    Desc: TEXT <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Src: PSc
+    Type: string
+    Req: 'Yes'
+    Key: true
   publication_title:
     Desc: The full title of the publication stated exactly as it appears on the published work. <br>This property is used as the key via which to identify the correct records during data updates. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Src: ICDC
     Type: string
     Req: 'Yes'
-    Key: true
   authorship:
     Desc: A list of authors for the cited work. More specifically, for publications with no more than three authors, authorship quoted in full; for publications with more than three authors, authorship abbreviated to first author et al. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Src: ICDC
@@ -450,7 +504,7 @@ PropDefinitions:
     Src: CMB
     Type:
       value_type: list
-      Enum: # Reflective only of the values used by the CMB
+      Enum: # Currently reflective only of the values used by the CMB
         - American Indian or Alaska Native
         - Black or African American
         - Native Hawaiian or other Pacific Islander
@@ -468,7 +522,7 @@ PropDefinitions:
     Src: CMB
     Type:
       value_type: list
-      Enum: # Reflective only of the values used by the CMB
+      Enum: # Currently reflective only of the values used by the CMB
         - Hispanic or Latino
         - Not Hispanic or Latino
         - Not reported
@@ -485,7 +539,7 @@ PropDefinitions:
     Src: CMB
     Type:
       value_type: list
-      Enum: # Reflective only of the values used by the CMB
+      Enum: # Currently reflective only of the values used by the CMB
         - Female
         - Intersex
         - Male

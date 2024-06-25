@@ -53,10 +53,10 @@ Nodes:
       - study_type #11160683 per CV
       - study_design
       - study_status # per CV
-      - study_beginning_year
-      - study_ending_year
       - enrollment_beginning_year
       - enrollment_ending_year
+      - study_beginning_year
+      - study_ending_year
       - number_of_participants
       - biospecimen_collection
   study_personnel:
@@ -70,7 +70,8 @@ Nodes:
       - person_first_name # formerly principal_investigator_first_name 10624731
       - person_last_name # formerly principal_investigator_last_name 10624733
       - person_middle_name # formerly principal_investigator_middle_name 10624732
-      - person_orcid_id
+      #- person_orcid_id
+      - person_institution
       - person_email_address
       - person_role # for example, Data Coordintator, Data POC, Statistician, per CV
   associated_link:
@@ -92,6 +93,7 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
+      - publication_record_id
       - publication_title
       - authorship
       - year_of_publication
