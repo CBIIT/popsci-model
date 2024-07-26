@@ -27,7 +27,7 @@ PropDefinitions:
     Req: Preferred
   # program properties
   program_name:
-    Desc: The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis. <br>CDE ID = 11444542 
+    Desc: <The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis.> <br>CDE ID = 11444542 
     Term:
       - Origin: caDSR - CRDC
         Code: '11444542'
@@ -36,7 +36,7 @@ PropDefinitions:
     Type: string
     Req: 'Yes'
   program_short_name:
-    Desc: An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. For example, CPTAC. <br>CDE ID = 11459801 <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
+    Desc: <An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. For example, CPTAC.> <br>CDE ID = 11459801 <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
     Term:
       - Origin: caDSR - CRDC
         Code: '11459801'
@@ -47,7 +47,7 @@ PropDefinitions:
     Key: true
   # project properties
   project_name:
-    Desc: The narrative title used to refer to an organ-, site-, disease- or phase-specific data collection within a broad framework of goals under which related studies or other research activities are grouped. <br>CDE ID = 11459804
+    Desc: <The narrative title used to refer to an organ-, site-, disease- or phase-specific data collection within a broad framework of goals under which related studies or other research activities are grouped.> <br>CDE ID = 11459804
     Term:
       - Origin: caDSR - CRDC
         Code: '11459804'
@@ -56,7 +56,7 @@ PropDefinitions:
     Type: string
     Req: 'Yes'
   project_short_name:
-    Desc:  An acronym or abbreviated form of the title used to refer to an organ-, site- or disease-specific data collection within a broad framework of goals under which related studies or other research activities are grouped. <br>CDE ID = 11459806 <br>This property is used as the key via which child records, e.g. study/trial, image collection and principal investigator records, can be associated with the appropriate project during data loading, and to identify the correct records during data updates.
+    Desc:  <An acronym or abbreviated form of the title used to refer to an organ-, site- or disease-specific data collection within a broad framework of goals under which related studies or other research activities are grouped.> <br>CDE ID = 11459806 <br>This property is used as the key via which child records, e.g. study/trial, image collection and principal investigator records, can be associated with the appropriate project during data loading, and to identify the correct records during data updates.
     Term:
       - Origin: caDSR - CRDC
         Code: '11459806'
@@ -67,7 +67,7 @@ PropDefinitions:
     Key: true
   # study properties
   study_name: 
-    Desc: The narrative title used as a textual label for a research data collection. <br>CDE ID = 11459810
+    Desc: <The narrative title used as a textual label for a research data collection.> <br>CDE ID = 11459810
     Term:
       - Origin: caDSR - CRDC
         Code: '11459810'
@@ -78,7 +78,7 @@ PropDefinitions:
     Tags:
       Labeled: Study Name
   study_short_name:
-    Desc:  The acronym or abbreviated form of the title for a research data collection. <br>CDE ID = 11459812 <br>This property is used as the key via which child records, e.g. the study demographic record and disease coverage records, can be associated with the appropriate study during data loading, and to identify the correct records during data updates.
+    Desc:  <The acronym or abbreviated form of the title for a research data collection.> <br>CDE ID = 11459812 <br>This property is used as the key via which child records, e.g. the study demographic record and disease coverage records, can be associated with the appropriate study during data loading, and to identify the correct records during data updates.
     Term:
       - Origin: caDSR - CRDC
         Code: '11459812'
@@ -88,13 +88,13 @@ PropDefinitions:
     Req: 'Yes'
     Key: true
     Tags:
-      Labeled: Study Code 
+      Labeled: Study Acronym
   study_id:
-    Desc: Any external identifier by which the study in question is already known. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: <A unique identifier assigned to a clinical study.> Any external identifier() by which the study in question is already known. <br>CDE ID = 5054234
     Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+      - Origin: caDSR - NMDP
+        Code: '5054234'
+        Value: Clinical Study Identifier  
     Src: FNL
     Type: string
     Req: 'No'
@@ -112,11 +112,11 @@ PropDefinitions:
     Tags:
       Labeled: dbGaP ID 
   study_description: 
-    Desc: A narrative description of the study outlining its design, conduct and data collection goals. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: <A textual description of the study, with components such as objectives or goals.> A narrative description of the study outlining its design, conduct and data collection goals. <br>CDE ID = 3444002
     Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+      - Origin: caDSR - CCDI
+        Code: '3444002'
+        Value: Study Research Identification Descriptive Text   
     Src: PSc
     Type: string
     Req: 'Yes'
@@ -253,7 +253,7 @@ PropDefinitions:
       - 'No'
     Req: Preferred
     Tags:
-      Labeled: Biospecimen Collection
+      Labeled: Biospecimen Collection, Biospecimens
   # study_personnel properties
   person_first_name:
     Desc: <A word or group of words indicating a person's first (personal or given) name; the name that precedes the surname. Synonym = Given Name.> The first or given name of each individual who is responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179589
@@ -364,29 +364,29 @@ PropDefinitions:
       Labeled: Position or Role
   # associated_link properties
   associated_link_id:  
-    Desc: A unique identifier of each associated link record, used to identify the correct associated link records during data updates. <br>NO CDE REQUIRED
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each associated link record, used to identify the correct associated link records during data updates. <br>CDE ID = 14822135
     Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+      - Origin: caDSR - CTDC
+        Code: '14822135'
+        Value: Data Record Link Unique Identifier  
     Src: FNL
     Type: string
     Req: 'Yes'
   associated_link_name:  
-    Desc: The exact text to be displayed within the UI where it functions as an intuitive identifier of any given link associated with the study/trial in question. <br>NO CDE REQUIRED?
+    Desc: <The words by which the linkage between related records is known.> The exact text to be displayed within the UI where it functions as an intuitive identifier of any given link associated with the study/trial in question. <br>CDE ID = 14822136
     Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+      - Origin: caDSR - CTDC
+        Code: '14822136'
+        Value: Data Record Link Identifier Name
     Src: FNL
     Type: string
     Req: 'Yes'
   associated_link_url:
-    Desc: The url to which an end user will be redirected upon selection of the corresponding link name displayed within the UI. <br>NO CDE REQUIRED?
+    Desc: <The global address of the linkage between related records on the World Wide Web.> The url to which an end user will be redirected upon selection of the corresponding link name displayed within the UI. <br>CDE ID = 14822140
     Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+      - Origin: caDSR - CTDC
+        Code: '14822140'
+        Value: Clinical Study Record Link Identifier URL Text
     Src: FNL
     Type: string
     Req: 'Yes'
@@ -652,20 +652,92 @@ PropDefinitions:
         Value: Data Element Name 
     Src: PSc
     Enum:
-      - Tobacco Usage # Lifestyle and Behaviors
-      - Alcohol Usage # Lifestyle and Behaviors
-      - Drug Usage # Lifestyle and Behaviors
-      - Nutrition # Lifestyle and Behaviors
-      - Physical Activity # Lifestyle and Behaviors
-      - Sleep # Lifestyle and Behaviors
-      - Age, Race and Ethnicity # Socio-demograhic and Economic Characteristics
-      - Sex and Gender # Socio-demograhic and Economic Characteristics
-      - Educattion # Socio-demograhic and Economic Characteristics
-      - Residence # Socio-demograhic and Economic Characteristics
-      - Birthplace # Socio-demograhic and Economic Characteristics
-      - Primary Disease # Diseases
-      - Comorbidity # Diseases
-    Req: 'No'
+      # - Tobacco Usage # Lifestyle and Behaviors
+      # - Alcohol Usage # Lifestyle and Behaviors
+      # - Drug Usage # Lifestyle and Behaviors
+      # - Nutrition # Lifestyle and Behaviors
+      # - Physical Activity # Lifestyle and Behaviors
+      # - Sleep # Lifestyle and Behaviors
+      # - Age, Race and Ethnicity # Socio-demograhic and Economic Characteristics
+      # - Sex and Gender # Socio-demograhic and Economic Characteristics
+      # - Educattion # Socio-demograhic and Economic Characteristics
+      # - Residence # Socio-demograhic and Economic Characteristics
+      # - Birthplace # Socio-demograhic and Economic Characteristics
+      # - Primary Disease # Diseases
+      # - Comorbidity # Diseases
+      - Age #Demographics / Lifestyle / Life events / Quality of life
+      - Biological Sex
+      - Sexual Orientation and Gender Identity
+      - Ethnicity and Race
+      - Education Level
+      - Employment Status
+      - Residential Information
+      - Language/Country of Origin
+      - Life events, beliefs, values
+      - Marital Status
+      - Quality of Life
+      - Social Support
+      - Socio-Economic Status
+      - Alcohol Consumption #Alcohol / Tobacco / Drug Use
+      - Cigarette Smoking
+      - Other Tobacco Products
+      - Drug use
+      - Dietary Intake #Diet / Nutrition
+      - Dietary Supplement Use
+      - Physical Activity #Physical Activity / Energy Balance
+      - Physical Function Measures
+      - Self-Reported Anthropometry #Anthropometry
+      - Measured Anthropometry
+      - Puberty, Menstration, and Menopause #Reproductive Health History
+      - Pregnancy and Parity
+      - Breastfeeding
+      - Contraception
+      - Hormone Replacement
+      - Sexual Behavior and Health
+      - Housing Exposures #Environmental or Occupational Exposures
+      - Workplace Exposures
+      - Radiation  Exposure
+      - Chemical Exposure
+      - Health Insurance Status #Medical / Health Status / Health History
+      - Screening
+      - Immunization
+      - Sleep Habits
+      - Fatigue
+      - Cognitive Function
+      - Depression
+      - Family History of Cancer
+      - Family History of Heart Disease
+      - Family History of Diabetes
+      - Other Family History
+      - Prescription Medication Use
+      - Complementary and Alternative Medicine
+      - Non-prescription Medication
+      - Other Medical Conditions
+      - Other Psychosocial Variables
+      - Psychological Measures
+      - Cancer Treatment
+      - Other Medical Treatements
+      - Infectious and Parasitic Diseases(ICD Category A & B)
+      - Neoplasms (ICD Category C)
+      - Neoplasms, Blood, Blood-forming Organs (ICD Category D)
+      - Endocrine, Nutritional, Metabolic (ICD Category E)
+      - Mental and Behavioral Disorders (ICD Category F)
+      - Nervous System (ICD Category G)
+      - Eye and Adnexa, Ear and Mastoid Process (ICD Category H)
+      - Circulatory System (ICD Category I)
+      - Respiratory System (ICD Category J)
+      - Digestive System (ICD Category K)
+      - Skin and Subcutaneous Tissue (ICD Category L)
+      - Musculoskeletal and Connective Tissue (ICD Category M)
+      - Genitourinary System (ICD Category N)
+      - Pregnancy, Childbirth and the Puerperium (ICD Category O)
+      - Certain Conditions Originating in the Perinatal Period (ICD Category P)
+      - Congenital Malformations, Deformations and Chromosomal Abnormalities (ICD Category Q)
+      - Symptoms, Signs and Abnormal Clinical and Lab Findings (ICD Category R)
+      - Injury, Poisoning, Certain Other Consequences of External Causes (ICD Category S)
+      - Injury, Poisoning, Certain Other Consequences of External Causes (ICD Category T)
+      - Vital Status
+    Req: 'Yes'
     Tags:
       Labeled: Data Collection Categories
   # data_collection_category_annotation_coverage:
@@ -708,11 +780,11 @@ PropDefinitions:
     Tags:
       Labeled: File Name
   data_file_type:
-    Desc: A curated indicator as to the type of content represented by the data file <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: <The type of information contained in an electronic record.> A curated indicator as to the type of content represented by the data file <br>CDE ID = 14824731
     Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+      - Origin: caDSR - CTDC
+        Code: '14824731'
+        Value: Electronic Data File Content Type  
     Src: FNL
     Enum:
       - Clinical Report
@@ -795,20 +867,20 @@ PropDefinitions:
       - Unknown
     Req: Preferred
   data_file_uuid:
-    Desc: text NO CDE REQUIRED
+    Desc: <A unique sequence of characters used to identify the contents of an electronic record.> <br>CDE ID = 14826100
     Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+      - Origin: caDSR - CTDC
+        Code: '14826100'
+        Value: Electronic Data File Content Unique Identifier 
     Src: FNL
     Type: string
     Req: 'Yes'
   data_file_location:
-    Desc: The specific location within the S3 storage bucket at which the file is stored, expressed in terms of a unique url <br>NO CDE REQUIRED
+    Desc: <The specification of a node (file or directory) in a hierarchical file system where an electronic file is located.> The specific location within the S3 storage bucket at which the file is stored, expressed in terms of a unique url <br>CDE ID = 11556141
     Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+      - Origin: caDSR - CDS
+        Code: '11556141'
+        Value: Electronic File Pathname Text    
     Src: FNL
     Type: string
     Req: 'Yes'    
