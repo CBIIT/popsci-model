@@ -122,40 +122,40 @@ PropDefinitions:
     Req: 'Yes'
     Tags:
       Labeled: Description
-  study_type: 
-    Desc: A classification of the study based upon the primary intent of the study's activities. <br>CDE ID = 11160683
-    Term:
-      - Origin: caDSR - CRDC
-        Code: '11160683'
-        Value: Study Primary Purpose Type 
-    Src: DSS
-    Enum:
-      - Adverse Effect Mitigation Study 
-      - Ancillary Study
-      - Basic Science Research
-      - Correlative Study
-      - Cure Study
-      - Device Feasibility Study
-      - Diagnosis Study
-      - Disease Modifying Treatment Study
-      - Early Detection Study
-      - Education Training Clinical Study
-      - Epidemiology Research 
-      - Genomics Research
-      - Health Services Research
-      - Imaging Research
-      - Observational Study
-      - Outcomes Research
-      - Prevention Study
-      - Proteomic Research
-      - Rehabilitation Clinical Study
-      - Screening Study
-      - Supportive Care Study
-      - Transcriptomics Research
-      - Treatment Study
-    Req: 'Yes'
-    Tags:
-      Labeled: Study Type
+  # study_type: 
+  #   Desc: A classification of the study based upon the primary intent of the study's activities. <br>CDE ID = 11160683
+  #   Term:
+  #     - Origin: caDSR - CRDC
+  #       Code: '11160683'
+  #       Value: Study Primary Purpose Type 
+  #   Src: DSS
+  #   Enum:
+  #     - Adverse Effect Mitigation Study 
+  #     - Ancillary Study
+  #     - Basic Science Research
+  #     - Correlative Study
+  #     - Cure Study
+  #     - Device Feasibility Study
+  #     - Diagnosis Study
+  #     - Disease Modifying Treatment Study
+  #     - Early Detection Study
+  #     - Education Training Clinical Study
+  #     - Epidemiology Research 
+  #     - Genomics Research
+  #     - Health Services Research
+  #     - Imaging Research
+  #     - Observational Study
+  #     - Outcomes Research
+  #     - Prevention Study
+  #     - Proteomic Research
+  #     - Rehabilitation Clinical Study
+  #     - Screening Study
+  #     - Supportive Care Study
+  #     - Transcriptomics Research
+  #     - Treatment Study
+  #   Req: 'Yes'
+  #   Tags:
+  #     Labeled: Study Type
   study_design: 
     Desc: Text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -164,23 +164,19 @@ PropDefinitions:
         Value: Data Element Name 
     Src: PSc
     Enum:
-      # - Case-Control # Patients who already have a certain condition are compared with people who do not
-      # - Case Series # Cases are not compared to subjects without the manifestations of interest; Case Series studies are primarily descriptive reports observed in groups under study.
-      # - Cohort # Cohort Studies compare two groups, such as subjects with exposure/risk factor to subjects without exposure/risk 
-      # - Cross-sectional # Observation of a defined population at a single point in time or during a specific time interval to examine associations between for example, disease and potential risk factors
-      # # Acceptable values listed below are the actual values propsed by the working group
-      - Case Series
-      - Case-control Studies
-      - Nested case-control
-      - Cohort Studies - prospective
-      - Cohort Studies - retrospective
-      - Consortia
-      - Cross-sectional Studies
-      - Descriptive Epidemiology
-      - Registry linkage Studies
-      - Family-based Studies
-      - Clinical Trials
-      - Methods Development
+      # Acceptable values listed below are the actual values propsed by the working group
+      - Case Series Study # Cases are not compared to subjects without the manifestations of interest; Case Series studies are primarily descriptive reports observed in groups under study.
+      - Case-Control Study # Patients who already have a certain condition are compared with people who do not
+      - Nested Case-Control Study
+      - Cohort Study - Prospective # Cohort Studies compare two groups, such as subjects with exposure/risk factor to subjects without exposure/risk
+      - Cohort Study - Retrospective
+      - Consortia Study
+      - Cross-Sectional Study # Observation of a defined population at a single point in time or during a specific time interval to examine
+      - Descriptive Epidemiology Study
+      - Registry Linkage Study
+      - Family-Based Study
+      - Clinical Trial
+      - Methods Development Study
       - Other
     Req: 'Yes'
     Tags:
@@ -363,15 +359,16 @@ PropDefinitions:
     Tags:
       Labeled: Position or Role
   # associated_link properties
-  associated_link_id:  
-    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each associated link record, used to identify the correct associated link records during data updates. <br>CDE ID = 14822135
+  associated_link_record_id:  
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each associated link record, used to identify the correct associated link records during data loading. <br>CDE ID = 14822135
     Term:
       - Origin: caDSR - CTDC
         Code: '14822135'
-        Value: Data Record Link Unique Identifier  
+        Value: Data Record Link Unique Identifier
     Src: FNL
     Type: string
     Req: 'Yes'
+    Key: true
   associated_link_name:  
     Desc: <The words by which the linkage between related records is known.> The exact text to be displayed within the UI where it functions as an intuitive identifier of any given link associated with the study/trial in question. <br>CDE ID = 14822136
     Term:
@@ -392,7 +389,11 @@ PropDefinitions:
     Req: 'Yes'
   # publication properties
   publication_record_id:
-    Desc: TEXT <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each publication record associated with the study in question, used to identify the correct publication records during data loading. <br>CDE ID = 14822135
+    Term:
+      - Origin: caDSR - CTDC
+        Code: '14822135'
+        Value: Data Record Link Unique Identifier
     Src: PSc
     Type: string
     Req: 'Yes'
@@ -438,6 +439,16 @@ PropDefinitions:
     Tags:
        Labeled: PubMed ID
   # study_country properties
+  study_country_record_id:
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each country record associated with the study in question, used to identify the correct country records during data loading. <br>CDE ID = 14822135
+    Term:
+      - Origin: caDSR - CTDC
+        Code: '14822135'
+        Value: Data Record Link Unique Identifier 
+    Src: PSc
+    Type: string
+    Req: 'Yes'
+    Key: true
   study_country:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -450,6 +461,16 @@ PropDefinitions:
     Tags:
       Labeled: Countries
   # study_state_province_territory properties
+  study_state_record_id:
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each state, province or territory associated with the study in question, used to identify the correct state, province or territory records during data updates. <br>CDE ID = 14822135
+    Term:
+      - Origin: caDSR - CTDC
+        Code: '14822135'
+        Value: Data Record Link Unique Identifier
+    Src: PSc
+    Type: string
+    Req: 'Yes'
+    Key: true
   study_state_province_territory:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -462,6 +483,16 @@ PropDefinitions:
     Tags:
       Labeled: States, Provinces and Territories
   # study_demographic properties
+  study_demographic_record_id:
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each demographic record, used to identify the correct demographic records during data updates. <br>CDE ID = 14822135
+    Term:
+      - Origin: caDSR - CTDC
+        Code: '14822135'
+        Value: Data Record Link Unique Identifier 
+    Src: PSc
+    Type: string
+    Req: 'Yes'
+    Key: true
   study_participant_minimum_age:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -592,6 +623,16 @@ PropDefinitions:
     Type: string # supposedly enumerated but no permissible values specified
     Req: 'Yes'  
   # primary_diagnosis properties
+  primary_diagnosis_record_id:
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each primary diagnosis record associated with the study in question, used to identify the correct primary diagnosis records during data updates. <br>CDE ID = 14822135
+    Term:
+      - Origin: caDSR - CTDC
+        Code: '14822135'
+        Value: Data Record Link Unique Identifier
+    Src: PSc
+    Type: string
+    Req: 'Yes'
+    Key: true
   primary_diagnosis_disease_term:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -614,6 +655,16 @@ PropDefinitions:
     Tags:
       Labeled: Primary Diagnoses Examined
   # comorbidity properties
+  comorbidity_record_id:
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each comorbidity record associated with the study in question, used to identify the correct comorbidity records during data updates. <br>CDE ID = 14822135
+    Term:
+      - Origin: caDSR - CTDC
+        Code: '14822135'
+        Value: Data Record Link Unique Identifier
+    Src: PSc
+    Type: string
+    Req: 'Yes'
+    Key: true
   comorbidity_disease_term:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -631,6 +682,16 @@ PropDefinitions:
     Tags:
       Labeled: Comorbities Examined
   # data_collection properties
+  data_collection_record_id:
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each data collection record associated with the study in question, used to identify the correct data collection records during data updates. <br>CDE ID = 14822135
+    Term:
+      - Origin: caDSR - CTDC
+        Code: '14822135'
+        Value: Data Record Link Unique Identifier
+    Src: PSc
+    Type: string
+    Req: 'Yes'
+    Key: true
   # data_collection_grouping:
   #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
   #   Term:
@@ -651,20 +712,7 @@ PropDefinitions:
         Code: 'code/ID'
         Value: Data Element Name 
     Src: PSc
-    Enum:
-      # - Tobacco Usage # Lifestyle and Behaviors
-      # - Alcohol Usage # Lifestyle and Behaviors
-      # - Drug Usage # Lifestyle and Behaviors
-      # - Nutrition # Lifestyle and Behaviors
-      # - Physical Activity # Lifestyle and Behaviors
-      # - Sleep # Lifestyle and Behaviors
-      # - Age, Race and Ethnicity # Socio-demograhic and Economic Characteristics
-      # - Sex and Gender # Socio-demograhic and Economic Characteristics
-      # - Educattion # Socio-demograhic and Economic Characteristics
-      # - Residence # Socio-demograhic and Economic Characteristics
-      # - Birthplace # Socio-demograhic and Economic Characteristics
-      # - Primary Disease # Diseases
-      # - Comorbidity # Diseases
+    Enum: # n=71
       - Age #Demographics / Lifestyle / Life events / Quality of life
       - Biological Sex
       - Sexual Orientation and Gender Identity
@@ -673,7 +721,7 @@ PropDefinitions:
       - Employment Status
       - Residential Information
       - Language/Country of Origin
-      - Life events, beliefs, values
+      - Life Events, Beliefs, Values
       - Marital Status
       - Quality of Life
       - Social Support
@@ -688,7 +736,7 @@ PropDefinitions:
       - Physical Function Measures
       - Self-Reported Anthropometry #Anthropometry
       - Measured Anthropometry
-      - Puberty, Menstration, and Menopause #Reproductive Health History
+      - Puberty, Menstruation, and Menopause #Reproductive Health History
       - Pregnancy and Parity
       - Breastfeeding
       - Contraception
@@ -696,7 +744,7 @@ PropDefinitions:
       - Sexual Behavior and Health
       - Housing Exposures #Environmental or Occupational Exposures
       - Workplace Exposures
-      - Radiation  Exposure
+      - Radiation Exposure
       - Chemical Exposure
       - Health Insurance Status #Medical / Health Status / Health History
       - Screening
@@ -711,31 +759,30 @@ PropDefinitions:
       - Other Family History
       - Prescription Medication Use
       - Complementary and Alternative Medicine
-      - Non-prescription Medication
+      - Non-Prescription Medication
       - Other Medical Conditions
       - Other Psychosocial Variables
       - Psychological Measures
       - Cancer Treatment
       - Other Medical Treatements
-      - Infectious and Parasitic Diseases(ICD Category A & B)
-      - Neoplasms (ICD Category C)
-      - Neoplasms, Blood, Blood-forming Organs (ICD Category D)
-      - Endocrine, Nutritional, Metabolic (ICD Category E)
-      - Mental and Behavioral Disorders (ICD Category F)
-      - Nervous System (ICD Category G)
-      - Eye and Adnexa, Ear and Mastoid Process (ICD Category H)
-      - Circulatory System (ICD Category I)
-      - Respiratory System (ICD Category J)
-      - Digestive System (ICD Category K)
-      - Skin and Subcutaneous Tissue (ICD Category L)
-      - Musculoskeletal and Connective Tissue (ICD Category M)
-      - Genitourinary System (ICD Category N)
-      - Pregnancy, Childbirth and the Puerperium (ICD Category O)
-      - Certain Conditions Originating in the Perinatal Period (ICD Category P)
-      - Congenital Malformations, Deformations and Chromosomal Abnormalities (ICD Category Q)
-      - Symptoms, Signs and Abnormal Clinical and Lab Findings (ICD Category R)
-      - Injury, Poisoning, Certain Other Consequences of External Causes (ICD Category S)
-      - Injury, Poisoning, Certain Other Consequences of External Causes (ICD Category T)
+      - Infectious and Parasitic Diseases
+      - Neoplasms
+      - Neoplasms, Blood, Blood-forming Organs
+      - Endocrine, Nutritional, Metabolic
+      - Mental and Behavioral Disorders
+      - Nervous System
+      - Eye and Adnexa, Ear and Mastoid Process
+      - Circulatory System
+      - Respiratory System
+      - Digestive System
+      - Skin and Subcutaneous Tissue
+      - Musculoskeletal and Connective Tissue
+      - Genitourinary System
+      - Pregnancy, Childbirth and the Puerperium
+      - Certain Conditions Originating in the Perinatal Period
+      - Congenital Malformations, Deformations and Chromosomal Abnormalities
+      - Symptoms, Signs and Abnormal Clinical and Lab Findings
+      - Injury, Poisoning, Certain Other Consequences of External Causes
       - Vital Status
     Req: 'Yes'
     Tags:

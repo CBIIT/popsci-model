@@ -50,7 +50,7 @@ Nodes:
       - study_id #5054234
       - dbgap_accession_id
       - study_description #3444002
-      - study_type #11160683
+      #- study_type #11160683
       - study_design
       - study_status
       - enrollment_beginning_year
@@ -82,7 +82,7 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
-      - associated_link_id #14822135
+      - associated_link_record_id #14822135
       - associated_link_name #14822136
       - associated_link_url #14822140
   publication:
@@ -108,6 +108,7 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
+      - study_country_record_id
       - study_country
   study_state_province_territory:
     Desc: The Study State/Province/Territory node contains only a single proerty via which potentially lengthy lists of states and/or provinces and/or territories from which study participants were included can be associated with the study in question, using data loading files of minimal complexity.
@@ -117,6 +118,7 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
+      - study_state_record_id
       - study_state_province_territory
   study_demographic:
     Desc: The Demographic node is comprised of properties which describe the key demographic characteristics of the study population as whole, such as the sexes, genders, races and etnnicities represented.
@@ -126,6 +128,7 @@ Nodes:
       Class: primary
       Template: 'Yes'
     Props:
+      - study_demographic_record_id
       - study_participant_minimum_age
       - study_participant_maximum_age
       - study_participant_median_age
@@ -143,6 +146,7 @@ Nodes:
       Class: primary
       Template: 'Yes'
     Props:
+      - primary_diagnosis_record_id
       - primary_diagnosis_disease_term
   comorbidity:
     Desc: The Comorbidity node contains only a single property which captures any comorbidities being examined by the study in question as potential contributing factors.
@@ -152,6 +156,7 @@ Nodes:
       Class: primary
       Template: 'Yes'
     Props:  
+      - comorbidity_record_id
       - comorbidity_disease_term
   data_collection:
     Desc: The Data Collection node is comprised of the properties required to describe the nature of the data being gathered by any given study, and to define the extent to which each data collection category was covered.
@@ -161,6 +166,7 @@ Nodes:
       Class: primary
       Template: 'Yes'
     Props:  
+      - data_collection_record_id
       #- data_collection_grouping # the higher-level grouping or family to which each specific data collection category belongs
       - data_collection_category # for example Mental Health Assessments, Cardiovascular Health Assessments, Smoking History, etc., all per CV
       #- data_collection_category_annotation_coverage # for example Extensive, Typical, Limited, Minimal
