@@ -251,6 +251,16 @@ PropDefinitions:
     Tags:
       Labeled: Biospecimen Collection, Biospecimens
   # study_personnel properties
+  study_personnel_record_id:  
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each each study personnel record associated with the study in question, used to identify the appropriate study personnel record(s) during data loading and/or record modification. <br>CDE ID = 14822135
+    Term:
+      - Origin: caDSR - CTDC
+        Code: '14822135'
+        Value: Data Record Link Unique Identifier
+    Src: FNL
+    Type: string
+    Req: 'Yes'
+    Key: true
   person_first_name:
     Desc: <A word or group of words indicating a person's first (personal or given) name; the name that precedes the surname. Synonym = Given Name.> The first or given name of each individual who is responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179589
     Term:
@@ -360,7 +370,7 @@ PropDefinitions:
       Labeled: Position or Role
   # associated_link properties
   associated_link_record_id:  
-    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each associated link record, used to identify the correct associated link records during data loading. <br>CDE ID = 14822135
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each associated link record, used to identify the appropriate associated link record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
       - Origin: caDSR - CTDC
         Code: '14822135'
@@ -389,7 +399,7 @@ PropDefinitions:
     Req: 'Yes'
   # publication properties
   publication_record_id:
-    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each publication record associated with the study in question, used to identify the correct publication records during data loading. <br>CDE ID = 14822135
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each publication record associated with the study in question, used to identify the appropriate publication record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
       - Origin: caDSR - CTDC
         Code: '14822135'
@@ -440,7 +450,7 @@ PropDefinitions:
        Labeled: PubMed ID
   # study_country properties
   study_country_record_id:
-    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each country record associated with the study in question, used to identify the correct country records during data loading. <br>CDE ID = 14822135
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each country record associated with the study in question, used to identify the appropriate country record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
       - Origin: caDSR - CTDC
         Code: '14822135'
@@ -462,7 +472,7 @@ PropDefinitions:
       Labeled: Countries
   # study_state_province_territory properties
   study_state_record_id:
-    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each state, province or territory associated with the study in question, used to identify the correct state, province or territory records during data updates. <br>CDE ID = 14822135
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each state, province or territory associated with the study in question, used to identify the appropriate state, province or territory record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
       - Origin: caDSR - CTDC
         Code: '14822135'
@@ -484,7 +494,7 @@ PropDefinitions:
       Labeled: States, Provinces and Territories
   # study_demographic properties
   study_demographic_record_id:
-    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each demographic record, used to identify the correct demographic records during data updates. <br>CDE ID = 14822135
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each demographic record, used to identify the appropriate demographic record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
       - Origin: caDSR - CTDC
         Code: '14822135'
@@ -624,7 +634,7 @@ PropDefinitions:
     Req: 'Yes'  
   # primary_diagnosis properties
   primary_diagnosis_record_id:
-    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each primary diagnosis record associated with the study in question, used to identify the correct primary diagnosis records during data updates. <br>CDE ID = 14822135
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each primary diagnosis record associated with the study in question, used to identify the appropriate primary diagnosis record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
       - Origin: caDSR - CTDC
         Code: '14822135'
@@ -656,7 +666,7 @@ PropDefinitions:
       Labeled: Primary Diagnoses Examined
   # comorbidity properties
   comorbidity_record_id:
-    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each comorbidity record associated with the study in question, used to identify the correct comorbidity records during data updates. <br>CDE ID = 14822135
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each comorbidity record associated with the study in question, used to identify the appropriate comorbidity record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
       - Origin: caDSR - CTDC
         Code: '14822135'
@@ -683,7 +693,7 @@ PropDefinitions:
       Labeled: Comorbities Examined
   # data_collection properties
   data_collection_record_id:
-    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each data collection record associated with the study in question, used to identify the correct data collection records during data updates. <br>CDE ID = 14822135
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each data collection record associated with the study in question, used to identify the appropriate data collection record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
       - Origin: caDSR - CTDC
         Code: '14822135'
@@ -729,7 +739,7 @@ PropDefinitions:
       - Alcohol Consumption #Alcohol / Tobacco / Drug Use
       - Cigarette Smoking
       - Other Tobacco Products
-      - Drug use
+      - Drug Use
       - Dietary Intake #Diet / Nutrition
       - Dietary Supplement Use
       - Physical Activity #Physical Activity / Energy Balance
@@ -922,6 +932,7 @@ PropDefinitions:
     Src: FNL
     Type: string
     Req: 'Yes'
+    Key: true
   data_file_location:
     Desc: <The specification of a node (file or directory) in a hierarchical file system where an electronic file is located.> The specific location within the S3 storage bucket at which the file is stored, expressed in terms of a unique url <br>CDE ID = 11556141
     Term:
