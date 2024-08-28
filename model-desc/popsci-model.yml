@@ -190,6 +190,7 @@ Nodes:
       - data_file_compression_status #11387114
       - data_file_uuid #14826100
       - data_file_location #11556141
+      - data_file_signed_url # to be used ONLY in support of the MVP-style direct file download, and to be removed outright post-MVP
 Relationships:
   belongs_to:
     Mul: many_to_one

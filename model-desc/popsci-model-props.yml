@@ -941,4 +941,13 @@ PropDefinitions:
         Value: Electronic File Pathname Text    
     Src: FNL
     Type: string
-    Req: 'Yes'    
+    Req: 'Yes'
+  data_file_signed_url: # to be used ONLY in support of the MVP-style direct file download, and to be removed outright post-MVP
+    Desc: The pre-signed URL specifically associated with any given data file, used in support of the MVP-style direct file download. <br>NO CDE REQUIRED
+    Term:
+      - Origin: caDSR
+        Code: 'code/ID'
+        Value: Data Element Name  
+    Src: FNL
+    Type: string
+    Req: 'Yes'     
