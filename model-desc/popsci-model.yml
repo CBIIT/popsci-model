@@ -18,7 +18,7 @@ Nodes:
   #     - property_5
   #     - property_6
   program:  
-    Desc: The Program node contains properties which describe any broad framework and/or administrative umbrella into which inter-related projects, and/or studies/trials and/or other research activities can be grouped, based upon their origins and/or scientific focus. These programs may or may not directly relate to any formal program, e.g. NCI funding programs. Example - Clinical Proteomic Tumor Analysis. <br>CDE ID = 11444542 
+    Desc: The Program node contains properties which describe any broad framework and/or administrative umbrella into which inter-related projects, and/or studies/trials and/or other research activities can be grouped, based upon their origins and/or scientific focus. These programs may or may not directly relate to any formal program, e.g. NCI funding programs. Example - Clinical Proteomic Tumor Analysis.
     Tags:
       Category: administrative
       Assignment: core
@@ -47,13 +47,14 @@ Nodes:
     Props:
       - study_name #11459810
       - study_short_name #11459812
-      - study_id
-      - study_phs_id
+      - study_id #5054234
       - dbgap_accession_id
-      - study_description
-      - study_type #11160683 per CV
+      - study_description #3444002
+      #- study_type #11160683
       - study_design
-      - study_status # per CV
+      - study_status
+      - enrollment_beginning_year
+      - enrollment_ending_year
       - study_beginning_year
       - study_ending_year
       - number_of_participants
@@ -66,12 +67,14 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
-      - person_first_name # formerly principal_investigator_first_name 10624731
-      - person_last_name # formerly principal_investigator_last_name 10624733
-      - person_middle_name # formerly principal_investigator_middle_name 10624732
-      - person_orcid_id
+      - study_personnel_record_id #14822135
+      - person_first_name #2179589
+      - person_last_name #2179591
+      - person_middle_name #2179590
+      #- person_orcid_id #10624734
+      - person_institution
       - person_email_address
-      - person_role # for example, Data Coordintator, Data POC, Statistician, per CV
+      - person_role #2201713
   associated_link:
     Desc: The Associated Link node contains the properties required to associate multiple links to additional information about any given study with the appropriate study record, and to define an inuitive label via which each link will be diplayed within the UI. 
     Tags:
@@ -80,9 +83,9 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
-      - associated_link_id
-      - associated_link_name
-      - associated_link_url
+      - associated_link_record_id #14822135
+      - associated_link_name #14822136
+      - associated_link_url #14822140
   publication:
     Desc: The Publication node is comprised of properties which describe publications that are directly associated with any given study of interest, inclusive of the location(s) at which publications can be viewed in electronic form.
     Tags:
@@ -91,6 +94,7 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
+      - publication_record_id #14822135
       - publication_title
       - authorship
       - year_of_publication
@@ -98,31 +102,34 @@ Nodes:
       - digital_object_id
       - pubmed_id
   study_country:
-    Desc: The Study Country node contains only a single property via which potentially lengthy lists of countires from which study participants were included can be associated with the study in question, using data loading files of minimal complexity. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The Study Country node contains only a single property via which potentially lengthy lists of countires from which study participants were included can be associated with the study in question, using data loading files of minimal complexity.
     Tags:
       Category: study
       Assignment: core
       Class: secondary
       Template: 'Yes'
     Props:
+      - study_country_record_id #14822135
       - study_country
   study_state_province_territory:
-    Desc: The Study State/Province/Territory node contains only a single proerty via which potentially lengthy lists of states and/or provinces and/or territories from which study participants were included can be associated with the study in question, using data loading files of minimal complexity. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The Study State/Province/Territory node contains only a single proerty via which potentially lengthy lists of states and/or provinces and/or territories from which study participants were included can be associated with the study in question, using data loading files of minimal complexity.
     Tags:
       Category: study
       Assignment: core
       Class: secondary
       Template: 'Yes'
     Props:
+      - study_state_record_id #14822135
       - study_state_province_territory
   study_demographic:
-    Desc: The Demographic node is comprised of properties which describe the key demographic characteristics of the study population as whole, such as the sexes, genders, races and etnnicities represented. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The Demographic node is comprised of properties which describe the key demographic characteristics of the study population as whole, such as the sexes, genders, races and etnnicities represented.
     Tags:
       Category: study
       Assignment: core
       Class: primary
       Template: 'Yes'
     Props:
+      - study_demographic_record_id #14822135
       - study_participant_minimum_age
       - study_participant_maximum_age
       - study_participant_median_age
@@ -133,31 +140,34 @@ Nodes:
       - ncbi_taxonomy_id #10543100
       - ncbi_taxonomy_name #10543082
   primary_diagnosis:
-    Desc: The Diagnosis node contains only a single property which captures the various and potentially numerous primary diseases with which study participants were diagnosed. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The Diagnosis node contains only a single property which captures the various and potentially numerous primary diseases with which study participants were diagnosed.
     Tags:
       Category: study
       Assignment: core
       Class: primary
       Template: 'Yes'
     Props:
+      - primary_diagnosis_record_id #14822135
       - primary_diagnosis_disease_term
   comorbidity:
-    Desc: The Comorbidity node contains only a single property which captures any comorbidities being examined by the study in question as potential contributing factors. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The Comorbidity node contains only a single property which captures any comorbidities being examined by the study in question as potential contributing factors.
     Tags:
       Category: study
       Assignment: core
       Class: primary
       Template: 'Yes'
     Props:  
+      - comorbidity_record_id #14822135
       - comorbidity_disease_term
   data_collection:
-    Desc: The Data Collection node is comprised of the properties required to describe the nature of the data being gathered by any given study, and to define the extent to which each data collection category was covered. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The Data Collection node is comprised of the properties required to describe the nature of the data being gathered by any given study, and to define the extent to which each data collection category was covered.
     Tags:
       Category: study
       Assignment: core
       Class: primary
       Template: 'Yes'
     Props:  
+      - data_collection_record_id #14822135
       #- data_collection_grouping # the higher-level grouping or family to which each specific data collection category belongs
       - data_collection_category # for example Mental Health Assessments, Cardiovascular Health Assessments, Smoking History, etc., all per CV
       #- data_collection_category_annotation_coverage # for example Extensive, Typical, Limited, Minimal
@@ -171,15 +181,16 @@ Nodes:
       Template: 'Yes'
     Props:
       - data_file_name #11284037
-      - data_file_type
+      - data_file_type #14824731
       - data_file_description #11280338
       - data_file_format #11416926
       - data_file_size #11479876
       - data_file_checksum_value #11480133
       - data_file_checksum_type #11475057
       - data_file_compression_status #11387114
-      - data_file_uuid
-      - data_file_location
+      - data_file_uuid #14826100
+      - data_file_location #11556141
+      - data_file_signed_url # to be used ONLY in support of the MVP-style direct file download, and to be removed outright post-MVP
 Relationships:
   belongs_to:
     Mul: many_to_one
