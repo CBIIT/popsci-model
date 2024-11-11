@@ -1,7 +1,8 @@
 # Population Sciences DC data model nodes, properties and relationships file
 # Title case names are "reserved" (meaningful to the parser)
 # Lower case names are labels for the entities
-
+Handle: PSCD
+Version: 1.0.0
 Nodes:
   # node:
   #   Desc: text
