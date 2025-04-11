@@ -14,7 +14,7 @@ jobs:
     permissions:
       packages: read
       contents: write
-    uses: CBIIT/bento-workflows/.github/workflows/model-test-and-deploy.yml@v2.1.2 
+    uses: CBIIT/bento-workflows/.github/workflows/model-test-and-deploy.yml@v2.3.12 
     with:
       model_files: |
         popsci-model.yml popsci-model-props.yml
