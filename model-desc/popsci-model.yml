@@ -172,7 +172,7 @@ Nodes:
       #- data_collection_category_annotation_coverage # for example Extensive, Typical, Limited, Minimal
       - data_collection_category_annotation_count # the number of annotations per data collection category
   participant:
-  Desc:
+  Desc: The Particpant node is comprised of the properties which define and characterize each study participant
   Tags:
     Category: case
     Assignment: core
