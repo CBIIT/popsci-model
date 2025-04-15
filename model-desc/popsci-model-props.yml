@@ -881,7 +881,7 @@ PropDefinitions:
       - Origin: TBD
         Code: '13606049' #'4723846' # updated 04-11-25
         Value: Diagnosis Disease ICD-O-3 Morphology Code #NCI CTEP Simplified Disease Classification Terminology MedDRA Version 10 Code
-        Version: #'1'    
+        Version: '1' # ?    
     Src: Data Submitter(s)
     Type:
       value_type: list
