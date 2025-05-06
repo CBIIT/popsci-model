@@ -171,6 +171,7 @@ Nodes:
       - data_collection_category # for example Mental Health Assessments, Cardiovascular Health Assessments, Smoking History, etc., all per CV
       #- data_collection_category_annotation_coverage # for example Extensive, Typical, Limited, Minimal
       - data_collection_category_annotation_count # the number of annotations per data collection category
+      - data_collection_category_assessed
   participant:
     Desc: The Particpant node is comprised of the properties which define and characterize each study participant
     Tags:
@@ -180,7 +181,9 @@ Nodes:
       Template: 'Yes'
     Props:
       - participant_id # per CTDC, CDE ID = 12220014
-      - cancer_diagnosis
+      - participant_case_indicator
+      - cancer_diagnosis_primary_site
+      - cancer_diagnosis_morphology
       - age_at_enrollment # per CTDC, CDE = 12299548
       - age_at_first_cancer_diagnosis
       #- year_of_birth
@@ -190,7 +193,7 @@ Nodes:
       #- height # per CTDC, CDE ID = 2179643
       #- weight # per CTDC, CDE ID = 2179689
       #- body_surface_area # per CTDC, CDE ID = 653
-      - body_mass_index
+      #- body_mass_index
       #- occupation # per CTDC, CDE ID = 6617540
       #- income # per CTDC, CDE ID = 14834966
       #- highest_level_of_education # per CTDC, CDE ID = 2681552

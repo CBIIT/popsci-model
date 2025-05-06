@@ -863,6 +863,17 @@ PropDefinitions:
     Req: Preferred
     Tags:
       Labeled: Variable Count
+  data_collection_category_assessed: # per working group discussions, this property now replaces the data_collection_annotation_count property, providing a simple Yes versus No indicator as to whether the data collection category in question was examined or not
+    Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Term:
+      - Origin: caDSR
+        Code: 'code/ID'
+        Value: Data Element Name 
+    Src: FNL
+    Type: integer
+    Req: Preferred
+    Tags:
+      Labeled: Variable Count
   # participant properties
   participant_id:
     Desc: <A sequence of letters, numbers, or characters that uniquely identifies the participant who has taken part in the investigation or research study.> The globally unique ID by which any given participant can be unambiguously identified and displayed across studies/trials. <br>CDE ID = 12220014 <br>This property is used to identify the correct records during data updates.
@@ -875,27 +886,121 @@ PropDefinitions:
     Type: string
     Req: 'Yes'
     Key: true
-  cancer_diagnosis:
-    Desc: <The ICD-O-3 code which identifies the specific appearance of cells and tissues (normal and abnormal) used to define the presence and nature of disease.> This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each neoplasm value specified is represented within the associated controlled vocabulary of acceptable terms. Within the data loading file for the Participant node, multiple diagnoses assocaited with a single study participant must be separated from one another using the pipe (|) character. <br>CDE ID = 13606049
+  participant_case_indicator:
+    Desc: <A response to indicate whether or not the participant is a case in the study in question.> <br>CDE ID = 14883047
     Term:
       - Origin: TBD
-        Code: '13606049' #'4723846' # updated 04-11-25
-        Value: Diagnosis Disease ICD-O-3 Morphology Code #NCI CTEP Simplified Disease Classification Terminology MedDRA Version 10 Code
+        Code: '14883047'
+        Value: Subject Participant Case Indicator
+        Version: '1' # ?    
+    Src: Data Submitter(s)
+    Enum:
+      - 'No'
+      - 'Yes'
+  cancer_diagnosis_primary_site:
+    Desc: <The location within the body from where the disease of interest originated as captured in the Uberon identifier.> <br>CDE = 14883047
+    Term:
+      - Origin: TBD
+        Code: '14883047'
+        Value: Primary Disease Anatomic Site UBERON Identifier
         Version: '1' # ?    
     Src: Data Submitter(s)
     Type:
       value_type: list
-      Enum: # Currently reflective only of the CTEP values used by the CMB
-        - Acute Myeloid Leukemia Not Otherwise Specified
-        - Adenocarcinoma of the Gastroesophageal Junction
-        - Colorectal Carcinoma
-        - Invasive Breast Carcinoma
-        - Melanoma 
-        - Non-Small Cell Lung Carcinoma
-        - Ovarian Carcinoma
-        - Plasma Cell Myeloma 
-        - Prostate Carcinoma 
-        - Small Cell Lung Carcinoma 
+      Enum: # example values for primary site copied directly from the ICDC data model listed below are to be used only for the generation of mock data
+      - Abdomen
+      - Bladder
+      - Bladder, Prostate
+      - Bladder, Urethra
+      - Bladder, Urethra, Prostate
+      - Bladder, Urethra, Vagina
+      - Bone
+      - Bone (Appendicular)
+      - Bone (Axial)
+      - Bone Marrow
+      - Brain
+      - Carpus
+      - Chest Wall
+      - Cranial Sternum
+      - Distal Urethra
+      - Elbow Joint
+      - Femur
+      - Flank
+      - Hip
+      - Hock
+      - Humerus
+      - Inguinal Region
+      - Kidney
+      - Knee Region
+      - Lip
+      - Lung
+      - Lymph Node
+      - Mammary Gland
+      - Mandible
+      - Maxilla
+      - Mouth
+      - Neck
+      - Not Applicable
+      - Pleural Cavity
+      - Rib Region
+      - Shoulder
+      - Skin
+      - Spleen
+      - Subcutis
+      - Tarsus
+      - Thigh
+      - Thorax
+      - Thyroid Gland
+      - Unknown
+      - Urethra, Prostate
+      - Urinary Tract
+      - Urogenital Tract
+    Req: 'Yes'
+  cancer_diagnosis_morphology:
+    Desc: <The ICD-O-3 code which identifies the specific appearance of cells and tissues (normal and abnormal) used to define the presence and nature of disease.> This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each neoplasm value specified is represented within the associated controlled vocabulary of acceptable terms. Within the data loading file for the Participant node, multiple diagnoses assocaited with a single study participant must be separated from one another using the pipe (|) character. <br>CDE ID = 13606049
+    Term:
+      - Origin: TBD
+        Code: '13606049' #'4723846' # updated 04-11-25
+        Value: Diagnosis Disease ICD-O-3 Morphology Code
+        Version: '1' # ?    
+    Src: Data Submitter(s)
+    Type:
+      value_type: list
+      Enum:
+        # - Acute Myeloid Leukemia Not Otherwise Specified
+        # - Adenocarcinoma of the Gastroesophageal Junction
+        # - Colorectal Carcinoma
+        # - Invasive Breast Carcinoma
+        # - Melanoma 
+        # - Non-Small Cell Lung Carcinoma
+        # - Ovarian Carcinoma
+        # - Plasma Cell Myeloma 
+        # - Prostate Carcinoma 
+        - Small Cell Lung Carcinoma
+        - 8000/0 Benign Neoplasm
+        - 8000/1 Neoplasm, Uncertain Whether Benign or Malignant
+        - 8000/3 Malignant Neoplasm
+        - 8000/6 Metastatic Neoplasm
+        - 8000/9 Malignant Neoplasm, Uncertain Whether Primary or Metastatic
+        - 8001/0 Benign Cellular Infiltrate
+        - 8001/1 Neoplastic Cell
+        - 8001/3 Malignant Cell
+        - 8003/3 Malignant Giant Cell Neoplasm
+        - 8004/3 Malignant Spindle Cell Neoplasm
+        - 8005/0 Clear Cell Neoplasm
+        - 8005/3 Malignant Ovarian Clear Cell Tumor
+        - 8010/2 Carcinoma In Situ
+        - 8010/6 Metastatic Carcinoma
+        - 8010/9 Carcinomatosis
+        - 8012/3 Large Cell Carcinoma
+        - 8013/3 Large Cell Neuroendocrine Carcinoma
+        - 8014/3 Lung Large Cell Carcinoma with Rhabdoid Phenotype
+        - 8015/3 Glassy Cell Carcinoma
+        - 8022/3 Pleomorphic Carcinoma
+        - 8023/3 NUT Carcinoma
+        - 8031/3 Giant Cell Carcinoma
+        - 8035/3 Undifferentiated Carcinoma with Osteoclast-Like Giant Cells
+        - 8045/3 Combined Small Cell Lung Carcinoma
     Req: 'Yes'
   age_at_enrollment:
     Desc: <The age in days of the subject when the subject enrolled in the study.> The age of the participant as of enrollment, measured in days. <br>CDE ID = 15742605
@@ -932,7 +1037,7 @@ PropDefinitions:
   #   Src: Data Submitter(s)
   #   Type: number
   #   Req: 'Yes'
-  participant_race: # participant prefix to prevent property duplication will be removed once the study_demographic node is retired out
+  participant_race: # participant prefix to avoid property duplication; will be removed once the study_demographic node is retired out
     Desc: <The text for reporting information about race based on the Office of Management and Budget (OMB) categories.> <br>CDE ID = 2192199
     Term:
       - Origin: caDSR - OMB/NCI Standard
@@ -940,7 +1045,9 @@ PropDefinitions:
         Value: Race Category Text
         Version: '1'
     Src: Data Submitter(s)
-    Enum: # now fully aligned with the acceptable values for the corresponding CDE
+    Type:
+      value_type: list
+      Enum: # now fully aligned with the acceptable values for the corresponding CDE
       - American Indian or Alaska Native
       - Asian
       - Black or African American
@@ -950,7 +1057,7 @@ PropDefinitions:
       - Unknown
       - White
     Req: 'Yes'
-  participant_ethnicity: # participant prefix to prevent property duplication will be removed once the study_demographic node is retired out
+  participant_ethnicity: # participant prefix to avoid property duplication; will be removed once the study_demographic node is retired out
     Desc: <The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.> <br>CDE ID = 2192217
     Term:
       - Origin: caDSR - OMB/NCI Standard
@@ -965,7 +1072,7 @@ PropDefinitions:
       - Not reported
       - Unknown
     Req: 'Yes'
-  participant_sex: # participant prefix to prevent property duplication will be removed once the study_demographic node is retired out
+  participant_sex: # participant prefix to avoid property duplication; will be removed once the study_demographic node is retired out
     Desc: <A textual description of a person's sex at birth.> CDE ID = 7572817
     Term:
       - Origin: caDSR - NCI Standards
