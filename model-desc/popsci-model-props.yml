@@ -956,7 +956,7 @@ PropDefinitions:
       - Urinary Tract
       - Urogenital Tract
     Req: 'Yes'
-  cancer_diagnosis_morphology:
+  cancer_diagnosis_disease_morphology:
     Desc: <The ICD-O-3 code which identifies the specific appearance of cells and tissues (normal and abnormal) used to define the presence and nature of disease.> This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each neoplasm value specified is represented within the associated controlled vocabulary of acceptable terms. Within the data loading file for the Participant node, multiple diagnoses assocaited with a single study participant must be separated from one another using the pipe (|) character. <br>CDE ID = 13606049
     Term:
       - Origin: TBD

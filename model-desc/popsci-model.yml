@@ -183,7 +183,7 @@ Nodes:
       - participant_id # per CTDC, CDE ID = 12220014
       - participant_case_indicator
       - cancer_diagnosis_primary_site
-      - cancer_diagnosis_morphology
+      - cancer_diagnosis_disease_morphology
       - age_at_enrollment # per CTDC, CDE = 12299548
       - age_at_first_cancer_diagnosis
       #- year_of_birth
