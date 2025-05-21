@@ -11,7 +11,7 @@ Nodes:
       - data_collection_category_grouping_d
       - data_collection_category_grouping_e
       - data_collection_category_grouping_f
-      - data_collection_categor_groupingy_g
+      - data_collection_category_grouping_g
       - data_collection_category_grouping_h
 PropDefinitions:
   # data_collection_category_grouping
@@ -91,7 +91,7 @@ PropDefinitions:
       Labeled: ENVIRONMENTAL OR OCCUPATIONAL EXPOSURES
       Rank: "7"
   data_collection_category_grouping_h:
-    Desc: This Data Collection Category Grouping encompasses data collection realting to Medical / Health Status / Health History
+    Desc: This Data Collection Category Grouping encompasses data collection relating to Medical / Health Status / Health History
     Enum:
       - Health Insurance Status #Medical / Health Status / Health History
       - Screening
