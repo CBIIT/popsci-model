@@ -1,5 +1,5 @@
 Nodes:
-  data_collection:
+  data_collection_category:
     Desc: text here
     Props: null
   data_collection_category_grouping:

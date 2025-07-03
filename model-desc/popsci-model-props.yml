@@ -4,65 +4,66 @@
 
 PropDefinitions:
   # node
-  property_1:
-    Desc: syntax for simple properties
-    Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
-    Src: xyz
-    Type: string # number # integer # datetime 
-    Req: 'Yes'
-  property_2:
-    Desc: syntax for numerical properties with units
-    Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name
-    Src: xyz
-    Type:
-      units:
-        - days
-      value_type: number
-    Req: 'No'
-  property_3:
-    Desc: syntax for enumerated properties
-    Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name
-    Src: xyz
-    Enum: 
-      - 'Yes'
-      - 'No'
-      - '1'
-      - Unknown
-    Req: Preferred
-  property_4:
-    Desc: syntax for list type properties governed by a controlled vocabulary
-    Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name
-    Src: xyz
-    Type:
-      value_type: list
-      Enum:
-        - a
-        - b
-        - c
-    Req: 'Yes'
-  property_5:
-    Desc: syntax for list type properties not governed by any controlled vocabulary
-    Term:
-      - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name
-    Src: xyz
-    Type:
-      value_type: list
-      item_type: string
-    Req: 'Yes'  
+  # property_1:
+  #   Desc: syntax for simple properties
+  #   Term:
+  #     - Origin: caDSR
+  #       Code: 'code/ID'
+  #       Value: Data Element Name  
+  #   Src: xyz
+  #   Type: string # number # integer # datetime 
+  #   Req: 'Yes'
+  # property_2:
+  #   Desc: syntax for numerical properties with units
+  #   Term:
+  #     - Origin: caDSR
+  #       Code: 'code/ID'
+  #       Value: Data Element Name
+  #   Src: xyz
+  #   Type:
+  #     units:
+  #       - days
+  #     value_type: number
+  #   Req: 'No'
+  # property_3:
+  #   Desc: syntax for enumerated properties
+  #   Term:
+  #     - Origin: caDSR
+  #       Code: 'code/ID'
+  #       Value: Data Element Name
+  #   Src: xyz
+  #   Enum: 
+  #     - 'Yes'
+  #     - 'No'
+  #     - '1'
+  #     - Unknown
+  #   Req: Preferred
+  # property_4:
+  #   Desc: syntax for list type properties governed by a controlled vocabulary
+  #   Term:
+  #     - Origin: caDSR
+  #       Code: 'code/ID'
+  #       Value: Data Element Name
+  #   Src: xyz
+  #   Type:
+  #     value_type: list
+  #     Enum:
+  #       - a
+  #       - b
+  #       - c
+  #   Req: 'Yes'
+  # property_5:
+  #   Desc: syntax for list type properties not governed by any controlled vocabulary
+  #   Term:
+  #     - Origin: caDSR
+  #       Code: 'code/ID'
+  #       Value: Data Element Name
+  #   Src: xyz
+  #   Type:
+  #     value_type: list
+  #     item_type: string
+  #  Req: 'Yes'  
+
   # program properties
   program_name:
     Desc: <The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis.> <br>CDE ID = 11444542 

@@ -72,7 +72,7 @@ Nodes:
       - person_middle_name #2179590
       #- person_orcid_id #10624734
       - person_institution
-      - person_email_address
+      #- person_email_address
       - person_role #2201713
   associated_link:
     Desc: The Associated Link node contains the properties required to associate multiple links to additional information about any given study with the appropriate study record, and to define an inuitive label via which each link will be diplayed within the UI. 
