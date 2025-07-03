@@ -1,22 +1,22 @@
 Nodes:
-  data_collection:
+  data_collection_category:
     Desc: text here
     Props: null
   data_collection_category_grouping:
     Desc: The Data Collection Category Grouping node defines the names of the upper-level groupings or "families" to which the various specific data collection categories belong, defines the order in which the data collection category groupings are to be displayed within the UI, defines which specific data collection categories belong to each grouping, and defines the order in which specific data collection categories are to be displayed within the UI under their parental grouping.
     Props:
-      - data_collection_category_a
-      - data_collection_category_b
-      - data_collection_category_c
-      - data_collection_category_d
-      - data_collection_category_e
-      - data_collection_category_f
-      - data_collection_category_g
-      - data_collection_category_h
+      - data_collection_category_grouping_a
+      - data_collection_category_grouping_b
+      - data_collection_category_grouping_c
+      - data_collection_category_grouping_d
+      - data_collection_category_grouping_e
+      - data_collection_category_grouping_f
+      - data_collection_category_grouping_g
+      - data_collection_category_grouping_h
 PropDefinitions:
   # data_collection_category_grouping
-  data_collection_category_grouping_a: #Demographics / lifestyle / Life Events / Quality of Life
-    Desc: Demographics / lifestyle / Life Events / Quality of Life
+  data_collection_category_grouping_a:
+    Desc: This Data Collection Category Grouping encompasses data collection relating to Demographics, Lifestyle, Life Events and Quality of Life
     Enum:
       - Age
       - Biological Sex
@@ -32,39 +32,44 @@ PropDefinitions:
       - Social Support
       - Socio-Economic Status
     Tags:
-      Rank: "1"  
-  data_collection_category_grouping_b: #Alcohol / Tobacco / Drug Use
-    Desc: Alcohol / Tobacco / Drug Use
+      Labeled: DEMOGRAPHICS / LIFESTYLE / LIFE EVENTS / QUALITY OF LIFE
+      Rank: "1"
+  data_collection_category_grouping_b:
+    Desc: This Data Collection Category Grouping encompasses data collection relating to Alcohol Consumption, Tobacco Use and Drug Use
     Enum:
       - Alcohol Consumption
       - Cigarette Smoking
       - Other Tobacco Products
       - Drug Use
     Tags:
+      Labeled: ALCOHOL / TOBACCO / DRUG USE
       Rank: "2"
-  data_collection_category_grouping_c: #Diet / Nutrition
-    Desc: Diet / Nutrition
+  data_collection_category_grouping_c:
+    Desc: This Data Collection Category Grouping encompasses data collection relating to Diet and Nutrition
     Enum:
       - Dietary Intake
       - Dietary Supplement Use
     Tags:
+      Labeled: DIET / NUTRITION
       Rank: "3"
-  data_collection_category_grouping_d: #Physical Activity / Energy Balance
-    Desc: Physical Activity / Energy Balance
+  data_collection_category_grouping_d:
+    Desc: This Data Collection Category Grouping encompasses data collection relating to Physical Activity and Energy Balance
     Enum:
       - Physical Activity
       - Physical Function Measures
     Tags:
+      Labeled: PHYSICAL ACTIVITY / ENERGY BALANCE
       Rank: "4"
-  data_collection_category_grouping_e: #Anthropometry
-    Desc: Anthropometry
+  data_collection_category_grouping_e:
+    Desc: This Data Collection Category Grouping encompasses data collection relating to Anthropometry
     Enum:
       - Self-Reported Anthropometry
       - Measured Anthropometry
     Tags:
+      Labeled: ANTHROPOMETRY
       Rank: "5"
-  data_collection_category_grouping_f: #Reproductive Health History
-    Desc: Reproductive Health History
+  data_collection_category_grouping_f:
+    Desc: This Data Collection Category Grouping encompasses data collection relating to Reproductive Health History
     Enum:
       - Puberty, Menstruation, and Menopause
       - Pregnancy and Parity
@@ -74,17 +79,19 @@ PropDefinitions:
       - Sexual Behavior and Health
     Tags:
       Rank: "6"
-  data_collection_category_grouping_g: #Environmental or Occupational Exposures
-    Desc: Environmental or Occupational Exposures
+      Labeled: REPRODUCTIVE HEALTH HISTORY
+  data_collection_category_grouping_g:
+    Desc: This Data Collection Category Grouping encompasses data collection relating to Environmental or Occupational Exposures
     Enum:
       - Housing Exposures
       - Workplace Exposures
       - Radiation Exposure
       - Chemical Exposure
     Tags:
+      Labeled: ENVIRONMENTAL OR OCCUPATIONAL EXPOSURES
       Rank: "7"
-  data_collection_category_grouping_h: #Medical / Health Status / Health History
-    Desc: Medical / Health Status / Health History
+  data_collection_category_grouping_h:
+    Desc: This Data Collection Category Grouping encompasses data collection relating to Medical / Health Status / Health History
     Enum:
       - Health Insurance Status #Medical / Health Status / Health History
       - Screening
@@ -126,6 +133,7 @@ PropDefinitions:
       - Vital Status
     Tags:
       Rank: "8"
+      Labeled: MEDICAL / HEALTH STATUS / HEALTH HISTORY
 Relationships:
   associated_with:
     Mul: one_to_one
