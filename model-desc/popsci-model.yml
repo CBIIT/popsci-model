@@ -171,7 +171,7 @@ Nodes:
       - data_collection_category # for example Mental Health Assessments, Cardiovascular Health Assessments, Smoking History, etc., all per CV
       #- data_collection_category_annotation_coverage # for example Extensive, Typical, Limited, Minimal
       - data_collection_category_annotation_count # the number of annotations per data collection category
-      - data_collection_category_assessed
+      #- data_collection_category_assessed
   participant:
     Desc: The Particpant node is comprised of the properties which define and characterize each study participant
     Tags:
@@ -214,14 +214,14 @@ Nodes:
       - data_file_name #11284037
       - data_file_type #14824731
       - data_file_description #11280338
-      - data_file_format #11416926
-      - data_file_size #11479876
-      - data_file_checksum_value #11480133
-      - data_file_checksum_type #11475057
-      - data_file_compression_status #11387114
-      - data_file_uuid #14826100
-      - data_file_location #11556141
-      - data_file_signed_url # to be used ONLY in support of the MVP-style direct file download, and to be removed outright post-MVP
+      #- data_file_format #11416926
+      #- data_file_size #11479876
+      #- data_file_checksum_value #11480133
+      #- data_file_checksum_type #11475057
+      #- data_file_compression_status #11387114
+      #- data_file_uuid #14826100
+      #- data_file_location #11556141
+      #- data_file_signed_url # to be used ONLY in support of the MVP-style direct file download, and to be removed outright post-MVP
       - data_file_access_control
 Relationships:
   belongs_to:
