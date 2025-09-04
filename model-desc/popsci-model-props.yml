@@ -345,7 +345,7 @@ PropDefinitions:
   #   Tags:
   #     Labeled: ORCID ID
   person_institution:
-    Desc: text here
+    Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
       - Origin: caDSR
         Code: 'code/ID'
@@ -1023,7 +1023,7 @@ PropDefinitions:
       value_type: number
     Req: 'Yes'
   age_at_first_cancer_diagnosis:
-    Desc: <The age (in days) of the participant when the participant was first diagnosed with cancer.> The age of the participant as of first diagnosis of cancer, measured in days. <br>CDE ID = 
+    Desc: <The age (in days) of the participant when the participant was first diagnosed with cancer.> The age of the participant as of first diagnosis of cancer, measured in days. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
       - Origin: x
         Code: 'y' # TBD 04-11-25
@@ -1204,30 +1204,6 @@ PropDefinitions:
   #     - 'Yes'
   #     - 'No'
   #   Req: Preferred
-  # country_of_residence:
-  #   Desc: text
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: Data Submitter(s)
-  #   Enum:
-  #     - country 1
-  #     - country 2
-  #     - country 3
-  #   Req: Preferred
-  # state_province_territory_of_residence:
-  #   Desc: text
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: Data Submitter(s)
-  #   Enum:
-  #     - state 1
-  #     - state 2
-  #     - state 3
-  #   Req: Preferred
   ncbi_taxonomy_id: # participant prefix to prevent property duplication will be removed once the study_demographic node is retired out
     Desc: A label provided by NCBI Taxonomy Database (https://www.ncbi.nlm.nih.gov/taxonomy/),  which uniquely identifies group or category, at any level, in a system for classifying plants or animals (including humans) providing ranked categories for the classification of organisms according to their suspected evolutionary relationships. For human study participants, the value of this ID must be stated as 9606. <br>CDE ID = 10543100
     Term:
@@ -1257,7 +1233,7 @@ PropDefinitions:
     Term:
       - Origin: caDSR - CRDC
         Code: '11284037'
-        Value: Electronic Data File Name  
+        Value: Electronic Data File Name
     Src: DSS
     Type: string
     Req: 'Yes'
@@ -1270,14 +1246,14 @@ PropDefinitions:
         Code: '14824731'
         Value: Electronic Data File Content Type
     Src: FNL
-    Enum: # file types borrowed staright from CTDC and clearly in need of revision
+    Enum:
       - Data Dictionary
-      - Clinical Report
+      - Data Guide
       - File Collection
       - Investigator Report
+      - Questionnaire
+      - Survey
       - More options to be added as needed
-      #- Variant Call File
-      #- Variant Report
     Req: 'Yes'
     Tags:
       Labeled: File Type
@@ -1292,94 +1268,80 @@ PropDefinitions:
     Req: 'Yes'
     Tags:
       Labeled: Description
-  # data_file_format:
-  #   Desc: A defined organization or layout representing and structuring data in a computer file; the electronic format of the file, as derived during file validation <br>With the actual values of this property being loader derived, the acceptable values currently specified are in place only to support the generation of mock data <br>CDE ID = 11416926
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '11416926'
-  #       Value: Electronic Data File Format Type  
-  #   Src: DSS
-  #   Enum:
-  #     - docx
-  #     - gz
-  #     - pdf
-  #     - vcf
-  #     - zip
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Format
-  # data_file_size:
-  #   Desc: The measure, expressed in bytes, as to how much space a data file takes up on a storage medium. <br>CDE ID = 11479876
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '11479876'
-  #       Value: Electronic Data File Size Integer  
-  #   Src: DSS
-  #   Type: number
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Size
-  # data_file_checksum_value:
-  #   Desc: A small-sized block of data derived from a file for the purpose of detecting errors that may have been introduced during file transmission and/or storage and used to verify data integrity. <br>CDE ID = 11480133
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '11480133'
-  #       Value: Electronic Data File Checksum Value  
-  #   Src: DSS
-  #   Type: string
-  #   Req: 'Yes'
-  # data_file_checksum_type:
-  #   Desc: The method by which the file checksum was calculated. <br>CDE ID = 11475057
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '11475057'
-  #       Value: Electronic Data File Checksum Type  
-  #   Src: DSS
-  #   Enum:
-  #     - md5sum
-  #     - sha1
-  #     - sha256
-  #   Req: 'Yes'
-  # data_file_compression_status:
-  #   Desc: The state of data when saved to storage space or during data transmission. <br>CDE ID = 11387114
-  #   Term:
-  #     - Origin: caDSR-CRDC
-  #       Code: '11387114'
-  #       Value: Electronic Data File Compression Type  
-  #   Src: DSS
-  #   Enum:
-  #     - Compressed
-  #     - Uncompressed
-  #     - Unknown
-  #   Req: Preferred
-  # data_file_uuid:
-  #   Desc: <A unique sequence of characters used to identify the contents of an electronic record.> <br>CDE ID = 14826100
-  #   Term:
-  #     - Origin: caDSR - CTDC
-  #       Code: '14826100'
-  #       Value: Electronic Data File Content Unique Identifier 
-  #   Src: FNL
-  #   Type: string
-  #   Req: 'Yes'
-  #   Key: true
-  # data_file_location:
-  #   Desc: <The specification of a node (file or directory) in a hierarchical file system where an electronic file is located.> The specific location within the S3 storage bucket at which the file is stored, expressed in terms of a unique url <br>CDE ID = 11556141
-  #   Term:
-  #     - Origin: caDSR - CDS
-  #       Code: '11556141'
-  #       Value: Electronic File Pathname Text    
-  #   Src: FNL
-  #   Type: string
-  #   Req: 'Yes'
-  # data_file_signed_url: # to be used ONLY in support of the MVP-style direct file download, and to be removed outright post-MVP
-  #   Desc: The pre-signed URL specifically associated with any given data file, used in support of the MVP-style direct file download. <br>NO CDE REQUIRED
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: FNL
-  #   Type: string
-  #   Req: 'Yes'
+  data_file_format:
+    Desc: A defined organization or layout representing and structuring data in a computer file; the electronic format of the file, as derived during file validation <br>With the actual values of this property being loader derived, the acceptable values currently specified are in place only to support the generation of mock data <br>CDE ID = 11416926
+    Term:
+      - Origin: caDSR - CRDC
+        Code: '11416926'
+        Value: Electronic Data File Format Type  
+    Src: DSS
+    Type: string
+    Req: 'Yes'
+    Tags:
+      Labeled: Format
+  data_file_size:
+    Desc: The measure, expressed in bytes, as to how much space a data file takes up on a storage medium. <br>CDE ID = 11479876
+    Term:
+      - Origin: caDSR - CRDC
+        Code: '11479876'
+        Value: Electronic Data File Size Integer  
+    Src: DSS
+    Type: number
+    Req: 'Yes'
+    Tags:
+      Labeled: Size
+  data_file_checksum_value:
+    Desc: A small-sized block of data derived from a file for the purpose of detecting errors that may have been introduced during file transmission and/or storage and used to verify data integrity. <br>CDE ID = 11480133
+    Term:
+      - Origin: caDSR - CRDC
+        Code: '11480133'
+        Value: Electronic Data File Checksum Value  
+    Src: DSS
+    Type: string
+    Req: 'Yes'
+  data_file_checksum_type:
+    Desc: The method by which the file checksum was calculated. <br>CDE ID = 11475057
+    Term:
+      - Origin: caDSR - CRDC
+        Code: '11475057'
+        Value: Electronic Data File Checksum Type  
+    Src: DSS
+    Enum:
+      - md5sum
+      - sha1
+      - sha256
+    Req: 'Yes'
+  data_file_compression_status:
+    Desc: The state of data when saved to storage space or during data transmission. <br>CDE ID = 11387114
+    Term:
+      - Origin: caDSR-CRDC
+        Code: '11387114'
+        Value: Electronic Data File Compression Type  
+    Src: DSS
+    Enum:
+      - Compressed
+      - Uncompressed
+      - Unknown
+    Req: Preferred
+  data_file_uuid:
+    Desc: <A unique sequence of characters used to identify the contents of an electronic record.> <br>CDE ID = 14826100
+    Term:
+      - Origin: caDSR - CTDC
+        Code: '14826100'
+        Value: Electronic Data File Content Unique Identifier 
+    Src: FNL
+    Type: string
+    Req: 'Yes'
+    Key: true
+  data_file_location:
+    Desc: <The specification of a node (file or directory) in a hierarchical file system where an electronic file is located.> The specific location within the S3 storage bucket at which the file is stored, expressed in terms of a unique url <br>CDE ID = 11556141
+    Term:
+      - Origin: caDSR - CDS
+        Code: '11556141'
+        Value: Electronic File Pathname Text    
+    Src: FNL
+    Type: string
+    Req: 'Yes'
   data_file_access_control:
     Desc: An indicator as to the level of access control to which a data file is subject. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:

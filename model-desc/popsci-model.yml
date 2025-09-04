@@ -44,12 +44,12 @@ Nodes:
       Class: primary
       Template: 'Yes'
     Props:
-      - study_name #11459810
-      - study_short_name #11459812
-      - study_id #5054234
+      - study_name # CDE ID = 11459810
+      - study_short_name # CDE ID = 11459812
+      - study_id # CDE ID = 5054234
       - dbgap_accession_id
-      - study_description #3444002
-      #- study_type #11160683
+      - study_description # CDE ID = 3444002
+      #- study_type # CDE ID = 11160683
       - study_design
       - study_status
       - enrollment_beginning_year
@@ -66,14 +66,14 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
-      - study_personnel_record_id #14822135
-      - person_first_name #2179589
-      - person_last_name #2179591
-      - person_middle_name #2179590
-      #- person_orcid_id #10624734
+      - study_personnel_record_id # CDE ID = 14822135
+      - person_first_name # CDE ID = 2179589
+      - person_last_name # CDE ID = 2179591
+      - person_middle_name # CDE ID = 2179590
+      #- person_orcid_id # CDE ID = 10624734
       - person_institution
       #- person_email_address
-      - person_role #2201713
+      - person_role # CDE ID = 2201713
   associated_link:
     Desc: The Associated Link node contains the properties required to associate multiple links to additional information about any given study with the appropriate study record, and to define an inuitive label via which each link will be diplayed within the UI. 
     Tags:
@@ -82,9 +82,9 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
-      - associated_link_record_id #14822135
-      - associated_link_name #14822136
-      - associated_link_url #14822140
+      - associated_link_record_id #CDE ID = 14822135
+      - associated_link_name #CDE ID = 14822136
+      - associated_link_url #CDE ID = 14822140
   publication:
     Desc: The Publication node is comprised of properties which describe publications that are directly associated with any given study of interest, inclusive of the location(s) at which publications can be viewed in electronic form.
     Tags:
@@ -93,7 +93,7 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
-      - publication_record_id #14822135
+      - publication_record_id # CDE ID = 14822135
       - publication_title
       - authorship
       - year_of_publication
@@ -108,7 +108,7 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
-      - study_country_record_id #14822135
+      - study_country_record_id # CDE ID = 14822135
       - study_country
   study_state_province_territory:
     Desc: The Study State/Province/Territory node contains only a single proerty via which potentially lengthy lists of states and/or provinces and/or territories from which study participants were included can be associated with the study in question, using data loading files of minimal complexity.
@@ -118,7 +118,7 @@ Nodes:
       Class: secondary
       Template: 'Yes'
     Props:
-      - study_state_record_id #14822135
+      - study_state_record_id # CDE ID = 14822135
       - study_state_province_territory
   # study_demographic:
   #   Desc: The Demographic node is comprised of properties which describe the key demographic characteristics of the study population as whole, such as the sexes, genders, races and etnnicities represented.
@@ -211,16 +211,16 @@ Nodes:
       Class: primary
       Template: 'Yes'
     Props:
-      - data_file_name #11284037
-      - data_file_type #14824731
-      - data_file_description #11280338
-      #- data_file_format #11416926
-      #- data_file_size #11479876
-      #- data_file_checksum_value #11480133
-      #- data_file_checksum_type #11475057
-      #- data_file_compression_status #11387114
-      #- data_file_uuid #14826100
-      #- data_file_location #11556141
+      - data_file_name # CDE ID = 11284037
+      - data_file_type # CDE ID = 14824731
+      - data_file_description # CDE ID = 11280338
+      - data_file_format # CDE ID = 11416926
+      - data_file_size # CDE ID = 11479876
+      - data_file_checksum_value # CDE ID = 11480133
+      - data_file_checksum_type # CDE ID = 11475057
+      - data_file_compression_status # CDE ID = 11387114
+      - data_file_uuid # CDE ID = 14826100
+      - data_file_location # CDE ID = 11556141
       #- data_file_signed_url # to be used ONLY in support of the MVP-style direct file download, and to be removed outright post-MVP
       - data_file_access_control
 Relationships:
@@ -249,11 +249,11 @@ Relationships:
         Dst: study
       # - Src: comorbidity
       #   Dst: study
-      - Src: primary_diagnosis
-        Dst: study
-      - Src: study_demographic
-        Dst: study
-        Mul: one_to_one
+      # - Src: primary_diagnosis
+      #   Dst: study
+      # - Src: study_demographic
+      #   Dst: study
+      #   Mul: one_to_one
       - Src: study_state_province_territory
         Dst: study
       - Src: study_country
