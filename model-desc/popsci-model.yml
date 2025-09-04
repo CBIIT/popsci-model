@@ -224,18 +224,18 @@ Nodes:
       #- data_file_signed_url # to be used ONLY in support of the MVP-style direct file download, and to be removed outright post-MVP
       - data_file_access_control
 Relationships:
-  belongs_to:
-    Mul: many_to_one
-    Ends:
-      - Src: study
-        Dst: project
-      - Src: study # so can a lowest-level study belong directly to a highest-level program?
-        Dst: program
+  # belongs_to:
+  #   Mul: many_to_one
+  #   Ends:
+      # - Src: study
+      #   Dst: project
+      # - Src: study # so can a lowest-level study belong directly to a highest-level program?
+      #   Dst: program
       #- Src: project # this relationship can be removed because project is above study?
         #Dst: study
-      - Src: project # this seems legitimate
-        Dst: program     
-    Props: null
+    #   - Src: project # this seems legitimate
+    #     Dst: program     
+    # Props: null
   associated_with: # group all file relationships in here?
     Mul: many_to_one
     Ends:
