@@ -203,7 +203,7 @@ Nodes:
       #- state_province_territory_of_residence
       - ncbi_taxonomy_id # per DSS for CTDC, CDE ID = 10543100
       #- participant_ncbi_taxonomy_name # per DSS for CTDC, CDE ID = 10543082
-  data_file:
+  file:
     Desc: Within the PSDC, data files can currently be associated only with study records. Notably, data files are not themselves stored within the application. Instead, the application stores records as to the existence and nature of such data files. The Data File node is comprised of properties which characterize these files in terms of their size, format and content, such that they can be appropriately represented within the application's UI, and in terms of their storage location, such that they can be retrieved for analysis.
     Tags:
       Category: data_file
@@ -239,7 +239,7 @@ Relationships:
   associated_with: # group all file relationships in here?
     Mul: many_to_one
     Ends:
-      - Src: data_file
+      - Src: file
         Dst: study
       # - Src: data_file
       #   Dst: project
