@@ -1227,7 +1227,7 @@ PropDefinitions:
   #   Enum:
   #     - Homo sapiens
   #   Req: 'Yes'  
-  # data_file properties
+  # file properties
   data_file_name:
     Desc: The literal label for an electronic data file, inclusive of file extension(s). <br>CDE ID = 11284037
     Term:
