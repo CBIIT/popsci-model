@@ -138,7 +138,7 @@ Nodes:
       Template: 'Yes'
     Props:
       - participant_id # per CTDC, CDE ID = 12220014
-      - participant_case_indicator # CDE ID = 14883047 as noted here 12-05-25
+      - participant_case_indicator # NOT CURRENTLY ASSIGNED ANY CDE
       - cancer_diagnosis_primary_site # CDE ID = 14883047 as noted here 12-05-25
       - cancer_diagnosis_disease_morphology # CDE ID = 13606049 as noted here 12-05-25
       - age_at_enrollment # per CTDC, CDE = 12299548

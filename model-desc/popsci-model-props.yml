@@ -589,8 +589,8 @@ PropDefinitions:
   participant_case_indicator:
     Desc: <A response to indicate whether or not the participant is a case in the study in question.> <br>CDE ID = 14883047
     Term:
-      - Origin: TBD
-        Code: '14883047'
+      - Origin: x
+        Code: 'y' # TBD as of 12-09-25
         Value: Subject Participant Case Indicator
         Version: '1' # ?    
     Src: Data Submitter(s)
