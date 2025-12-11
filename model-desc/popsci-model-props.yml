@@ -64,25 +64,25 @@ PropDefinitions:
   #     item_type: string
   #  Req: 'Yes'  
   # program properties
-  # program_name:
-  #   Desc: <The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis.> <br>CDE ID = 11444542 
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '11444542'
-  #       Value: Program Name Text  
-  #   Src: DSS
-  #   Type: string
-  #   Req: 'Yes'
-  # program_short_name:
-  #   Desc: <An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. For example, CPTAC.> <br>CDE ID = 11459801 <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '11459801'
-  #       Value: Program Short Name Text  
-  #   Src: DSS
-  #   Type: string
-  #   Req: 'Yes'
-  #   Key: true
+  program_name:
+    Desc: <The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis.> <br>CDE ID = 11444542 
+    Term:
+      - Origin: caDSR - CRDC
+        Code: '11444542'
+        Value: Program Name Text  
+    Src: DSS
+    Type: string
+    Req: 'Yes'
+  program_short_name:
+    Desc: <An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. For example, CPTAC.> <br>CDE ID = 11459801 <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
+    Term:
+      - Origin: caDSR - CRDC
+        Code: '11459801'
+        Value: Program Short Name Text  
+    Src: DSS
+    Type: string
+    Req: 'Yes'
+    Key: true
   # # project properties
   # project_name:
   #   Desc: <The narrative title used to refer to an organ-, site-, disease- or phase-specific data collection within a broad framework of goals under which related studies or other research activities are grouped.> <br>CDE ID = 11459804
