@@ -63,27 +63,26 @@ PropDefinitions:
   #     value_type: list
   #     item_type: string
   #  Req: 'Yes'  
-
   # program properties
-  # program_name:
-  #   Desc: <The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis.> <br>CDE ID = 11444542 
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '11444542'
-  #       Value: Program Name Text  
-  #   Src: DSS
-  #   Type: string
-  #   Req: 'Yes'
-  # program_short_name:
-  #   Desc: <An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. For example, CPTAC.> <br>CDE ID = 11459801 <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '11459801'
-  #       Value: Program Short Name Text  
-  #   Src: DSS
-  #   Type: string
-  #   Req: 'Yes'
-  #   Key: true
+  program_name:
+    Desc: <The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis.> <br>CDE ID = 11444542 
+    Term:
+      - Origin: caDSR - CRDC
+        Code: '11444542'
+        Value: Program Name Text  
+    Src: DSS
+    Type: string
+    Req: 'Yes'
+  program_short_name:
+    Desc: <An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. For example, CPTAC.> <br>CDE ID = 11459801 <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
+    Term:
+      - Origin: caDSR - CRDC
+        Code: '11459801'
+        Value: Program Short Name Text  
+    Src: DSS
+    Type: string
+    Req: 'Yes'
+    Key: true
   # # project properties
   # project_name:
   #   Desc: <The narrative title used to refer to an organ-, site-, disease- or phase-specific data collection within a broad framework of goals under which related studies or other research activities are grouped.> <br>CDE ID = 11459804
@@ -161,40 +160,6 @@ PropDefinitions:
     Req: 'Yes'
     Tags:
       Labeled: Description
-  # study_type: 
-  #   Desc: A classification of the study based upon the primary intent of the study's activities. <br>CDE ID = 11160683
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '11160683'
-  #       Value: Study Primary Purpose Type 
-  #   Src: DSS
-  #   Enum:
-  #     - Adverse Effect Mitigation Study 
-  #     - Ancillary Study
-  #     - Basic Science Research
-  #     - Correlative Study
-  #     - Cure Study
-  #     - Device Feasibility Study
-  #     - Diagnosis Study
-  #     - Disease Modifying Treatment Study
-  #     - Early Detection Study
-  #     - Education Training Clinical Study
-  #     - Epidemiology Research 
-  #     - Genomics Research
-  #     - Health Services Research
-  #     - Imaging Research
-  #     - Observational Study
-  #     - Outcomes Research
-  #     - Prevention Study
-  #     - Proteomic Research
-  #     - Rehabilitation Clinical Study
-  #     - Screening Study
-  #     - Supportive Care Study
-  #     - Transcriptomics Research
-  #     - Treatment Study
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Study Type
   study_design: 
     Desc: Text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -202,8 +167,7 @@ PropDefinitions:
         Code: 'code/ID'
         Value: Data Element Name 
     Src: Data Submitter(s)
-    Enum:
-      # Acceptable values listed below are the actual values propsed by the working group
+    Enum: # Acceptable values listed below are the actual values propsed by the working group
       - Case Series Study # Cases are not compared to subjects without the manifestations of interest; Case Series studies are primarily descriptive reports observed in groups under study.
       - Case-Control Study # Patients who already have a certain condition are compared with people who do not
       - Nested Case-Control Study
@@ -268,18 +232,7 @@ PropDefinitions:
         Value: Data Element Name  
     Src: Data Submitter(s)c
     Type: string # this accomodates use of the the term Ongoing for studies that are still active
-    Req: 'Yes'    
-  # number_of_participants: # this will no longer be needed with participant records loaded, from which the study-specific participant counts can be derived
-  #   Desc: The total number of participants included in the study as of its submission. <br>NOT CURRENTLY ASSIGNED ANY CDE
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: Data Submitter(s)
-  #   Type: integer
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Participant Count
+    Req: 'Yes'
   biospecimen_collection:
     Desc: A Boolean indication as to whether the study in question included the collection of biospecimens from any of the participants enrolled in the study, that gives no indication as to the type and/or number of any such biospecimens. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Src: Data Submitter(s)
@@ -333,17 +286,6 @@ PropDefinitions:
     Req: 'No'
     Tags:
       Labeled: Full Name
-  # person_orcid_id:
-  #   Desc: A persistent unique digital identifier assigned to a principal investigator by the Open Researcher and Contributor ID (ORCID) organization. <br>CDE ID = 10624734
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '10624734'
-  #       Value: Person ORCID Text
-  #   Src: DSS
-  #   Type: string
-  #   Req: Preferred
-  #   Tags:
-  #     Labeled: ORCID ID
   person_institution:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -355,17 +297,6 @@ PropDefinitions:
     Req: 'Yes'
     Tags:
       Labeled: Institution
-  # person_email_address:
-  #   Desc: text <br>NOT CURRENTLY ASSIGNED ANY CDE
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: Data Submitter(s)
-  #   Type: string
-  #   Req: Preferred
-  #   Tags:
-  #     Labeled: Email Address
   person_role:
     Desc: <The text that describes the distinguishable characteristics of the action or activity assigned to or required or expected of a person in a formal association with a group or organization.> An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given indivdual may be assigned multiple roles for the study in question. Within the data loading file, multiple roles assigned to a single individual must be separated from one another using the pipe (|) character. <br>CDE ID = 2201713
     Term:
@@ -525,213 +456,6 @@ PropDefinitions:
     Req: 'Yes'
     Tags:
       Labeled: States, Provinces and Territories
-  # study_demographic properties
-  # study_demographic_record_id:
-  #   Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each demographic record, used to identify the appropriate demographic record(s) during data loading and/or record modification. <br>CDE ID = 14822135
-  #   Term:
-  #     - Origin: caDSR - CTDC
-  #       Code: '14822135'
-  #       Value: Data Record Link Unique Identifier 
-  #   Src: Data Submitter(s)
-  #   Type: string
-  #   Req: 'Yes'
-  #   Key: true
-  # study_participant_minimum_age:
-  #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: Data Submitter(s)
-  #   Type: integer
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Minimum Participant Age
-  # study_participant_maximum_age:
-  #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: Data Submitter(s)
-  #   Type: integer
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Maximum Participant Age 
-  # study_participant_median_age:
-  #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: Data Submitter(s)
-  #   Type: number
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Median Participant Age 
-  # race:
-  #   Desc: <The text for reporting information about race based on the Office of Management and Budget (OMB) categories.> This list type property accepts multiple values for the races represented within any given study population, provided that each value specified is included in the associated controlled vocabulary of acceptable terms. Within the data loading file for the Study Demographic node, multiple race values must be separated from one another using the pipe (|) character. <br>CDE ID = 2192199
-  #   Term:
-  #     - Origin: caDSR - OMB/NCI Standard
-  #       Code: '2192199'
-  #       Value: Subject Race
-  #       Version: '1'
-  #   Src: Data Submitter(s)
-  #   Type:
-  #     value_type: list
-  #     Enum: # now fully aligned with the acceptable values for the corresponding CDE
-  #       - American Indian or Alaska Native
-  #       - Asian #added 04-15-25
-  #       - Black or African American
-  #       - Native Hawaiian or other Pacific Islander
-  #       - Not allowed to collect # added 04-11-25
-  #       - Not Reported
-  #       - Unknown
-  #       - White
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Race, Particpant Races
-  # ethnicity:
-  #   Desc: The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.> This list type property accepts multiple values for the ethnicities represented within any given study population, provided that each value specified is included in the associated controlled vocabulary of acceptable terms. Within the data loading file for the Study Demographic node, multiple ethnicity values must be separated from one another using the pipe (|) character. <br>CDE ID = 2192217
-  #   Term:
-  #     - Origin: caDSR - OMB/NCI Standard
-  #       Code: '2192217'
-  #       Value: Ethnic Group Category Text
-  #       Version: '2'
-  #   Src: CMB
-  #   Type:
-  #     value_type: list
-  #     Enum: # now fully aligned with the acceptable values for the corresponding CDE
-  #       - Hispanic or Latino
-  #       - Not allowed to collect # added 04-15-25
-  #       - Not Hispanic or Latino
-  #       - Not reported
-  #       - Unknown
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Ethnicity, Participant Ethnicities
-  # sex:
-  #   Desc: <A textual description of a person's sex at birth.>  This list type property accepts multiple values for the sexes represented within any given study population, provided that each value specified is included in the associated controlled vocabulary of acceptable terms. Within the data loading file for the Study Demographic node, multiple sex values must be separated from one another using the pipe (|) character. <br>CDE ID = 7572817
-  #   Term:
-  #     - Origin: caDSR - NCI Standards
-  #       Code: '7572817'
-  #       Value: Person Sex at Birth Category
-  #       Version: '2'
-  #   Src: CMB
-  #   Type:
-  #     value_type: list
-  #     Enum: # now fully aligned with the acceptable values for the corresponding CDE
-  #       - Female
-  #       #- Intersex removed 04-15-25
-  #       - Male
-  #       - Unknown
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Sex, Participant Sexes
-  # gender:
-  #   Desc: Characteristics of people that are socially constructed, including norms, behaviors, and roles based on their sex. As a social construct, these norms, behaviors, and roles vary from society to society and can change over time. <br>CDE ID = 10748236
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '10748236'
-  #       Value: Person Reported Gender Type  
-  #   Src: DSS
-  #   Type:
-  #     value_type: list
-  #     Enum:
-  #       # - Choose Not to Disclose # = Response Declined per CMB?
-  #       - Female # per CMB data values
-  #       # - Female-To-Male
-  #       - Female-to-Male Transsexual # per CMB data values
-  #       - Intersex # per CMB data values
-  #       - Male # per CMB data values
-  #       # - Male-To-Female
-  #       - Male-to-Female Transsexual # per CMB data values
-  #       # - None Of These Describe Me
-  #       # - Non-Conforming Gender
-  #       #- Refused to Answer # = Response Declined per CMB?
-  #       - Response Declined # per CMB data values
-  #       - Unknown # per CMB data values
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Gender Representation
-  # ncbi_taxonomy_id:
-  #   Desc: A label provided by NCBI Taxonomy Database (https://www.ncbi.nlm.nih.gov/taxonomy/),  which uniquely identifies group or category, at any level, in a system for classifying plants or animals (including humans) providing ranked categories for the classification of organisms according to their suspected evolutionary relationships. For human study participants, the value of this ID will be 9606. <br>CDE ID = 10543100
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '10543100'
-  #       Value: Subject National Center for Biotechnology Information Taxonomy Identifier Integer
-  #   Src: DSS
-  #   Type: integer # not enumerated
-  #   Req: 'Yes'
-  # ncbi_taxonomy_name:
-  #   Desc: The textual label associated with a subject's organismal classification as captured in the National Center for Biotechnology Information (NCBI) Taxonomy standard nomenclature and classification repository. For human study participants, the value of this property will be Homo sapiens. <br>Supposedly enumerated but no permissible values specified. <br>CDE ID = 10543082
-  #   Term:
-  #     - Origin: caDSR - CRDC
-  #       Code: '10543082'
-  #       Value: Subject National Center for Biotechnology Information Taxonomy Name Text
-  #   Src: DSS
-  #   Type: string # supposedly enumerated but no permissible values specified
-  #   Req: 'Yes'  
-  # primary_diagnosis properties
-  # primary_diagnosis_record_id:
-  #   Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each primary diagnosis record associated with the study in question, used to identify the appropriate primary diagnosis record(s) during data loading and/or record modification. <br>CDE ID = 14822135
-  #   Term:
-  #     - Origin: caDSR - CTDC
-  #       Code: '14822135'
-  #       Value: Data Record Link Unique Identifier
-  #   Src: PSc
-  #   Type: string
-  #   Req: 'Yes'
-  #   Key: true
-  # primary_diagnosis_disease_term:
-  #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: CMB
-  #   Enum: # Examples of the ctep_disease_term values used by the CMB
-  #     - Acute Myeloid Leukemia Not Otherwise Specified  # meddra code 10000884
-  #     - Adenocarcinoma of the Gastroesophageal Junction # meddra code 10066354
-  #     - Colorectal Carcinoma                            # meddra code 10010029
-  #     - Invasive Breast Carcinoma                       # meddra code 10006190 NEW
-  #     - Melanoma                                        # meddra code 10053571 
-  #     - Non-Small Cell Lung Carcinoma                   # meddra code 10029514
-  #     - Ovarian Carcinoma                               # meddra code 10033159 NEW
-  #     - Plasma Cell Myeloma                             # meddra code 10028566 
-  #     - Prostate Carcinoma                              # meddra code 10036910 
-  #     - Small Cell Lung Carcinoma                       # meddra code 10041071
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Primary Diagnoses Examined
-  # comorbidity properties
-  # comorbidity_record_id:
-  #   Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each comorbidity record associated with the study in question, used to identify the appropriate comorbidity record(s) during data loading and/or record modification. <br>CDE ID = 14822135
-  #   Term:
-  #     - Origin: caDSR - CTDC
-  #       Code: '14822135'
-  #       Value: Data Record Link Unique Identifier
-  #   Src: PSc
-  #   Type: string
-  #   Req: 'Yes'
-  #   Key: true
-  # comorbidity_disease_term:
-  #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: PSc
-  #   Enum: # NEED LIST OF ACCEPTABLE TERMS HERE - these are purely random examples
-  #     - Chronic Respiratory Illness
-  #     - Heart Disease
-  #     - Kidney Disease
-  #     - Inflammatory Bowel Disease
-  #     - Crohn's Disease
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Comorbities Examined
-  # data_collection properties
   data_collection_record_id:
     Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each data collection record associated with the study in question, used to identify the appropriate data collection record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
@@ -742,19 +466,6 @@ PropDefinitions:
     Type: string
     Req: 'Yes'
     Key: true
-  # data_collection_grouping:
-  #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
-  #   Src: PSc
-  #   Enum:
-  #     - Lifestyle and Behaviors
-  #     - Socio-demograhic and Economic Characteristics
-  #     - Diseases
-  #     - Etc
-  #   Req: 'No'
   data_collection_category:
     Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -763,7 +474,7 @@ PropDefinitions:
         Value: Data Element Name 
     Src: PSc
     Enum: # n=71
-      - Age #Demographics / Lifestyle / Life events / Quality of life
+      - Age # Demographics / Lifestyle / Life events / Quality of life
       - Biological Sex
       - Sexual Orientation and Gender Identity
       - Ethnicity and Race
@@ -776,27 +487,27 @@ PropDefinitions:
       - Quality of Life
       - Social Support
       - Socio-Economic Status
-      - Alcohol Consumption #Alcohol / Tobacco / Drug Use
+      - Alcohol Consumption # Alcohol / Tobacco / Drug Use
       - Cigarette Smoking
       - Other Tobacco Products
       - Drug Use
-      - Dietary Intake #Diet / Nutrition
+      - Dietary Intake # Diet / Nutrition
       - Dietary Supplement Use
-      - Physical Activity #Physical Activity / Energy Balance
+      - Physical Activity # Physical Activity / Energy Balance
       - Physical Function Measures
       - Self-Reported Anthropometry #Anthropometry
       - Measured Anthropometry
-      - Puberty, Menstruation, and Menopause #Reproductive Health History
+      - Puberty, Menstruation, and Menopause # Reproductive Health History
       - Pregnancy and Parity
       - Breastfeeding
       - Contraception
       - Hormone Replacement
       - Sexual Behavior and Health
-      - Housing Exposures #Environmental or Occupational Exposures
+      - Housing Exposures # Environmental or Occupational Exposures
       - Workplace Exposures
       - Radiation Exposure
       - Chemical Exposure
-      - Health Insurance Status #Medical / Health Status / Health History
+      - Health Insurance Status # Medical / Health Status / Health History
       - Screening
       - Immunization
       - Sleep Habits
@@ -837,22 +548,6 @@ PropDefinitions:
     Req: 'Yes'
     Tags:
       Labeled: Data Collection Categories
-  # data_collection_category_annotation_coverage:
-  #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-  #   Term:
-  #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name 
-  #   Src: FNL
-  #   Enum: 
-  #     - None
-  #     - Minimal
-  #     - Detailed
-  #     - Extensive
-  #     - Low
-  #     - Medium
-  #     - High
-  #   Req: Preferred
   data_collection_category_annotation_count: # subject to confirmation from the working group, this property will morph into a binary Yes versus No indicator as to whether the data collection category in question was examined or not, given that the reporting of the number of variables per data collection category will be too burdensome
     Desc: Pending additional data model and application code changes, this property functions as a binary indicator as to whether variables associated with any given data collection were assessed or not. A value of 0 should be used to indicate that no variables associated with a given data collection category were assessed. Whereas regradless of how many variables within a data collection category were assessed, a value of 1 should be used simply to indicate that variables associated with a given data collection category were indeed assessed. <br>NOT CURRENTLY ASSIGNED ANY CDE
     Term:
@@ -894,8 +589,8 @@ PropDefinitions:
   participant_case_indicator:
     Desc: <A response to indicate whether or not the participant is a case in the study in question.> <br>CDE ID = 14883047
     Term:
-      - Origin: TBD
-        Code: '14883047'
+      - Origin: x
+        Code: 'y' # TBD as of 12-09-25
         Value: Subject Participant Case Indicator
         Version: '1' # ?    
     Src: Data Submitter(s)
@@ -913,54 +608,6 @@ PropDefinitions:
     Type:
       value_type: list
       item_type: string
-      # Enum: # example values for primary site copied directly from the ICDC data model listed below are to be used only for the generation of mock data
-      # - Abdomen
-      # - Bladder
-      # - Bladder, Prostate
-      # - Bladder, Urethra
-      # - Bladder, Urethra, Prostate
-      # - Bladder, Urethra, Vagina
-      # - Bone
-      # - Bone (Appendicular)
-      # - Bone (Axial)
-      # - Bone Marrow
-      # - Brain
-      # - Carpus
-      # - Chest Wall
-      # - Cranial Sternum
-      # - Distal Urethra
-      # - Elbow Joint
-      # - Femur
-      # - Flank
-      # - Hip
-      # - Hock
-      # - Humerus
-      # - Inguinal Region
-      # - Kidney
-      # - Knee Region
-      # - Lip
-      # - Lung
-      # - Lymph Node
-      # - Mammary Gland
-      # - Mandible
-      # - Maxilla
-      # - Mouth
-      # - Neck
-      # - Not Applicable
-      # - Pleural Cavity
-      # - Rib Region
-      # - Shoulder
-      # - Skin
-      # - Spleen
-      # - Subcutis
-      # - Tarsus
-      # - Thigh
-      # - Thorax
-      # - Thyroid Gland
-      # - Unknown
-      # - Urethra, Prostate
-      # - Urinary Tract
-      # - Urogenital Tract
     Req: 'Yes'
   cancer_diagnosis_disease_morphology:
     Desc: <The ICD-O-3 code which identifies the specific appearance of cells and tissues (normal and abnormal) used to define the presence and nature of disease.> This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each disease morphology is represented by a valid ICD-O-3 code. In such cases, within the data loading file for the Participant node, the codes for each disease morphology reported as being associated with a single study participant must be separated from one another using the pipe (|) character. <br>CDE ID = 13606049
@@ -973,41 +620,6 @@ PropDefinitions:
     Type:
       value_type: list
       item_type: string
-      # Enum:
-      #   # - Acute Myeloid Leukemia Not Otherwise Specified
-      #   # - Adenocarcinoma of the Gastroesophageal Junction
-      #   # - Colorectal Carcinoma
-      #   # - Invasive Breast Carcinoma
-      #   # - Melanoma 
-      #   # - Non-Small Cell Lung Carcinoma
-      #   # - Ovarian Carcinoma
-      #   # - Plasma Cell Myeloma 
-      #   # - Prostate Carcinoma 
-      #   - Small Cell Lung Carcinoma
-      #   - 8000/0 Benign Neoplasm
-      #   - 8000/1 Neoplasm, Uncertain Whether Benign or Malignant
-      #   - 8000/3 Malignant Neoplasm
-      #   - 8000/6 Metastatic Neoplasm
-      #   - 8000/9 Malignant Neoplasm, Uncertain Whether Primary or Metastatic
-      #   - 8001/0 Benign Cellular Infiltrate
-      #   - 8001/1 Neoplastic Cell
-      #   - 8001/3 Malignant Cell
-      #   - 8003/3 Malignant Giant Cell Neoplasm
-      #   - 8004/3 Malignant Spindle Cell Neoplasm
-      #   - 8005/0 Clear Cell Neoplasm
-      #   - 8005/3 Malignant Ovarian Clear Cell Tumor
-      #   - 8010/2 Carcinoma In Situ
-      #   - 8010/6 Metastatic Carcinoma
-      #   - 8010/9 Carcinomatosis
-      #   - 8012/3 Large Cell Carcinoma
-      #   - 8013/3 Large Cell Neuroendocrine Carcinoma
-      #   - 8014/3 Lung Large Cell Carcinoma with Rhabdoid Phenotype
-      #   - 8015/3 Glassy Cell Carcinoma
-      #   - 8022/3 Pleomorphic Carcinoma
-      #   - 8023/3 NUT Carcinoma
-      #   - 8031/3 Giant Cell Carcinoma
-      #   - 8035/3 Undifferentiated Carcinoma with Osteoclast-Like Giant Cells
-      #   - 8045/3 Combined Small Cell Lung Carcinoma
     Req: 'Yes'
   age_at_enrollment:
     Desc: <The age in days of the subject when the subject enrolled in the study.> The age of the participant as of enrollment, measured in days. <br>CDE ID = 15742605
@@ -1044,7 +656,7 @@ PropDefinitions:
   #   Src: Data Submitter(s)
   #   Type: number
   #   Req: 'Yes'
-  race: # participant prefix to avoid property duplication; will be removed once the study_demographic node is retired out
+  race:
     Desc: <The text for reporting information about race based on the Office of Management and Budget (OMB) categories.> <br>CDE ID = 2192199
     Term:
       - Origin: caDSR - OMB/NCI Standard
@@ -1064,7 +676,7 @@ PropDefinitions:
       - Unknown
       - White
     Req: 'Yes'
-  ethnicity: # participant prefix to avoid property duplication; will be removed once the study_demographic node is retired out
+  ethnicity:
     Desc: <The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.> <br>CDE ID = 2192217
     Term:
       - Origin: caDSR - OMB/NCI Standard
@@ -1079,7 +691,7 @@ PropDefinitions:
       - Not reported
       - Unknown
     Req: 'Yes'
-  sex: # participant prefix to avoid property duplication; will be removed once the study_demographic node is retired out
+  sex:
     Desc: <A textual description of a person's sex at birth.> CDE ID = 7572817
     Term:
       - Origin: caDSR - NCI Standards
