@@ -1,199 +1,231 @@
 repo https://github.com/CBIIT/popsci-model
-commit 87203dd
+commit bc05208
 node	property	value_or_TYPE
-associated_link	associated_link_id	STRING
 associated_link	associated_link_name	STRING
+associated_link	associated_link_record_id	STRING
 associated_link	associated_link_url	STRING
-comorbidity	comorbidity_disease_term	Chronic Respiratory Illness
-comorbidity	comorbidity_disease_term	Crohn's Disease
-comorbidity	comorbidity_disease_term	Heart Disease
-comorbidity	comorbidity_disease_term	Inflammatory Bowel Disease
-comorbidity	comorbidity_disease_term	Kidney Disease
-data_collection	data_collection_category	Age, Race and Ethnicity
-data_collection	data_collection_category	Alcohol Usage
-data_collection	data_collection_category	Birthplace
-data_collection	data_collection_category	Comorbidity
-data_collection	data_collection_category	Drug Usage
-data_collection	data_collection_category	Educattion
-data_collection	data_collection_category	Nutrition
+data_collection	data_collection_category	Age
+data_collection	data_collection_category	Alcohol Consumption
+data_collection	data_collection_category	Biological Sex
+data_collection	data_collection_category	Breastfeeding
+data_collection	data_collection_category	Cancer Treatment
+data_collection	data_collection_category	Certain Conditions Originating in the Perinatal Period
+data_collection	data_collection_category	Chemical Exposure
+data_collection	data_collection_category	Cigarette Smoking
+data_collection	data_collection_category	Circulatory System
+data_collection	data_collection_category	Cognitive Function
+data_collection	data_collection_category	Complementary and Alternative Medicine
+data_collection	data_collection_category	Congenital Malformations, Deformations and Chromosomal Abnormalities
+data_collection	data_collection_category	Contraception
+data_collection	data_collection_category	Depression
+data_collection	data_collection_category	Dietary Intake
+data_collection	data_collection_category	Dietary Supplement Use
+data_collection	data_collection_category	Digestive System
+data_collection	data_collection_category	Drug Use
+data_collection	data_collection_category	Education Level
+data_collection	data_collection_category	Employment Status
+data_collection	data_collection_category	Endocrine, Nutritional, Metabolic
+data_collection	data_collection_category	Ethnicity and Race
+data_collection	data_collection_category	Eye and Adnexa, Ear and Mastoid Process
+data_collection	data_collection_category	Family History of Cancer
+data_collection	data_collection_category	Family History of Diabetes
+data_collection	data_collection_category	Family History of Heart Disease
+data_collection	data_collection_category	Fatigue
+data_collection	data_collection_category	Genitourinary System
+data_collection	data_collection_category	Health Insurance Status
+data_collection	data_collection_category	Hormone Replacement
+data_collection	data_collection_category	Housing Exposures
+data_collection	data_collection_category	Immunization
+data_collection	data_collection_category	Infectious and Parasitic Diseases
+data_collection	data_collection_category	Injury, Poisoning, Certain Other Consequences of External Causes
+data_collection	data_collection_category	Language/Country of Origin
+data_collection	data_collection_category	Life Events, Beliefs, Values
+data_collection	data_collection_category	Marital Status
+data_collection	data_collection_category	Measured Anthropometry
+data_collection	data_collection_category	Mental and Behavioral Disorders
+data_collection	data_collection_category	Musculoskeletal and Connective Tissue
+data_collection	data_collection_category	Neoplasms
+data_collection	data_collection_category	Neoplasms, Blood, Blood-forming Organs
+data_collection	data_collection_category	Nervous System
+data_collection	data_collection_category	Non-Prescription Medication
+data_collection	data_collection_category	Other Family History
+data_collection	data_collection_category	Other Medical Conditions
+data_collection	data_collection_category	Other Medical Treatments
+data_collection	data_collection_category	Other Psychosocial Variables
+data_collection	data_collection_category	Other Tobacco Products
 data_collection	data_collection_category	Physical Activity
-data_collection	data_collection_category	Primary Disease
-data_collection	data_collection_category	Residence
-data_collection	data_collection_category	Sex and Gender
-data_collection	data_collection_category	Sleep
-data_collection	data_collection_category	Tobacco Usage
-data_collection	data_collection_category_annotation_count	INTEGER
-data_file	data_file_checksum_type	md5sum
-data_file	data_file_checksum_type	sha1
-data_file	data_file_checksum_type	sha256
-data_file	data_file_checksum_value	STRING
-data_file	data_file_compression_status	Compressed
-data_file	data_file_compression_status	Uncompressed
-data_file	data_file_compression_status	Unknown
-data_file	data_file_description	STRING
-data_file	data_file_format	docx
-data_file	data_file_format	gz
-data_file	data_file_format	pdf
-data_file	data_file_format	vcf
-data_file	data_file_format	zip
-data_file	data_file_location	STRING
-data_file	data_file_name	STRING
-data_file	data_file_size	NUMBER
-data_file	data_file_type	Clinical Report
-data_file	data_file_type	File Collection
-data_file	data_file_type	Variant Call File
-data_file	data_file_type	Variant Report
-data_file	data_file_uuid	STRING
-primary_diagnosis	primary_diagnosis_disease_term	Acute Myeloid Leukemia Not Otherwise Specified
-primary_diagnosis	primary_diagnosis_disease_term	Adenocarcinoma of the Gastroesophageal Junction
-primary_diagnosis	primary_diagnosis_disease_term	Colorectal Carcinoma
-primary_diagnosis	primary_diagnosis_disease_term	Invasive Breast Carcinoma
-primary_diagnosis	primary_diagnosis_disease_term	Melanoma
-primary_diagnosis	primary_diagnosis_disease_term	Non-Small Cell Lung Carcinoma
-primary_diagnosis	primary_diagnosis_disease_term	Ovarian Carcinoma
-primary_diagnosis	primary_diagnosis_disease_term	Plasma Cell Myeloma
-primary_diagnosis	primary_diagnosis_disease_term	Prostate Carcinoma
-primary_diagnosis	primary_diagnosis_disease_term	Small Cell Lung Carcinoma
+data_collection	data_collection_category	Physical Function Measures
+data_collection	data_collection_category	Pregnancy and Parity
+data_collection	data_collection_category	Pregnancy, Childbirth and the Puerperium
+data_collection	data_collection_category	Prescription Medication Use
+data_collection	data_collection_category	Psychological Measures
+data_collection	data_collection_category	Puberty, Menstruation, and Menopause
+data_collection	data_collection_category	Quality of Life
+data_collection	data_collection_category	Radiation Exposure
+data_collection	data_collection_category	Residential Information
+data_collection	data_collection_category	Respiratory System
+data_collection	data_collection_category	Screening
+data_collection	data_collection_category	Self-Reported Anthropometry
+data_collection	data_collection_category	Sexual Behavior and Health
+data_collection	data_collection_category	Sexual Orientation and Gender Identity
+data_collection	data_collection_category	Skin and Subcutaneous Tissue
+data_collection	data_collection_category	Sleep Habits
+data_collection	data_collection_category	Social Support
+data_collection	data_collection_category	Socio-Economic Status
+data_collection	data_collection_category	Symptoms, Signs and Abnormal Clinical and Lab Findings
+data_collection	data_collection_category	Vital Status
+data_collection	data_collection_category	Workplace Exposures
+data_collection	data_collection_category_annotation_count	0
+data_collection	data_collection_category_annotation_count	1
+data_collection	data_collection_record_id	STRING
+file	data_file_access_control	Controlled Access
+file	data_file_access_control	Open Access
+file	data_file_checksum_type	md5sum
+file	data_file_checksum_type	sha1
+file	data_file_checksum_type	sha256
+file	data_file_checksum_value	STRING
+file	data_file_compression_status	Compressed
+file	data_file_compression_status	Uncompressed
+file	data_file_compression_status	Unknown
+file	data_file_description	STRING
+file	data_file_format	STRING
+file	data_file_location	STRING
+file	data_file_name	STRING
+file	data_file_size	NUMBER
+file	data_file_type	Data Dictionary
+file	data_file_type	Data Guide
+file	data_file_type	File Collection
+file	data_file_type	Investigator Report
+file	data_file_type	More options to be added as needed
+file	data_file_type	Questionnaire
+file	data_file_type	Survey
+file	data_file_uuid	STRING
+participant	age_at_enrollment	NUMBER (days)
+participant	age_at_first_cancer_diagnosis	NUMBER (days)
+participant	ethnicity	Hispanic or Latino
+participant	ethnicity	Not Hispanic or Latino
+participant	ethnicity	Not allowed to collect
+participant	ethnicity	Not reported
+participant	ethnicity	Unknown
+participant	ncbi_taxonomy_id	9606
+participant	participant_case_indicator	No
+participant	participant_case_indicator	Yes
+participant	participant_id	STRING
+participant	sex	Female
+participant	sex	Male
+participant	sex	Unknown
 program	program_name	STRING
 program	program_short_name	STRING
-project	project_name	STRING
-project	project_short_name	STRING
 publication	authorship	STRING
 publication	digital_object_id	STRING
 publication	journal_citation	STRING
+publication	publication_record_id	STRING
 publication	publication_title	STRING
 publication	pubmed_id	NUMBER
-publication	year_of_publication	NUMBER
+publication	year_of_publication	INTEGER
 study	biospecimen_collection	No
 study	biospecimen_collection	Yes
 study	dbgap_accession_id	STRING
-study	number_of_participants	INTEGER
-study	study_beginning_year	NUMBER
+study	enrollment_beginning_year	INTEGER
+study	enrollment_ending_year	INTEGER
+study	study_beginning_year	INTEGER
 study	study_description	STRING
-study	study_design	Case Series
-study	study_design	Case-Control
-study	study_design	Cohort
-study	study_design	Cross-sectional
-study	study_ending_year	NUMBER
+study	study_design	Case Series Study
+study	study_design	Case-Control Study
+study	study_design	Clinical Trial
+study	study_design	Cohort Study - Prospective
+study	study_design	Cohort Study - Retrospective
+study	study_design	Consortia Study
+study	study_design	Cross-Sectional Study
+study	study_design	Descriptive Epidemiology Study
+study	study_design	Family-Based Study
+study	study_design	Methods Development Study
+study	study_design	Nested Case-Control Study
+study	study_design	Other
+study	study_design	Registry Linkage Study
+study	study_ending_year	STRING
 study	study_id	STRING
 study	study_name	STRING
-study	study_phs_id	STRING
 study	study_short_name	STRING
 study	study_status	Active
 study	study_status	Closed
-study	study_status	Completed
-study	study_type	Adverse Effect Mitigation Study
-study	study_type	Ancillary Study
-study	study_type	Basic Science Research
-study	study_type	Correlative Study
-study	study_type	Cure Study
-study	study_type	Device Feasibility Study
-study	study_type	Diagnosis Study
-study	study_type	Disease Modifying Treatment Study
-study	study_type	Early Detection Study
-study	study_type	Education Training Clinical Study
-study	study_type	Epidemiology Research
-study	study_type	Genomics Research
-study	study_type	Health Services Research
-study	study_type	Imaging Research
-study	study_type	Observational Study
-study	study_type	Outcomes Research
-study	study_type	Prevention Study
-study	study_type	Proteomic Research
-study	study_type	Rehabilitation Clinical Study
-study	study_type	Screening Study
-study	study_type	Supportive Care Study
-study	study_type	Transcriptomics Research
-study	study_type	Treatment Study
 study_country	study_country	STRING
-study_demographic	ncbi_taxonomy_id	INTEGER
-study_demographic	ncbi_taxonomy_name	STRING
-study_demographic	study_participant_maximum_age	INTEGER
-study_demographic	study_participant_median_age	NUMBER
-study_demographic	study_participant_minimum_age	INTEGER
-study_personnel	person_email_address	STRING
+study_country	study_country_record_id	STRING
 study_personnel	person_first_name	STRING
+study_personnel	person_institution	STRING
 study_personnel	person_last_name	STRING
 study_personnel	person_middle_name	STRING
-study_personnel	person_orcid_id	STRING
-study_personnel	person_role	Data Analyst
-study_personnel	person_role	Data Coordinator
-study_personnel	person_role	General Dogs Body
-study_personnel	person_role	Principal Investigator
-study_personnel	person_role	Statistician
+study_personnel	study_personnel_record_id	STRING
 study_state_province_territory	study_state_province_territory	STRING
+study_state_province_territory	study_state_record_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-associated_with	study_demographic	study	NA	NA
-associated_with	study_country	study	NA	NA
-associated_with	study_personnel	study	NA	NA
-associated_with	primary_diagnosis	study	NA	NA
-associated_with	data_collection	study	NA	NA
-associated_with	associated_link	study	NA	NA
-associated_with	data_file	study	NA	NA
-associated_with	publication	study	NA	NA
+associated_with	participant	study	NA	NA
 associated_with	study_state_province_territory	study	NA	NA
-associated_with	comorbidity	study	NA	NA
+associated_with	study_country	study	NA	NA
+associated_with	data_collection	study	NA	NA
+associated_with	file	study	NA	NA
+associated_with	publication	study	NA	NA
+associated_with	study_personnel	study	NA	NA
+associated_with	associated_link	study	NA	NA
 belongs_to	study	program	NA	NA
-belongs_to	study	project	NA	NA
-belongs_to	project	program	NA	NA
 
 property	description
-associated_link_id	A unique identifier of each associated link record, used to identify the correct associated link records during data updates. <br>NO CDE REQUIRED
+age_at_enrollment	<The age in days of the subject when the subject enrolled in the study.> The age of the participant as of enrollment, measured in days. <br>CDE ID = 15742605
+age_at_first_cancer_diagnosis	<The age (in days) of the participant when the participant was first diagnosed with cancer.> The age of the participant as of first diagnosis of cancer, measured in days. <br>NOT CURRENTLY ASSIGNED ANY CDE
+associated_link_name	<The words by which the linkage between related records is known.> The exact text to be displayed within the UI where it functions as an intuitive identifier of any given link associated with the study/trial in question. <br>CDE ID = 14822136
+associated_link_record_id	<A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each associated link record, used to identify the appropriate associated link record(s) during data loading and/or record modification. The value of this record ID also dictates the order in which associated links are listed within the application's UI.<br>CDE ID = 14822135
+associated_link_url	<The global address of the linkage between related records on the World Wide Web.> The url to which an end user will be redirected upon selection of the corresponding link name displayed within the UI. <br>CDE ID = 14822140
 authorship	A list of authors for the cited work. More specifically, for publications with no more than three authors, authorship quoted in full; for publications with more than three authors, authorship abbreviated to first author et al. <br>NOT CURRENTLY ASSIGNED ANY CDE
 biospecimen_collection	A Boolean indication as to whether the study in question included the collection of biospecimens from any of the participants enrolled in the study, that gives no indication as to the type and/or number of any such biospecimens. <br>NOT CURRENTLY ASSIGNED ANY CDE
-comorbidity_disease_term	text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+cancer_diagnosis_disease_morphology	<The ICD-O-3 code which identifies the specific appearance of cells and tissues (normal and abnormal) used to define the presence and nature of disease.> This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each disease morphology is represented by a valid ICD-O-3 code. In such cases, within the data loading file for the Participant node, the codes for each disease morphology reported as being associated with a single study participant must be separated from one another using the pipe (|) character. <br>CDE ID = 13606049
+cancer_diagnosis_primary_site	<The location within the body from where the disease of interest originated as captured in the Uberon identifier.> More specifically, primary disease sites must be reported in the form of the appripriate Uberon codes.This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each primary disease site is specified by a valid Uberon code. In such cases, within the data loading file for the Participant node, the codes for each primary disease site reported asd being assocaited with a single study participant must be separated from one another using the pipe (|) character.  <br>CDE = 14883047
 data_collection_category	text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-data_collection_category_annotation_count	text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+data_collection_category_annotation_count	Pending additional data model and application code changes, this property functions as a binary indicator as to whether variables associated with any given data collection were assessed or not. A value of 0 should be used to indicate that no variables associated with a given data collection category were assessed. Whereas regradless of how many variables within a data collection category were assessed, a value of 1 should be used simply to indicate that variables associated with a given data collection category were indeed assessed. <br>NOT CURRENTLY ASSIGNED ANY CDE
+data_collection_record_id	<A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each data collection record associated with the study in question, used to identify the appropriate data collection record(s) during data loading and/or record modification. <br>CDE ID = 14822135
+data_file_access_control	An indicator as to the level of access control to which a data file is subject. <br>NOT CURRENTLY ASSIGNED ANY CDE
 data_file_checksum_type	The method by which the file checksum was calculated. <br>CDE ID = 11475057
 data_file_checksum_value	A small-sized block of data derived from a file for the purpose of detecting errors that may have been introduced during file transmission and/or storage and used to verify data integrity. <br>CDE ID = 11480133
 data_file_compression_status	The state of data when saved to storage space or during data transmission. <br>CDE ID = 11387114
-data_file_description	A free text field that can be used to document the content and other details about an electronic file that may not be captured elsewhere. For example, the file's derivation from a specimen of normal tissue versus tumor tissue. <br>CDE ID = 11280338
+data_file_description	A free text field that can be used to document the content and other details about an electronic file that may not be captured elsewhere. <br>CDE ID = 11280338
 data_file_format	A defined organization or layout representing and structuring data in a computer file; the electronic format of the file, as derived during file validation <br>With the actual values of this property being loader derived, the acceptable values currently specified are in place only to support the generation of mock data <br>CDE ID = 11416926
-data_file_location	The specific location within the S3 storage bucket at which the file is stored, expressed in terms of a unique url <br>NO CDE REQUIRED
+data_file_location	<The specification of a node (file or directory) in a hierarchical file system where an electronic file is located.> The specific location within the S3 storage bucket at which the file is stored, expressed in terms of a unique url <br>CDE ID = 11556141
 data_file_name	The literal label for an electronic data file, inclusive of file extension(s). <br>CDE ID = 11284037
 data_file_size	The measure, expressed in bytes, as to how much space a data file takes up on a storage medium. <br>CDE ID = 11479876
-data_file_type	A curated indicator as to the type of content represented by the data file <br>NOT CURRENTLY ASSIGNED ANY CDE
-data_file_uuid	text NO CDE REQUIRED
+data_file_type	<The type of information contained in an electronic record.> A curated indicator as to the type of content represented by the data file <br>CDE ID = 14824731
+data_file_uuid	<A unique sequence of characters used to identify the contents of an electronic record.> <br>CDE ID = 14826100
 dbgap_accession_id	The dbGaP-assigned identifier by which the study in question is known. <br>NOT CURRENTLY ASSIGNED ANY CDE
 digital_object_id	Where applicable, the digital object identifier for the cited work, by which it can be permanently identified, and linked to via the internet. <br>Values of this property must contain only the alphanumeric string of the digital object identifier itself, exclusive of any prefix such as "DOI:", such that values can be correctly interpreted and displayed as hyperlinks within the application. <br>NOT CURRENTLY ASSIGNED ANY CDE
-ethnicity	The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories. <br>NOT CURRENTLY ASSIGNED ANY CDE
-gender	Characteristics of people that are socially constructed, including norms, behaviors, and roles based on their sex. As a social construct, these norms, behaviors, and roles vary from society to society and can change over time. <br>CDE ID = 10748236
+enrollment_beginning_year	The year in which the study began enrolling participants. <br>NOT CURRENTLY ASSIGNED ANY CDE
+enrollment_ending_year	The year in which the study stopped enrolling participants. <br>NOT CURRENTLY ASSIGNED ANY CDE
+ethnicity	<The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.> <br>CDE ID = 2192217
 journal_citation	The name of the journal in which the cited work was published, inclusive of the citation itself in terms of journal volume number, part number where applicable, and page numbers. <br>NOT CURRENTLY ASSIGNED ANY CDE
-ncbi_taxonomy_id	A label provided by NCBI Taxonomy Database (https://www.ncbi.nlm.nih.gov/taxonomy/),  which uniquely identifies group or category, at any level, in a system for classifying plants or animals (including humans) providing ranked categories for the classification of organisms according to their suspected evolutionary relationships. <br>CDE ID = 10543100
-ncbi_taxonomy_name	The textual label associated with a subject's organismal classification as captured in the National Center for Biotechnology Information (NCBI) Taxonomy standard nomenclature and classification repository.  <br>Supposedly enumerated but no permissible values specified. <br>CDE ID = 10543082
-number_of_participants	The total number of participants included in the study as of its submission. <br>NOT CURRENTLY ASSIGNED ANY CDE
-person_email_address	text <br>NOT CURRENTLY ASSIGNED ANY CDE
-person_first_name	The first or given name of each individual who is responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 10624731
-person_last_name	The last or family name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 10624733
-person_middle_name	The middle name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 10624732
-person_orcid_id	A persistent unique digital identifier assigned to a principal investigator by the Open Researcher and Contributor ID (ORCID) organization. <br>CDE ID = 10624734
-person_role	An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given indivdual may be assigned multiple roles for the study in question. <br>NOT CURRENTLY ASSIGNED ANY CDE
-primary_diagnosis_disease_term	text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-program_name	The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis. <br>CDE ID = 11444542
-program_short_name	An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. For example, CPTAC. <br>CDE ID = 11459801 <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
-project_name	The narrative title used to refer to an organ-, site-, disease- or phase-specific data collection within a broad framework of goals under which related studies or other research activities are grouped. <br>CDE ID = 11459804
-project_short_name	An acronym or abbreviated form of the title used to refer to an organ-, site- or disease-specific data collection within a broad framework of goals under which related studies or other research activities are grouped. <br>CDE ID = 11459806 <br>This property is used as the key via which child records, e.g. study/trial, image collection and principal investigator records, can be associated with the appropriate project during data loading, and to identify the correct records during data updates.
-property_1	text
-property_2	text
-property_3	text
+ncbi_taxonomy_id	A label provided by NCBI Taxonomy Database (https://www.ncbi.nlm.nih.gov/taxonomy/),  which uniquely identifies group or category, at any level, in a system for classifying plants or animals (including humans) providing ranked categories for the classification of organisms according to their suspected evolutionary relationships. For human study participants, the value of this ID must be stated as 9606. <br>CDE ID = 10543100
+participant_case_indicator	<A response to indicate whether or not the participant is a case in the study in question.> <br>CDE ID = 14883047
+participant_id	<A sequence of letters, numbers, or characters that uniquely identifies the participant who has taken part in the investigation or research study.> The globally unique ID by which any given participant can be unambiguously identified and displayed across studies/trials. <br>CDE ID = 12220014 <br>This property is used to identify the correct records during data updates.
+person_first_name	<A word or group of words indicating a person's first (personal or given) name; the name that precedes the surname. Synonym = Given Name.> The first or given name of each individual who is responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179589
+person_institution	text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+person_last_name	<A means of identifying an individual by using a word or group of words indicating a person's last (family) name. Synonym = Last Name, Surname.> The last or family name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179591
+person_middle_name	<A means of identifying an individual by using a word or group of words indicating a person's middle name.> The middle name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179590
+person_role	<The text that describes the distinguishable characteristics of the action or activity assigned to or required or expected of a person in a formal association with a group or organization.> An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given indivdual may be assigned multiple roles for the study in question. Within the data loading file, multiple roles assigned to a single individual must be separated from one another using the pipe (|) character. <br>CDE ID = 2201713
+program_name	<The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis.> <br>CDE ID = 11444542
+program_short_name	<An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. For example, CPTAC.> <br>CDE ID = 11459801 <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
+publication_record_id	<A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each publication record associated with the study in question, used to identify the appropriate publication record(s) during data loading and/or record modification. The value of this record ID also dictates the order in which publications are listed within the application's UI. <br>CDE ID = 14822135
 publication_title	The full title of the publication stated exactly as it appears on the published work. <br>This property is used as the key via which to identify the correct records during data updates. <br>NOT CURRENTLY ASSIGNED ANY CDE
 pubmed_id	Where applicable, the unique numerical identifier assigned to the cited work by PubMed, by which it can be linked to via the internet. <br>Values of this property must contain only the numeric string of the PubMed ID itself, exclusive of any prefix such as "PMID:", such that values can be correctly interpreted and displayed as hyperlinks within the application. <br>NOT CURRENTLY ASSIGNED ANY CDE
-race	The text for reporting information about race based on the Office of Management and Budget (OMB) categories. <br>NOT CURRENTLY ASSIGNED ANY CDE
-sex	text CDE ID = 6343385
-study_beginning_year	The year in which the study began enrolling study perticipants. <br>NOT CURRENTLY ASSIGNED ANY CDE
+race	<The text for reporting information about race based on the Office of Management and Budget (OMB) categories.> <br>CDE ID = 2192199
+sex	<A textual description of a person's sex at birth.> CDE ID = 7572817
+study_beginning_year	The year in which the study was initiated. <br>NOT CURRENTLY ASSIGNED ANY CDE
 study_country	text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-study_description	A narrative description of the study outlining its design, conduct and data collection goals. <br>NOT CURRENTLY ASSIGNED ANY CDE
+study_country_record_id	<A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each country record associated with the study in question, used to identify the appropriate country record(s) during data loading and/or record modification. <br>CDE ID = 14822135
+study_description	<A textual description of the study, with components such as objectives or goals.> A narrative description of the study outlining its design, conduct and data collection goals. <br>CDE ID = 3444002
 study_design	Text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-study_ending_year	The year in which the study completed data collection. <br>NOT CURRENTLY ASSIGNED ANY CDE
-study_id	Any external identifier by which the study in question is already known. <br>NOT CURRENTLY ASSIGNED ANY CDE
-study_name	The narrative title used as a textual label for a research data collection. <br>CDE ID = 11459810
-study_participant_maximum_age	text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-study_participant_median_age	text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-study_participant_minimum_age	text here <br>NOT CURRENTLY ASSIGNED ANY CDE
-study_phs_id	The PHS-assigned identifier by which the study in question is known. <br>NOT CURRENTLY ASSIGNED ANY CDE
-study_short_name	The acronym or abbreviated form of the title for a research data collection. <br>CDE ID = 11459812 <br>This property is used as the key via which child records, e.g. the study demographic record and disease coverage records, can be associated with the appropriate study during data loading, and to identify the correct records during data updates.
+study_ending_year	The year in which the study was completed. <br>NOT CURRENTLY ASSIGNED ANY CDE
+study_id	<A unique identifier assigned to a clinical study.> Any external identifier(s) by which the study in question is already known. <br>CDE ID = 5054234
+study_name	<The narrative title used as a textual label for a research data collection.> <br>CDE ID = 11459810
+study_personnel_record_id	<A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each each study personnel record associated with the study in question, used to identify the appropriate study personnel record(s) during data loading and/or record modification. The value of this record ID also dictates the order in which study personnel are listed within the application's UI. <br>CDE ID = 14822135
+study_short_name	<The acronym or abbreviated form of the title for a research data collection.> <br>CDE ID = 11459812 <br>This property is used as the key via which child records, e.g. publication records and study demographic records, can be associated with the appropriate study during data loading, and to identify the correct records during data updates.
 study_state_province_territory	text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+study_state_record_id	<A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each state, province or territory associated with the study in question, used to identify the appropriate state, province or territory record(s) during data loading and/or record modification. <br>CDE ID = 14822135
 study_status	An indicator as to the status of the study as of its submission. <br>NOT CURRENTLY ASSIGNED ANY CDE
-study_type	A classification of the study based upon the primary intent of the study's activities. <br>CDE ID = 11160683
 year_of_publication	The year in which the cited work was published. <br>NOT CURRENTLY ASSIGNED ANY CDE
