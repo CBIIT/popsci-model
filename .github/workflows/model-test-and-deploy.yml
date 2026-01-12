@@ -20,3 +20,5 @@ jobs:
         popsci-model.yml popsci-model-props.yml
       model_prefix: popsci-model
       event_name: ${{ github.event_name }}
+      token: ${{ secrets.GITHUB_TOKEN }}
+      
