@@ -62,7 +62,18 @@ PropDefinitions:
   #   Type:
   #     value_type: list
   #     item_type: string
-  #  Req: 'Yes'  
+  #  Req: 'Yes'
+
+  #  Syntax for full CDE rerefrence
+  #  Term:
+  #     - Origin: caDSR
+  #       Code: '11459801'
+  #       Value: 'Program Short Name Text'
+  #       Version: '1'
+  #       Tags:
+  #         Provenance: DSS
+  #         Added: 12-23-25
+  #         Labeled: Program 
   # program properties
   program_name:
     Desc: <The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis.> <br>CDE ID = 11444542 
@@ -107,65 +118,79 @@ PropDefinitions:
   study_name: 
     Desc: <The narrative title used as a textual label for a research data collection.> <br>CDE ID = 11459810
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '11459810'
-        Value: Study Name Text  
+        Value: Study Administration Study Name Text # Study Name Text
+        Version: '4'
+        Tags:
+          Provenance: CRDC
+          Labeled: Study Name
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
-    Tags:
-      Labeled: Study Name
   study_short_name:
     Desc:  <The acronym or abbreviated form of the title for a research data collection.> <br>CDE ID = 11459812 <br>This property is used as the key via which child records, e.g. publication records and study demographic records, can be associated with the appropriate study during data loading, and to identify the correct records during data updates.
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '11459812'
-        Value: Study Short Name Text
+        Value: Study Administration Study Short Name Text # Study Short Name Text
+        Version: '4'
+        Tags:
+          Provenance: CRDC
+          Labeled: Study Acronym
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
     Key: true
-    Tags:
-      Labeled: Study Acronym
   study_id:
     Desc: <A unique identifier assigned to a clinical study.> Any external identifier(s) by which the study in question is already known. <br>CDE ID = 5054234
     Term:
-      - Origin: caDSR - NMDP
-        Code: '5054234'
-        Value: Clinical Study Identifier  
+      - Origin: caDSR
+        Code: '16979764'
+        Value: Study Administration Study Identifier
+        Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC
+          Labeled: Study ID 
     Src: Data Submitter(s)
     Type: string
     Req: 'No'
-    Tags:
-      Labeled: Study ID 
   dbgap_accession_id:
-    Desc: The dbGaP-assigned identifier by which the study in question is known. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The dbGaP-assigned identifier by which the study in question is known. <br>CDE ID = 11524544
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+        Code: '11524544'
+        Value: Research Activity dbGaP Accession Number Identifier
+        Version: '1'
+        Tags:
+          Provenance: CRDC
+          Labeled: dbGaP ID
     Src: Data Submitter(s)
     Type: string
     Req: 'No'
-    Tags:
-      Labeled: dbGaP ID 
   study_description: 
-    Desc: <A textual description of the study, with components such as objectives or goals.> A narrative description of the study outlining its design, conduct and data collection goals. <br>CDE ID = 3444002
+    Desc: <A textual description of the study, with components such as objectives or goals.> A narrative description of the study outlining its design, conduct and data collection goals. <br>CDE ID = 16188024
     Term:
-      - Origin: caDSR - CCDI
-        Code: '3444002'
-        Value: Study Research Identification Descriptive Text   
+      - Origin: caDSR - Ped/CCDI
+        Code: '16188024'
+        Value: Research Activity Study Description Text
+        Version: '1'
+        Tags:
+          Provenance: Ped/CCDI
+          Labeled: Description
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
-    Tags:
-      Labeled: Description
   study_design: 
-    Desc: Text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: Text here <br>CDE ID = 16979765
     Term:
-      - Origin: caDSR - CRDC
-        Code: 'code/ID'
-        Value: Data Element Name 
+      - Origin: caDSR
+        Code: '16979765'
+        Value: Research Activity Study Design Type
+        Version: '1'
+        Tags:
+          Provenance:  CRDC/PSDC
+          Labeled: Study Design
     Src: Data Submitter(s)
     Enum: # Acceptable values listed below are the actual values propsed by the working group
       - Case Series Study # Cases are not compared to subjects without the manifestations of interest; Case Series studies are primarily descriptive reports observed in groups under study.
@@ -182,73 +207,94 @@ PropDefinitions:
       - Methods Development Study
       - Other
     Req: 'Yes'
-    Tags:
-      Labeled: Study Design
   study_status: 
-    Desc: An indicator as to the status of the study as of its submission. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: An indicator as to the status of the study as of its submission. <br>CDE ID = 15607838
     Term:
-      - Origin: caDSR - CRDC
-        Code: 'code/ID'
-        Value: Data Element Name 
+      - Origin: caDSR
+        Code: '15607838'
+        Value: Study Administration Study Status
+        Version: '1'
+        Tags:
+          Provenance: Ped/CRDC
+          Labeled: Status
     Src: Data Submitter(s)
     Enum: # Acceptable values listed here are the actual values propsed by the working group
       - Active # Data collection still in progress
       - Closed # Data collection completed, data analysis in progress
     Req: Preferred
-    Tags:
-      Labeled: Status 
   enrollment_beginning_year:
-    Desc: The year in which the study began enrolling participants. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The year in which the study began enrolling participants. <br>CDE ID = 16979766
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+        Code: '16979766'
+        Value: Research Activity Study Enrollment Start Year Date
+        Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC
     Src: Data Submitter(s)
     Type: integer
     Req: 'Yes'
   enrollment_ending_year:
-    Desc: The year in which the study stopped enrolling participants. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The year in which the study stopped enrolling participants. <br>CDE ID = 16979767
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+        Code: '16979767'
+        Value: Research Activity Study Enrollment End Year Date
+        Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC
     Src: Data Submitter(s)
     Type: integer
     Req: 'Yes'
   study_beginning_year:
-    Desc: The year in which the study was initiated. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The year in which the study was initiated. <br>CDE ID = 15607845
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+        Code: '15607845'
+        Value: Study Administration Study Start Year Date
+        Version: '1'
+        Tags:
+          Provenance: Ped/CCDI
     Src: Data Submitter(s)
     Type: integer
     Req: 'Yes'
   study_ending_year:
-    Desc: The year in which the study was completed. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The year in which the study was completed. <br>CDE ID = 15607913
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+        Code: '15607913'
+        Value: Study Administration Study End Year Date
+        Version: '1'
+        Tags:
+          Provenance: Ped/CCDI
     Src: Data Submitter(s)c
     Type: string # this accomodates use of the the term Ongoing for studies that are still active
     Req: 'Yes'
   biospecimen_collection:
-    Desc: A Boolean indication as to whether the study in question included the collection of biospecimens from any of the participants enrolled in the study, that gives no indication as to the type and/or number of any such biospecimens. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: A Boolean indication as to whether the study in question included the collection of biospecimens from any of the participants enrolled in the study, that gives no indication as to the type and/or number of any such biospecimens. <br>CDE ID = 16979768
+    Term:
+      - Origin: caDSR
+        Code: '16979768'
+        Value: Research Activity Biospecimen Collection Indicator
+        Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC
+          Labeled: Biospecimen Collection, Biospecimens
     Src: Data Submitter(s)
     Enum: 
       - 'Yes'
       - 'No'
     Req: Preferred
-    Tags:
-      Labeled: Biospecimen Collection, Biospecimens
   # study_personnel properties
   study_personnel_record_id:  
     Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each each study personnel record associated with the study in question, used to identify the appropriate study personnel record(s) during data loading and/or record modification. The value of this record ID also dictates the order in which study personnel are listed within the application's UI. <br>CDE ID = 14822135
     Term:
-      - Origin: caDSR - CTDC
+      - Origin: caDSR
         Code: '14822135'
         Value: Data Record Link Unique Identifier
+        Version: '1'
+        Tags:
+          Provenance: CTDC
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
@@ -256,53 +302,65 @@ PropDefinitions:
   person_first_name:
     Desc: <A word or group of words indicating a person's first (personal or given) name; the name that precedes the surname. Synonym = Given Name.> The first or given name of each individual who is responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179589
     Term:
-      - Origin: CSAERS/NCI Standard
+      - Origin: caDSR
         Code: '2179589'
         Value: Person Given/First Name
+        Version: '2'
+        Tags:
+          Provenance: NCI Standard
+          Labeled: Full Name
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
-    Tags:
-      Labeled: Full Name
   person_last_name:
     Desc: <A means of identifying an individual by using a word or group of words indicating a person's last (family) name. Synonym = Last Name, Surname.> The last or family name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179591
     Term:
-      - Origin: CSAERS/NCI Standard
+      - Origin: caDSR
         Code: '2179591'
         Value: Person Family/Last Name
+        Version: '2'
+        Tags:
+          Provenance: NCI Standard
+          Labeled: Full Name
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
-    Tags:
-      Labeled: Full Name
   person_middle_name:
     Desc: <A means of identifying an individual by using a word or group of words indicating a person's middle name.> The middle name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. <br>CDE ID = 2179590
     Term:
-      - Origin: CSAERS/NCI Standard
+      - Origin: caDSR
         Code: '2179590'
-        Value: Person Middle Name 
+        Value: Person Middle Name
+        Version: '2'
+        Tags:
+          Provenance: NCI Standard
+          Labeled: Full Name
     Src: Data Submitter(s)
     Type: string
-    Req: 'No'
-    Tags:
-      Labeled: Full Name
+    Req: 'No' 
   person_institution:
-    Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: text here <br>CDE ID = 16990046
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name
+        Code: '16990046'
+        Value: Person Study Personnel Institution Name
+        Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC
+          Labeled: Institution
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
-    Tags:
-      Labeled: Institution
   person_role:
     Desc: <The text that describes the distinguishable characteristics of the action or activity assigned to or required or expected of a person in a formal association with a group or organization.> An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given indivdual may be assigned multiple roles for the study in question. Within the data loading file, multiple roles assigned to a single individual must be separated from one another using the pipe (|) character. <br>CDE ID = 2201713
     Term:
-      - Origin: caDSR - NCI Standard
+      - Origin: caDSR 
         Code: '2201713'
-        Value: Person Affiliation Role Text Type 
+        Value: Person Affiliation Role Text Type
+        Version: '2'
+        Tags:
+          Provenance: NCI Standard
+          Labeled: Position or Role
     Src: Data Submitter(s)
     Type:
       value_type: list
@@ -330,15 +388,16 @@ PropDefinitions:
         - Study Chairperson
         - Study Coordinator
     Req: 'Yes'  
-    Tags:
-      Labeled: Position or Role
   # associated_link properties
   associated_link_record_id:  
     Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each associated link record, used to identify the appropriate associated link record(s) during data loading and/or record modification. The value of this record ID also dictates the order in which associated links are listed within the application's UI.<br>CDE ID = 14822135
     Term:
-      - Origin: caDSR - CTDC
+      - Origin: caDSR
         Code: '14822135'
         Value: Data Record Link Unique Identifier
+        Version: '1'
+        Tags:
+          Provenance: CRDC/CTDC
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
@@ -365,113 +424,170 @@ PropDefinitions:
   publication_record_id:
     Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each publication record associated with the study in question, used to identify the appropriate publication record(s) during data loading and/or record modification. The value of this record ID also dictates the order in which publications are listed within the application's UI. <br>CDE ID = 14822135
     Term:
-      - Origin: caDSR - CTDC
+      - Origin: caDSR
         Code: '14822135'
         Value: Data Record Link Unique Identifier
+        Version: '1'
+        Tags:
+          Provenance: CRDC/CTDC
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
     Key: true
   publication_title:
-    Desc: The full title of the publication stated exactly as it appears on the published work. <br>This property is used as the key via which to identify the correct records during data updates. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The full title of the publication stated exactly as it appears on the published work. <br>CDE ID = 16078531
+    Term: 
+      - Origin: caDSR
+        Code: '16078531'
+        Value: Study Administration Publication Identification Title Text
+        Version: '1'
+        Tags:
+          Provenance: CRDC/CTDC
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
   authorship:
-    Desc: A list of authors for the cited work. More specifically, for publications with no more than three authors, authorship quoted in full; for publications with more than three authors, authorship abbreviated to first author et al. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: A list of authors for the cited work. More specifically, for publications with no more than three authors, authorship quoted in full; for publications with more than three authors, authorship abbreviated to first author et al. <br>CDE ID = 16081468
+    Term:
+      - Origin: caDSR
+        Code: '16081468'
+        Value: Study Administration Publication Identification Citation Author List Text
+        Version: '1'
+        Tags:
+          Provenance: CRDC/CTDC
+          Labeled: Authorship
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
-    Tags:
-       Labeled: Authorship
   year_of_publication:
-    Desc: The year in which the cited work was published. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The year in which the cited work was published. <br>CDE ID = 16081475
+    Term:
+      - Origin: caDSR
+        Code: '16081475'
+        Value: Study Administration Publication Identification Year Date
+        Version: '1'
+        Tags:
+          Provenance: CRDC/CTDC
+          Labeled: Year of Publication
     Src: Data Submitter(s)
     Type: integer
     Req: 'Yes'
-    Tags:
-       Labeled: Year of Publication
   journal_citation:
-    Desc: The name of the journal in which the cited work was published, inclusive of the citation itself in terms of journal volume number, part number where applicable, and page numbers. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: The name of the journal in which the cited work was published, inclusive of the citation itself in terms of journal volume number, part number where applicable, and page numbers. <br>CDE ID = 16081476
+    Term:
+      - Origin: caDSR
+        Code: '16081476'
+        Value: Study Administration Publication Identification Journal Citation Text
+        Version: '1'
+        Tags:
+          Provenance: CRDC/CTDC
+          Labeled: Journal
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
-    Tags:
-       Labeled: Journal
   digital_object_id:
-    Desc: Where applicable, the digital object identifier for the cited work, by which it can be permanently identified, and linked to via the internet. <br>Values of this property must contain only the alphanumeric string of the digital object identifier itself, exclusive of any prefix such as "DOI:", such that values can be correctly interpreted and displayed as hyperlinks within the application. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: Where applicable, the digital object identifier for the cited work, by which it can be permanently identified, and linked to via the internet. <br>Values of this property must contain only the alphanumeric string of the digital object identifier itself, exclusive of any prefix such as "DOI:", such that values can be correctly interpreted and displayed as hyperlinks within the application. <br>CDE ID = 15915370
+    Term: 
+      - Origin: caDSR
+        Code: '15915370'
+        Value: Study Administration Publication Identification DOI Text
+        Version: '1'
+        Tags:
+          Provenance: Ped/CCDI
+          Labeled: DOI
     Src: Data Submitter(s)
     Type: string
     Req: Preferred
-    Tags:
-       Labeled: DOI
   pubmed_id:
-    Desc: Where applicable, the unique numerical identifier assigned to the cited work by PubMed, by which it can be linked to via the internet. <br>Values of this property must contain only the numeric string of the PubMed ID itself, exclusive of any prefix such as "PMID:", such that values can be correctly interpreted and displayed as hyperlinks within the application. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: Where applicable, the unique numerical identifier assigned to the cited work by PubMed, by which it can be linked to via the internet. <br>Values of this property must contain only the numeric string of the PubMed ID itself, exclusive of any prefix such as "PMID:", such that values can be correctly interpreted and displayed as hyperlinks within the application. <br> CDE ID = 15915377
+    Term:
+      - Origin: caDSR
+        Code: '15915377'
+        Value: Study Administration Publication Identification PubMed ID Text
+        Version: '1'
+        Tags:
+          Provenance: Ped/CCDI
+          Labeled: PubMed ID
     Src: Data Submitter(s)
     Type: number
     Req: Preferred
-    Tags:
-       Labeled: PubMed ID
-  # study_country properties
+  # study_country properties    Tags completed through here as of 2.30pm 03-03-26
   study_country_record_id:
     Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each country record associated with the study in question, used to identify the appropriate country record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
-      - Origin: caDSR - CTDC
+      - Origin: caDSR
         Code: '14822135'
-        Value: Data Record Link Unique Identifier 
+        Value: Data Record Link Unique Identifier
+        Version: '1'
+        Tags:
+          Provenance: CRDC/CTDC
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
     Key: true
   study_country:
-    Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: text here <br>CDE ID = 16990793
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+        Code: '16990793'
+        Value: Research Activity Study Country Name
+        Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC
+          Labeled: Countries
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
-    Tags:
-      Labeled: Countries
   # study_state_province_territory properties
   study_state_record_id:
     Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each state, province or territory associated with the study in question, used to identify the appropriate state, province or territory record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
-      - Origin: caDSR - CTDC
+      - Origin: caDSR
         Code: '14822135'
         Value: Data Record Link Unique Identifier
+        Version: '1'
+        Tags:
+          Provenance: CRDC/CTDC
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
     Key: true
   study_state_province_territory:
-    Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: text here <br>CDE ID = 16990818
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+        Code: '16990818'
+        Value: Research Activity Study State Province Territory Name
+        Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC
+          Labeled: States, Provinces and Territories
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
-    Tags:
-      Labeled: States, Provinces and Territories
   data_collection_record_id:
     Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each data collection record associated with the study in question, used to identify the appropriate data collection record(s) during data loading and/or record modification. <br>CDE ID = 14822135
     Term:
-      - Origin: caDSR - CTDC
+      - Origin: caDSR
         Code: '14822135'
         Value: Data Record Link Unique Identifier
+        Version: '1'
+        Tags:
+          Provenance: CRDC/CTDC
     Src: PSc
     Type: string
     Req: 'Yes'
     Key: true
   data_collection_category:
-    Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: text here <br>CDE ID = 16990979
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name 
+        Code: '16990979'
+        Value: Research Activity Data Collection Category text
+        Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC
+          Labeled: Data Collection Categories
     Src: PSc
     Enum: # n=71
       - Age # Demographics / Lifestyle / Life events / Quality of life
@@ -546,27 +662,28 @@ PropDefinitions:
       - Injury, Poisoning, Certain Other Consequences of External Causes
       - Vital Status
     Req: 'Yes'
-    Tags:
-      Labeled: Data Collection Categories
   data_collection_category_annotation_count: # subject to confirmation from the working group, this property will morph into a binary Yes versus No indicator as to whether the data collection category in question was examined or not, given that the reporting of the number of variables per data collection category will be too burdensome
-    Desc: Pending additional data model and application code changes, this property functions as a binary indicator as to whether variables associated with any given data collection were assessed or not. A value of 0 should be used to indicate that no variables associated with a given data collection category were assessed. Whereas regradless of how many variables within a data collection category were assessed, a value of 1 should be used simply to indicate that variables associated with a given data collection category were indeed assessed. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: Pending additional data model and application code changes, this property functions as a binary indicator as to whether variables associated with any given data collection were assessed or not. A value of 0 should be used to indicate that no variables associated with a given data collection category were assessed. Whereas regradless of how many variables within a data collection category were assessed, a value of 1 should be used simply to indicate that variables associated with a given data collection category were indeed assessed. <br>CDE ID = 16991477
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name 
+        Code: '16991477'
+        Value: Research Activity Data Collection Category Annotation Count
+        Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC
+          Labeled: Assessed
     Src: FNL
     Enum:
       - "0"
       - "1"
     Req: 'Yes'
-    Tags:
-      Labeled: Assessed
   # data_collection_category_assessed: # per working group discussions, this property now replaces the data_collection_annotation_count property, providing a simple Yes versus No indicator as to whether the data collection category in question was examined or not
-  #   Desc: text here <br>NOT CURRENTLY ASSIGNED ANY CDE
+  #   Desc: text here <br>CDE ID = 16991478
   #   Term:
   #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name 
+  #       Code: '16991478'
+  #       Value: Research Activity Data Collection Category Assessed Count
+  #       Version: '1'
   #   Src: FNL
   #   Enum:
   #     - 'Yes'
@@ -578,32 +695,39 @@ PropDefinitions:
   participant_id:
     Desc: <A sequence of letters, numbers, or characters that uniquely identifies the participant who has taken part in the investigation or research study.> The globally unique ID by which any given participant can be unambiguously identified and displayed across studies/trials. <br>CDE ID = 12220014 <br>This property is used to identify the correct records during data updates.
     Term:
-      - Origin: caDSR - CDS
+      - Origin: caDSR
         Code: '12220014'
         Value: Subject Data Origin Identifier
         Version: '1'
+        Tags:
+          Provenance: CRDC/GC
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
     Key: true
   participant_case_indicator:
-    Desc: <A response to indicate whether or not the participant is a case in the study in question.> <br>CDE ID = 14883047
+    Desc: <A response to indicate whether or not the participant is a case in the study in question.> <br>CDE ID = 16991485
     Term:
-      - Origin: x
-        Code: 'y' # TBD as of 12-09-25
-        Value: Subject Participant Case Indicator
-        Version: '1' # ?    
+      - Origin: caDSR
+        Code: '16991485'
+        Value: Research Activity Study Participant Indicator
+        Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC  
     Src: Data Submitter(s)
     Enum:
       - 'No'
       - 'Yes'
   cancer_diagnosis_primary_site:
-    Desc: <The location within the body from where the disease of interest originated as captured in the Uberon identifier.> More specifically, primary disease sites must be reported in the form of the appripriate Uberon codes.This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each primary disease site is specified by a valid Uberon code. In such cases, within the data loading file for the Participant node, the codes for each primary disease site reported asd being assocaited with a single study participant must be separated from one another using the pipe (|) character.  <br>CDE = 14883047
+    Desc: <The location within the body from where the disease of interest originated as captured in the Uberon identifier.> More specifically, primary disease sites must be reported in the form of the appripriate Uberon codes. This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each primary disease site is specified by a valid Uberon code. In such cases, within the data loading file for the Participant node, the codes for each primary disease site reported asd being assocaited with a single study participant must be separated from one another using the pipe (|) character.  <br>CDE = 14883047
     Term:
-      - Origin: TBD
+      - Origin: caDSR
         Code: '14883047'
         Value: Primary Disease Anatomic Site UBERON Identifier
-        Version: '1' # ?    
+        Version: '1'
+        Tags:
+          Provenance: CRDC Standard
+          Labeled: Cancer Type by Uberon Primary Disease Site
     Src: Data Submitter(s)
     Type:
       value_type: list
@@ -612,10 +736,13 @@ PropDefinitions:
   cancer_diagnosis_disease_morphology:
     Desc: <The ICD-O-3 code which identifies the specific appearance of cells and tissues (normal and abnormal) used to define the presence and nature of disease.> This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each disease morphology is represented by a valid ICD-O-3 code. In such cases, within the data loading file for the Participant node, the codes for each disease morphology reported as being associated with a single study participant must be separated from one another using the pipe (|) character. <br>CDE ID = 13606049
     Term:
-      - Origin: TBD
-        Code: '13606049' #'4723846' # updated 04-11-25
+      - Origin: caDSR
+        Code: '13606049' #'4723846' i.e. NCI CTEP Simplified Disease Classification Terminology MedDRA Version 10 Code # updated 04-11-25
         Value: Diagnosis Disease ICD-O-3 Morphology Code
-        Version: '1' # ?    
+        Version: '2'
+        Tags:
+          Provenance: Ped/CCDI
+          Labeled: Cancer Type by ICD-O Disease Morphology
     Src: Data Submitter(s)
     Type:
       value_type: list
@@ -624,10 +751,13 @@ PropDefinitions:
   age_at_enrollment:
     Desc: <The age in days of the subject when the subject enrolled in the study.> The age of the participant as of enrollment, measured in days. <br>CDE ID = 15742605
     Term:
-      - Origin: TBD
-        Code: '15742605' # formerly '12299548' updated 04-11-25
+      - Origin: caDSR
+        Code: '15742605' # formerly '12299548' as updated 04-11-25
         Value: Subject Age in Days at Enrollment Count # formerly Subject Age of Enrollment Day Count
         Version: '1'
+        Tags:
+          Provenance: Ped/CCDC
+          Labeled: Age at Enrollment
     Src: Data Submitter(s)
     Type:
       units:
@@ -635,12 +765,14 @@ PropDefinitions:
       value_type: number
     Req: 'Yes'
   age_at_first_cancer_diagnosis:
-    Desc: <The age (in days) of the participant when the participant was first diagnosed with cancer.> The age of the participant as of first diagnosis of cancer, measured in days. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: <The age (in days) of the participant when the participant was first diagnosed with cancer.> The age of the participant as of first diagnosis of cancer, measured in days. <br>CDE ID = 16991497
     Term:
-      - Origin: x
-        Code: 'y' # TBD 04-11-25
-        Value: ~ Subject Age in Days at First Diagnosis Count
+      - Origin: caDSR
+        Code: '16991497'
+        Value: Subject Age in Days at First Diagnosis Count
         Version: '1'
+        Tags:
+          Provenance: CRDC/PSDC
     Src: Data Submitter(s)
     Type:
       units:
@@ -659,10 +791,13 @@ PropDefinitions:
   race:
     Desc: <The text for reporting information about race based on the Office of Management and Budget (OMB) categories.> <br>CDE ID = 2192199
     Term:
-      - Origin: caDSR - OMB/NCI Standard
+      - Origin: caDSR
         Code: '2192199' # verified 04-11-25
         Value: Race Category Text
         Version: '1'
+        Tags:
+          Provenance: NCI/CRDC Standard
+          Labeled: Race
     Src: Data Submitter(s)
     Type:
       value_type: list
@@ -679,10 +814,13 @@ PropDefinitions:
   ethnicity:
     Desc: <The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.> <br>CDE ID = 2192217
     Term:
-      - Origin: caDSR - OMB/NCI Standard
+      - Origin: caDSR
         Code: '2192217' # verified 04-11-25
         Value: Ethnic Group Category Text
         Version: '2'
+        Tags:
+          Provenance: NCI/CRDC Standard
+          Labeled: Ethnicity
     Src: Data Submitter(s)
     Enum: # now fully aligned with the acceptable values for the corresponding CDE
       - Hispanic or Latino
@@ -694,10 +832,13 @@ PropDefinitions:
   sex:
     Desc: <A textual description of a person's sex at birth.> CDE ID = 7572817
     Term:
-      - Origin: caDSR - NCI Standards
+      - Origin: caDSR
         Code: '7572817'  # verified 04-11-25
-        Value: Person Sex at Birth Category 
-        Version: '2'
+        Value: Person Sex at Birth Category
+        Version: '3'
+        Tags:
+          Provenance: NCI/CRDC Standard
+          Labeled: Sex
     Src: Data Submitter(s)
     Enum: # now fully aligned with the acceptable values for the corresponding CDE
       - Female
@@ -708,10 +849,12 @@ PropDefinitions:
   # height:
   #   Desc: <The number that describes the vertical distance of an individual.> The height of the participant as of enrollment, measured in cm. <br>CDE ID = 2179643
   #   Term:
-  #     - Origin: caDSR- CSAERS/NCI Standard
+  #     - Origin: caDSR
   #       Code: '2179643'
   #       Value: Person Height Value
   #       Version: '4'
+  #       Tags:
+  #         Provenance: NCI/CRDC Standard
   #   Src: Data Submitter(s)
   #   Type:
   #     units:
@@ -719,13 +862,14 @@ PropDefinitions:
   #     value_type: number
   #   Req: Preferred
   # weight:
-  #   Desc: <The number that describes the vertical force exerted by the mass of an individual as a result of gravity.> The weight of the participant as of enrollment,
-  #     measured in kg. <br>CDE ID = 2179689
+  #   Desc: <The number that describes the vertical force exerted by the mass of an individual as a result of gravity.> The weight of the participant as of enrollment, measured in kg. <br>CDE ID = 2179689
   #   Term:
-  #     - Origin: caDSR - CSAERS/NCI Standard
+  #     - Origin: caDSR
   #       Code: '2179689'
   #       Value: Person Weight Value
   #       Version: '4'
+  #       Tags:
+  #         Provenance: NCI/CRDC Standard
   #   Src: Data Submitter(s)
   #   Type:
   #     units:
@@ -735,10 +879,12 @@ PropDefinitions:
   # body_surface_area:
   #   Desc: <The calculated numerical quantity that represents the 2-dimensional extent of the body surface relating height to weight.> The body surface area of the participant as of enrollment, mathematically derived from the participant's height and weight, and expressed in square meters. <br>CDE ID = 653
   #   Term:
-  #     - Origin: caDSR - CTEP
+  #     - Origin: caDSR
   #       Code: '653'
   #       Value: Person Body Surface Area Value
   #       Version: '6'
+  #       Tags:
+  #         Provenance: CTEP/NCI Standard
   #   Src: Data Submitter(s)
   #   Type:
   #     units:
@@ -746,42 +892,50 @@ PropDefinitions:
   #     value_type: number
   #   Req: Preferred
   # bmi:
-  #   Desc: text
+  #   Desc: text. <br>CDE ID = 2006410
   #   Term:
   #     - Origin: caDSR
-  #       Code: 'code/ID'
-  #       Value: Data Element Name  
+  #       Code: '2006410'
+  #       Value: Person Body Mass Index Value
+  #       Version: '3'
+  #       Tags:
+  #         Provenance: NCI/CRDC Standard
   #   Src: Data Submitter(s)
   #   Type: number
   #   Req: 'Yes'
   # occupation:
   #   Desc: <The occupation/job category of a person.> <br>CDE ID = 6617540
   #   Term:
-  #     - Origin: caDSR - NCIP
+  #     - Origin: caDSR
   #       Code: '6617540'
   #       Value: Person Occupation Category
   #       Version: '1'
+  #       Tags:
+  #         Provenance: NCIP
   #   Src: Data Submitter(s)
   #   Type: string
   #   Req: Preferred
   # income:
   #   Desc: <The amount of earnings made by a family in a year.> <br>CDE ID = 14834966
   #   Term:
-  #     - Origin: caDSR - CTDC
+  #     - Origin: caDSR
   #       Code: '14834966'
   #       Value: Person Annual Household Income Text
   #       Version: '1'
+  #       Tags:
+  #         Provenance: CRDC
   #   Src: Data Submitter(s)
   #   Type: string
   #   Req: Preferred
   # highest_level_of_education:
-  #   Desc: <The subdivision that summarizes the highest level of education attained by a person.> An indication as to the highest level of education attained by
-  #     the participant. <br>CDE ID = 2681552
+  #   Desc: <The subdivision that summarizes the highest level of education attained by a person.> An indication as to the highest level of education attained by the participant. <br>CDE ID = 2681552
   #   Term:
-  #     - Origin: caDSR - NCI Standards (NCIP)
+  #     - Origin: caDSR
   #       Code: '2681552'
   #       Value: Person Education Level Summary Type
   #       Version: '1'
+  #       Tags:
+  #         Provenance: NCIP
   #   Src: Data Submitter(s)
   #   Enum: # Currently reflective only of the values used by the CMB
   #     - No formal education
@@ -819,10 +973,12 @@ PropDefinitions:
   ncbi_taxonomy_id: # participant prefix to prevent property duplication will be removed once the study_demographic node is retired out
     Desc: A label provided by NCBI Taxonomy Database (https://www.ncbi.nlm.nih.gov/taxonomy/),  which uniquely identifies group or category, at any level, in a system for classifying plants or animals (including humans) providing ranked categories for the classification of organisms according to their suspected evolutionary relationships. For human study participants, the value of this ID must be stated as 9606. <br>CDE ID = 10543100
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '10543100' # verified 04-11-25
         Value: Subject Taxonomy NCBI Identifier # formerly Subject National Center for Biotechnology Information Taxonomy Identifier Integer
         Version: '2'
+        Tags:
+          Provenance: CRDC
     Src: Data Submitter(s)
     Enum:
       - "9606"
@@ -830,33 +986,41 @@ PropDefinitions:
   # participant_ncbi_taxonomy_name:
   #   Desc: The textual label associated with a participant's organismal classification as captured in the National Center for Biotechnology Information (NCBI) Taxonomy standard nomenclature and classification repository.  <br>Supposedly enumerated but no permissible values specified. <br>CDE ID = 10543082
   #   Term:
-  #     - Origin: caDSR - CRDC
+  #     - Origin: caDSR
   #       Code: '10543082'
-  #       Value: Subject National Center for Biotechnology Information Taxonomy Name
+  #       Value: Subject Taxonomy NCBI Name # formerly Subject National Center for Biotechnology Information Taxonomy Name
   #         Text
   #       Version: '2'
+  #       Tags:
+  #         Provenance: CRDC
   #   Src: Data Submitter(s)
   #   Enum:
   #     - Homo sapiens
   #   Req: 'Yes'  
   # file properties
-  data_file_name:
+  data_file_name: #Tags completed through here as of 10.30pm 03-06-26
     Desc: The literal label for an electronic data file, inclusive of file extension(s). <br>CDE ID = 11284037
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '11284037'
-        Value: Electronic Data File Name
+        Value: Data File Name Text # Electronic Data File Name
+        Version: '3'
+        Tags:
+          Provenance: NCI/CRDC Standard
+          Labeled: File Name
     Src: DSS
     Type: string
     Req: 'Yes'
-    Tags:
-      Labeled: File Name
   data_file_type:
     Desc: <The type of information contained in an electronic record.> A curated indicator as to the type of content represented by the data file <br>CDE ID = 14824731
     Term:
-      - Origin: caDSR - CTDC
+      - Origin: caDSR
         Code: '14824731'
-        Value: Electronic Data File Content Type
+        Value: Data File Content Category # Electronic Data File Content Type
+        Version: '2'
+        Tags:
+          Provenance: NCI/CRDC Standard
+          Labeled: File Type
     Src: FNL
     Enum:
       - Data Dictionary
@@ -867,56 +1031,66 @@ PropDefinitions:
       - Survey
       - More options to be added as needed
     Req: 'Yes'
-    Tags:
-      Labeled: File Type
   data_file_description:
     Desc: A free text field that can be used to document the content and other details about an electronic file that may not be captured elsewhere. <br>CDE ID = 11280338
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '11280338'
-        Value: Electronic Data File Description Text  
+        Value: Data File Description Text # Electronic Data File Description Text
+        Version: '2'
+        Tags:
+          Provenance: NCI/CRDC Standard
+          Labeled: Description
     Src: DSS
     Type: string
     Req: 'Yes'
-    Tags:
-      Labeled: Description
   data_file_format:
     Desc: A defined organization or layout representing and structuring data in a computer file; the electronic format of the file, as derived during file validation <br>With the actual values of this property being loader derived, the acceptable values currently specified are in place only to support the generation of mock data <br>CDE ID = 11416926
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '11416926'
-        Value: Electronic Data File Format Type  
+        Value: Data File Format Type # Electronic Data File Format Type
+        Version: '2'
+        Tags:
+          Provenance: NCI/CRDC Standard
+          Labeled: Format
     Src: DSS
     Type: string
     Req: 'Yes'
-    Tags:
-      Labeled: Format
   data_file_size:
     Desc: The measure, expressed in bytes, as to how much space a data file takes up on a storage medium. <br>CDE ID = 11479876
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '11479876'
-        Value: Electronic Data File Size Integer  
+        Value: Data File Size Integer # Electronic Data File Size Integer
+        Version: '2'
+        Tags:
+          Provenance: NCI/CRDC Standard
+          Labeled: Size
     Src: DSS
-    Type: number
+    Type: integer
     Req: 'Yes'
-    Tags:
-      Labeled: Size
   data_file_checksum_value:
     Desc: A small-sized block of data derived from a file for the purpose of detecting errors that may have been introduced during file transmission and/or storage and used to verify data integrity. <br>CDE ID = 11480133
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '11480133'
-        Value: Electronic Data File Checksum Value  
+        Value: Data File Checksum Value # Electronic Data File Checksum Value
+        Version: '2'
+        Tags:
+          Provenance: NCI/CRDC Standard
     Src: DSS
     Type: string
     Req: 'Yes'
   data_file_checksum_type:
     Desc: The method by which the file checksum was calculated. <br>CDE ID = 11475057
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '11475057'
-        Value: Electronic Data File Checksum Type  
+        Value: Data File Checksum Type # Electronic Data File Checksum Type
+        Version: '2'
+        Tags:
+          Provenance: NCI/CRDC Standard
     Src: DSS
     Enum:
       - md5sum
@@ -926,9 +1100,12 @@ PropDefinitions:
   data_file_compression_status:
     Desc: The state of data when saved to storage space or during data transmission. <br>CDE ID = 11387114
     Term:
-      - Origin: caDSR-CRDC
+      - Origin: caDSR
         Code: '11387114'
-        Value: Electronic Data File Compression Type  
+        Value: Data File Compression Status # Electronic Data File Compression Type
+        Version: '2'
+        Tags:
+          Provenance: NCI/CRDC Standard
     Src: DSS
     Enum:
       - Compressed
@@ -938,9 +1115,13 @@ PropDefinitions:
   data_file_uuid:
     Desc: <A unique sequence of characters used to identify the contents of an electronic record.> <br>CDE ID = 14826100
     Term:
-      - Origin: caDSR - CTDC
+      - Origin: caDSR
         Code: '14826100'
-        Value: Electronic Data File Content Unique Identifier 
+        Value: Data File Content Unique Identifier # Electronic Data File Content Unique Identifier
+        Version: '1'
+        Tags:
+          Provenance: NCI/CRDC Standard
+          Template: 'No'
     Src: FNL
     Type: string
     Req: 'Yes'
@@ -948,18 +1129,25 @@ PropDefinitions:
   data_file_location:
     Desc: <The specification of a node (file or directory) in a hierarchical file system where an electronic file is located.> The specific location within the S3 storage bucket at which the file is stored, expressed in terms of a unique url <br>CDE ID = 11556141
     Term:
-      - Origin: caDSR - CDS
+      - Origin: caDSR
         Code: '11556141'
-        Value: Electronic File Pathname Text    
+        Value: Data File Content Unique Identifier # Electronic File Pathname Text
+        Version: '2'
+        Provenance: CRDC/CDS
+        Template: 'No'
     Src: FNL
     Type: string
     Req: 'Yes'
   data_file_access_control:
-    Desc: An indicator as to the level of access control to which a data file is subject. <br>NOT CURRENTLY ASSIGNED ANY CDE
+    Desc: An indicator as to the level of access control to which a data file is subject. <br>CDE ID = 11555664
     Term:
       - Origin: caDSR
-        Code: 'code/ID'
-        Value: Data Element Name  
+        Code: '11555664'
+        Value: Data File Access Level Text
+        Version: '2'
+        Tags:
+          Provenance: CRDC/GC
+          Labeled: Access Control
     Src: Data Submitter(s)
     Enum:
       - Controlled Access
