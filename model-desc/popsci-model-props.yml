@@ -725,6 +725,7 @@ PropDefinitions:
         Code: '14883047'
         Value: Primary Disease Anatomic Site UBERON Identifier
         Version: '1'
+        useNullCDE: 'Yes'
         Tags:
           Provenance: CRDC Standard
           Labeled: Cancer Type by Uberon Primary Disease Site
@@ -740,6 +741,7 @@ PropDefinitions:
         Code: '13606049' #'4723846' i.e. NCI CTEP Simplified Disease Classification Terminology MedDRA Version 10 Code # updated 04-11-25
         Value: Diagnosis Disease ICD-O-3 Morphology Code
         Version: '2'
+        useNullCDE: 'Yes'
         Tags:
           Provenance: Ped/CCDI
           Labeled: Cancer Type by ICD-O Disease Morphology
