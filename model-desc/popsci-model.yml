@@ -72,7 +72,7 @@ Nodes:
       - person_institution # CDE ID = 16990046
       - person_role # CDE ID = 2201713
   associated_link:
-    Desc: The Associated Link node contains the properties required to associate multiple links to additional information about any given study with the appropriate study record, and to define an inuitive label via which each link will be diplayed within the UI. 
+    Desc: The Associated Link node contains the properties required to associate multiple links to additional information about any given study with the appropriate study record, and to define an intuitive label via which each link will be displayed within the UI. 
     Tags:
       Category: study
       Assignment: core
@@ -98,7 +98,7 @@ Nodes:
       - digital_object_id # per CTDC, CDE ID = 15915370
       - pubmed_id # per CTDC, CDE ID = 15915377
   study_country:
-    Desc: The Study Country node contains only a single property via which potentially lengthy lists of countires from which study participants were included can be associated with the study in question, using data loading files of minimal complexity.
+    Desc: The Study Country node contains only a single property via which potentially lengthy lists of countries from which study participants were included can be associated with the study in question, using data loading files of minimal complexity.
     Tags:
       Category: study
       Assignment: core
@@ -108,7 +108,7 @@ Nodes:
       - study_country_record_id # CDE ID = 14822135
       - study_country # CDE ID = 16990793
   study_state_province_territory:
-    Desc: The Study State/Province/Territory node contains only a single proerty via which potentially lengthy lists of states and/or provinces and/or territories from which study participants were included can be associated with the study in question, using data loading files of minimal complexity.
+    Desc: The Study State/Province/Territory node contains only a single property via which potentially lengthy lists of states and/or provinces and/or territories from which study participants were included can be associated with the study in question, using data loading files of minimal complexity.
     Tags:
       Category: study
       Assignment: core
@@ -130,7 +130,7 @@ Nodes:
       - data_collection_category_annotation_count # the number of annotations per data collection category # CDE ID = 16991477 but property will ultimately be deprecated, and superseded by data_collection_category_assessed as noted below
       #- data_collection_category_assessed  # CDE ID = 16991478 and this property will supersede the current data_collection_category_annotation_count as noted above
   participant:
-    Desc: The Particpant node is comprised of the properties which define and characterize each study participant
+    Desc: The Participant node is comprised of the properties which define and characterize each study participant
     Tags:
       Category: case
       Assignment: core
@@ -146,7 +146,7 @@ Nodes:
       #- year_of_birth # NOT CURRENTLY ASSIGNED ANY CDE
       - race # per CTDC, CDE ID = 2192199
       - ethnicity # per CTDC, CDE ID = 2192217
-      - sex # per CTDC, CDE ID = 7572817)
+      - sex # per CTDC, CDE ID = 7572817
       #- height # per CTDC, CDE ID = 2179643
       #- weight # per CTDC, CDE ID = 2179689
       #- body_surface_area # per CTDC, CDE ID = 653

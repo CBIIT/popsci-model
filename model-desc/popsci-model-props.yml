@@ -143,7 +143,7 @@ PropDefinitions:
     Req: 'Yes'
     Key: true
   study_id:
-    Desc: <A unique identifier assigned to a clinical study.> Any external identifier(s) by which the study in question is already known. <br>CDE ID = 5054234
+    Desc: <A unique identifier assigned to a clinical study.> Any external identifier(s) by which the study in question is already known. <br>CDE ID = 16979764 # formerly 5054234
     Term:
       - Origin: caDSR
         Code: '16979764'
@@ -267,7 +267,7 @@ PropDefinitions:
         Version: '1'
         Tags:
           Provenance: Ped/CCDI
-    Src: Data Submitter(s)c
+    Src: Data Submitter(s)
     Type: string # this accomodates use of the the term Ongoing for studies that are still active
     Req: 'Yes'
   biospecimen_collection:
@@ -287,7 +287,7 @@ PropDefinitions:
     Req: Preferred
   # study_personnel properties
   study_personnel_record_id:  
-    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each each study personnel record associated with the study in question, used to identify the appropriate study personnel record(s) during data loading and/or record modification. The value of this record ID also dictates the order in which study personnel are listed within the application's UI. <br>CDE ID = 14822135
+    Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each study personnel record associated with the study in question, used to identify the appropriate study personnel record(s) during data loading and/or record modification. The value of this record ID also dictates the order in which study personnel are listed within the application's UI. <br>CDE ID = 14822135
     Term:
       - Origin: caDSR
         Code: '14822135'
@@ -352,7 +352,7 @@ PropDefinitions:
     Type: string
     Req: 'Yes'
   person_role:
-    Desc: <The text that describes the distinguishable characteristics of the action or activity assigned to or required or expected of a person in a formal association with a group or organization.> An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given indivdual may be assigned multiple roles for the study in question. Within the data loading file, multiple roles assigned to a single individual must be separated from one another using the pipe (|) character. <br>CDE ID = 2201713
+    Desc: <The text that describes the distinguishable characteristics of the action or activity assigned to or required or expected of a person in a formal association with a group or organization.> An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given individual may be assigned multiple roles for the study in question. Within the data loading file, multiple roles assigned to a single individual must be separated from one another using the pipe (|) character. <br>CDE ID = 2201713
     Term:
       - Origin: caDSR 
         Code: '2201713'
@@ -663,7 +663,7 @@ PropDefinitions:
       - Vital Status
     Req: 'Yes'
   data_collection_category_annotation_count: # subject to confirmation from the working group, this property will morph into a binary Yes versus No indicator as to whether the data collection category in question was examined or not, given that the reporting of the number of variables per data collection category will be too burdensome
-    Desc: Pending additional data model and application code changes, this property functions as a binary indicator as to whether variables associated with any given data collection were assessed or not. A value of 0 should be used to indicate that no variables associated with a given data collection category were assessed. Whereas regradless of how many variables within a data collection category were assessed, a value of 1 should be used simply to indicate that variables associated with a given data collection category were indeed assessed. <br>CDE ID = 16991477
+    Desc: Pending additional data model and application code changes, this property functions as a binary indicator as to whether variables associated with any given data collection were assessed or not. A value of 0 should be used to indicate that no variables associated with a given data collection category were assessed. Whereas regardless of how many variables within a data collection category were assessed, a value of 1 should be used simply to indicate that variables associated with a given data collection category were indeed assessed. <br>CDE ID = 16991477
     Term:
       - Origin: caDSR
         Code: '16991477'
@@ -719,7 +719,7 @@ PropDefinitions:
       - 'No'
       - 'Yes'
   cancer_diagnosis_primary_site:
-    Desc: <The location within the body from where the disease of interest originated as captured in the Uberon identifier.> More specifically, primary disease sites must be reported in the form of the appripriate Uberon codes. This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each primary disease site is specified by a valid Uberon code. In such cases, within the data loading file for the Participant node, the codes for each primary disease site reported asd being assocaited with a single study participant must be separated from one another using the pipe (|) character.  <br>CDE = 14883047
+    Desc: <The location within the body from where the disease of interest originated as captured in the Uberon identifier.> More specifically, primary disease sites must be reported in the form of the appropriate Uberon codes. This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each primary disease site is specified by a valid Uberon code. In such cases, within the data loading file for the Participant node, the codes for each primary disease site reported as being associated with a single study participant must be separated from one another using the pipe (|) character.  <br>CDE ID = 14883047
     Term:
       - Origin: caDSR
         Code: '14883047'
