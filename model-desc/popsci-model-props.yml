@@ -78,19 +78,25 @@ PropDefinitions:
   program_name:
     Desc: <The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis.> <br>CDE ID = 11444542 
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '11444542'
-        Value: Program Name Text  
-    Src: DSS
+        Value: Program Name Text 
+        Version: '3'
+        Tags:
+          Provenance: CRDC
+    Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
   program_short_name:
     Desc: <An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. For example, CPTAC.> <br>CDE ID = 11459801 <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
     Term:
-      - Origin: caDSR - CRDC
+      - Origin: caDSR
         Code: '11459801'
-        Value: Program Short Name Text  
-    Src: DSS
+        Value: Program Short Name Text
+        Version: '3'
+        Tags:
+          Provenance: CRDC
+    Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
     Key: true
@@ -171,7 +177,7 @@ PropDefinitions:
   study_description: 
     Desc: <A textual description of the study, with components such as objectives or goals.> A narrative description of the study outlining its design, conduct and data collection goals. <br>CDE ID = 16188024
     Term:
-      - Origin: caDSR - Ped/CCDI
+      - Origin: caDSR
         Code: '16188024'
         Value: Research Activity Study Description Text
         Version: '1'
@@ -405,18 +411,24 @@ PropDefinitions:
   associated_link_name:  
     Desc: <The words by which the linkage between related records is known.> The exact text to be displayed within the UI where it functions as an intuitive identifier of any given link associated with the study/trial in question. <br>CDE ID = 14822136
     Term:
-      - Origin: caDSR - CTDC
+      - Origin: caDSR
         Code: '14822136'
         Value: Data Record Link Identifier Name
+        Version: '1'
+        Tags:
+          Provenance: CTDC
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
   associated_link_url:
     Desc: <The global address of the linkage between related records on the World Wide Web.> The url to which an end user will be redirected upon selection of the corresponding link name displayed within the UI. <br>CDE ID = 14822140
     Term:
-      - Origin: caDSR - CTDC
+      - Origin: caDSR
         Code: '14822140'
         Value: Clinical Study Record Link Identifier URL Text
+        Version: '1'
+        Tags:
+          Provenance: CTDC
     Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
@@ -574,25 +586,25 @@ PropDefinitions:
         Version: '1'
         Tags:
           Provenance: CRDC/CTDC
-    Src: PSc
+    Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
     Key: true
   data_collection_category:
     Desc: text here <br>CDE ID = 16990979
-    Term:
-      - Origin: caDSR
-        Code: '16990979'
-        Value: Research Activity Data Collection Category text
-        Version: '1'
-        Tags:
-          Provenance: CRDC/PSDC
-          Labeled: Data Collection Categories
+    # Term:
+    #   - Origin: caDSR
+    #     Code: '16990979'
+    #     Value: Research Activity Data Collection Category text
+    #     Version: '1'
+    #     Tags:
+    #       Provenance: CRDC/PSDC
+    #       Labeled: Data Collection Categories
     Src: PSc
     Enum: # n=71
       - Age # Demographics / Lifestyle / Life events / Quality of life
       - Biological Sex
-      - Sexual Orientation and Gender Identity
+      #- Sexual Orientation and Gender Identity
       - Ethnicity and Race
       - Education Level
       - Employment Status
@@ -662,21 +674,25 @@ PropDefinitions:
       - Injury, Poisoning, Certain Other Consequences of External Causes
       - Vital Status
     Req: 'Yes'
+    Tags:
+      Labeled: Data Collection Categories
   data_collection_category_annotation_count: # subject to confirmation from the working group, this property will morph into a binary Yes versus No indicator as to whether the data collection category in question was examined or not, given that the reporting of the number of variables per data collection category will be too burdensome
     Desc: Pending additional data model and application code changes, this property functions as a binary indicator as to whether variables associated with any given data collection were assessed or not. A value of 0 should be used to indicate that no variables associated with a given data collection category were assessed. Whereas regardless of how many variables within a data collection category were assessed, a value of 1 should be used simply to indicate that variables associated with a given data collection category were indeed assessed. <br>CDE ID = 16991477
-    Term:
-      - Origin: caDSR
-        Code: '16991477'
-        Value: Research Activity Data Collection Category Annotation Count
-        Version: '1'
-        Tags:
-          Provenance: CRDC/PSDC
-          Labeled: Assessed
-    Src: FNL
+    # Term:
+    #   - Origin: caDSR
+    #     Code: '16991477'
+    #     Value: Research Activity Data Collection Category Annotation Count
+    #     Version: '1'
+    #     Tags:
+    #       Provenance: CRDC/PSDC
+    #       Labeled: Assessed
+    Src: Data Submitter(s)
     Enum:
       - "0"
       - "1"
     Req: 'Yes'
+    Tags:
+      Labeled: Assessed
   # data_collection_category_assessed: # per working group discussions, this property now replaces the data_collection_annotation_count property, providing a simple Yes versus No indicator as to whether the data collection category in question was examined or not
   #   Desc: text here <br>CDE ID = 16991478
   #   Term:
@@ -684,7 +700,7 @@ PropDefinitions:
   #       Code: '16991478'
   #       Value: Research Activity Data Collection Category Assessed Count
   #       Version: '1'
-  #   Src: FNL
+  #   Src: Data Submitter(s)
   #   Enum:
   #     - 'Yes'
   #     - 'No'
@@ -738,7 +754,7 @@ PropDefinitions:
     Desc: <The ICD-O-3 code which identifies the specific appearance of cells and tissues (normal and abnormal) used to define the presence and nature of disease.> This list type property accepts multiple values for participants diagnosed with more than one type of cancer, provided that each disease morphology is represented by a valid ICD-O-3 code. In such cases, within the data loading file for the Participant node, the codes for each disease morphology reported as being associated with a single study participant must be separated from one another using the pipe (|) character. <br>CDE ID = 13606049
     Term:
       - Origin: caDSR
-        Code: '13606049' #'4723846' i.e. NCI CTEP Simplified Disease Classification Terminology MedDRA Version 10 Code # updated 04-11-25
+        Code: '13606049' #  updated 04-11-25, formerly '4723846' i.e. NCI CTEP Simplified Disease Classification Terminology MedDRA Version 10 Code
         Value: Diagnosis Disease ICD-O-3 Morphology Code
         Version: '2'
         useNullCDE: 'Yes'
@@ -1010,7 +1026,7 @@ PropDefinitions:
         Tags:
           Provenance: NCI/CRDC Standard
           Labeled: File Name
-    Src: DSS
+    Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
   data_file_type:
@@ -1023,7 +1039,7 @@ PropDefinitions:
         Tags:
           Provenance: NCI/CRDC Standard
           Labeled: File Type
-    Src: FNL
+    Src: Data Submitter(s)
     Enum:
       - Data Dictionary
       - Data Guide
@@ -1043,7 +1059,7 @@ PropDefinitions:
         Tags:
           Provenance: NCI/CRDC Standard
           Labeled: Description
-    Src: DSS
+    Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
   data_file_format:
@@ -1056,7 +1072,7 @@ PropDefinitions:
         Tags:
           Provenance: NCI/CRDC Standard
           Labeled: Format
-    Src: DSS
+    Src: System-generated
     Type: string
     Req: 'Yes'
   data_file_size:
@@ -1069,7 +1085,7 @@ PropDefinitions:
         Tags:
           Provenance: NCI/CRDC Standard
           Labeled: Size
-    Src: DSS
+    Src: Data Submitter(s)
     Type: integer
     Req: 'Yes'
   data_file_checksum_value:
@@ -1081,7 +1097,7 @@ PropDefinitions:
         Version: '2'
         Tags:
           Provenance: NCI/CRDC Standard
-    Src: DSS
+    Src: Data Submitter(s)
     Type: string
     Req: 'Yes'
   data_file_checksum_type:
@@ -1093,7 +1109,7 @@ PropDefinitions:
         Version: '2'
         Tags:
           Provenance: NCI/CRDC Standard
-    Src: DSS
+    Src: Data Submitter(s)
     Enum:
       - md5sum
       - sha1
@@ -1108,7 +1124,7 @@ PropDefinitions:
         Version: '2'
         Tags:
           Provenance: NCI/CRDC Standard
-    Src: DSS
+    Src: Data Submitter(s)
     Enum:
       - Compressed
       - Uncompressed
@@ -1124,7 +1140,7 @@ PropDefinitions:
         Tags:
           Provenance: NCI/CRDC Standard
           Template: 'No'
-    Src: FNL
+    Src: System-generated
     Type: string
     Req: 'Yes'
     Key: true
@@ -1137,7 +1153,7 @@ PropDefinitions:
         Version: '2'
         Provenance: CRDC/CDS
         Template: 'No'
-    Src: FNL
+    Src: System-generated
     Type: string
     Req: 'Yes'
   data_file_access_control:
