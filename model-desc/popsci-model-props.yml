@@ -1050,6 +1050,8 @@ PropDefinitions:
       - Survey
       - More options to be added as needed
     Req: 'Yes'
+    Tags:
+      Labeled: File Type
   data_file_description:
     Desc: <A free text field that can be used to document the content and other details about an electronic file that may not be captured elsewhere.>
     Term:
@@ -1171,4 +1173,6 @@ PropDefinitions:
     Enum:
       - Controlled Access
       - Open Access
-    Req: 'Yes'       
+    Req: 'Yes'
+    Tags:
+      Labeled: Access Control
