@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/popsci-model
-commit 095d1e3
+commit 4d900ee
 node	property	value_or_TYPE
 associated_link	associated_link_name	STRING
 associated_link	associated_link_record_id	STRING
@@ -159,14 +159,14 @@ study_state_province_territory	study_state_province_territory	STRING
 study_state_province_territory	study_state_record_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-associated_with	associated_link	study	NA	NA
-associated_with	study_personnel	study	NA	NA
-associated_with	file	study	NA	NA
 associated_with	publication	study	NA	NA
+associated_with	study_personnel	study	NA	NA
+associated_with	associated_link	study	NA	NA
 associated_with	study_country	study	NA	NA
+associated_with	file	study	NA	NA
 associated_with	participant	study	NA	NA
-associated_with	study_state_province_territory	study	NA	NA
 associated_with	data_collection	study	NA	NA
+associated_with	study_state_province_territory	study	NA	NA
 belongs_to	study	program	NA	NA
 
 property	description
