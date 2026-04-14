@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/popsci-model
-commit 36dd76d
+commit 095d1e3
 node	property	value_or_TYPE
 associated_link	associated_link_name	STRING
 associated_link	associated_link_record_id	STRING
@@ -159,14 +159,14 @@ study_state_province_territory	study_state_province_territory	STRING
 study_state_province_territory	study_state_record_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
-associated_with	data_collection	study	NA	NA
 associated_with	associated_link	study	NA	NA
+associated_with	study_personnel	study	NA	NA
+associated_with	file	study	NA	NA
 associated_with	publication	study	NA	NA
 associated_with	study_country	study	NA	NA
-associated_with	file	study	NA	NA
-associated_with	study_personnel	study	NA	NA
-associated_with	study_state_province_territory	study	NA	NA
 associated_with	participant	study	NA	NA
+associated_with	study_state_province_territory	study	NA	NA
+associated_with	data_collection	study	NA	NA
 belongs_to	study	program	NA	NA
 
 property	description
@@ -182,7 +182,7 @@ cancer_diagnosis_primary_site	<The location within the body from where the disea
 data_collection_category	An area of contextual and/or scientific interest, or groupings of such inter-related areas of interest, that are surveyed via questionnaires in order to more fully understand factors such as, but not limited to, the demographics, lifestyle, dietary and nutritional intake, physical activity levels, enviormental and occupational exposures, and overall health status of each study participant. Both the areas of interest that are surveyed, and the detail at which any given area of interest is surveyed, will vary widely by study, and this property serves simply to indicate which areas of interest were examined during the course of any given study. <br>CDE ID = 16990979
 data_collection_category_annotation_count	Pending additional data model and application code changes, this property functions as a binary indicator as to whether variables associated with any given data collection were assessed or not. A value of 0 should be used to indicate that no variables associated with a given data collection category were assessed. Whereas regardless of how many variables within a data collection category were assessed, a value of 1 should be used simply to indicate that variables associated with a given data collection category were indeed assessed. <br>CDE ID = 16991477
 data_collection_record_id	<A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each data collection record associated with the study in question, used to identify the appropriate data collection record(s) during data loading and/or record modification.
-data_file_access_control	An indicator as to the level of access control to which a data file is subject.
+data_file_access_control	An indicator as to the level of access control to which a data file is subject. <br>CDE ID = 11555664
 data_file_checksum_type	<The method by which the file checksum was calculated.>
 data_file_checksum_value	<A small-sized block of data derived from a file for the purpose of detecting errors that may have been introduced during file transmission and/or storage and used to verify data integrity.>
 data_file_compression_status	<The state of data when saved to storage space or during data transmission.>
@@ -191,7 +191,7 @@ data_file_format	<A defined organization or layout representing and structuring 
 data_file_location	<The specification of a node (file or directory) in a hierarchical file system where an electronic file is located.> The specific location within the S3 storage bucket at which the file is stored, expressed in terms of a unique url.
 data_file_name	<The literal label for an electronic data file.> The literal label for an electronic data file, inclusive of file extension(s).
 data_file_size	<The measure (in bytes) of how much space a data file takes up on a storage medium.> The measure, expressed in bytes, as to how much space a data file takes up on a storage medium.
-data_file_type	<The type of information contained in an electronic record.> A curated indicator as to the type of content represented by the data file.
+data_file_type	<The type of information contained in an electronic record.> A curated indicator as to the type of content represented by the data file. <br>CDE ID = 14824731
 data_file_uuid	<A unique sequence of characters used to identify the contents of an electronic record.>
 dbgap_accession_id	<A stable unique alphanumeric identifier assigned to a study and any objects by the database of Genotypes and Phenotypes (dbGaP).> The dbGaP-assigned identifier by which the study in question is known.
 digital_object_id	<A unique code used by publishers to identify a digital object, such as a journal article, web document, or other item of intellectual property.> Where applicable, the digital object identifier for the cited work, by which it can be permanently identified, and linked to via the internet. <br>Values of this property must contain only the alphanumeric string of the digital object identifier itself, exclusive of any prefix such as "DOI:", such that values can be correctly interpreted and displayed as hyperlinks within the application.
