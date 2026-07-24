@@ -677,8 +677,8 @@ PropDefinitions:
     Req: 'Yes'
     Tags:
       Labeled: Data Collection Categories
-  data_collection_category_annotation_count: # subject to confirmation from the working group, this property will morph into a binary Yes versus No indicator as to whether the data collection category in question was examined or not, given that the reporting of the number of variables per data collection category will be too burdensome
-    Desc: Pending additional data model and application code changes, this property functions as a binary indicator as to whether variables associated with any given data collection were assessed or not. A value of 0 should be used to indicate that no variables associated with a given data collection category were assessed. Whereas regardless of how many variables within a data collection category were assessed, a value of 1 should be used simply to indicate that variables associated with a given data collection category were indeed assessed. <br>CDE ID = 16991477
+  # data_collection_category_annotation_count: # subject to confirmation from the working group, this property will morph into a binary Yes versus No indicator as to whether the data collection category in question was examined or not, given that the reporting of the number of variables per data collection category will be too burdensome
+    # Desc: Pending additional data model and application code changes, this property functions as a binary indicator as to whether variables associated with any given data collection were assessed or not. A value of 0 should be used to indicate that no variables associated with a given data collection category were assessed. Whereas regardless of how many variables within a data collection category were assessed, a value of 1 should be used simply to indicate that variables associated with a given data collection category were indeed assessed. <br>CDE ID = 16991477
     # Term:
     #   - Origin: caDSR
     #     Code: '16991477'
@@ -687,27 +687,27 @@ PropDefinitions:
     #     Tags:
     #       Provenance: CRDC/PSDC
     #       Labeled: Assessed
-    Src: Data Submitter(s)
-    Enum:
-      - "0"
-      - "1"
-    Req: 'Yes'
-    Tags:
-      Labeled: Assessed
-  # data_collection_category_assessed: # per working group discussions, this property now replaces the data_collection_annotation_count property, providing a simple Yes versus No indicator as to whether the data collection category in question was examined or not
-  #   Desc: INCORRECT <The number of annotations assessed by data collection category.> <br>CDE ID = 16991478
+    # Src: Data Submitter(s)
+    # Enum:
+    #   - "0"
+    #   - "1"
+    # Req: 'Yes'
+    # Tags:
+    #   Labeled: Assessed
+  data_collection_category_assessed: # per working group discussions, this property now replaces the data_collection_annotation_count property, providing a simple Yes versus No indicator as to whether the data collection category in question was examined or not
+    Desc: A Boolean indicator as to whether variables associated with any given data collection either were or were not assessed. A value of No should be used to indicate that no variables associated with a given data collection category were assessed, whereas regardless of the number of variables assessed, a value of Yes should be used to indicate that one or more variables were indeed assessed within the data collection category in question. <br>CDE ID = 16991478
   #   Term:
   #     - Origin: caDSR
   #       Code: '16991478'
   #       Value: Research Activity Data Collection Category Assessed Count # INCORRECT AND NOT YET ASSOCIATED WITH ANY PERMISSIBLE VALUES
   #       Version: '1'
-  #   Src: Data Submitter(s)
-  #   Enum:
-  #     - 'Yes'
-  #     - 'No'
-  #   Req: 'Yes'
-  #   Tags:
-  #     Labeled: Assessed
+    Src: Data Submitter(s)
+    Enum:
+      - 'Yes'
+      - 'No'
+    Req: 'Yes'
+    Tags:
+      Labeled: Assessed
   # participant properties
   participant_id:
     Desc: <A sequence of letters, numbers, or characters that uniquely identifies the participant who has taken part in the investigation or research study.> The globally unique ID by which any given participant can be unambiguously identified and displayed across studies/trials. <br>This property is used to identify the correct records during data updates.

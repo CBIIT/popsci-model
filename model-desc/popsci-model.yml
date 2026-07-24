@@ -2,7 +2,7 @@
 # Title case names are "reserved" (meaningful to the parser)
 # Lower case names are labels for the entities
 Handle: PSDC
-Version: v1.0.0
+Version: v2.0.0
 Nodes:
   # node:
   #   Desc: text
@@ -127,8 +127,8 @@ Nodes:
     Props:  
       - data_collection_record_id # CDE ID = 14822135
       - data_collection_category # for example Mental Health Assessments, Cardiovascular Health Assessments, Smoking History, etc., all per CV # CDE ID = 16990979
-      - data_collection_category_annotation_count # the number of annotations per data collection category # CDE ID = 16991477 but property will ultimately be deprecated, and superseded by data_collection_category_assessed as noted below
-      #- data_collection_category_assessed  # CDE ID = 16991478 and this property will supersede the current data_collection_category_annotation_count as noted above
+      #- data_collection_category_annotation_count # the number of annotations per data collection category # CDE ID = 16991477 but property deprecated, and superseded by data_collection_category_assessed as noted below
+      - data_collection_category_assessed  # CDE ID = 16991478 and this property supersedes the current data_collection_category_annotation_count as noted above
   participant:
     Desc: The Participant node is comprised of the properties which define and characterize each study participant
     Tags:
