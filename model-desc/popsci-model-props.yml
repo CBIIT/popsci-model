@@ -694,7 +694,7 @@ PropDefinitions:
     # Req: 'Yes'
     # Tags:
     #   Labeled: Assessed
-  data_collection_category_assessed: # per working group discussions, this property now replaces the data_collection_annotation_count property, providing a simple Yes versus No indicator as to whether the data collection category in question was examined or not
+  data_collection_category_assessed: # per working group discussions, this property now replaces the data_collection_category_annotation_count property, providing a simple Yes versus No indicator as to whether the data collection category in question was examined or not
     Desc: A Boolean indicator as to whether variables associated with any given data collection either were or were not assessed. A value of No should be used to indicate that no variables associated with a given data collection category were assessed, whereas regardless of the number of variables assessed, a value of Yes should be used to indicate that one or more variables were indeed assessed within the data collection category in question. <br>CDE ID = 16991478
   #   Term:
   #     - Origin: caDSR
