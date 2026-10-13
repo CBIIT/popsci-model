@@ -360,14 +360,14 @@ PropDefinitions:
     Req: 'Yes'
   person_role:
     Desc: <The text that describes the distinguishable characteristics of the action or activity assigned to or required or expected of a person in a formal association with a group or organization.> An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given individual may be assigned multiple roles for the study in question. Within the data loading file, multiple roles assigned to a single individual must be separated from one another using the pipe (|) character.
-    Term: # COMMENT THIS CDE REFERENCE OUT - WE ONLY WANT TO ALLOW THE SUBSET OF VALUES SPECIFIED BELOW
-      - Origin: caDSR 
-        Code: '2201713'
-        Value: Person Affiliation Role Text Type
-        Version: '2'
-        Tags:
-          Provenance: NCI Standard
-          Labeled: Position or Role
+    # Term: # NEED TO TEMPORARILY COMMENT THIS CDE REFERENCE OUT - WE ONLY WANT TO ALLOW THE SUBSET OF VALUES SPECIFIED BELOW
+    #   - Origin: caDSR 
+    #     Code: '2201713'
+    #     Value: Person Affiliation Role Text Type
+    #     Version: '2'
+    #     Tags:
+    #       Provenance: NCI Standard
+    #       Labeled: Position or Role
     Src: Data Submitter(s)
     Type:
       value_type: list
@@ -394,7 +394,9 @@ PropDefinitions:
         - Study Chair
         - Study Chairperson
         - Study Coordinator
-    Req: 'Yes'  
+    Req: 'Yes'
+    Tags:
+      Labeled: Position or Role
   # associated_link properties
   associated_link_record_id:  
     Desc: <A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each associated link record, used to identify the appropriate associated link record(s) during data loading and/or record modification. The value of this record ID also dictates the order in which associated links are listed within the application's UI.
