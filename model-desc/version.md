@@ -1,8 +1,10 @@
 ## Release Notes - Population Sciences Data Commons (PSDC)
 ### Data Model version 2.0.0
-Release Date: 08/17/26  
+Release Date: 10/21/26  
 
 Within the Data Collection node, the Boolean data_collection_category_assessed property, which accepts data values of simply "Yes" versus "No", supersedes the original data_collection_category_annotation_count property, simplifying the ingestion and presentation of qualitative Data Collection data
+
+This release also includes a number of minor revisions and/or corrections to node and property descriptions
 
 ### Data Model version 1.0.0
 Release Date: 03/23/26  
