@@ -1,5 +1,5 @@
 repo https://github.com/CBIIT/popsci-model
-commit a1ee254
+commit 6228a69
 node	property	value_or_TYPE
 associated_link	associated_link_name	STRING
 associated_link	associated_link_record_id	STRING
@@ -95,7 +95,6 @@ file	data_file_type	Data Dictionary
 file	data_file_type	Data Guide
 file	data_file_type	File Collection
 file	data_file_type	Investigator Report
-file	data_file_type	More options to be added as needed
 file	data_file_type	Questionnaire
 file	data_file_type	Survey
 file	data_file_uuid	STRING
@@ -146,8 +145,9 @@ study	study_ending_year	STRING
 study	study_id	STRING
 study	study_name	STRING
 study	study_short_name	STRING
-study	study_status	Active
-study	study_status	Closed
+study	study_status	Active Study
+study	study_status	Completed Study
+study	study_status	Provisional Study
 study_country	study_country	STRING
 study_country	study_country_record_id	STRING
 study_personnel	person_first_name	STRING
@@ -159,14 +159,14 @@ study_state_province_territory	study_state_province_territory	STRING
 study_state_province_territory	study_state_record_id	STRING
 
 relationship	source_node	destination_node	property	value_or_TYPE
+associated_with	participant	study	NA	NA
+associated_with	publication	study	NA	NA
+associated_with	study_country	study	NA	NA
+associated_with	associated_link	study	NA	NA
 associated_with	study_personnel	study	NA	NA
 associated_with	file	study	NA	NA
-associated_with	study_country	study	NA	NA
-associated_with	data_collection	study	NA	NA
-associated_with	publication	study	NA	NA
-associated_with	associated_link	study	NA	NA
 associated_with	study_state_province_territory	study	NA	NA
-associated_with	participant	study	NA	NA
+associated_with	data_collection	study	NA	NA
 belongs_to	study	program	NA	NA
 
 property	description
@@ -207,8 +207,8 @@ person_institution	<The name of the research society, corporation, foundation or
 person_last_name	<A means of identifying an individual by using a word or group of words indicating a person's last (family) name. Synonym = Last Name, Surname.> The last or family name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project.
 person_middle_name	<A means of identifying an individual by using a word or group of words indicating a person's middle name.> The middle name of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project.
 person_role	<The text that describes the distinguishable characteristics of the action or activity assigned to or required or expected of a person in a formal association with a group or organization.> An indicator as to the role(s) and/or responsibilities of each individual responsible for or directly involved in the conduct and/or analysis of the clinical trial or research project. Each such individual must have at least one specified role, but any given individual may be assigned multiple roles for the study in question. Within the data loading file, multiple roles assigned to a single individual must be separated from one another using the pipe (|) character.
-program_name	<The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis.>
-program_short_name	<An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. For example, CPTAC.> <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
+program_name	<The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped.>
+program_short_name	<An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped.> <br>This property is used as the key via which child records, e.g. project and/or study/trial records, can be associated with the appropriate program during data loading, and to identify the correct records during data updates.
 publication_record_id	<A unique sequence of characters used to identify a linkage between related records.> A unique identifier of each publication record associated with the study in question, used to identify the appropriate publication record(s) during data loading and/or record modification. The value of this record ID also dictates the order in which publications are listed within the application's UI.
 publication_title	<The title for a published printed or electronic article.> The full title of the publication stated exactly as it appears on the published work.
 pubmed_id	Where applicable, the unique numerical identifier assigned to the cited work by PubMed, by which it can be linked to via the internet. <br>Values of this property must contain only the numeric string of the PubMed ID itself, exclusive of any prefix such as "PMID:", such that values can be correctly interpreted and displayed as hyperlinks within the application.
