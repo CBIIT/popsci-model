@@ -1,0 +1,19 @@
+{
+  "model-files": [
+    "model-desc/popsci-model.yml",
+    "model-desc/popsci-model-props.yml"
+  ],
+  "readme-file": "README.md",
+  "release-notes": "model-desc/version.md",
+  "ui_settings": {
+    "name": "PopSci",
+    "configuration": {
+      "pageTitle": "PopSci Model Preview",
+      "readMeDownload": false,
+      "facetFilterSearchData": [],
+      "pdfConfig": {
+        "enabled": false
+      }
+    }
+  }
+}
