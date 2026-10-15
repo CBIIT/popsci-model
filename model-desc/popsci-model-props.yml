@@ -76,7 +76,7 @@ PropDefinitions:
   #         Labeled: Program 
   # program properties
   program_name:
-    Desc: <The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. # Example - Clinical Proteomic Tumor Analysis.>
+    Desc: <The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped.> # Example - Clinical Proteomic Tumor Analysis.
     Term:
       - Origin: caDSR
         Code: '11444542'

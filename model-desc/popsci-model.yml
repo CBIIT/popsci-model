@@ -2,7 +2,7 @@
 # Title case names are "reserved" (meaningful to the parser)
 # Lower case names are labels for the entities
 Handle: PSDC
-Version: v2.1.0
+Version: v2.0.0
 Nodes:
   # node:
   #   Desc: text
@@ -118,7 +118,7 @@ Nodes:
       - study_state_record_id # CDE ID = 14822135
       - study_state_province_territory # CDE ID = 16990818
   data_collection:
-    Desc: The Data Collection node is comprised of the properties required to illustarate the nature of the data being gathered by any given study.
+    Desc: The Data Collection node is comprised of the properties required to illustrate the nature of the data being gathered by any given study.
     Tags:
       Category: study
       Assignment: core
